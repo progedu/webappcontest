@@ -12,7 +12,7 @@ function setAwardData(selecter, data) {
 // 受賞者
 setAwardData($(".nhigh.grand-prize"), datas.filter( e => e.category === "N高" && e.award === "最優秀賞")[0]);
 setAwardData($(".nhigh.first-place"), datas.filter( e => e.category === "N高" && e.award === "優秀賞")[0]);
-setAwardData($(".nmiddle.grand-prize"), datas.filter( e => e.category === "N中" && e.award === "最優秀賞")[0]);
+setAwardData($(".nprog.grand-prize"), datas.filter( e => e.category === "N中" && e.award === "最優秀賞")[0]);
 setAwardData($(".nprep.grand-prize"), datas.filter( e => e.category === "N予備校" && e.award === "最優秀賞")[0]);
 
 // 健闘賞
