@@ -1,35 +1,32 @@
 'use strict'
 
-function setAwardData(selecter, category, award) {
-    const data = datas.filter( e => e.category === category && e.award === award)[0];
+function setAwardData(selecter, data) {
     $(selecter + ".data-thumb").attr("style", `background-image: url("assets/img/applications/${data.id}.png");`);
     $(selecter + ".data-title").text(data.title);
     $(selecter + ".data-page").attr("href", data.page);
+    $(selecter + ".data-name").text(data.name);
     $(selecter + ".data-source").attr("href", data.source);
     $(selecter + ".data-desc").text(data.desc);
 }
 
-// N高
-setAwardData(".nhigh.grand-prize", "N高", "最優秀賞");
-setAwardData(".nhigh.first-place", "N高", "優秀賞");
-setAwardData(".nmiddle.grand-prize", "N中", "最優秀賞");
-setAwardData(".nprep.grand-prize", "N予備校", "最優秀賞");
+// 受賞者
+setAwardData(".nhigh.grand-prize", datas.filter( e => e.category === "N高" && e.award === "最優秀賞")[0]);
+setAwardData(".nhigh.first-place", datas.filter( e => e.category === "N高" && e.award === "優秀賞")[0]);
+setAwardData(".nmiddle.grand-prize", datas.filter( e => e.category === "N中" && e.award === "最優秀賞")[0]);
+setAwardData(".nprep.grand-prize", datas.filter( e => e.category === "N予備校" && e.award === "最優秀賞")[0]);
 
 // 健闘賞
 const contentTemplate = $(".template");
-
 const kentos = datas.filter( e => e.award === "" );
-
 for (let data of kentos) { 
 
-    let content = contentTemplate.clone(true);
+    const content = contentTemplate.clone(true);
     content.find(".data-thumb").attr("style", `background-image: url("assets/img/applications/${data.id}.png");`);
     content.find(".data-title").text(data.title);
-    content.find(".data-name").text(data.name);
     content.find(".data-page").attr("href", data.page);
+    content.find(".data-name").text(data.name);
     content.find(".data-source").attr("href", data.source);
+    content.find(".data-desc").text(data.desc);
     contentTemplate.after(content);
-
 }
 contentTemplate.hide();
-
