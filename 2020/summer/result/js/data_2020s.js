@@ -256,8 +256,8 @@ const datas = [
     "name": "mame",
     "title": "累計時間計測アプリ",
     "desc": "累計時間を計ることができます。 毎日学習記録を付ける中で、自分が必要で欲しかったものを作りました。",
-    "page": "https://kaori4.github.io/time-cal/time-cal.html",
-    "source": "https://github.com/Kaori4/time-cal"
+    "page": "https://neutral-kaori.github.io/time-cal/time-cal.html",
+    "source": "https://github.com/neutral-kaori/time-cal"
   },
   {
     "category": "N予備校",
