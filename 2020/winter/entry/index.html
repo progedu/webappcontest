@@ -70,46 +70,164 @@
             <h3 class='section-subheading text-muted'>Rules</h3>
           </div>
         </div>
-        <div class='col-lg-8 mx-auto text-center'>
-          <h3 class='service-heading'>参加資格</h3>
-          <p class='large text-muted'>N予備校 または N高課外授業 にて プログラミングのいずれかのコースを受講中であること</p>
-        </div>
   
-        <div class='col-lg-8 mx-auto text-center'>
-          <h3 class='service-heading mt-5'>応募規定</h3>
-          <p class='large text-muted'>作品は「クライアントサーバシステム」の Web アプリケーションであること</p>
-          <p class='large text-muted'>N予備校で教材を用意している言語（JavaScript、Scala、Python、Golang、Swift、Java） を主として使用した作品を提出すること（他のプログラミング言語から変換したものは不可）</p>
-          <p class='large text-muted'>作品は著作権上問題のないメディアファイル、ソースコードのみで構成されていること</p>
-          <p class='large text-muted'>コードの提出はプロジェクトフォルダを GitHub にアップロードし、リポジトリの URL を提出すること</p>
-          <p class='large text-muted'>Heroku 等でアプリケーションをホスティングし、動作確認ができる URL を提出すること</p>
-          <p class='large text-muted'>作品は審査期間中、 Google Chrome ブラウザで正常に動作すること</p>
-          <p class='large text-muted'>良い作品は公開される可能性があるため、それに了承できること</p>
-        </div>
-  
-        <div class='col-lg-8 mx-auto text-center mt-5'>
-          
-          <h3 class='service-heading'>評価項目</h3>
+        <div class='col-lg-8 mx-auto text-center mb-5'>
+          <h2 class='service-heading mb-4'>応募規定</h2>
+          <p>応募条件、テーマ、作品提出のルールなど</p>
+          <div class="list-group　text-center">
 
-          <h5 class="mt-4">コーディング技術</h5>
-          <p class='large text-muted'>
-            コードの簡潔さ、コードの可読性、必要なコメントの有無などを評価します。
-          </p>
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 text-left">N予備校にてプログラミングコースを受講中であること</h5>
+              </div> 
+              <p class="mb-1">N予備校プログラミングコース受講生、または N高等学校/N中等部の課外授業 にてプログラミングコースを受講している方が応募できます。</p>
+              <small class="text-muted">コンテスト期間中に退会を行うと、審査対象外となったり賞状や賞品が送付できなくなる可能性があります。</small>
+            </div>
 
-          <h5 class="mt-4">完成度</h5>
-          <p class='large text-muted'>
-            作り込みの深さ、バグの少なさ、スタイルの有無などを評価します。
-          </p>
-  
-          <h5 class="mt-4">アイデア</h5>
-          <p class='large text-muted'>
-            創意工夫や発想、テーマに沿っているか、着眼点の良さなどを評価します。
-          </p>
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">クライアントサーバシステムの Web アプリケーションであること</h5>
+              </div>
+              <p class="mb-1">サーバーサイドの実装量は問いませんが、必ず HTTP リクエストを処理するコードを実装してください。</p>
+              <small class="text-muted">第 4 章以降で学ぶ Web フレームワークを利用することをオススメします。</small>
+            </div>
+
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">N予備校で教材を用意している言語を主として使用していること</h5>
+              </div>
+              <p class="mb-1">N予備校プログラミングコースでは、JavaScript、Scala、Python、Golang、Swift、Java の教材を用意しています。</p>
+              <small class="text-muted">他のプログラミング言語から変換したものは不可。</small>
+            </div>
+
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">著作権上問題のないメディアファイル、コードのみで構成されていること</h5>
+              </div>
+              <p class="mb-1">自作でない画像やライブラリを利用する際は、該当コンテンツのライセンスを十分に確認してください。</p>
+              <small class="text-muted">外部ライブラリの利用は問題ありません。</small>
+            </div>
+
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">コードの提出は GitHub リポジトリの URL を提出すること</h5>
+              </div>
+              <p class="mb-1">審査期間中のコード変更は禁止しませんが、バグなどが含まれると評点が下がる可能性があります。審査用にブランチを分けておくと管理がしやすいです。</p>
+              <small class="text-muted">リポジトリの公開設定は Public で作成してください。</small>
+            </div>
+
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">動作確認ができる URL を提出すること</h5>
+              </div>
+              <p class="mb-1">Heroku 等で応募作品のアプリケーションをホスティングし、アプリケーションの URL を提出してください。審査期間中のアプリケーション変更は禁止しませんが、バグなどが含まれると評点が下がる可能性があります。</p>
+              <small class="text-muted">提出しているコードと同じ動作となるようにしてください。</small>
+            </div>
+
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">作品は審査期間中、 Google Chrome ブラウザで正常に動作すること</h5>
+              </div>
+              <p class="mb-1">審査は PC 版 Google Chrome ブラウザにて行われます。</p>
+            </div>
+
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">応募作品は公開される可能性があるため、それに了承できること</h5>
+              </div>
+              <p class="mb-1">応募作品のコードおよびアプリケーションの URL は結果ページにリンクが貼られ、プログラミングの授業などにて紹介されます。</p>
+              <small class="text-muted">授業での表彰および紹介が終わるまでは、アプリケーションのホスティングを続けてください。</small>
+            </div>
+
           </div>
+        </div>
+        
+        <hr>
+
+        <div class='col-lg-12 mx-auto text-center my-5'>
+          
+          <h2 class='service-heading m-4'>評価項目</h2>
+          <p>作品の審査基準、点数配分について</p>
+          <div class="card-group text-center">
+            <div class="card">
+              <h4 class="card-header">⚒️ コーディング ⚒️</h4>
+              <div class="card-body">
+                <div class="card-text text-left">
+                  <p class="font-weight-bold">
+                    コードの簡潔さ、可読性、コメントの有無などを評価します。
+                  </p>
+                  <h5 class="text-center mb-0 text-muted">Hints</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">役割毎にファイル分割されているか</li>
+                    <li class="list-group-item">見やすくフォルダ分けされているか</li>
+                    <li class="list-group-item">オブジェクトのスコープは適切か</li>
+                    <li class="list-group-item">コードが冗長的でないか</li>
+                    <li class="list-group-item">必要なコメントが記述されているか</li>
+                  </ul>
+                </div>
+              </div>
   
-          <div class='col-lg-8 mx-auto text-center mt-5'>
-          <h3 class='service-heading'>過去作品</h3>
+              <div class="card-footer">
+                <small class="text-muted">40 点</small>
+              </div>
+            </div>
+            
+            <div class="card">
+              <h4 class="card-header">🏯 完成度 🏯</h4>
+              <div class="card-body">
+                <div class="card-text text-left">
+                  <p class="font-weight-bold">
+                    作り込みの深さ、バグの少なさ、UI/UXなどを評価します。
+                  </p>
+                  <h5 class="text-center mb-0 text-muted">Hints</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">バグや動作不良などはないか</li>
+                    <li class="list-group-item">攻撃可能な脆弱性はないか</li>
+                    <li class="list-group-item">UI/UX が洗練されているか</li>
+                    <li class="list-group-item">テストコードが書かれているか</li>
+                    <li class="list-group-item">リポジトリの説明やREADMEの有無</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">30 点</small>
+              </div>
+            </div>
+  
+            <div class="card">
+              <h4 class="card-header">💡 アイデア 💡</h4>
+              <div class="card-body">
+                <div class="card-text text-left">
+                  <p class="font-weight-bold">
+                    創意工夫や発想、テーマに沿っているか、着眼点の良さなどを評価します。
+                  </p>
+                  <h5 class="text-center mb-0 text-muted">Hints</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">作品のテーマ・アイデアが新しいか</li>
+                    <li class="list-group-item">機能や実装に独創性があるか</li>
+                    <li class="list-group-item">余分な機能がなく洗練されているか</li>
+                    <li class="list-group-item">時世やトレンドを取り入れているか</li>
+                    <li class="list-group-item">デザインに創意工夫があるか</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">30 点</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class='col-lg-8 mx-auto text-center mt-5'>
+          <h2 class='service-heading'>過去作品集</h2>
+          作品アイデアの参考などに
           <p class='large text-muted'>
-            去年のコンテスト応募者の作品は <a href="https://progedu.github.io/web-contests/move-webcontest2020-winter/results/">こちら</a> から閲覧できます。
+             <h5><a class="btn btn-secondary btn-lg" href="https://progedu.github.io/webappcontest2019w-results/" target="_blank">Webアプリコンテスト2019冬</a></h5>
+             <h5><a class="btn btn-secondary btn-lg" href="https://progedu.github.io/web-contests/webcontest2018-winter/results/" target="_blank">Webアプリコンテスト2018冬</a></h5>
+             <h5><a class="btn btn-secondary btn-lg" href="https://progedu.github.io/web-contests/webcontest2017-winter/results/" target="_blank">Webアプリコンテスト2017冬</a></h5>
           </p>
         </div>
       </div>
@@ -125,7 +243,7 @@
           </div>
         </div>
 
-        <div class="card-group text-center">
+        <div class="card-deck text-center">
           <div class="card">
             <h4 class="card-header">👑 最優秀賞 👑</h4>
             <div class="card-body">
@@ -194,6 +312,7 @@
             </div>
           </div>
         </div>
+
         <div class="card my-5">
           <div class="row no-gutters">
             <div class="col-md-4 m-auto">
@@ -205,7 +324,7 @@
                 <p class="card-text">
                   各賞とは別に、N予備校の入門コース第４章までの内容をコードに反映できている作品の応募者には、『N予備校プログラミング入門コース修了認定証』を贈呈します。
                 </p>
-                <p class="card-text"><small class="text-muted">- 複数名 -</small></p>
+                <p class="card-text"><small class="text-muted">修了認定証を送付、およびフィードバックのメールにて評点をお送りいたします。</small></p>
               </div>
             </div>
           </div>
@@ -238,7 +357,7 @@
           </div>
         </div>
 
-        <div class="card-group text-center" style="max-width:720px; margin: auto;">
+        <div class="card-deck text-center" style="max-width:720px; margin: auto;">
           <div class="card">
             <h4 class="card-header">👑 最優秀賞 👑</h4>
             <div class="card-body">
@@ -295,7 +414,7 @@
                 <p class="card-text">
                   各賞とは別に、N予備校の入門コース第４章までの内容をコードに反映できている作品の応募者には、『N予備校プログラミング入門コース修了認定証』を贈呈します。
                 </p>
-                <p class="card-text"><small class="text-muted">- 複数名 -</small></p>
+                <p class="card-text"><small class="text-muted">修了認定証を送付、およびフィードバックのメールにて評点をお送りいたします。</small></p>
               </div>
             </div>
           </div>
@@ -329,7 +448,7 @@
           </div>
         </div>
 
-        <div class="card-group text-center">
+        <div class="card-deck text-center">
           <div class="card">
             <h4 class="card-header">👑 最優秀賞 👑</h4>
             <div class="card-body">
@@ -387,7 +506,7 @@
                 <p class="card-text">
                   各賞とは別に、N予備校の入門コース第４章までの内容をコードに反映できている作品の応募者には、『N予備校プログラミング入門コース修了認定証』を贈呈します。
                 </p>
-                <p class="card-text"><small class="text-muted">- 複数名 -</small></p>
+                <p class="card-text"><small class="text-muted">修了認定証を送付、およびフィードバックのメールにて評点をお送りいたします。</small></p>
               </div>
             </div>
           </div>
@@ -521,11 +640,11 @@
         <div class='row align-items-center pt-1'>
           <div class='col-md-12'>
             | 
-            <a href="index.html"> TOP </a>
-            |  
-            <a href="https://www.nnn.ed.nico/pages/programming/"> N予備校 プログラミングコース</a>
+            <a href="https://progedu.github.io/webappcontest"> N予備校Webアプリコンテスト</a>
             | 
             <a href="https://github.com/progedu/webappcontest/"> GitHub </a>
+            |  
+            <a href="https://www.nnn.ed.nico/pages/programming/"> N予備校プログラミングコース</a>
             | <br>
             <span class='copyright'>Copyright &copy; DWANGO Co., Ltd.</span>
           </div>
