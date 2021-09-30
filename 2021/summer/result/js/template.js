@@ -1,7 +1,7 @@
 'use strict'
 
 function setAwardData(selecter, data) {
-    selecter.find(".data-thumb").attr("style", `background-image: url("assets/img/applications/${data.id}.png");`);
+    selecter.find(".data-thumb").attr("style", `background-image: url("assets/img/app/${data.id}.png");`);
     selecter.find(".data-title").text(data.title);
     selecter.find(".data-page").attr("href", data.page);
     selecter.find(".data-name").text(data.name);
