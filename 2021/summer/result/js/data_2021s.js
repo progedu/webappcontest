@@ -356,8 +356,8 @@ const datas = [
     "name": "らっく",
     "title": "夜ご飯が思いつかないときはコレだ！！",
     "desc": "「夜ご飯、何食べようかなぁ。」と考えていたらいつの間にかカップ麺になってしまうことが何回かありました。夜ご飯の何にするか考えるときに考えがまとまらないことが多いです。だったら頭の中で考えていることをまとめられるようにしたら役に立つんじゃないかと思ったので作ることにしました。\n　今回は「夜ご飯」をテーマにしましたが、頭の中がまとまらないことはほかにもあると思います。なので、ほかのテーマのものに応用しやすくなるように意識してコードを描きました。夜ご飯をどうするかの質問はこれから少しづつよくしていく予定です。\n　初めて作ったWebページでしたが、関数がどんなものか作っていくうちによくわかりました。これからも”思考整理系”のWebページシリーズを作っていこうと思います。何度も作り直していくたびにできていく様子がとても楽しかったです。\n　まだCSSに関してはJavaScriptに比べて学びが薄いのでこれからのWebページ作成の中でマナbbで行きたいと思います。",
-    "page": "https://github.com/RAKU0731/dinner-coaching.git",
-    "source": "https://raku0731.github.io/dinner-coaching/coaching-copy"
+    "page": "https://raku0731.github.io/dinner-coaching/coaching-copy",
+    "source": "https://github.com/RAKU0731/dinner-coaching.git"
   },
   {
     "category": "N高等学校",
@@ -387,7 +387,7 @@ const datas = [
     "title": "clock",
     "desc": "切手のような数字のデザインを考えるのに一番苦労しました。普通の切手は絵がメインなので数字は小さいのが多く、今回のために数字をメインにデザインするのがとても大変でした。",
     "page": "https://chiyogami.github.io/clock/clock.html",
-    "source": "https://github.com/chiyogami/clock/blob/gh-pages/clock.html、https://github.com/chiyogami/clock/blob/gh-pages/clock.js、https://github.com/chiyogami/clock/blob/gh-pages/clock.css、https://github.com/chiyogami/clock/tree/gh-pages/background、https://github.com/chiyogami/clock/tree/gh-pages/number、https://github.com/chiyogami/clock/tree/gh-pages/parts、https://github.com/chiyogami/clock/tree/gh-pages/week"
+    "source": "https://github.com/chiyogami/clock/"
   },
   {
     "category": "N高等学校",
@@ -396,7 +396,7 @@ const datas = [
     "name": "yu1k",
     "title": "IPアドレス情報確認くん",
     "desc": "入力した IPv4 アドレス の情報を確認します。サブネットマスクの計算のみ対応。\n詳しくは READMEmd に記載します。",
-    "page": "https://yu1k.github.io/ip-network-info/",
+    "page": "https://yu1k.github.io/ip-network-info/client/",
     "source": "https://github.com/yu1k/ip-network-info/tree/nyobikou-webappcontest-2021-summer/client/"
   },
   {
