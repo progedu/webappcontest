@@ -9,14 +9,14 @@ function setAwardData(selecter, data) {
     selecter.find(".data-desc").text(data.desc);
 }
 
-// 受賞者
-setAwardData($(".nhigh.grand-prize"), datas.filter( e => e.category === "N高等学校" && e.award === "最優秀賞")[0]);
-setAwardData($(".nhigh.first-place"), datas.filter( e => e.category === "N高等学校" && e.award === "優秀賞")[0]);
-setAwardData($(".nprog.grand-prize"), datas.filter( e => e.category === "N中等部" && e.award === "最優秀賞")[0]);
-setAwardData($(".nprep.grand-prize"), datas.filter( e => e.category === "N予備校" && e.award === "最優秀賞")[0]);
-setAwardData($(".nprep.tech-prize"), datas.filter( e => e.category === "N予備校" && e.award === "技術賞")[0]);
-setAwardData($(".nprep.move-prize"), datas.filter( e => e.category === "N予備校" && e.award === "動くで賞")[0]);
-setAwardData($(".nprep.design-prize"), datas.filter( e => e.category === "N予備校" && e.award === "デザイン賞")[0]);
+// 受賞作品
+setAwardData($(".nhigh.grand-prize"), datas.filter( e => e.category === "NS高等学校部門" && e.award === "最優秀賞")[0]);
+setAwardData($(".nhigh.first-place"), datas.filter( e => e.category === "NS高等学校部門" && e.award === "優秀賞")[0]);
+setAwardData($(".nprog.grand-prize"), datas.filter( e => e.category === "N中等部部門" && e.award === "最優秀賞")[0]);
+setAwardData($(".nprep.grand-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "最優秀賞")[0]);
+setAwardData($(".nprep.tech-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "技術賞")[0]);
+setAwardData($(".nprep.move-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "動くで賞")[0]);
+setAwardData($(".nprep.design-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "デザイン賞")[0]);
 
 // 佳作
 const contentTemplate = $(".template");

@@ -1,6 +1,6 @@
 const datas = [
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 1,
     "award": "佳作",
     "name": "ミニミニコ",
@@ -10,7 +10,7 @@ const datas = [
     "source": "https://github.com/chikako2020/kotobaRainbow"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 2,
     "award": "佳作",
     "name": "まさし",
@@ -20,7 +20,7 @@ const datas = [
     "source": "https://github.com/ma3shi/janken/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 3,
     "award": "佳作",
     "name": "まさし",
@@ -30,7 +30,7 @@ const datas = [
     "source": "https://github.com/ma3shi/memory-game/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 4,
     "award": "技術賞",
     "name": "まさし",
@@ -40,7 +40,7 @@ const datas = [
     "source": "https://github.com/ma3shi/tenpuzzle/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 5,
     "award": "佳作",
     "name": "まさし",
@@ -50,7 +50,7 @@ const datas = [
     "source": "https://github.com/ma3shi/card-memory/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 6,
     "award": "佳作",
     "name": "まさし",
@@ -60,7 +60,7 @@ const datas = [
     "source": "https://github.com/ma3shi/roulette/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 7,
     "award": "佳作",
     "name": "まさし",
@@ -70,7 +70,7 @@ const datas = [
     "source": "https://github.com/ma3shi/todo/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 8,
     "award": "佳作",
     "name": "まさし",
@@ -80,7 +80,7 @@ const datas = [
     "source": "https://github.com/ma3shi/seconds-guess/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 9,
     "award": "佳作",
     "name": "まさし",
@@ -90,7 +90,7 @@ const datas = [
     "source": "https://github.com/ma3shi/number-guess/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 10,
     "award": "佳作",
     "name": "りさりさと",
@@ -100,7 +100,7 @@ const datas = [
     "source": "https://github.com/risarisato/SummerContest/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 11,
     "award": "佳作",
     "name": "HappyK",
@@ -110,7 +110,7 @@ const datas = [
     "source": "https://github.com/HappyKumamoto/RandomEmoji"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 12,
     "award": "佳作",
     "name": "pala",
@@ -120,7 +120,7 @@ const datas = [
     "source": "https://github.com/89nno/PerfectPrefecture/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 13,
     "award": "最優秀賞",
     "name": "こってぃ",
@@ -130,7 +130,7 @@ const datas = [
     "source": "https://github.com/coticoticotty/communication-type-assessment"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 14,
     "award": "佳作",
     "name": "Taka",
@@ -140,7 +140,7 @@ const datas = [
     "source": "https://github.com/hamuyashiki/calculate-vacation-date.git"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 15,
     "award": "佳作",
     "name": "BlueZhiaar",
@@ -150,7 +150,7 @@ const datas = [
     "source": "https://github.com/BlueZhiaar/summer-diary/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 16,
     "award": "佳作",
     "name": "fleur-hana",
@@ -160,7 +160,7 @@ const datas = [
     "source": "https://github.com/fleur-hana/webAppContest-summer-2021/tree/main"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 17,
     "award": "佳作",
     "name": "kofun0117",
@@ -170,7 +170,7 @@ const datas = [
     "source": "https://github.com/kofun0117/lottery/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 18,
     "award": "佳作",
     "name": "にょろぼん",
@@ -180,7 +180,7 @@ const datas = [
     "source": "https://nyeoro-bong.github.io/vaccineRiskCalc"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 19,
     "award": "佳作",
     "name": "にゃんだーZ",
@@ -190,7 +190,7 @@ const datas = [
     "source": "https://github.com/aknkz/sel-wsong"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 20,
     "award": "動くで賞",
     "name": "nakako",
@@ -200,7 +200,7 @@ const datas = [
     "source": "https://github.com/nakako/catCleaner"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 21,
     "award": "デザイン賞",
     "name": "ふーちん",
@@ -210,7 +210,7 @@ const datas = [
     "source": "https://github.com/fuuchin/kaomoji-emoticon/tree/gh-pages"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 22,
     "award": "佳作",
     "name": "kenton116",
@@ -220,7 +220,7 @@ const datas = [
     "source": "https://github.com/kenton116/Favorite-PictureViewer"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 23,
     "award": "佳作",
     "name": "roo",
@@ -230,7 +230,7 @@ const datas = [
     "source": "https://github.com/cat22roo/PayItForward-Maker"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 24,
     "award": "佳作",
     "name": "ゲストさん",
@@ -240,7 +240,7 @@ const datas = [
     "source": "https://github.com/compmac-sblo/NConSummer2021-1"
   },
   {
-    "category": "N予備校",
+    "category": "N予備校部門",
     "id": 25,
     "award": "佳作",
     "name": "hanaP",
@@ -250,7 +250,7 @@ const datas = [
     "source": "https://github.com/hana-pr/contest"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 26,
     "award": "佳作",
     "name": "たぬみく",
@@ -260,7 +260,7 @@ const datas = [
     "source": "https://github.com/mikurui/azarashikun.git"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 27,
     "award": "佳作",
     "name": "たぬきっつぁん",
@@ -270,7 +270,7 @@ const datas = [
     "source": "https://github.com/tanukizzan/random-color"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 28,
     "award": "佳作",
     "name": "take",
@@ -280,7 +280,7 @@ const datas = [
     "source": "https://github.com/Takeharu7-51/My-Vocabulary-Book"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 29,
     "award": "佳作",
     "name": "ねこむら",
@@ -290,7 +290,7 @@ const datas = [
     "source": "https://github.com/11201ozi/sinjiro/tree/gh-pages"
   },
   {
-    "category": "N中等部",
+    "category": "N中等部部門",
     "id": 30,
     "award": "最優秀賞",
     "name": "Yuta Kobayashi",
@@ -300,7 +300,7 @@ const datas = [
     "source": "https://github.com/progedu/web-tools"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 31,
     "award": "佳作",
     "name": "sol",
@@ -310,7 +310,7 @@ const datas = [
     "source": "https://github.com/loveruvwnSol/payment-app"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 32,
     "award": "佳作",
     "name": "ねや",
@@ -320,7 +320,7 @@ const datas = [
     "source": "https://github.com/NeyaTetsu/Neyagawakoen"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 33,
     "award": "佳作",
     "name": "syoujin",
@@ -330,7 +330,7 @@ const datas = [
     "source": "https://github.com/syoujin/kansai-quiz"
   },
   {
-    "category": "S高等学校",
+    "category": "NS高等学校部門",
     "id": 34,
     "award": "佳作",
     "name": "クッキー",
@@ -340,7 +340,7 @@ const datas = [
     "source": "https://github.com/marotyuket/FizzBuzz-watch/tree/gh-pages"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 35,
     "award": "最優秀賞",
     "name": "golden peach",
@@ -350,7 +350,7 @@ const datas = [
     "source": "https://github.com/KPLOVEPeach/game/tree/gh-pages"
   },
   {
-    "category": "S高等学校",
+    "category": "NS高等学校部門",
     "id": 36,
     "award": "佳作",
     "name": "らっく",
@@ -360,7 +360,7 @@ const datas = [
     "source": "https://github.com/RAKU0731/dinner-coaching.git"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 37,
     "award": "優秀賞",
     "name": "かしわ餅tea",
@@ -370,7 +370,7 @@ const datas = [
     "source": "https://github.com/kashitea/oekakiAnimation"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 38,
     "award": "佳作",
     "name": "ろずっち",
@@ -380,7 +380,7 @@ const datas = [
     "source": "https://github.com/amechanKyobo/3D_RPG"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 39,
     "award": "佳作",
     "name": "うさぎさん",
@@ -390,7 +390,7 @@ const datas = [
     "source": "https://github.com/chiyogami/clock/"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 40,
     "award": "佳作",
     "name": "yu1k",
@@ -400,7 +400,7 @@ const datas = [
     "source": "https://github.com/yu1k/ip-network-info/tree/nyobikou-webappcontest-2021-summer/client/"
   },
   {
-    "category": "N高等学校",
+    "category": "NS高等学校部門",
     "id": 41,
     "award": "佳作",
     "name": "parakeet",
