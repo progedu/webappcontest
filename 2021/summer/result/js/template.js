@@ -1,5 +1,6 @@
 'use strict'
 
+// テンプレにデータをセットする関数
 function setAwardData(selecter, data) {
     selecter.find(".data-thumb").attr("style", `background-image: url("assets/img/app/${data.id}.png");`);
     selecter.find(".data-title").text(data.title);
@@ -18,12 +19,11 @@ setAwardData($(".nprep.tech-prize"), datas.filter( e => e.category === "N予備�
 setAwardData($(".nprep.move-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "動くで賞")[0]);
 setAwardData($(".nprep.design-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "デザイン賞")[0]);
 
-// 佳作
-const contentTemplate = $(".template");
-const kentos = datas.filter( e => e.award === "佳作" );
-for (let data of kentos) { 
-    const content = contentTemplate.clone(true);
-    setAwardData(content, data);
-    contentTemplate.after(content);
+// 佳作一覧
+const contentTemplate = $(".template"); // HTMLテンプレ部品を読込み
+for (let data of datas.filter(e => e.award === "佳作")) { // 受賞作品以外でループ
+    const content = contentTemplate.clone(true); // HTMLテンプレ部品をコピー
+    setAwardData(content, data); // データをセット
+    contentTemplate.after(content); // HTMLに追加
 }
-contentTemplate.hide();
+contentTemplate.hide(); // テンプレを非表示
