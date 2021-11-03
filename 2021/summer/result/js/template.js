@@ -2,12 +2,12 @@
 
 // テンプレにデータをセットする関数
 function setAwardData(selecter, data) {
-    selecter.find(".data-thumb").attr("style", `background-image: url("assets/img/app/${data.id}.png");`);
-    selecter.find(".data-title").text(data.title);
-    selecter.find(".data-page").attr("href", data.page);
-    selecter.find(".data-name").text(data.name);
-    selecter.find(".data-source").attr("href", data.source);
-    selecter.find(".data-desc").text(data.desc);
+    selecter.find(".data-thumb").attr("style", `background-image: url("assets/img/app/${data.id}.png");`); // サムネイル
+    selecter.find(".data-title").text(data.title); // タイトル
+    selecter.find(".data-name").text(data.name); // 応募者名
+    selecter.find(".data-page").attr("href", data.page); // 作品リンク
+    selecter.find(".data-source").attr("href", data.source); // GitHubのURL
+    selecter.find(".data-desc").text(data.desc); // 作品の説明
 }
 
 // 受賞作品
