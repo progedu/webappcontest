@@ -18,9 +18,9 @@ setAwardData($(".nprep.tech-prize"), datas.filter( e => e.category === "N予備�
 setAwardData($(".nprep.move-prize"), datas.filter( e => e.category === "N予備校" && e.award === "動くで賞")[0]);
 setAwardData($(".nprep.design-prize"), datas.filter( e => e.category === "N予備校" && e.award === "デザイン賞")[0]);
 
-// 健闘賞
+// 佳作
 const contentTemplate = $(".template");
-const kentos = datas.filter( e => e.award === "健闘賞" );
+const kentos = datas.filter( e => e.award === "佳作" );
 for (let data of kentos) { 
     const content = contentTemplate.clone(true);
     setAwardData(content, data);
