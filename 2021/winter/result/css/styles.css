@@ -10140,7 +10140,7 @@ img::-moz-selection {
   }
 }
 header.masthead {
-  padding-top: 8rem;
+  padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   background-image: url("../assets/img/header-bg.jpg");
@@ -10166,8 +10166,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -10516,9 +10516,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.data-desc {
-  width: 80%;
-  margin: auto;
 }
