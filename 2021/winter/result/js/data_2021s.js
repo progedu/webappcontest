@@ -22,7 +22,7 @@ const datas = [
   {
     "category": "N予備校部門",
     "id": 3,
-    "award": "",
+    "award": "デザイン特別賞",
     "name": "まさし",
     "title": "フラッピーバード",
     "desc": "フラッピーバードゲームです。 土管の代わりに敵を配置しました。  1.スペースボタンを押すとplayerが浮き上がります。 2.右から来る敵を避けて敵が通過すると得点になります。 3.敵に当たるとゲームオーバーです。",
@@ -52,7 +52,7 @@ const datas = [
   {
     "category": "N予備校部門",
     "id": 6,
-    "award": "",
+    "award": "技術特別賞",
     "name": "りさりさと",
     "title": "匿名ひとことチャット",
     "desc": "匿名で発言することができます！",
@@ -66,13 +66,13 @@ const datas = [
     "name": "にょろぼん",
     "title": "covidリスク確認くん",
     "desc": "covidリスク確認くんは、GitHub認証でき、\"\"おなまえ\"\"を作れて、それぞれのcovid19リスク状況を確認できるサービスです。",
-    "page": "not available yet",
+    "page": "https://powerful-ridge-94830.herokuapp.com/",
     "source": "https://github.com/nyeoro-bong/vaccineRiskCalc"
   },
   {
     "category": "N予備校部門",
     "id": 8,
-    "award": "",
+    "award": "最優秀賞",
     "name": "kenton116",
     "title": "CoderChat",
     "desc": "「会話して学ぼう」をモットーにしたプログラミング学習のソーシャルサービスです。オンラインのクイズでプログラミングをみんなで学ぶことができます。",
@@ -102,20 +102,20 @@ const datas = [
   {
     "category": "N中等部部門",
     "id": 11,
-    "award": "",
+    "award": "最優秀賞",
     "name": "marukun",
     "title": "marukun-music",
     "desc": "ストリーミングについて学んでみたくて作成しました。Socket.IOを使った簡単なチャット機能が付いたicecast2ライブストリーミング、HTTP Live Streamingを使った音楽のストリーミング再生などの機能があります。最初はicecast2を使ったライブストリーミングの部分だけを作ろうと思っていたのですが、作成しているうちに機能を増やしたくなり、hls.jsで音楽をストリーミングしたりチャット機能も付けてみました。大きなwebサービスを作るのは初めてだったのですが、満足のいく仕上がりになったと思います。",
     "page": "https://marukunserver.ml/marukun-music/",
-    "source": "https://github.com/marukun712/marukun-music  https://github.com/marukun712/holo-radio"
+    "source": "https://github.com/marukun712"
   },
   {
     "category": "N・S高等学校部門",
     "id": 12,
-    "award": "",
+    "award": "最優秀賞",
     "name": "あ",
     "title": "śvara",
-    "desc": "Youtubeに上がっている音楽ライブのトラックリストをより見やすくしたWebアプリです。\n\n頑張ったところ。\n- CSS書きたくなかったのでChakra-UIを採用しました。\n- モバイル対応もしました（Chakra-UIが）。\n- 状態管理にrecoilを採用し、バケツリレーを防いでます。といいつつほぼ使ってないです。\n- Web系イマイチわかんないけどテストもお気持ち程度に書きました。",
+    "desc": "Youtubeに上がっている音楽ライブのトラックリストをより見やすくしたWebアプリです。",
     "page": "https://h1rose.com/Koke/",
     "source": "https://github.com/hirossan4049/Koke"
   },
@@ -142,7 +142,7 @@ const datas = [
   {
     "category": "N・S高等学校部門",
     "id": 15,
-    "award": "",
+    "award": "優秀賞",
     "name": "parakeet",
     "title": "WEBAPPS",
     "desc": "作ったアプリを紹介できるサービスです。特にアプリのサムネイルを表示する機能を頑張って作りました。今後もMarkdownを使えるようにするなど、いろいろな機能を追加していきたいと思います。",

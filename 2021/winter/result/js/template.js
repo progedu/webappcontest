@@ -10,14 +10,12 @@ function setAwardData(selecter, data) {
 }
 
 // 受賞者
-/*
 setAwardData($(".nhigh.grand-prize"), datas.filter( e => e.category === "N・S高等学校部門" && e.award === "最優秀賞")[0]);
 setAwardData($(".nhigh.first-place"), datas.filter( e => e.category === "N・S高等学校部門" && e.award === "優秀賞")[0]);
 setAwardData($(".nprog.grand-prize"), datas.filter( e => e.category === "N中等部部門" && e.award === "最優秀賞")[0]);
 setAwardData($(".nprep.grand-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "最優秀賞")[0]);
-setAwardData($(".nprep.tech-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "技能特別賞")[0]);
+setAwardData($(".nprep.tech-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "技術特別賞")[0]);
 setAwardData($(".nprep.design-prize"), datas.filter( e => e.category === "N予備校部門" && e.award === "デザイン特別賞")[0]);
-*/
 
 // 全作品
 const contentTemplate = $(".template");
