@@ -1,0 +1,26 @@
+a.entry {
+    color: orangered
+}
+
+a.entry h3 {
+    font-size: 1.8rem;
+}
+  
+a.entry:hover {
+    color: orangered; 
+}
+
+.entry_badge {
+    animation: blinkAnime 0.5s infinite alternate;
+    margin-bottom: 15px;
+}
+@keyframes blinkAnime{
+    0% {
+        color: pink;
+        transform: rotate(-20deg);
+    }
+    100% {
+        color: orangered;
+        transform: rotate(20deg);
+    }
+}
