@@ -11,16 +11,40 @@ a.entry:hover {
 }
 
 .entry_badge {
-    animation: blinkAnime 0.5s infinite alternate;
+    animation: blinkAnime 2s infinite linear;
     margin-bottom: 15px;
 }
 @keyframes blinkAnime{
     0% {
-        color: pink;
-        transform: rotate(-20deg);
+        color: red;
+        transform: rotate(0deg);
+    }
+    40% {
+        color: red;
+        transform: rotate(0deg);
+    }
+    50% {
+        color: orange;
+        transform: rotate(60deg);
+    }
+    60% {
+        color: yellow;
+        transform: rotate(120deg);
+    }
+    70% {
+        color: green;
+        transform: rotate(180deg);
+    }
+    80% {
+        color: aqua;
+        transform: rotate(240deg);
+    }
+    90% {
+        color: blue;
+        transform: rotate(300deg);
     }
     100% {
-        color: orangered;
-        transform: rotate(20deg);
+        color: purple;
+        transform: rotate(360deg);
     }
 }
