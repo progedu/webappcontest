@@ -703,11 +703,11 @@ const datas = [
     "category": "N中",
     "id": "entry71",
     "award": "",
-    "name": "Tuva1991",
+    "name": "Yuba",
     "title": "SandandGun",
     "desc": "この作品は内戦中の国家を動かすゲームです！\nこの作品はまだ未完成な部分も(多分バグも)ありますが 大量の時間を使って作りました！約1500行の JavaScriptのプログラムは中々辛いものがありました。",
-    "page": "https://tuva1991.github.io/1991/SandandGun/html.html",
-    "source": "https://github.com/Tuva1991/1991"
+    "page": "https://yuba-san.github.io/2020summer/html.html",
+    "source": "https://github.com/Yuba-san/2020summer"
   },
   {
     "category": "N中",
