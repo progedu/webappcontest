@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N予備校 動くWebページコンテスト2023夏 応募ページ</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- header -->
+  <!-- <header>
+    <nav class='navbar fixed-top navbar-dark' style="background-color: #30a2ff;" id='mainNav'>
+      <div class='container'>
+        <a class='navbar-brand' href='#page-top'>N予備校 動くWebページコンテスト2023夏</a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarResponsive'
+          aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation'>
+          Menu
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarResponsive'>
+          <ul class='navbar-nav text-uppercase ml-auto'>
+            <li class='nav-item'>
+              <a class='nav-link js-scroll-trigger' href='#rule'>コンテスト規定</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link js-scroll-trigger' href='#nhigh'>応募フォーム(部門別)</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link js-scroll-trigger' href='#schedule'>スケジュール</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link js-scroll-trigger' href='#judge'>審査員</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+
+  <!-- Header -->
+  <section class='heading'>
+    <div class='heading container'>
+      <h1 class="display-4">N予備校</h1>
+      <div class='mt-4'><span>動く</span>Webページ<br>コンテスト2023<span>夏</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 趣旨 -->
+  <section class='page-sectionbg-light p-5 rounded-3 m-3' id='main'>
+    <div class='container'>
+      <div class='text-center'>
+        <h3 class='service-heading' style="max-width: 800px; margin: auto;">N予備校
+          動くWebページコンテストは、<br>N予備校プログラミング入門コースで学んだN・S高校生、N中等部生ならびにN予備校受講者が、 プログラミングの成果物を競うコンテストです。</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- 規定 -->
+  <section class='page-section' id='rule'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12 text-center'>
+          <h2>コンテスト規定</h2>
+          <h3>Rules</h3>
+        </div>
+      </div>
+
+      <div class='col-lg-8 mx-auto text-center mb-5'>
+        <h2 class='service-heading mb-4'>応募規定</h2>
+        <p>応募条件、テーマ、作品提出のルールなど</p>
+        <div class="list-group text-center">
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="w-100 justify-content-between">
+              <h5 class="mb-1">N予備校にてプログラミングコースを受講中であること</h5>
+            </div>
+            <p class="mb-1">N予備校プログラミングコース受講生、または N・S高等学校/N中等部に所属している方が応募できます。</p>
+            <small class="text-muted">コンテスト期間中に退会すると、審査対象外となったり賞状や賞品が送付できなくなる可能性があります。</small>
+          </div>
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class=" w-100 justify-content-between">
+              <h5 class="mb-1">HTML / CSS / JavaScript で作成された動きのある Web ページを制作し提出すること</h5>
+            </div>
+            <p class="mb-1">コーディングの評点は JavaScript のコードを主に評価します。</p>
+            <small class="text-muted">他のプログラミング言語から変換したものは不可</small>
+          </div>
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class=" w-100 justify-content-between">
+              <h5 class="mb-1">作品に外部ライブラリ (jQuery, Processing.js, anime.js, Pixi.js など) が利用されていないこと</h5>
+            </div>
+            <p class="mb-1">完成度に差がつき過ぎてしまうため禁止とします。</p>
+            <small class="text-muted">外部ライブラリを模倣したオリジナルのライブラリやコードであれば使用可能です。</small>
+            <br>
+            <small class="text-muted">Bootstrapは使用可能です。</small>
+          </div>
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class=" w-100 justify-content-between">
+              <h5 class="mb-1">著作権上問題のないメディアファイル、コードのみで構成されていること</h5>
+            </div>
+            <p class="mb-1">自作でない画像やライブラリを利用する際は、該当コンテンツのライセンスを十分に確認してください。</p>
+            <small class="text-muted">著作権やライセンスについては <a target="_blank"
+                href="https://www.nnn.ed.nico/contents/guides/6247">著作権とライセンス</a> を見てください。</small>
+          </div>
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class=" w-100 justify-content-between">
+              <h5 class="mb-1">応募作品のコードは GitHub リポジトリの URL で提出すること</h5>
+            </div>
+            <p class="mb-1">審査期間中のコード変更は禁止しませんが、バグなどが含まれると評点が下がる可能性があります。</p>
+            <small class="text-muted">リポジトリの公開設定は Public で作成してください。</small>
+          </div>
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class=" w-100 justify-content-between">
+              <h5 class="mb-1">動作確認ができる Web ページの URL を提出すること</h5>
+            </div>
+            <p class="mb-1">応募作品は GitHub Pages で公開し、動作確認ができる Web ページの URL を提出してください。</p>
+            <small class="text-muted">※提出しているコードと同じ動作となるようにしてください。</small>
+          </div>
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class=" w-100 justify-content-between">
+              <h5 class="mb-1">作品は審査期間中、 Google Chrome ブラウザで正常に動作すること</h5>
+            </div>
+            <p class="mb-1">審査は PC 版 Google Chrome ブラウザにて行われます。</p>
+          </div>
+
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class=" w-100 justify-content-between">
+              <h5 class="mb-1">応募作品は公開される可能性があるため、それに了承できること</h5>
+            </div>
+            <p class="mb-1">応募作品のコードおよびアプリケーションの URL は結果ページにリンクが貼られ、プログラミングの授業などにて紹介されます。</p>
+            <small class="text-muted">※授業での表彰および紹介が終わるまでは、公開状態としてください。</small>
+          </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class='col-lg-12 mx-auto text-center my-5'>
+
+        <h2 class='service-heading m-4'>評価項目</h2>
+        <p>作品の審査基準、点数配分について</p>
+        <div class="card-group text-center">
+          <div class="card">
+            <h4 class="card-header"><i class="bi bi-tools text-black-50"></i> コーディング <i
+                class="bi bi-tools text-black-50"></i></h4>
+            <div class="card-body">
+              <div class="card-text text-left">
+                <p class="font-weight-bold">
+                  コードの簡潔さ、可読性、コメントの有無などを評価します。
+                </p>
+                <h5 class="text-center mb-0 text-muted">Hints</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">HTML / CSS / JS が役割毎にファイル分割されているか</li>
+                  <li class="list-group-item">ソースコードに無駄がないか、見やすく書かれているか</li>
+                  <li class="list-group-item">入門コース１章で習った要素や技術をうまく使えているか</li>
+                  <li class="list-group-item">自分なりに調べて実現したい機能を実装できているか</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <small class="text-muted">40 点</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 class="card-header"><i class="bi bi-hand-thumbs-up text-warning"></i> 完成度 <i
+                class="bi bi-hand-thumbs-up text-warning"></i></h4>
+            <div class="card-body">
+              <div class="card-text text-left">
+                <p class="font-weight-bold">
+                  作り込みの深さ、バグの少なさ、デザインなどを評価します。
+                </p>
+                <h5 class="text-center mb-0 text-muted">Hints</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">意図した通りに動くか、動作不良やエラーなどはないか</li>
+                  <li class="list-group-item">使いやすく、わかりやすい見た目やデザインになっているか</li>
+                  <li class="list-group-item">作品のテーマに対して必要な機能が十分に実装されているか</li>
+                  <li class="list-group-item">難易度の高いテーマにチャレンジしているか</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">30 点</small>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 class="card-header"><i class="bi bi-lightbulb text-warning"></i> アイデア <i
+                class="bi bi-lightbulb text-warning"></i></h4>
+            <div class="card-body">
+              <div class="card-text text-left">
+                <p class="font-weight-bold">
+                  創意工夫や発想、テーマに沿っているか、着眼点の良さなどを評価します。
+                </p>
+                <h5 class="text-center mb-0 text-muted">Hints</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">作品のテーマや発想が新しいか、時世やトレンドを取り入れているか</li>
+                  <li class="list-group-item">コーディングに工夫が見られるか、難しい問題を解決できているか</li>
+                  <li class="list-group-item">見せ方に工夫があるか、便利で楽しめるサービスになっているか</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">30 点</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+
+    </div>
+  </section>
+
+  <!-- N・S高部門 -->
+  <section class='page-section' id='nhigh'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12 text-center'>
+          <h2 class='section-heading text-uppercase'>N・S高等学校 部門</h2>
+          <h3 class='section-subheading text-muted'>N High School & S High School</h3>
+        </div>
+      </div>
+
+      <div class="card-deck text-center">
+        <div class="card">
+          <h4 class="card-header"><i class="bi bi-trophy-fill text-warning"></i> 最優秀賞 <i
+              class="bi bi-trophy-fill text-warning"></i></h4>
+          <div class="card-body">
+            <div class="card-text">
+              <p>
+                結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                賞状および賞品、審査員からのフィードバックコメントを送付します。
+              </p>
+              <p class='service-heading font-weight-bold'>《賞品》</p>
+              <p class='text-muted'>
+                「 <a href="https://www.pfu.fujitsu.com/direct/hhkb/" target="_blank">HHKB </a>」 シリーズ
+                <br>
+                または<br>「 <a href="http://www.realforce.co.jp/products/index.html" target="_blank">REALFORCE</a> 」シリーズ
+                <br>のいずれか
+              </p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <small class="text-muted">- 1 名 -</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-header"><i class="bi bi-award-fill text-warning"></i> 優秀賞 <i
+              class="bi bi-award-fill text-warning"></i></h4>
+          <div class="card-body">
+            <div class="card-text">
+              <p>
+                結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                賞状および賞品、審査員からのフィードバックコメントを送付します。
+              </p>
+
+              <p class='service-heading font-weight-bold'>《賞品》</p>
+              <p class='text-muted'>
+                「 <a href="https://www2.razer.com/jp-jp/gaming-mice/razer-basilisk-ultimate"
+                  target="_blank">ゲーミングマウス</a>
+                」
+                <br>または<br>「 <a
+                  href="https://www.amazon.co.jp/Logicool-%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-G933s-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0-LIGHTSYNC/dp/B07NDNWBD8?th=1"
+                  target="_blank">ワイヤレスヘッドセット</a> 」
+                <br>または<br>「 <a
+                  href="https://www.amazon.co.jp/dp/B087JLCLJG/ref=cm_sw_em_r_mt_dp_H1G14J0SZ60PFXWYFKVB?_encoding=UTF8&psc=1"
+                  target="_blank">ゲーミングチェア</a> 」
+                <br>または<br>「 <a href="https://www.wacom.com/ja-jp/products/pen-tablets/wacom-intuos"
+                  target="_blank">ペンタブレット</a> 」
+                <br>のいずれか
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">- 1 名 -</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-header"><i class="bi bi-stars text-warning"></i> 健闘賞 <i class="bi bi-stars text-warning"></i>
+          </h4>
+          <div class="card-body">
+            <div class="card-text">
+              <p>
+                結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                賞状および賞品、審査員からのフィードバックコメントを送付します。
+              </p>
+
+              <p class='service-heading font-weight-bold'>《賞品》</p>
+              <p class='text-muted'>
+                <a href="https://github.myshopify.com/collections/stickers/products/octodex-sticker-packs"
+                  target="_blank">
+                  GitHub ステッカーパック
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">- 複数名 -</small>
+          </div>
+        </div>
+      </div>
+      <div class='row text-center mt-5'>
+        <div class='col-md-12'>
+
+          <div class='col-lg-8 mx-auto text-center'>
+            <h3 class='service-heading'>応募フォーム</h3>
+            <!-- <p class='large text-muted'>
+              <a class='btn btn-primary btn-lg my-3' href="https://forms.gle/LLQ6p4GWvS9Lf4yE8">N・S高等学校部門応募フォーム</a><br>
+              （フォームはN中等部部門と共用です）<br>
+              （N予備校部門とフォームが分かれているのでご注意ください）
+            </p> -->
+            <p class='large text-muted'>準備中</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- N中部門 -->
+  <section class='bg-light page-section' id='nmiddle'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12 text-center'>
+          <h2 class='section-heading text-uppercase'>N中等部 部門</h2>
+          <h3 class='section-subheading text-muted'>N Progressive School</h3>
+        </div>
+      </div>
+
+      <div class="card-deck text-center">
+        <div class="card">
+          <h4 class="card-header"><i class="bi bi-trophy-fill text-warning"></i> 最優秀賞 <i
+              class="bi bi-trophy-fill text-warning"></i></h4>
+          <div class="card-body">
+            <div class="card-text">
+              <p>
+                結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                賞状および賞品、審査員からのフィードバックコメントを送付します。
+              </p>
+              <p class='service-heading font-weight-bold'>《賞品》</p>
+              <p class='text-muted'>
+                「<a
+                  href="https://www.amazon.co.jp/Logicool-%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-G933s-%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AA%E3%83%B3%E3%82%B0-LIGHTSYNC/dp/B07NDNWBD8?th=1"
+                  target="_blank">ワイヤレスヘッドセット</a>」
+                または、<br>「<a href="https://www2.razer.com/jp-jp/gaming-keyboards-keypads/razer-blackwidow-v3"
+                  target="_blank">ゲーミングキーボード</a>」
+                または、<br>「<a href="https://www2.razer.com/jp-jp/gaming-mice/razer-basilisk-ultimate"
+                  target="_blank">ゲーミングマウス</a>」
+                のいずれか。
+              </p>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <small class="text-muted">- 1 名 -</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-header"><i class="bi bi-award-fill text-warning"></i> 優秀賞 <i
+              class="bi bi-award-fill text-warning"></i></h4>
+          <div class="card-body">
+            <div class="card-text">
+              <p>
+                結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                賞状および賞品、審査員からのフィードバックコメントを送付します。
+              </p>
+
+              <p class='service-heading font-weight-bold'>《賞品》</p>
+              <p class='text-muted'>
+                「<a href="https://www.xp-pen.jp/product/478.html" target="_blank">ペンタブレット</a>」
+                または、<br>「<a href="https://www.logicool.co.jp/ja-jp/products/webcams/hd-pro-webcam-c920n.960-001261.html"
+                  target="_blank">Webカメラ</a>」
+                または、<br>「<a href="https://www.sony.jp/microphone/products/ECM-PCV80U/" target="_blank">マイク</a>」
+                または、<br>「<a
+                  href="https://www.amazon.co.jp/gp/product/B07VWPW48C/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1"
+                  target="_blank">モバイルバッテリー</a>」
+                のいずれか。
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">- 1 名 -</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card-header"><i class="bi bi-stars text-warning"></i> 健闘賞 <i class="bi bi-stars text-warning"></i>
+          </h4>
+          <div class="card-body">
+            <div class="card-text">
+              <p>
+                結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                賞状および賞品、審査員からのフィードバックコメントを送付します。
+              </p>
+
+              <p class='service-heading font-weight-bold'>《賞品》</p>
+              <p class='text-muted'>
+                <a href="https://github.myshopify.com/collections/stickers/products/octodex-sticker-packs"
+                  target="_blank">
+                  GitHub ステッカーパック
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">- 複数名 -</small>
+          </div>
+        </div>
+      </div>
+      <div class='row text-center mt-5'>
+        <div class='col-md-12'>
+
+          <div class='col-lg-8 mx-auto text-center'>
+            <h3 class='service-heading'>応募フォーム</h3>
+            <!-- <p class='large text-muted'>
+            <a class='btn btn-primary btn-lg my-3' href="https://forms.gle/LLQ6p4GWvS9Lf4yE8">N中等部部門応募フォーム</a><br>
+            （フォームはN・S高等学校部門と共用です）<br>
+            （N予備校部門とフォームが分かれているのでご注意ください）
+          </p> -->
+            <p class='large text-muted'>準備中</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- N予備校部門 -->
+  <section class="page-section" id="nprep">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">N予備校 部門</h2>
+          <h3 class="section-subheading text-muted">N prep School</h3>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <h4 class="card-header"><i class="bi bi-trophy-fill text-warning"></i> 最優秀賞 <i
+                class="bi bi-trophy-fill text-warning"></i></h4>
+            <div class="card-body">
+              <div class="card-text">
+                <p>
+                  結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                  賞状および記念品、審査員からのフィードバックコメントを送付します。
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">- 1 名 -</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <h4 class="card-header"><i class="bi bi-award-fill text-warning"></i> 特別賞 <i
+                class="bi bi-award-fill text-warning"></i></h4>
+            <div class="card-body">
+              <div class="card-text">
+                <p>
+                  デザイン特別賞／技術特別賞があります。
+                  結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                  賞状および記念品、審査員からのフィードバックコメントを送付します。
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">- 各 1 名 -</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <h4 class="card-header"><i class="bi bi-stars text-warning"></i> 健闘賞 <i
+                class="bi bi-stars text-warning"></i>
+            </h4>
+            <div class="card-body">
+              <div class="card-text">
+                <p>
+                  結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+                  賞状および記念品、審査員からのフィードバックコメントを送付します。
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">- 複数名 -</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center mt-5">
+        <div class="col-md-12">
+          <div class="col-lg-8 mx-auto text-center">
+            <h3 class="service-heading">応募フォーム</h3>
+            <p class="large text-muted">準備中</p>
+            <!-- <p class='large text-muted'>
+            <a class='btn btn-primary btn-lg my-3' href="https://questant.jp/q/0BK7FUXT">N予備校部門応募フォーム</a><br>
+            （N・S高等学校部門、N中等部部門とはフォームが分かれているのでご注意ください）
+          </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- スケジュール -->
+  <section class="page-section" id="schedule">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">スケジュール</h2>
+          <h3 class="section-subheading text-muted">Contest schedule</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-12">
+
+          <div class="mb-5">
+            <h3 class="service-heading">応募フォーム公開</h3>
+            <p class="text-muted">
+              準備が出来次第、各部門向けの応募フォームのリンクが追加されます。
+            </p>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="service-heading">応募期間</h3>
+            <p class="text-muted">
+              応募フォーム公開から2023年8月31日までの間、応募フォームより応募可能です。
+            </p>
+            <!-- <p class='large text-muted'>
+              <a class='btn btn-primary btn-lg my-3' href="https://questant.jp/q/0BK7FUXT">N予備校部門応募フォーム</a><br>
+              （N・S高等学校部門、N中等部部門とはフォームが分かれているのでご注意ください）
+            </p> -->
+          </div>
+
+          <div class="mb-5">
+            <h3 class="service-heading">結果発表</h3>
+            <p class="text-muted">
+              2023年10月中にN予備校プログラミング入門コースの授業放送および本サイトにて発表します。
+            </p>
+          </div>
+
+          <div class="mb-5">
+            <h3 class="service-heading">賞状・賞品送付</h3>
+            <p class="text-muted">
+              （受賞者のみ）<br>
+              結果発表後、順次送付いたします。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Judge -->
+  <section class="bg-light page-section" id="judge">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">審査員</h2>
+          <h3 class="section-subheading text-muted">Judge</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="team-member d-flex flex-column align-items-center">
+            <img class="mx-auto rounded-circle" src="assets/img/team/orihara_teacher.png" alt="" width="150"
+              height="150">
+            <h4>折原 ダビデ竜</h4>
+            <p class="text-muted"><b>プログラミング講師</b></p>
+            <p class="text-muted">
+              東京理科大学大学院情報科学専攻修了。卒業後、株式会社ドワンゴに入社。ニコニコ生放送の開発に携わり、2016年よりN予備校のプログラミング講師として高校生にプログラミングを教える。</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member d-flex flex-column align-items-center">
+            <img class="mx-auto rounded-circle" src="assets/img/team/labeneko_teacher.png" alt="" width="150"
+              height="150">
+            <h4>津野 貴大</h4>
+            <p class="text-muted"><b>プログラミング講師</b></p>
+            <p class="text-muted">静岡大学情報学部情報科学科卒業後、株式会社ドワンゴに新卒入社。イラスト・漫画サービスの開発に携わり、2020年から主に社会人向けにプログラミングを教える。</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member d-flex flex-column align-items-center">
+            <img class="mx-auto rounded-circle" src="assets/img/team/tsunoda.png" alt="" width="150" height="150">
+            <h4>角田 志穂</h4>
+            <p class="text-muted"><b>プログラミング講師</b></p>
+            <p class="text-muted">SI系システム開発会社にて半導体セミナーの講師を担当。ドワンゴでは社会人向け研修を担当。</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member d-flex flex-column align-items-center">
+            <img class="mx-auto rounded-circle" src="assets/img/team/koizuka.jpeg" alt="" width="150" height="150">
+            <h4>戀塚 昭彦</h4>
+            <p class="text-muted"><b>教材総監修</b></p>
+            <p class="text-muted">システム開発会社にて制御系プログラムの開発に従事。その後、フリーランスを経てドワンゴに入社。ニコニコ動画のプロトタイプを三日で創り出した伝説的プログラマ。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class='col-lg-8 mx-auto text-center mt-5'>
+      <h2 class='service-heading'>過去の作品集</h2>
+      <p class='large text-muted'>
+      <h5><a class="btn btn-secondary btn-lg" href="https://nyobi-contest2022.web.app/"
+          target="_blank">動くWebページコンテスト2022夏</a></h5>
+      <h5><a class="btn btn-secondary btn-lg" href="https://progedu.github.io/webappcontest/2021/summer/result/"
+          target="_blank">動くWebページコンテスト2021夏</a></h5>
+      <h5><a class="btn btn-secondary btn-lg" href="https://progedu.github.io/webappcontest/2020/summer/result/"
+          target="_blank">動くWebページコンテスト2020夏</a></h5>
+      <h5><a class="btn btn-secondary btn-lg"
+          href="https://progedu.github.io/web-contests/move-webcontest2019-summer/results/"
+          target="_blank">動くWebページコンテスト2019夏</a></h5>
+      <h5><a class="btn btn-secondary btn-lg"
+          href="https://progedu.github.io/web-contests/move-webcontest2018-summer/results/"
+          target="_blank">動くWebページコンテスト2018夏</a></h5>
+      <h5><a class="btn btn-secondary btn-lg"
+          href="https://progedu.github.io/web-contests/move-webcontest2017-summer/results/"
+          target="_blank">動くWebページコンテスト2017夏</a></h5>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center pt-1">
+        <div class="col-md-12">
+          |
+          <a href="https://www.nnn.ed.nico/"> N予備校 </a>
+          |
+          <a href="https://progedu.github.io/webappcontest"> N予備校動くWebページコンテスト</a>
+          |
+          <a href="https://www.nnn.ed.nico/pages/programming/"> N予備校プログラミングコース</a>
+          | <br>
+          <span class="text-muted">&copy; DWANGO Co., Ltd.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+  <script>bubbly();</script>
+
+</body>
+
+</html>
