@@ -1,26 +1,5 @@
 body {
-  margin: 0;
-  background-color: transparent !important;
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('assets/img/wave.svg');
-  background-repeat: repeat-x;
-  animation: waveAnimation 10s linear infinite;
-}
-
-@keyframes waveAnimation {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 100%;
-  }
+  font-family: 'BIZ UDPGothic', sans-serif;
 }
 
 h2 {
@@ -33,19 +12,70 @@ h2 {
   background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
 }
 
-.heading {
-  background-image: url('/assets/img/header-bg2.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 300px; 
-  position: relative;
+.contest-title {
+  color: #004080;
+  text-align: center;
+  padding: 0.25em;
+  font-size: 2.5em;
 }
 
-.heading h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px; /* 必要に応じて適切なフォントサイズを指定 */
-  color: #ffffff; /* 必要に応じて適切な文字色を指定 */
+.move {
+  color: #32CB00;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.summer {
+  color: orange;
+}
+
+.headline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+}
+
+.rounded-circle {
+  border: 10px solid rgba(0,80,200,0.2); 
 }
