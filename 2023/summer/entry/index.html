@@ -101,7 +101,15 @@
       </div>
   </section>
 
-
+<div class="swimming-container">
+  <div class="swimming-inner">
+  <img src="assets/img/asteriskun_swim.png" alt="泳ぐアスタリスくん" class="swimming-image">
+  <div class="speech-bubble">
+    <div class="triangle"></div>
+    <div class="message">がんばろう<i class="bi bi-hand-thumbs-up-fill text-warning"></i></div>
+  </div>
+</div>
+</div>
 
   <!-- 賞 -->
   <section class='page-section' id='award'>
@@ -349,6 +357,19 @@
 
     moveElement.style.animationName = randomAnimation; /* 選択したアニメーションを適用します */
   });
+
+  function checkIfElementInView() {
+  const element = document.querySelector('.swimming-inner');
+  const rect = element.getBoundingClientRect();
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  
+  if (rect.top < windowHeight && rect.bottom >= 0) {
+    element.style.visibility = 'visible'; // 要素がビューポート内に表示されたら表示する
+    element.style.animationPlayState = 'running'; // アニメーションを開始する
+  }
+}
+
+window.addEventListener('scroll', checkIfElementInView);
         </script>
 </body>
 
