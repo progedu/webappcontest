@@ -3,11 +3,11 @@ body {
 }
 
 h2 {
-  color: #6cb4e4;
+  color: #336699;
   text-align: center;
   padding: 0.25em;
-  border-top: solid 2px #6cb4e4;
-  border-bottom: solid 2px #6cb4e4;
+  border-top: solid 2px #93c0e7;
+  border-bottom: solid 2px #93c0e7;
   background: -webkit-repeating-linear-gradient(
     -45deg,
     #f0f8ff,
@@ -22,6 +22,39 @@ h2 {
     #e9f4ff 3px,
     #e9f4ff 7px
   );
+}
+
+h3 {
+  color: #336699;
+  text-align: center;
+  padding: 0.25em 0.5em;
+  background: -webkit-repeating-linear-gradient(
+    -45deg,
+    #f0f8ff,
+    #f0f8ff 3px,
+    #e9f4ff 3px,
+    #e9f4ff 7px
+  );
+  background: repeating-linear-gradient(
+    -45deg,
+    #f0f8ff,
+    #f0f8ff 3px,
+    #e9f4ff 3px,
+    #e9f4ff 7px
+  );
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 40%; /* 楕円形の囲い */
+}
+
+h4 {
+  color: #336699;
+  text-align: center;
+  font-size: 18px;
+}
+
+.headline{
+  background-color: #dbf0f9;
 }
 
 .contest-title {
@@ -84,10 +117,9 @@ h2 {
   text-align: center;
 }
 
-.container {
-  text-align: center;
+th, td {
+  vertical-align: middle;
 }
-
 
 .swimming-container {
   position: relative;

@@ -20,9 +20,9 @@
 
 <body>
   <!-- nav -->
-  <nav class="navbar fixed-top navbar-light" style="background-color: #e9f4ff">
+  <nav class="navbar fixed-top navbar-light" style="background-color: #93c0e7">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color:#004080">
+      <a class="navbar-brand" href="#headline" style="color:#004080">
         <img src="assets/img/nyobi.png" width="30" alt="N予備校のロゴ">
         プログラミングコース
       </a>
@@ -50,346 +50,336 @@
     </div>
   </nav>
   <!-- Headline -->
-  <section class="page-section" style="background-color: #e9f4ff;">
-    <div class='container headline mt-5 pt-3 pb-3'>
+  <section class="headline" id="headline">
+    <div class='mt-5 pt-3 pb-3'>
       <h1 class="contest-title">N予備校<br><span class="move">動く</span>Webページ<br>コンテスト2023<span class="summer">夏</span>
       </h1>
       <img src="assets/img/asteriskun.png" alt="asteriskun" style="max-width: 60%;">
-
     </div>
   </section>
 
   <!-- 趣旨 -->
-  <section class='page-section' id='main'>
-    <div class='container mt-3'>
-      <div class='about'>
-        <h2>コンテストについて</h2>
-        <p>N予備校 動くWebページコンテストは、<br>
-          ドワンゴのN予備校プログラミングゴースが主催する、<br>Webページの成果物を競うコンテストです。<br>
-        <p>
-      </div>
+  <section id='about'>
+      <div class='text-center'>
+          <h2>コンテストについて</h2>
+          <p>N予備校 動くWebページコンテストは、<br>N予備校が主催する、<br>Webページの成果物を競うコンテストです。<br>
+          <p>
     </div>
   </section>
 
   <!-- 規定 -->
-  <section class='page-section' id='rule'>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-lg-8 mx-auto text-center mb-5'>
-          <h2 class='service-heading mb-4'>応募規定</h2>
-          <p>応募条件、テーマ、作品提出のルールなど</p>
-          <h4>応募条件</h4>
-          <p>作品のテーマは自由ですが、以下のガイドラインに従ってください。</p>
-          
-            <h5>使用可能言語</h5>
-            <p>HTML<i class="bi bi-filetype-html"></i>、CSS<i class="bi bi-filetype-css"></i>、JavaScript<i class="bi bi-filetype-js"></i></p>
-            <h5>使用可能ライブラリ</h5>
-            <p>BootStrap<i
-              class="bi bi-bootstrap-fill"></i><small><br>BootStrap以外の外部ライブラリは利用しないでください。</small></p>
-            
-            <h3>動作環境</h3>
-            <p>Google Chrome のブラウザで正常に動作すること。</p>
-            <h3>その他注意事項</h3>
-            <p>画像や音声などのメディアを使用する場合は、著作権上問題のないメディアを利用すること。</p>
-            <h3>提出物</h3>
-            <p>応募作品のコードを管理しているGitHubリポジトリのURL。公開設定はPublicにしてください。</p>
-            <p>動作確認ができるWebページのURL。応募作品はGitHubページで公開してください。</p>
+  <section id='rule'>
+    <div class='row'>
+      <div class='col-lg-12 text-center'>
+        <h2>応募規定</h2>
+        <p>応募条件、テーマ、作品提出のルールなど</p>
+        <h3>応募条件</h3>
+        <p>作品のテーマは自由ですが、以下のガイドラインに従ってください。</p>
 
-          <h3>応募資格</h3>
-          <h4>N・S高 部門</h4>
-          <p>応募時点でN高等学校もしくはS高等学校に在籍していること。</p>
-          <h4>N中等部 部門</h4>
-          <p>応募時点でN中等部に在籍していること。</p>
-          <h4>N予備校 部門</h4>
-          <p>応募時点でN予備校の会員であり、かつ上記の3校に在籍していないこと。</p>
-          <small class="text-muted">コンテスト期間中に退学・退会した場合は審査対象外となったり賞状や賞品が送付できなくなる可能性があります。</small>
+        <h5>使用可能言語</h5>
+        <p>HTML<i class="bi bi-filetype-html"></i>、CSS<i class="bi bi-filetype-css"></i>、JavaScript<i
+            class="bi bi-filetype-js"></i></p>
+        <h5>使用可能ライブラリ</h5>
+        <p>BootStrap<i class="bi bi-bootstrap-fill"></i><small><br>BootStrap以外の外部ライブラリは利用しないでください。</small></p>
 
+        <h3>動作環境</h3>
+        <p>Google Chrome のブラウザで正常に動作すること。</p>
+        <h3>その他注意事項</h3>
+        <p>画像や音声などのメディアを使用する場合は、著作権上問題のないメディアを利用すること。</p>
+        <h3>提出物</h3>
+        <p>応募作品のコードを管理しているGitHubリポジトリのURL。公開設定はPublicにしてください。</p>
+        <p>動作確認ができるWebページのURL。応募作品はGitHubページで公開してください。</p>
+
+        <h3>応募資格</h3>
+        <h4>N・S高 部門</h4>
+        <p>応募時点でN高等学校もしくはS高等学校に在籍していること。</p>
+        <h4>N中等部 部門</h4>
+        <p>応募時点でN中等部に在籍していること。</p>
+        <h4>N予備校 部門</h4>
+        <p>応募時〜結果発表時にN予備校の会員であり、かつ上記の3校に在籍していないこと。</p>
         <h3>参加費</h3>
-        <p>無料</p>
-        <small>ただし、N予備校部門の場合は月会費は必要です。</small>
-
-        </div>
+        <p>無料<br><small>ただし、N予備校部門の場合、N予備校の会費が必要です。</small></p>
+        <h3>注意事項</h3>
+        <p>コンテスト期間中に退学・退会した場合は審査対象外となったり賞状や賞品が送付できなくなる可能性があります。</p>
       </div>
+    </div>
   </section>
 
-<div class="swimming-container">
-  <div class="swimming-inner">
-  <img src="assets/img/asteriskun_swim.png" alt="泳ぐアスタリスくん" class="swimming-image">
-  <div class="speech-bubble">
-    <div class="triangle"></div>
-    <div class="message">がんばろう<i class="bi bi-hand-thumbs-up-fill text-warning"></i></div>
+  <div class="swimming-container">
+    <div class="swimming-inner">
+      <img src="assets/img/asteriskun_swim.png" alt="泳ぐアスタリスくん" class="swimming-image">
+      <div class="speech-bubble">
+        <div class="triangle"></div>
+        <div class="message">がんばろう<i class="bi bi-hand-thumbs-up-fill text-warning"></i></div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
-<!-- 評価項目 -->
-<h2 class="text-center mt-5">評価項目</h2>
-<div class="container">
-  <p>作品の審査基準、点数配分について</p>
-  
-</div>
+  <!-- 評価項目 -->
+  <section class='page-section' id="judge">
+    <h2>審査</h2>
+    <div class='row'>
+      <div class='col-lg-12 text-center'>
+        <p>作品の審査基準、点数配分について</p>
+        <h3>審査員</h3>
+      </div>
+      <div class='row m-1'>
+        <div class="col-sm-3">
+          <div class="d-flex flex-column align-items-center">
+            <img class="mx-auto rounded-circle" src="assets/img/team/orihara_teacher.png" alt="" width="150"
+              height="150">
+            <h4>折原 ダビデ竜</h4>
+            <p class="text-muted"><b>プログラミング講師</b></p>
+            <p class="text-muted">
+              東京理科大学大学院情報科学専攻修了。卒業後、株式会社ドワンゴに入社。ニコニコ生放送の開発に携わり、2016年よりN予備校のプログラミング講師として高校生にプログラミングを教える。</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="d-flex flex-column align-items-center">
+            <img class="mx-auto rounded-circle" src="assets/img/team/labeneko_teacher.png" alt="" width="150"
+              height="150">
+            <h4>津野 貴大</h4>
+            <p class="text-muted"><b>プログラミング講師</b></p>
+            <p class="text-muted">静岡大学情報学部情報科学科卒業後、株式会社ドワンゴに新卒入社。イラスト・漫画サービスの開発に携わり、2020年から主に社会人向けにプログラミングを教える。</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="d-flex flex-column align-items-center">
+            <img class="mx-auto rounded-circle" src="assets/img/team/tsunoda.png" alt="" width="150" height="150">
+            <h4>角田 志穂</h4>
+            <p class="text-muted"><b>プログラミング講師</b></p>
+            <p class="text-muted">SI系システム開発会社にて半導体セミナーの講師を担当。ドワンゴでは社会人向け研修を担当。</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="d-flex flex-column align-items-center">
+            <img class="mx-auto rounded-circle" src="assets/img/team/koizuka.jpeg" alt="" width="150" height="150">
+            <h4>戀塚 昭彦</h4>
+            <p class="text-muted"><b>教材総監修</b></p>
+            <p class="text-muted">システム開発会社にて制御系プログラムの開発に従事。その後、フリーランスを経てドワンゴに入社。ニコニコ動画のプロトタイプを三日で創り出した伝説的プログラマ。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- 賞 -->
   <section class='page-section' id='award'>
     <div class='container'>
       <div class='row'>
         <div class='col-lg-12 text-center'>
-          <h2 class='section-heading text-uppercase'><i class="bi bi-trophy-fill text-warning"></i>賞<i
-              class="bi bi-trophy-fill text-warning"></i></h2>
-
+          <h2><i class="bi bi-trophy-fill text-warning"></i>賞<i class="bi bi-trophy-fill text-warning"></i></h2>
+          <p>結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
+            賞状および賞品、審査員からのフィードバックコメントを送付します。</p>
+          <h3>N・S高等学校 部門</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>賞</th>
+                <th>賞品</th>
+                <th>人数</th>
+              </tr>
+              <tr>
+                <td>最優秀賞</td>
+                <td><a href="https://www.pfu.ricoh.com/direct/hhkb/">HHKBシリーズ</a><br><a
+                    href="https://www.realforce.co.jp/products/">RealForceシリーズ</a><br><a
+                    href="https://gaming.logicool.co.jp/ja-jp/products/gaming-audio/pro-x-wireless-headset.981-000911.html">logicool
+                    PRO X ワイヤレス</a><br><a
+                    href="https://www.jabra.jp/business/speakerphones/jabra-speak-series/jabra-speak-510">Jabra Speak
+                    510</a><br>のうちから一つ選択</td>
+                <td>1名</td>
+              </tr>
+              <tr>
+                <td>優秀賞</td>
+                <td><a href="https://www.razer.com/jp-jp/gaming-mice/razer-basilisk-ultimate">RASER BASILISK
+                    ULTIMATE</a><br><a
+                    href="https://www.logicool.co.jp/ja-jp/products/mice/mx-ergo-wireless-trackball-mouse.910-005183.html">logicool
+                    MX ELGO</a><br><a
+                    href="https://gaming.logicool.co.jp/ja-jp/products/gaming-audio/g933s-wireless-7-1-surround-sound-lightsync-gaming-headset.981-000747.html">logicool
+                    G933S</a><br><a href="https://amzn.asia/d/139AQ0i">サカべ ゲーミングチェア</a><br><a
+                    href="https://www.wacom.com/ja-jp/products/wacom-intuos">Wacom Intuos</a><br>のうちから一つ選択</td>
+                <td>1名</td>
+              </tr>
+              <tr>
+                <td>健闘賞</td>
+                <td><a href="https://www.thegithubshop.com/gh-sp-0003-sticker-pack">GitHub Sticker Pack</a></td>
+                <td>複数名</td>
+              </tr>
+            </thead>
+          </table>
+          <h3>N中等部 部門</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>賞</th>
+                <th>賞品</th>
+                <th>人数</th>
+              </tr>
+              <tr>
+                <td>最優秀賞</td>
+                <td><a href="https://www.razer.com/jp-jp/gaming-mice/razer-basilisk-ultimate">RASER BASILISK
+                    ULTIMATE</a><br><a
+                    href="https://www.logicool.co.jp/ja-jp/products/mice/mx-ergo-wireless-trackball-mouse.910-005183.html">logicool
+                    MX ELGO</a><br><a
+                    href="https://gaming.logicool.co.jp/ja-jp/products/gaming-audio/g933s-wireless-7-1-surround-sound-lightsync-gaming-headset.981-000747.html">logicool
+                    G933S</a><br><a href="https://amzn.asia/d/139AQ0i">サカべ ゲーミングチェア</a><br><a
+                    href="https://www.wacom.com/ja-jp/products/wacom-intuos">Wacom Intuos</a>のうちから一つ選択</td>
+                <td>1名</td>
+              </tr>
+              <tr>
+                <td>優秀賞</td>
+                <td><a href="https://www.xp-pen.jp/product/478.html">XP Pen Deco 01 V2</a><br><a
+                    href="https://www.logicool.co.jp/ja-jp/products/webcams/c922n-pro-stream-webcam.960-001262.html">logicool
+                    C922n Pro HDストリーム ウェブカメラ</a><br><a
+                    href="https://row.hyperx.com/ja/products/hyperx-solocast-usb-microphone?variant=40916449558733">HyperX
+                    SoloCast - USBマイク</a>のうちから一つ選択</td>
+                <td>1名</td>
+              </tr>
+              <tr>
+                <td>健闘賞</td>
+                <td><a href="https://www.thegithubshop.com/gh-sp-0003-sticker-pack">GitHub Sticker Pack</a></td>
+                <td>複数名</td>
+              </tr>
+            </thead>
+          </table>
+          <h3>N予備校 部門</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>賞</th>
+                <th>賞品</th>
+                <th>人数</th>
+              </tr>
+              <tr>
+                <td>最優秀賞</td>
+                <td>記念品</td>
+                <td>1名</td>
+              </tr>
+              <tr>
+                <td>技術特別賞</td>
+                <td>記念品</td>
+                <td>1名</td>
+              </tr>
+              <tr>
+                <td>デザイン特別賞</td>
+                <td>記念品</td>
+                <td>1名</td>
+              </tr>
+              <tr>
+                <td>健闘賞</td>
+                <td>記念品</td>
+                <td>複数名</td>
+              </tr>
+            </thead>
+          </table>
         </div>
       </div>
-      <p>結果発表ページにて作品を展示、プログラミング入門コースにて紹介します。<br>
-        賞状および賞品、審査員からのフィードバックコメントを送付します。</p>
-      <h3>N・S高等学校 部門</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>賞</th>
-            <th>賞品</th>
-            <th>人数</th>
-          </tr>
-          <tr>
-            <td>最優秀賞</td>
-            <td><a href="https://www.pfu.ricoh.com/direct/hhkb/">HHKBシリーズ</a><br><a href="https://www.realforce.co.jp/products/">RealForceシリーズ</a><br><a href="https://gaming.logicool.co.jp/ja-jp/products/gaming-audio/pro-x-wireless-headset.981-000911.html">logicool PRO X ワイヤレス</a><br><a href="https://www.jabra.jp/business/speakerphones/jabra-speak-series/jabra-speak-510">Jabra  Speak 510</a><br>のうちから一つ選択</td>
-            <td>1名</td>
-          </tr>
-          <tr>
-            <td>優秀賞</td>
-            <td><a href="https://www.razer.com/jp-jp/gaming-mice/razer-basilisk-ultimate">RASER BASILISK ULTIMATE</a><br><a href="https://www.logicool.co.jp/ja-jp/products/mice/mx-ergo-wireless-trackball-mouse.910-005183.html">logicool MX ELGO</a><br><a href="https://gaming.logicool.co.jp/ja-jp/products/gaming-audio/g933s-wireless-7-1-surround-sound-lightsync-gaming-headset.981-000747.html">logicool G933S</a><br><a href="https://amzn.asia/d/139AQ0i">サカべ ゲーミングチェア</a><br><a href="https://www.wacom.com/ja-jp/products/wacom-intuos">Wacom Intuos</a><br>のうちから一つ選択</td>
-            <td>1名</td>
-          </tr>
-          <tr>
-            <td>健闘賞</td>
-            <td><a href="https://www.thegithubshop.com/gh-sp-0003-sticker-pack">GitHub Sticker Pack</a></td>
-            <td>複数名</td>
-          </tr>
-        </thead>
-      </table>
-      <h3>N中等部 部門</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>賞</th>
-            <th>賞品</th>
-            <th>人数</th>
-          </tr>
-          <tr>
-            <td>最優秀賞</td>
-            <td><a href="https://www.razer.com/jp-jp/gaming-mice/razer-basilisk-ultimate">RASER BASILISK ULTIMATE</a><br><a href="https://www.logicool.co.jp/ja-jp/products/mice/mx-ergo-wireless-trackball-mouse.910-005183.html">logicool MX ELGO</a><br><a href="https://gaming.logicool.co.jp/ja-jp/products/gaming-audio/g933s-wireless-7-1-surround-sound-lightsync-gaming-headset.981-000747.html">logicool G933S</a><br><a href="https://amzn.asia/d/139AQ0i">サカべ ゲーミングチェア</a><br><a href="https://www.wacom.com/ja-jp/products/wacom-intuos">Wacom Intuos</a>のうちから一つ選択</td>
-            <td>1名</td>
-          </tr>
-          <tr>
-            <td>優秀賞</td>
-            <td><a href="https://www.xp-pen.jp/product/478.html">XP Pen Deco 01 V2</a><br><a href="https://www.logicool.co.jp/ja-jp/products/webcams/c922n-pro-stream-webcam.960-001262.html">logicool C922n Pro HDストリーム ウェブカメラ</a><br><a href="https://row.hyperx.com/ja/products/hyperx-solocast-usb-microphone?variant=40916449558733">HyperX SoloCast - USBマイク</a>のうちから一つ選択</td>
-            <td>1名</td>
-          </tr>
-          <tr>
-            <td>健闘賞</td>
-            <td><a href="https://www.thegithubshop.com/gh-sp-0003-sticker-pack">GitHub Sticker Pack</a></td>
-            <td>複数名</td>
-          </tr>
-        </thead>
-      </table>
-      <h3>N予備校 部門</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>賞</th>
-            <th>賞品</th>
-            <th>人数</th>
-          </tr>
-          <tr>
-            <td>最優秀賞</td>
-            <td>記念品</td>
-            <td>1名</td>
-          </tr>
-          <tr>
-            <td>技術特別賞</td>
-            <td>記念品</td>
-            <td>1名</td>
-          </tr>
-          <tr>
-            <td>デザイン特別賞</td>
-            <td>記念品</td>
-            <td>1名</td>
-          </tr>
-          <tr>
-            <td>健闘賞</td>
-            <td>記念品</td>
-            <td>複数名</td>
-          </tr>
-        </thead>
-      </table>
+  </section>
 
-      <!-- スケジュール -->
-      <section class="page-section" id="schedule">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">スケジュール</h2>
-            </div>
-          </div>
-          <div class="row text-center">
-            <div class="col-md-12">
+  <!-- スケジュール -->
+  <section class="page-section" id="schedule">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">スケジュール</h2>
 
-              <div class="mb-5">
-                <h3 class="service-heading">応募フォーム</h3>
-                <p class="text-muted">準備が出来次第、各部門向けの応募フォームのリンクが追加されます。</p>
-                <!-- ここに応募フォームを貼る -->
-              </div>
+          <div class="mb-5">
+            <h3>応募期間</h3>
+            <p>2023年8月1日(火)〜2023年8月31日(木)</p>
+            <!-- 変わる可能性あり -->
 
-              <div class="mb-5">
-                <h3 class="service-heading">応募期間</h3>
-                <p class="text-muted">2023年8月1日(火)〜2023年8月31日(木)</p>
-                <!-- 変わる可能性あり -->
-              </div>
-
-              <div class="mb-5">
-                <h3 class="service-heading">結果発表</h3>
-                <p class="text-muted">2023年10月中にN予備校プログラミング入門コースの授業放送および結果発表サイトにて発表します。</p>
-                <!-- TODO:リンクつける -->
-              </div>
-
-              <div class="mb-5">
-                <h3 class="service-heading">賞状・賞品発送</h3>
-                <p class="text-muted">結果発表後、順次発送いたします。</p>
-              </div>
-            </div>
+            <h3>結果発表</h3>
+            <p>2023年10月中にN予備校プログラミング入門コースの授業放送および結果発表サイトにて発表します。</p>
+            <!-- TODO:リンクつける -->
+            <h3>賞状・賞品発送</h3>
+            <p>結果発表後、順次発送いたします。</p>
           </div>
         </div>
-      </section>
-      <!-- Judge -->
-      <section class="page-section" id="judge">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">審査員</h2>
-              <h3 class="section-subheading text-muted">Judge</h3>
-            </div>
-          </div>
+      </div>
+    </div>
+  </section>
+  <!-- Judge -->
+  <section class="page-section" id="judge">
+    <div class="row">
+      <div class="col-lg-12 text-center">
 
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="team-member d-flex flex-column align-items-center">
-                <img class="mx-auto rounded-circle" src="assets/img/team/orihara_teacher.png" alt="" width="150"
-                  height="150">
-                <h4>折原 ダビデ竜</h4>
-                <p class="text-muted"><b>プログラミング講師</b></p>
-                <p class="text-muted">
-                  東京理科大学大学院情報科学専攻修了。卒業後、株式会社ドワンゴに入社。ニコニコ生放送の開発に携わり、2016年よりN予備校のプログラミング講師として高校生にプログラミングを教える。</p>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="team-member d-flex flex-column align-items-center">
-                <img class="mx-auto rounded-circle" src="assets/img/team/labeneko_teacher.png" alt="" width="150"
-                  height="150">
-                <h4>津野 貴大</h4>
-                <p class="text-muted"><b>プログラミング講師</b></p>
-                <p class="text-muted">静岡大学情報学部情報科学科卒業後、株式会社ドワンゴに新卒入社。イラスト・漫画サービスの開発に携わり、2020年から主に社会人向けにプログラミングを教える。</p>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="team-member d-flex flex-column align-items-center">
-                <img class="mx-auto rounded-circle" src="assets/img/team/tsunoda.png" alt="" width="150" height="150">
-                <h4>角田 志穂</h4>
-                <p class="text-muted"><b>プログラミング講師</b></p>
-                <p class="text-muted">SI系システム開発会社にて半導体セミナーの講師を担当。ドワンゴでは社会人向け研修を担当。</p>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="team-member d-flex flex-column align-items-center">
-                <img class="mx-auto rounded-circle" src="assets/img/team/koizuka.jpeg" alt="" width="150" height="150">
-                <h4>戀塚 昭彦</h4>
-                <p class="text-muted"><b>教材総監修</b></p>
-                <p class="text-muted">システム開発会社にて制御系プログラムの開発に従事。その後、フリーランスを経てドワンゴに入社。ニコニコ動画のプロトタイプを三日で創り出した伝説的プログラマ。</p>
-              </div>
-            </div>
-          </div>
+  </section>
+  <section class="page-section" id="form">
+    <!-- TODO:フォーム2種類 -->
+  </section>
+
+  <section class="page-section" id="historical">
+    <div class='col-lg-8 mx-auto text-center mt-5'>
+      <h2 class='service-heading'>過去の作品集</h2>
+      <a class="btn btn-outline-info" href="https://nyobi-contest2022.web.app/" target="_blank">2022夏</a>
+      <a class="btn btn-outline-info" href="https://progedu.github.io/webappcontest/2021/summer/result/"
+        target="_blank">2021夏</a>
+      <a class="btn btn-outline-info" href="https://progedu.github.io/webappcontest/2020/summer/result/"
+        target="_blank">2020夏</a>
+      <a class="btn btn-outline-info" href="https://progedu.github.io/web-contests/move-webcontest2019-summer/results/"
+        target="_blank">2019夏</a>
+      <a class="btn btn-outline-info" href="https://progedu.github.io/web-contests/move-webcontest2018-summer/results/"
+        target="_blank">2018夏</a>
+      <a class="btn btn-outline-info" href="https://progedu.github.io/web-contests/move-webcontest2017-summer/results/"
+        target="_blank">2017夏</a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer" style="background-color: #93c0e7">
+    <div class="container">
+      <div class="row align-items-center pt-1">
+        <div class="col-md-12">
+          |
+          <a href="https://www.nnn.ed.nico/"> N予備校 </a>
+          |
+          <a href="https://progedu.github.io/webappcontest"> N予備校動くWebページコンテスト</a>
+          | <br>
+          <span class="text-muted">&copy; DWANGO Co., Ltd.</span>
         </div>
-      </section>
-      <section class="page-section" id="form">
-        <!-- TODO:フォーム2種類 -->
-      </section>
-
-      <section>
-        <div class='col-lg-8 mx-auto text-center mt-5'>
-          <h2 class='service-heading'>過去の作品集</h2>
-          <p class='large text-muted'>
-          <h5><a class="btn btn-secondary btn-lg" href="https://nyobi-contest2022.web.app/"
-              target="_blank">動くWebページコンテスト2022夏</a></h5>
-          <h5><a class="btn btn-secondary btn-lg" href="https://progedu.github.io/webappcontest/2021/summer/result/"
-              target="_blank">動くWebページコンテスト2021夏</a></h5>
-          <h5><a class="btn btn-secondary btn-lg" href="https://progedu.github.io/webappcontest/2020/summer/result/"
-              target="_blank">動くWebページコンテスト2020夏</a></h5>
-          <h5><a class="btn btn-secondary btn-lg"
-              href="https://progedu.github.io/web-contests/move-webcontest2019-summer/results/"
-              target="_blank">動くWebページコンテスト2019夏</a></h5>
-          <h5><a class="btn btn-secondary btn-lg"
-              href="https://progedu.github.io/web-contests/move-webcontest2018-summer/results/"
-              target="_blank">動くWebページコンテスト2018夏</a></h5>
-          <h5><a class="btn btn-secondary btn-lg"
-              href="https://progedu.github.io/web-contests/move-webcontest2017-summer/results/"
-              target="_blank">動くWebページコンテスト2017夏</a></h5>
-          </p>
-        </div>
-      </section>
+      </div>
+    </div>
+  </footer>
 
 
-      <!-- Footer -->
-      <footer class="footer" style="background-color: #e9f4ff">
-        <div class="container">
-          <div class="row align-items-center pt-1">
-            <div class="col-md-12">
-              |
-              <a href="https://www.nnn.ed.nico/"> N予備校 </a>
-              |
-              <a href="https://progedu.github.io/webappcontest"> N予備校動くWebページコンテスト</a>
-              | <br>
-              <span class="text-muted">&copy; DWANGO Co., Ltd.</span>
-            </div>
-          </div>
-        </div>
-      </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const moveElement = document.querySelector('.move');
 
-
-      <!-- Bootstrap core JS-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-        <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const moveElement = document.querySelector('.move');
-
-    // ロード時に横に揺れるアニメーションを適用します
-    moveElement.style.animationName = 'shake';
-  });
-
-  const moveElement = document.querySelector('.move');
-
-  moveElement.addEventListener('click', function () {
-    moveElement.style.animationName = ''; // アニメーションを一旦リセット
-
-    // ランダムにアニメーションを選択する
-    const randomAnimation = Math.random() < 0.5 ? 'rotate' : 'bounce';
-
-    moveElement.style.animationName = randomAnimation; // アニメーションを適用
+      // ロード時に横に揺れるアニメーションを適用します
+      moveElement.style.animationName = 'shake';
     });
 
-  // swimming-innerが画面内に入ったらアニメーションを開始する
+    const moveElement = document.querySelector('.move');
 
-  function checkIfElementInView() {
-  const element = document.querySelector('.swimming-inner');
-  const rect = element.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  
-  if (rect.top < windowHeight && rect.bottom >= 0) {
-    element.style.visibility = 'visible'; 
-    element.style.animationPlayState = 'running'; 
-  }
-}
+    moveElement.addEventListener('click', function () {
+      moveElement.style.animationName = ''; // アニメーションを一旦リセット
 
-window.addEventListener('scroll', checkIfElementInView);
-        </script>
+      // ランダムにアニメーションを選択する
+      const randomAnimation = Math.random() < 0.5 ? 'rotate' : 'bounce';
+
+      moveElement.style.animationName = randomAnimation; // アニメーションを適用
+    });
+
+    // swimming-innerが画面内に入ったらアニメーションを開始する
+
+    function checkIfElementInView() {
+      const element = document.querySelector('.swimming-inner');
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (rect.top < windowHeight && rect.bottom >= 0) {
+        element.style.visibility = 'visible';
+        element.style.animationPlayState = 'running';
+      }
+    }
+
+    window.addEventListener('scroll', checkIfElementInView);
+  </script>
 </body>
 
 
