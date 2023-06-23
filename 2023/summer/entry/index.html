@@ -33,17 +33,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">コンテストについて</a>
+            <a class="nav-link" href="#about">コンテストについて</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">応募規定</a>
+            <a class="nav-link" href="#rule">応募規定</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#judge">審査について</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#award">賞</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">スケジュール</a>
 
         </ul>
       </div>
@@ -60,10 +62,10 @@
 
   <!-- 趣旨 -->
   <section id='about'>
-      <div class='text-center'>
-          <h2>コンテストについて</h2>
-          <p>N予備校 動くWebページコンテストは、<br>N予備校が主催する、<br>Webページの成果物を競うコンテストです。<br>
-          <p>
+    <div class='text-center'>
+      <h2>コンテストについて</h2>
+      <p>N予備校 動くWebページコンテストは、<br>N予備校が主催する、<br>Webページの成果物を競うコンテストです。<br>
+      <p>
     </div>
   </section>
 
@@ -75,21 +77,18 @@
         <p>応募条件、テーマ、作品提出のルールなど</p>
         <h3>応募条件</h3>
         <p>作品のテーマは自由ですが、以下のガイドラインに従ってください。</p>
-
-        <h5>使用可能言語</h5>
-        <p>HTML<i class="bi bi-filetype-html"></i>、CSS<i class="bi bi-filetype-css"></i>、JavaScript<i
-            class="bi bi-filetype-js"></i></p>
-        <h5>使用可能ライブラリ</h5>
-        <p>BootStrap<i class="bi bi-bootstrap-fill"></i><small><br>BootStrap以外の外部ライブラリは利用しないでください。</small></p>
-
-        <h3>動作環境</h3>
+        <h4>使用可能言語</h4>
+        <p>HTML、CSS、JavaScript</p>
+        <h4>使用可能ライブラリ</h4>
+        <p>BootStrap<br><small>BootStrap以外の外部ライブラリは利用しないでください。</small></p>
+        <h4>動作環境</h4>
         <p>Google Chrome のブラウザで正常に動作すること。</p>
-        <h3>その他注意事項</h3>
-        <p>画像や音声などのメディアを使用する場合は、著作権上問題のないメディアを利用すること。</p>
+        <h4>注意事項</h4>
+        <p>応募作品のコード及びサイトのURLは結果ページにリンクが貼られ、授業にて紹介します。<br>
+          画像や音声などのメディアを使用する場合は、著作権上問題のないメディアを利用すること。</p>
         <h3>提出物</h3>
-        <p>応募作品のコードを管理しているGitHubリポジトリのURL。公開設定はPublicにしてください。</p>
-        <p>動作確認ができるWebページのURL。応募作品はGitHubページで公開してください。</p>
-
+        <p>応募作品のコードを管理しているGitHubリポジトリのURL。<br><small>公開設定はPublicにしてください。</small></p>
+        <p>動作確認ができるWebページのURL。<br><small>応募作品はGitHubページで公開してください。</small></p>
         <h3>応募資格</h3>
         <h4>N・S高 部門</h4>
         <p>応募時点でN高等学校もしくはS高等学校に在籍していること。</p>
@@ -120,7 +119,92 @@
     <h2>審査</h2>
     <div class='row'>
       <div class='col-lg-12 text-center'>
-        <p>作品の審査基準、点数配分について</p>
+        <p>作品の審査基準、点数配分、審査員について</p>
+        <h3>審査のポイント</h3>
+        <p>以下の3つのポイントで審査します。</p>
+        <h4>コーディング</h4>
+        <p>コードの簡潔さ、可読性、コメントの有無などを評価します。<br>
+          <small>配点 : 40点</small>
+        </p>
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCoding"
+          aria-expanded="false" aria-controls="collapseCoding">
+          コーディングチェックリスト
+        </button>
+        </p>
+        <div class="collapse" id="collapseCoding">
+          <div class="card card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                HTML / CSS / JS が役割毎にファイル分割されているか
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                ソースコードに無駄がないか、見やすく書かれているか
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                入門コース１章で習った要素や技術をうまく使えているか
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                自分なりに調べて実現したい機能を実装できているか
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h4>完成度</h4>
+        <p>作り込みの深さ、バグの少なさ、デザインなどを評価します。<br><small>配点 : 30点</small><br>
+        </p>
+        <p>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseCompleteness" aria-expanded="false" aria-controls="collapseCompleteness">
+            完成度チェックリスト
+          </button>
+        </p>
+        <div class="collapse" id="collapseCompleteness">
+          <div class="card card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                意図した通りに動くか、動作不良やエラーなどはないか
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                使いやすく、わかりやすい見た目やデザインになっているか
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                作品のテーマに対して必要な機能が十分に実装されているか
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h4>アイデア</h4>
+        <p>創意工夫や発想、テーマに沿っているか、着眼点の良さなどを評価します。<br><small>配点 : 30点</small></p>
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIdea"
+          aria-expanded="false" aria-controls="collapseIdea">
+          アイデアチェックリスト
+        </button>
+        </p>
+        <div class="collapse" id="collapseIdea">
+          <div class="card card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                作品のテーマや発想が新しいか、時世やトレンドを取り入れているか
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                コーディングに工夫が見られるか、難しい問題を解決できているか
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                見せ方に工夫があるか、便利で楽しめるサービスになっているか
+              </li>
+            </ul>
+          </div>
+        </div>
         <h3>審査員</h3>
       </div>
       <div class='row m-1'>
@@ -131,7 +215,7 @@
             <h4>折原 ダビデ竜</h4>
             <p class="text-muted"><b>プログラミング講師</b></p>
             <p class="text-muted">
-              東京理科大学大学院情報科学専攻修了。卒業後、株式会社ドワンゴに入社。ニコニコ生放送の開発に携わり、2016年よりN予備校のプログラミング講師として高校生にプログラミングを教える。</p>
+              東京理科大学大学院情報科学専攻修了。卒業後、株式会社ドワンゴに入社。ニコニコ生放送の開発に携わり、2016年よりN予備校のプログラミング講師として高校生にプログラミングを教える。N中等部</p>
           </div>
         </div>
         <div class="col-sm-3">
@@ -145,10 +229,11 @@
         </div>
         <div class="col-sm-3">
           <div class="d-flex flex-column align-items-center">
-            <img class="mx-auto rounded-circle" src="assets/img/team/tsunoda.png" alt="" width="150" height="150">
-            <h4>角田 志穂</h4>
-            <p class="text-muted"><b>プログラミング講師</b></p>
-            <p class="text-muted">SI系システム開発会社にて半導体セミナーの講師を担当。ドワンゴでは社会人向け研修を担当。</p>
+            <img class="mx-auto rounded-circle" src="assets/img/team/moesuke.png" alt="" width="150" height="150">
+            <h4>青木 萌</h4>
+            <p class="text-muted"><b>教材編集担当</b></p>
+            <p class="text-muted">アパレルショップのECサイトの運営や、教材出版社にて小中理科の編集を担当。その後フリーランス教材編集者を経て、ドワンゴに入社。N予備校プログラミングコースの何でも屋さん。
+            </p>
           </div>
         </div>
         <div class="col-sm-3">
@@ -297,30 +382,23 @@
       </div>
     </div>
   </section>
-  <!-- Judge -->
-  <section class="page-section" id="judge">
-    <div class="row">
-      <div class="col-lg-12 text-center">
 
-  </section>
-  <section class="page-section" id="form">
-    <!-- TODO:フォーム2種類 -->
-  </section>
+  <!-- TODO:フォーム2種類 -->
 
   <section class="page-section" id="historical">
-    <div class='col-lg-8 mx-auto text-center mt-5'>
+    <div class='col-lg-8 mx-auto text-center mt-5 pb-2'>
       <h2 class='service-heading'>過去の作品集</h2>
-      <a class="btn btn-outline-info" href="https://nyobi-contest2022.web.app/" target="_blank">2022夏</a>
-      <a class="btn btn-outline-info" href="https://progedu.github.io/webappcontest/2021/summer/result/"
+      <a class="btn btn btn-outline-primary" href="https://nyobi-contest2022.web.app/" target="_blank">2022夏</a>
+      <a class="btn btn btn-outline-primary" href="https://progedu.github.io/webappcontest/2021/summer/result/"
         target="_blank">2021夏</a>
-      <a class="btn btn-outline-info" href="https://progedu.github.io/webappcontest/2020/summer/result/"
-        target="_blank">2020夏</a>
-      <a class="btn btn-outline-info" href="https://progedu.github.io/web-contests/move-webcontest2019-summer/results/"
-        target="_blank">2019夏</a>
-      <a class="btn btn-outline-info" href="https://progedu.github.io/web-contests/move-webcontest2018-summer/results/"
-        target="_blank">2018夏</a>
-      <a class="btn btn-outline-info" href="https://progedu.github.io/web-contests/move-webcontest2017-summer/results/"
-        target="_blank">2017夏</a>
+      <a class="btn btn btn-outline-primary" href="https://progedu.github.io/webappcontest/2020/summer/result/"
+        target="_blank">2020夏</a><br>
+      <a class="btn btn btn-outline-primary"
+        href="https://progedu.github.io/web-contests/move-webcontest2019-summer/results/" target="_blank">2019夏</a>
+      <a class="btn btn btn-outline-primary"
+        href="https://progedu.github.io/web-contests/move-webcontest2018-summer/results/" target="_blank">2018夏</a>
+      <a class="btn btn btn-outline-primary"
+        href="https://progedu.github.io/web-contests/move-webcontest2017-summer/results/" target="_blank">2017夏</a>
     </div>
   </section>
 
