@@ -3,24 +3,24 @@ body {
 }
 
 h2 {
-  color: #336699;
+  color: #004080;
   text-align: center;
   padding: 0.25em;
-  border-top: solid 2px #93c0e7;
-  border-bottom: solid 2px #93c0e7;
+  border-top: solid 2px #004080;
+  border-bottom: solid 2px #004080;
   background: -webkit-repeating-linear-gradient(
     -45deg,
-    #f0f8ff,
-    #f0f8ff 3px,
-    #e9f4ff 3px,
-    #e9f4ff 7px
+    #ccffff,
+    #ccffff 3px,
+    #b8f3ff 3px,
+    #b8f3ff 7px
   );
   background: repeating-linear-gradient(
     -45deg,
-    #f0f8ff,
-    #f0f8ff 3px,
-    #e9f4ff 3px,
-    #e9f4ff 7px
+    #ccffff,
+    #ccffff 3px,
+    #b8f3ff 3px,
+    #b8f3ff 7px
   );
 }
 
@@ -30,17 +30,17 @@ h3 {
   padding: 0.25em 0.5em;
   background: -webkit-repeating-linear-gradient(
     -45deg,
-    #f0f8ff,
-    #f0f8ff 3px,
-    #e9f4ff 3px,
-    #e9f4ff 7px
+    #ccffff,
+    #ccffff 3px,
+    #b8f3ff 3px,
+    #b8f3ff 7px
   );
   background: repeating-linear-gradient(
     -45deg,
-    #f0f8ff,
-    #f0f8ff 3px,
-    #e9f4ff 3px,
-    #e9f4ff 7px
+    #ccffff,
+    #ccffff 3px,
+    #b8f3ff 3px,
+    #b8f3ff 7px
   );
   font-size: 24px;
   display: inline-block;
@@ -53,9 +53,6 @@ h4 {
   font-size: 18px;
 }
 
-.headline{
-  background-color: #dbf0f9;
-}
 
 .contest-title {
   color: #004080;
@@ -204,5 +201,5 @@ th, td {
 }
 
 .rounded-circle {
-  border: 10px solid rgba(0, 80, 200, 0.2);
+  border: 10px solid rgba(102, 255, 255, 0.2);
 }
