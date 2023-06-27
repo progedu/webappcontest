@@ -106,14 +106,6 @@ h4 {
   color: orange;
 }
 
-.headline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 th, td {
   vertical-align: middle;
 }
