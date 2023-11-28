@@ -53,6 +53,7 @@ main h1 {
   }
   main h1 {
     font-size      : 24pt;
+    padding-top: 100px;
     padding-left: 10px;
   }
 }
