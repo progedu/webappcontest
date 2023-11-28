@@ -1,25 +1,69 @@
-#loading {
-  position: fixed;
-  left: 0;
-  top: 0;
+header {
+  background-color: rgb(180 154 31 / 80%);
+}
+
+header img {
+  width: 142px;
+  height: 32px;
+}
+
+header .title {
+  font-family: serif;
+  font-weight: 600;
+}
+
+main {
+  margin-top: -72px;
+  background-image: url(../img/dragon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
   width: 100%;
-  height: 100%;
-  background-color: black;
+  height: 100vh;
 }
 
-#loading p {
-  margin: 0;
+main h1 {
+  font-family: serif;
+  font-weight: 600;
+  padding-top: 120px;
+  padding-left: 40px;
+  display        : inline-block;
+  color          : #ffffff;
+  font-size      : 36pt;
+  letter-spacing : 4px;
+  text-shadow:  2px  2px 10px #333 ,
+               -2px  2px 10px #333 ,
+                2px -2px 10px #333 ,
+               -2px -2px 10px #333;
 }
 
-#loading #loading_main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 4.8rem;
-  width: 12em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align: center;
+@media (min-width: 1000px) {
+  main {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767.98px) {
+  main h1 {
+    font-size      : 24pt;
+    padding-left: 10px;
+  }
+}
+
+.jq-animation-fadein {
+  animation-duration: 3s;
+  animation-name: fadein;
+  position: relative;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top: 50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }
