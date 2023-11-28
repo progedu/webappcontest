@@ -44,6 +44,13 @@ main h1 {
 }
 
 @media (max-width: 767.98px) {
+  header img {
+    width: 71px;
+    height: 16px;
+  }
+  header .title {
+    font-size: 16px;
+  }
   main h1 {
     font-size      : 24pt;
     padding-left: 10px;
