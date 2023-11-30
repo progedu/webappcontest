@@ -175,8 +175,85 @@ main .attention h3{
 
 .course_box .course_description {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: inline;
+}
+
+.cert {
+  background-color: rgb(211, 182, 211);
+  padding: 1rem;
+  position: relative;
+}
+
+.cert #cert_kamifubuki {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.cert .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.cert .cert_deacription {
+  font-size: 1.3rem;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(90, 22, 90);
+  background-color: rgb(254, 232, 254);
+  position: relative;
+}
+
+.cert .cert_deacription .asta_joy {
+  position: absolute;
+  top: -111px;
+  right: 0px;
+  height: 150px;
+}
+
+.cert .cert_deacription .asta_serif {
+  font-family: "M PLUS Rounded 1c";
+  position: absolute;
+  top: -67px;
+  right: 141px;
+  background-color: white;
+  border: 2px solid rgb(132, 13, 39);
+  background: rgb(132, 13, 39);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+@media (max-width: 576px) {
+  .cert .cert_deacription {
+    margin-top: 150px;
+  }
+}
+
+.cert .cert_deacription .asta_serif::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid rgb(132, 13, 39);
+  z-index: 0;
+}
+
+.cert h2 {
+  font-weight: 700;
+  margin: 1rem 0 2rem;
+}
+
+.cert img {
+  height: 250px;
 }
 
 .jq-animation-fadein {
