@@ -199,7 +199,7 @@ main .attention h3{
 }
 
 .cert .cert_deacription {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 10px;
   padding: 10px;
   background-color: white;
@@ -228,6 +228,7 @@ main .attention h3{
   padding: 10px;
   border-radius: 10px;
   font-weight: 800;
+  font-size: 1rem;
 }
 
 @media (max-width: 576px) {
