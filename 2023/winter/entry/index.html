@@ -35,12 +35,28 @@
     <div class="limit">
       応募締切 <strong>2024</strong>年<strong>1</strong>月<strong>31</strong>日(水)
     </div>
+    <div class="text-2xl text-center p-5 attention">
+      <canvas class="background"></canvas>
+      <h3 class="w-[80%] mx-auto">N予備校プログラミング入門コースで学んだN・S高校生、N中等部生ならびにN予備校受講者が、プログラミングの成果物を競うコンテストです。</h3></div>
   </main>
   <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://npmcdn.com/particlesjs@2.0.0/dist/particles.min.js"></script>
+  <script>
+    window.onload = function() {
+      Particles.init({
+        selector: '.background',
+        color: '#e4cece',
+        connectParticles: true,
+        minDistance: 100,
+        showCube: true,
+        shape: 'square',
+      });
+    };
+  </script>
 </body>
 
 

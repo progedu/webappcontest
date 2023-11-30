@@ -63,6 +63,28 @@ main .bg {
   width: 100%;
 }
 
+main .attention {
+  font-weight: 700;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+main .attention h3{
+  color: white;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 200%;
+  background: #292d4a;
+}
+
 @media (min-width: 1000px) {
   main {
     background-size: cover;
@@ -70,6 +92,9 @@ main .bg {
   main .bg_wrapper {
     height: 500px;
     overflow: hidden;
+  }
+  .background {
+    height: 400%;
   }
 }
 
