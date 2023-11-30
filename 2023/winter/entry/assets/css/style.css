@@ -257,6 +257,28 @@ main .attention h3{
   height: 250px;
 }
 
+.rule {
+  background: rgb(97, 146, 68);
+}
+
+.rule h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.rule dl {
+  width: 90%;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.rule dt {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
 .jq-animation-fadein {
   animation-duration: 3s;
   animation-name: fadein;
