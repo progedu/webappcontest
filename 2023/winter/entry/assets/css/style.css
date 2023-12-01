@@ -258,7 +258,11 @@ main .attention h3{
 }
 
 .rule {
-  background: rgb(97, 146, 68);
+  background: rgb(197, 227, 181);
+  background-image: linear-gradient(45deg, rgb(207, 232, 178) 25%, transparent 25%, transparent 75%, rgb(207, 232, 178) 75%),
+                    linear-gradient(45deg, rgb(207, 232, 178) 25%, transparent 25%, transparent 75%, rgb(207, 232, 178) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 .rule h2 {
@@ -277,6 +281,127 @@ main .attention h3{
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.rule .rule_common {
+  background: rgb(129, 171, 105);
+}
+
+.rule .rule_common .rule_common_tip{
+  background: rgb(58, 80, 46);;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule .rule_master {
+  background: rgb(203, 176, 203);
+}
+
+.rule .rule_master .rule_master_tip{
+  background: purple;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule .rule_normal {
+  background: rgb(176, 191, 203);
+}
+
+.rule .rule_normal .rule_normal_tip{
+  background: rgb(0, 94, 128);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.assessment {
+  padding: 10px;
+  background: rgb(254, 216, 119);
+}
+
+.assessment h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.assessment dl {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.assessment dt {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.assessment dl:nth-child(1) dt {
+  background-color: rgb(0, 0, 174);
+}
+
+.assessment dl:nth-child(1) ul li {
+  border-bottom: 2px dashed rgb(112, 112, 193);
+}
+
+.assessment dl:nth-child(1) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment dl:nth-child(2) dt {
+  background-color: rgb(147, 1, 1);
+}
+
+.assessment dl:nth-child(2) ul li {
+  border-bottom: 2px dashed rgb(202, 161, 161);
+}
+
+.assessment dl:nth-child(2) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment dl:nth-child(3) dt {
+  background-color: rgb(1, 68, 1);
+}
+
+.assessment dl:nth-child(3) ul li {
+  border-bottom: 2px dashed rgb(107, 126, 107);
+}
+
+.assessment dl:nth-child(3) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment .row {
+  gap: 15px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .assessment dl {
+    width: 32%;
+  }
+}
+
+.assessment ul {
+  list-style: none;
+  padding: 0px;
 }
 
 .jq-animation-fadein {
