@@ -404,6 +404,108 @@ main .attention h3{
   padding: 0px;
 }
 
+.award {
+  padding: 10px;
+  background: rgb(93, 202, 164);
+}
+
+.award h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.award dl {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.award dt {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.award .row {
+  gap: 15px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .award dl {
+    width: 32%;
+  }
+}
+
+.award ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.award dd {
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.award ul li {
+  background: #514545;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.award ul li.gold {
+  background: rgb(164 3 3);
+  font-weight: bold;
+}
+
+.award dl:nth-child(1) dt {
+  background-color: rgb(158, 133, 5);
+}
+
+.award dl:nth-child(1) dd {
+  background-color: rgb(255 247 210);
+}
+
+.award dl:nth-child(2) dt {
+  background-color: rgb(135, 135, 135);
+}
+
+.award dl:nth-child(2) dd {
+  background-color: rgb(245 245 245);
+}
+
+.award dl:nth-child(3) dt {
+  background-color: rgb(235, 137, 61)
+}
+
+.award dl:nth-child(3) dd {
+  background-color: rgb(255 235 220);
+}
+
+.award .entry_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #055036;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+
+.award .entry_button:hover {
+  opacity: 0.8;
+}
+
 .jq-animation-fadein {
   animation-duration: 3s;
   animation-name: fadein;
@@ -435,7 +537,7 @@ main .attention h3{
 @keyframes below {
   from {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(50%);
   }
 
   to {
