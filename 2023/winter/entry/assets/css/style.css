@@ -462,6 +462,28 @@ main .attention h3{
   font-weight: bold;
 }
 
+.award ul li.gold ul li {
+  background: rgb(248, 221, 178);
+}
+
+.award ul li.gold ul li a {
+  color: rgb(220, 83, 3);
+  display: inline-block;
+  width: 100%;
+}
+
+.award ul li.gold ul li:hover {
+  background: rgb(243, 173, 61);
+}
+
+.award ul li.gold.github ul li {
+  background: rgb(175, 75, 75);
+}
+
+.award ul li.gold.github ul li:hover {
+  background: rgb(187, 91, 91);
+}
+
 .award dl:nth-child(1) dt {
   background-color: rgb(158, 133, 5);
 }
