@@ -10,8 +10,8 @@ window.onload = function() {
 };
 
 const options = {
-    root: null, // 今回はビューポートをルート要素とする
-    rootMargin: "-40% 0px", // ビューポートの中心を判定基準にする
+    root: null,
+    rootMargin: "-40% 0px",
     threshold: 0
 };
 
@@ -31,7 +31,7 @@ boxElList.forEach((element) => {
 particlesJS("cert_kamifubuki",{
 	"particles":{
 		"number":{
-			"value": 80,//この数値を変更すると紙吹雪の数が増減できる
+			"value": 80,
 			"density":{
 				"enable":false,
 				"value_area":400
@@ -41,12 +41,12 @@ particlesJS("cert_kamifubuki",{
         "value": ["#EA5532", "#F6AD3C", "#FFF33F", "#00A95F", "#00ADA9", "#00AFEC","#4D4398", "#E85298"]//紙吹雪の色の数を増やすことが出来る
 		},
 		"shape":{
-			"type":"polygon",//形状はpolygonを指定
+			"type":"polygon",
 			"stroke":{
 				"width":0,
 			},
 			"polygon":{
-				"nb_sides": 4//多角形の角の数
+				"nb_sides": 4
 			}
 			},
 			"opacity":{
@@ -61,7 +61,7 @@ particlesJS("cert_kamifubuki",{
 			},
 			"size":{
 				"value":5.305992965476349,
-				"random":true,//サイズをランダムに
+				"random": true,
 				"anim":{
 					"enable":true,
 					"speed":1.345709068776642,
@@ -74,12 +74,12 @@ particlesJS("cert_kamifubuki",{
 			},
 			"move":{
 				"enable":true,
-			"speed": 6,//この数値を小さくするとゆっくりな動きになる
-			"direction":"bottom",//下に向かって落ちる
-			"random":false,//動きはランダムにならないように
-			"straight":false,//動きをとどめない
-			"out_mode":"out",//画面の外に出るように描写
-			"bounce":false,//跳ね返りなし
+			"speed": 6,
+			"direction":"bottom",
+			"random":false,
+			"straight":false,
+			"out_mode":"out",
+			"bounce":false,
 				"attract":{
 					"enable":false,
 					"rotateX":600,
