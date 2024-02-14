@@ -1,0 +1,888 @@
+main {
+  text-align: center;
+  background: url(../img/bg.png) no-repeat rgb(209, 199, 150);
+  background-size: contain;
+  padding: 3rem 0;
+}
+
+main h1 {
+  font-family: serif;
+  font-weight: 600;
+  font-size: 6vw;
+  color: rgb(122, 71, 50)
+}
+
+main h1 .nyobi{
+  color:rgb(39, 39, 105)
+}
+
+main h1 .ugoku{
+  font-size: 11vw;
+}
+main h1 .contest{
+  font-size: 11vw;
+}
+main h1 .winter {
+  color: rgb(68, 145, 143);
+}
+main h1 .result {
+  color: rgb(209, 199, 150);
+  background: rgb(71, 39, 25);
+  font-size: 7vw;
+  padding: 1vw;
+  line-height: 1.5;
+}
+
+main .bg_wrapper {
+  width: 100%;
+}
+
+.limit {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  padding: 10px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 3px;
+  background-image: repeating-linear-gradient( 135deg, #777, #777 10px, #999 10px, #999 20px);
+}
+
+.limit .fukidashi {
+  margin-right: 180px;
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #111;
+  color: #FFFFFF;
+  background-color: #111;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.limit .fukidashi:after {
+  content: "";
+    position: absolute;
+    top: 45px;
+    right: -25px;
+    margin-left: -15px;
+    border: 10px solid transparent;
+    border-left: 15px solid #111;
+}
+
+.limit .asta_joy {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  width: 170px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.limit .asta_joy img {
+  width: 170px;
+  height: 170px;
+}
+
+main .bg {
+  width: 100%;
+}
+
+.detail {
+  background-color: #e8e8e8;
+  padding: 1rem;
+  position: relative;
+}
+
+.detail .entry_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #6c6c6c;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
+
+.detail .entry_button:hover {
+  opacity: 0.8;
+}
+
+.detail h4 {
+  color: #3c3c3c;
+  font-weight: 300;
+}
+
+.bumon span {
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.course_header {
+  width: 90%;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  color: white;
+  padding: 10px;
+}
+
+.course_header.normal {
+  background-color: rgb(21, 97, 112);
+}
+
+.course_header.master {
+  background-color: rgb(69, 17, 154);
+}
+
+.course_body {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.course_body.normal {
+  background-color: rgb(175, 209, 215);
+}
+
+.course_body.master {
+  background-color: rgb(221, 206, 245);
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 200%;
+  background: #292d4a;
+}
+
+.work .tip {
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+}
+
+.work.result_1 {
+  background-color: rgb(241, 235, 199);
+}
+
+.work.result_2 {
+  background-color: rgb(230, 230, 230);
+}
+
+.work.result_3 {
+  background-color: rgb(237, 222, 222);
+}
+
+.work.result_1 .tip {
+  background: linear-gradient(45deg, #DAAF08 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #DAAF08 90% 100%);
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(.62, .28, .23, .99) both;
+  color: #fff;
+  border: 0;
+}
+
+.work.result_2 .tip {
+  background: linear-gradient(45deg, #999999 0%, #a6a6a6 45%, #e5e5e5 70%, #a6a6a6 85%, #a6a6a6 90% 100%);
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(.62, .28, .23, .99) both;
+  color: #fff;
+  border: 0;
+}
+
+.work.result_3 .tip {
+  background: linear-gradient(45deg, rgb(131, 73, 73) 0%, rgb(131, 73, 73) 45%, rgb(169, 125, 125) 70%, rgb(131, 73, 73) 85%, rgb(131, 73, 73) 90% 100%);
+  background-size: 800% 400%;
+  animation: gradient 5s infinite cubic-bezier(.62, .28, .23, .99) both;
+  color: #fff;
+  border: 0;
+}
+
+.work .img {
+  margin-top: 30px;
+}
+
+.work .img img {
+  max-width: 90%;
+  border: 1px solid #999;
+}
+
+.work .title {
+  margin-top: 20px;
+}
+
+.work .author {
+  margin-top: 20px;
+}
+
+.work .menu {
+  margin-top: 30px;
+}
+
+.work .menu a {
+  text-decoration: none;
+}
+
+.work .menu a:hover {
+  opacity: 0.8;
+}
+
+.work .menu span {
+  background-color: #055036;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.work .menu span.site {
+  background-color: #4100a9;
+}
+
+.work .menu span.github {
+  background-color: #2b2b2b;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  main h1 {
+    padding-left: 10px;
+  }
+  .limit .fukidashi {
+    margin-right: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #111;
+    color: #FFFFFF;
+    background-color: #111;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .limit .asta_joy {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+  }
+  
+  .limit .asta_joy img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.cert {
+  background-color: rgb(211, 182, 211);
+  padding: 1rem;
+  position: relative;
+}
+
+.cert #cert_kamifubuki {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.cert .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.cert .cert_deacription {
+  font-size: 1.1rem;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(90, 22, 90);
+  background-color: rgb(254, 232, 254);
+  position: relative;
+}
+
+.cert .cert_deacription .asta_joy {
+  position: absolute;
+  top: -111px;
+  right: 0px;
+  height: 150px;
+}
+
+.cert .cert_deacription .asta_serif {
+  font-family: "M PLUS Rounded 1c";
+  position: absolute;
+  top: -67px;
+  right: 141px;
+  background-color: white;
+  border: 2px solid rgb(132, 13, 39);
+  background: rgb(132, 13, 39);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .cert .cert_deacription {
+    margin-top: 150px;
+  }
+}
+
+.cert .cert_deacription .asta_serif::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid rgb(132, 13, 39);
+  z-index: 0;
+}
+
+.cert h2 {
+  font-weight: 700;
+  margin: 1rem 0 2rem;
+}
+
+.cert img {
+  height: 250px;
+}
+
+.rule {
+  background: rgb(197, 227, 181);
+  background-image: linear-gradient(45deg, rgb(207, 232, 178) 25%, transparent 25%, transparent 75%, rgb(207, 232, 178) 75%),
+                    linear-gradient(45deg, rgb(207, 232, 178) 25%, transparent 25%, transparent 75%, rgb(207, 232, 178) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.rule h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.rule dl {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.rule dt {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.rule .rule_common {
+  background: rgb(129, 171, 105);
+}
+
+.rule .rule_common .rule_common_tip{
+  background: rgb(58, 80, 46);;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule .rule_master {
+  background: rgb(203, 176, 203);
+}
+
+.rule .rule_master .rule_master_tip{
+  background: purple;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule .rule_normal {
+  background: rgb(176, 191, 203);
+}
+
+.rule .rule_normal .rule_normal_tip{
+  background: rgb(0, 94, 128);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule.gakuen {
+  background: rgb(251, 223, 211);
+  background-image: linear-gradient(45deg, rgb(255, 208, 190) 25%, transparent 25%, transparent 75%, rgb(255, 208, 190) 75%),
+                    linear-gradient(45deg, rgb(255, 208, 190) 25%, transparent 25%, transparent 75%, rgb(255, 208, 190) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.assessment {
+  padding: 10px;
+  background: rgb(254, 216, 119);
+}
+
+.assessment h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.assessment dl {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.assessment dt {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.assessment dl:nth-child(1) dt {
+  background-color: rgb(0, 0, 174);
+}
+
+.assessment dl:nth-child(1) ul li {
+  border-bottom: 2px dashed rgb(112, 112, 193);
+}
+
+.assessment dl:nth-child(1) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment dl:nth-child(2) dt {
+  background-color: rgb(147, 1, 1);
+}
+
+.assessment dl:nth-child(2) ul li {
+  border-bottom: 2px dashed rgb(202, 161, 161);
+}
+
+.assessment dl:nth-child(2) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment dl:nth-child(3) dt {
+  background-color: rgb(1, 68, 1);
+}
+
+.assessment dl:nth-child(3) ul li {
+  border-bottom: 2px dashed rgb(107, 126, 107);
+}
+
+.assessment dl:nth-child(3) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment .row {
+  gap: 15px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .assessment dl {
+    width: 32%;
+  }
+}
+
+.assessment ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.award {
+  padding: 10px;
+  background: rgb(93, 202, 164);
+}
+
+.award h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.award dl {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.award dt {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.award .row {
+  gap: 15px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .award dl {
+    width: 32%;
+  }
+}
+
+.award ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.award dd {
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.award ul li {
+  background: #514545;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.award ul li.gold {
+  background: rgb(164 3 3);
+  font-weight: bold;
+}
+
+.award ul li.gold ul li {
+  background: rgb(248, 221, 178);
+}
+
+.award ul li.gold ul li a {
+  color: rgb(220, 83, 3);
+  display: inline-block;
+  width: 100%;
+}
+
+.award ul li.gold ul li:hover {
+  background: rgb(243, 173, 61);
+}
+
+.award ul li.gold.github ul li {
+  background: rgb(175, 75, 75);
+}
+
+.award ul li.gold.github ul li:hover {
+  background: rgb(187, 91, 91);
+}
+
+.award dl:nth-child(1) dt {
+  background-color: rgb(158, 133, 5);
+}
+
+.award dl:nth-child(1), .award dl:nth-child(1) dd {
+  background-color: rgb(255 247 210);
+}
+
+.award dl:nth-child(2) dt {
+  background-color: rgb(135, 135, 135);
+}
+
+.award dl:nth-child(2), .award dl:nth-child(2) dd {
+  background-color: rgb(245 245 245);
+}
+
+.award dl:nth-child(3) dt {
+  background-color: rgb(235, 137, 61)
+}
+
+.award dl:nth-child(3), .award dl:nth-child(3) dd {
+  background-color: rgb(255 235 220);
+}
+
+.award .entry_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #055036;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+.award .entry_button:hover {
+  opacity: 0.8;
+}
+
+.award .description {
+  padding: 10px;
+}
+
+.award.award_gakuen {
+  background: rgb(149 147 221);
+}
+
+.award.award_gakuen .entry_button {
+  background: rgb(49, 47, 121);
+}
+
+.judge {
+  background-color: #dddddd;
+}
+
+.judge h2 {
+  font-weight: 700;
+}
+
+.judge {
+  text-align: center;
+}
+
+.judge img {
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+.judge .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.judge .row {
+  justify-content: center;
+  margin-left: 0;
+}
+
+.judge .box {
+  width: calc(33% - 50px);
+  display: block;
+  position: relative;
+  padding: 30px 0 20px;
+  margin-left: 40px;
+  background: #f1f1f1;
+}
+
+.judge .box:first {
+  margin-left: 0px;
+}
+
+@media (max-width: 576px) {
+  .judge .box {
+    width: calc(100% - 50px);
+    margin: 0 auto 50px;
+
+  }
+}
+
+.judge .name {
+  padding: 1rem;
+  border-top: 1px white dashed;
+  border-bottom: 1px white dashed;
+}
+.judge .description {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.judge .ribbon {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 0;
+  margin: 0 0 0 -20px;
+  width: calc(100% + 20px);
+  color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.judge .ribbon .post {
+  margin: 0;
+  padding: 0 30px 0 15px;
+  border-top: dashed 1px #FFF;
+  border-bottom: dashed 1px #FFF;
+  font-size: 20px;
+  line-height: 46px;
+}
+
+.judge .ribbon:after {
+  position: absolute;
+  content: '';
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.judge .ribbon:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #6081b7;
+}
+
+.judge .box:nth-child(1) {
+  background: #ba9ece;
+}
+.judge .box:nth-child(1) .ribbon:after {
+  border-right-color: #ba9ece;
+}
+.judge .box:nth-child(1) .ribbon {
+  background: #492b5e;
+}
+.judge .box:nth-child(1) .name {
+  color: #492b5e;
+}
+.judge .box:nth-child(1) .description {
+  color: #492b5e;
+}
+.judge .box:nth-child(1) .ribbon:before {
+  border-right-color: rgb(28, 15, 38);
+}
+
+.judge .box:nth-child(2) {
+  background: #9ebece;
+}
+.judge .box:nth-child(2) .ribbon:after {
+  border-right-color: #9ebece;
+}
+.judge .box:nth-child(2) .ribbon {
+  background: #183439;
+}
+.judge .box:nth-child(2) .name {
+  color: #183439;
+}
+.judge .box:nth-child(2) .description {
+  color: #183439;
+}
+.judge .box:nth-child(2) .ribbon:before {
+  border-right-color: #0c1d20;
+}
+
+.judge .box:nth-child(3) {
+  background: #cec29e;
+}
+.judge .box:nth-child(3) .ribbon:after {
+  border-right-color: #cec29e;
+}
+.judge .box:nth-child(3) .ribbon {
+  background: #124b12;
+}
+.judge .box:nth-child(3) .name {
+  color: #082b08;
+}
+.judge .box:nth-child(3) .description {
+  color: #082b08;
+}
+.judge .box:nth-child(3) .ribbon:before {
+  border-right-color: #082408;
+}
+
+.jq-animation-fadein {
+  animation-duration: 3s;
+  animation-name: fadein;
+  position: relative;
+}
+
+.animation-below {
+  visibility: hidden;
+}
+
+.animation-below.active {
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: below;
+}
+
+footer {
+  background-color: rgb(180 154 31 / 80%);
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 100px;
+  color: rgb(106, 90, 15);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top: 50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes below {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes course_box {
+  from {
+    opacity: 0;
+    transform: translate(-100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
