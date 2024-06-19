@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N予備校 動くWebページコンテスト2024 夏</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Google fonts-->
+  <link rel="stylesheet" href="assets/css/style.css?20240214">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top shadow">
+      <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+        <img src="assets/img/logo.svg" />
+        <div class="title flex-grow-1 p-3">動くWebページコンテスト 2024 夏</div>
+      </nav>
+    </header>
+    <div class="header">
+      <h1>動く Webページ<br>コンテスト<br>2024 夏</h1>
+    </div>
+    <!--Header ends-->
+    
+    <div class="text-2xl text-center attention">
+      <h3 class="w-[80%] mx-auto">N・S高校生、N中等部生ならびにN予備校生が、<br>プログラミングの成果物を競うコンテストです！</h3>
+    </div>
+    <div class="limit">
+      応募締切 <strong>2024</strong>年<strong>9</strong>月<strong>1</strong>日(日)
+    </div>
+    <div class="rule p-2">
+      <div class="text-center"><h2>応募規定</h2></div>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg rule_normal">
+        <dt class="text-center">
+          N予備校にてプログラミングコースを受講中であること
+        </dt>
+        <dd class="text-center">
+          N予備校プログラミングコース受講生、または N・S高等学校/N中等部の課外授業 にてプログラミングコースを受講している方が応募できます。<br>コンテスト期間中に退会を行うと、審査対象外となったり賞状や賞品が送付できなくなる可能性があります。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg rule_normal">
+        <dt class="text-center">
+          著作権上問題のないメディアファイル、コードのみで構成されていること
+        </dt>
+        <dd class="text-center">
+          自作でない画像やライブラリを利用する際は、該当コンテンツのライセンスを十分に確認してください。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg rule_normal">
+        <dt class="text-center">
+          コードの提出は GitHub リポジトリの URL を提出すること
+        </dt>
+        <dd class="text-center">
+          審査期間中のコード変更は禁止しませんが、バグなどが含まれると評点が下がる可能性があります。<br>
+          審査用にブランチを分けておくと管理がしやすいです。<br>
+          リポジトリの公開設定は Public で作成してください。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg rule_normal">
+        <dt class="text-center">
+          動作確認ができる URL を提出すること
+        </dt>
+        <dd class="text-center">
+          応募作品のアプリケーションをホスティングし、アプリケーションの URL を提出してください。<br>
+          提出しているコードと同じ動作となるようにしてください。<br>
+          ノーマルコースは GitHub Pages、マスターコースは render でのホスティングがおすすめです。<br>
+          もちろん、その他の場所にホスティングしても構いません。<br>
+          GitHub Pages は1章19節、render は、3章31節で学習します。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg rule_normal">
+        <dt class="text-center">
+          作品は審査期間中、 Google Chrome ブラウザで正常に動作すること
+        </dt>
+        <dd class="text-center">審査は PC 版・スマートフォン版の Google Chrome ブラウザにて行われます。</dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg rule_normal">
+        <dt class="text-center">
+          応募作品は公開される可能性があるため、それに了承できること
+        </dt>
+        <dd class="text-center">
+          応募作品のコードおよびアプリケーションの URL は結果ページにリンクが貼られ、プログラミングの授業などにて紹介されます。<br>
+          授業での表彰および紹介が終わるまでは、アプリケーションのホスティングを続けてください。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg rule_normal">
+        <dt class="text-center">
+          HTML / CSS / JavaScript で作成された動きのある Web ページであること
+        </dt>
+        <dd class="text-center">
+          Bootstrap以外の外部ライブラリ (jQuery, anime.js, Pixi.js など) の利用は、完成度に差がついてしまうため禁止とします。<br>
+          ただし、外部ライブラリを参考にしたオリジナルのプログラムであれば使用可能です。
+        </dd>
+      </dl>
+    </div>
+    
+    <div class="assessment p-3">
+      <div class="text-center"><h2>評価項目</h2></div>
+      <div class="row">
+        <dl class="shadow-lg">
+          <dt class="text-center">コーディング</dt>
+          <dd class="text-center my-2">
+            <ul>
+              <li class="p-2">ファイル/フォルダが整理されているか</li>
+              <li class="p-2">コードが見やすく整理されているか</li>
+              <li class="p-2">必要なコメントが記述されているか</li>
+              <li class="p-2">GitHubを有効に活用できているか</li>
+              <li class="p-2">ライブラリやフレームワークを活用できているか<br>(マスターコースのみ)</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg">
+          <dt class="text-center">完成度</dt>
+          <dd class="text-center my-2">
+            <ul>
+              <li class="p-2">バグや動作不良などはないか</li>
+              <li class="p-2">攻撃可能な脆弱性はないか</li>
+              <li class="p-2">UI/UX が洗練されているか</li>
+              <li class="p-2">テストコードが書かれているか</li>
+              <li class="p-2">初めての人が迷子にならないか</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg">
+          <dt class="text-center">アイデア</dt>
+          <dd class="text-center text-lg my-2">
+            <ul class="divide-y-[3px] divide-gray-300">
+              <li class="p-2">作品のテーマ・アイデアが新しいか</li>
+              <li class="p-2">機能や実装に独創性があるか</li>
+              <li class="p-2">時世やトレンドを取り入れているか</li>
+              <li class="p-2">デザインに創意工夫があるか</li>
+              <li class="p-2">実際に使われていてユーザーが付いているか</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="award award_study p-2">
+      <div class="text-center"><h2>N予備校 部門</h2></div>
+      <div class="row">
+        <dl class="shadow-lg">
+          <dt class="text-center">最優秀賞(1名)</dt>
+          <dd class="text-center py-2">
+            <div class="description">最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold">最優秀賞の賞品</li>
+              <li>最優秀賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg">
+          <dt class="text-center">特別賞(複数名)</dt>
+          <dd class="text-center py-2">
+            <div class="description">デザインやコーディングに優れた作品を <br><strong>特別賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold">特別賞の賞品</li>
+              <li>特別賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg">
+          <dt class="text-center">健闘賞(複数名)</dt>
+          <dd class="text-center text-lg py-2">
+            <div class="description">特に頑張りが認められた作品を <br><strong>健闘賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold">健闘賞の賞品</li>
+              <li>健闘賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <a href="https://questant.jp/q/nyobi_contest2024_summer" target="_blank" class="entry_button">応募はこちらから</a>
+    </div>
+    <div class="award award_gakuen p-2">
+      <div class="text-center"><h2>角川ドワンゴ学園 部門</h2></div>
+      <div class="row">
+        <dl class="shadow-lg">
+          <dt class="text-center">最優秀賞(1名)</dt>
+          <dd class="text-center py-2">
+            <div class="description">最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold">
+                最優秀賞の賞品<!--<br>(以下の中からいずれか1つ)
+                <ul>
+                  <li><a href=""></a></li>
+                </ul>
+                -->
+              </li>
+              <li>最優秀賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg">
+          <dt class="text-center">優秀賞(1名)</dt>
+          <dd class="text-center py-2">
+            <div class="description">最優秀賞に惜しくも届かなかった優秀な作品を <br><strong>優秀賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold">
+                優秀賞の賞品<!--<br>(以下の中からいずれか1つ)
+                <ul>
+                  <li><a href=""></a></li>
+                </ul>
+                -->
+              </li>
+              <li>特別賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg">
+          <dt class="text-center">健闘賞(複数名)</dt>
+          <dd class="text-center text-lg py-2">
+            <div class="description">特に頑張りが認められた作品を <br><strong>健闘賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold github">
+                健闘賞の賞品<!--
+                <ul>
+                  <li></li>
+                </ul>-->
+              </li>
+              <li>健闘賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <a href="" class="entry_button" target="_blank">応募はこちらから</a>
+    </div>
+    <div class="judge p-2">
+      <div class="text-center m-5"><h2>審査員</h2></div>
+      <div class="row">
+        <div class="box">
+          <div class="ribbon"><div class="post">プログラミング教材責任者</div></div>
+          <img src="assets/img/orihara.png">
+          <div class="name">折原 ダビデ竜</div>
+          <div class="description">
+            東京理科大学大学院情報科学専攻修了。卒業後、株式会社ドワンゴに入社。 ニコニコ生放送の開発に携わり、2016年よりN予備校のプログラミング講師として高校生にプログラミングを教える。
+          </div>
+        </div>
+        <div class="box">
+          <div class="ribbon"><div class="post">プログラミング講師</div></div>
+          <img src="assets/img/moesuke.png">
+          <div class="name">青木 萌</div>
+          <div class="description">
+            アパレルショップのECサイトの運営や、教材出版社にて小中理科の編集を担当。その後フリーランス教材編集者を経て、ドワンゴに入社。N予備校プログラミングコースの何でも屋さん。
+          </div>
+        </div>
+        <div class="box">
+          <div class="ribbon"><div class="post">プログラミング講師</div></div>
+          <img src="assets/img/tsuno.png">
+          <div class="name">津野 貴大</div>
+          <div class="description">
+            株式会社ドワンゴに新卒入社。長年ニコニコ関連サービスのエンジニアをしてきた経験を活かして、初心者にも分かりやすくて、より実践的なWebサービス開発について教えている。
+          </div>
+        </div>
+        <div class="box">
+          <div class="ribbon"><div class="post">教材総監修</div></div>
+          <img src="assets/img/koizuka.jpeg">
+          <div class="name">戀塚 昭彦</div>
+          <div class="description">
+            システム開発会社にて制御系プログラムの開発に従事。その後、フリーランスを経てドワンゴに入社。ニコニコ動画のプロトタイプを三日で創り出した伝説的プログラマ。
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    (C) 動くWebページコンテスト2024夏<br>
+    [ <a href="https://progedu.github.io/webappcontest/">N予備校 動くWebページコンテスト</a> ]
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://npmcdn.com/particlesjs@2.0.0/dist/particles.min.js"></script>
+  <script src="assets/js/particles.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
