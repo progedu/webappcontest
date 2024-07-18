@@ -541,6 +541,12 @@ main .attention h3{
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .oubo .description {
+    margin-top: 2rem;
+  }
+}
+
 .award {
   padding: 10px;
   background: url(../img/fireworks_study.png) left top no-repeat;
