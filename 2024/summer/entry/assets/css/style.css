@@ -444,6 +444,51 @@ main .attention h3{
   padding: 0px;
 }
 
+.apology {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding: 10px;
+  background: #666;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.apology > div {
+  margin: 3rem 0;
+}
+
+.apology h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #111111;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.apology strong {
+  font-size: 1.4rem;
+  color: rgb(232, 126, 126);
+  text-decoration: underline;
+}
+
+.apology .message {
+  width: 90%;
+  background-color: #333;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+@media (max-width: 768px) {
+  .apology {
+    font-size: 3.5vw;
+  }
+  .apology h2 {
+    font-size: 6vw;
+  }
+}
+
 .award {
   padding: 10px;
   background: url(../img/fireworks_study.png) left top no-repeat;
