@@ -447,9 +447,12 @@ main .attention h3{
 .apology {
   font-family: "M PLUS Rounded 1c", sans-serif;
   padding: 10px;
-  background: #666;
   color: white;
   font-size: 1.5vw;
+  background: rgb(154, 154, 154);
+  background-image: linear-gradient(45deg, rgb(139, 139, 139) 25%, transparent 25%, transparent 75%, rgb(139, 139, 139) 75%), linear-gradient(45deg, rgb(139, 139, 139) 25%, transparent 25%, transparent 75%, rgb(139, 139, 139) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 .apology > div {
@@ -468,13 +471,13 @@ main .attention h3{
 
 .apology strong {
   font-size: 1.4rem;
-  color: rgb(232, 126, 126);
+  color: rgb(223, 99, 99);
   text-decoration: underline;
 }
 
 .apology .message {
   width: 90%;
-  background-color: #333;
+  background-color: #232323;
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 2rem;
@@ -487,6 +490,55 @@ main .attention h3{
   .apology h2 {
     font-size: 6vw;
   }
+}
+
+.oubo {
+  background: rgb(251, 223, 211);
+  background-image: linear-gradient(45deg, rgb(255, 208, 190) 25%, transparent 25%, transparent 75%, rgb(255, 208, 190) 75%), linear-gradient(45deg, rgb(255, 208, 190) 25%, transparent 25%, transparent 75%, rgb(255, 208, 190) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.oubo > .title {
+  padding: 3rem 0;
+}
+
+.oubo h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #b55050;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.oubo strong {
+  font-size: 1.4rem;
+  color: rgb(223, 99, 99);
+  text-decoration: underline;
+}
+
+.oubo .message {
+  width: 90%;
+  background-color: #232323;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.oubo img {
+  width: 95%;
+  border: 1px solid #333;
+}
+
+.oubo .description {
+  width: 95%;
+  margin-left: 2%;
+  background: #fabc75ad;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
 }
 
 .award {
