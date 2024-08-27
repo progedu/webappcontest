@@ -1099,3 +1099,7 @@ footer {
   display:inline-block;
   vertical-align: middle;
 }
+
+header img {
+  width: 75px;
+}
