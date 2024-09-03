@@ -15,8 +15,12 @@ header .title {
   font-weight: 400;
   color: white;
 }
+header .title a {
+  color: white;
+  text-decoration: none;
+}
 
-main h1 {
+main .header p {
   font-family: "RocknRoll One", sans-serif;
   font-weight: 500;
   position: relative;
@@ -1102,4 +1106,96 @@ footer {
 
 header img {
   width: 30px;
+}
+
+.news {
+  background: url(../img/news_header.png) top center no-repeat;
+  background-size: cover;
+  background-color: #ebfbfc;
+}
+
+.news > div {
+  margin: 3rem 0;
+}
+
+.news ul {
+  display: block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border: 3px #77a2c8 solid;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  padding: 0.5rem 1rem;
+} 
+
+.news ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  border-bottom: 2px #77a2c8 dashed;
+  padding: 0.5rem;
+} 
+
+.news ul li:last-child {
+  border-bottom: 0;
+}
+
+.news article {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FFFFFFCC;
+  padding: 2rem;
+
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.news h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #2f8da6ee;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.news article h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.news p {
+  text-align: left;
+}
+
+.news p.date {
+  text-align: right;
+}
+
+.news p strong {
+  font-weight: bold;
+}
+
+.news p img {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.news article .btn {
+  background-color: #2f8da6ee;
+  color: #FFF;
+}
+
+@media (max-width: 768px) {
+  .news h2 {
+    font-size: 6vw;
+    text-shadow: 1px 1px rgb(181 181 181);
+  }
+  .news article h1{
+    font-size: 1.2rem;
+  }
 }
