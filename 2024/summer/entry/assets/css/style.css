@@ -15,6 +15,7 @@ header .title {
   font-weight: 400;
   color: white;
 }
+
 header .title a {
   color: white;
   text-decoration: none;
@@ -39,6 +40,10 @@ main .header p {
   }
   header {
     font-size: 3.5vw;
+  }
+  header .title {
+    padding-left: 0.5rem !important;
+    padding-right: 0 !important;
   }
 }
 
