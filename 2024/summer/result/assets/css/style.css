@@ -98,19 +98,19 @@ main .header p span {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.2) rotateY(0deg);
   }
   60% {
-    transform: scale(1);
+    transform: scale(1) rotateY(90deg);
   }
   70% {
-    transform: scale(0.5);
+    transform: scale(0.5) rotateY(180deg);
   }
   80% {
-    transform: scale(1);
+    transform: scale(1) rotateY(270deg);
   }
   90% {
-    transform: scale(1.2);
+    transform: scale(1.2) rotateY(360deg);
   }
   100% {
     transform: scale(0.5);
