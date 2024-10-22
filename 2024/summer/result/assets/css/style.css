@@ -34,6 +34,7 @@ header .title a {
 main .header .result {
   position: relative;
   top: 20vw;
+  left: 2vw;
 }
 
 main .header .result p {
