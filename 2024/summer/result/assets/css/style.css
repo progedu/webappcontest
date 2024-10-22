@@ -452,6 +452,10 @@ main .attention h3{
   background-color: rgb(247, 235, 235);
 }
 
+.ichiran.gakuen .entry {
+  background-color: rgb(239, 247, 235);
+}
+
 .ichiran .entry .thumb {
   max-height: 300px;
 }
