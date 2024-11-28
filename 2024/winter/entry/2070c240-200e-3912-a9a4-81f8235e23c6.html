@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEN Study 動くWebアプリコンテスト2024冬</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Google fonts-->
+  <link rel="stylesheet" href="assets/css/style.css?20240214">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+</head>
+
+<body>
+  <div id="loading" style="display: none;">
+    <div id="loading_main">
+      <p><i>Z</i><i>E</i><i>N</i><i>S</i><i>t</i><i>u</i><i>d</i><i>y</i></p>
+      <p><i>動</i><i>く</i><i>W</i><i>e</i><i>b</i><i>ア</i><i>プ</i><i>リ</i></p>
+      <p><i>コ</i><i>ン</i><i>テ</i><i>ス</i><i>ト</i></p>
+      <p><i>2</i><i>0</i><i>2</i><i>4</i><i>冬</i></p>
+    </div>
+  </div>
+  <header class="navbar navbar-expand-lg bd-navbar sticky-top shadow">
+    <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+      <img src="assets/img/logo_horizontal.svg" />
+      <div class="title flex-grow-1 p-3">動くWebアプリコンテスト 2024 冬</div>
+    </nav>
+  </header>
+  <main>
+    <h1>ZEN Study<br>動くWebアプリコンテスト<br>2024 冬</h1>
+    <div class="bg_wrapper">
+      <img class="bg" src="assets/img/dragon.png">
+    </div>
+    <div class="limit">
+      応募締切 <strong>2024</strong>年<strong>2</strong>月<strong>4</strong>日(日) [応募は締め切りました]
+    </div>
+    <div class="text-2xl text-center p-5 attention">
+      <canvas class="background"></canvas>
+      <h3 class="w-[80%] mx-auto">ZEN Studyプログラミング入門コースで学んだN・S高校生、N中等部生ならびにZEN Study受講者が、プログラミングの成果物を競うコンテストです。</h3>
+    </div>
+    <div class="course_header">
+      <h2 class="animation">
+        <div class="course_header_title m-4">応募コース紹介</div>
+      </h2>
+      <div class="animation-below animation">
+        <div class="course_header_description m-4">今年は難易度の違う2つのコースを用意しました！</div>
+      </div>
+    </div>
+    <div class="course_box course_master animation animation_course">
+      <div class="bg"></div>
+      <div class="course_title"><h4>マスターコース</h4></div>
+      <div class="course_description">ZEN Studyで学べる内容をフルに使って、クライアントサーバシステムの Web アプリケーションを制作するコースです。</div>
+    </div>
+    <div class="course_box course_normal animation animation_course">
+      <div class="bg"></div>
+      <div class="course_title"><h4>ノーマルコース</h4></div>
+      <div class="course_description">ZEN Study入門コース1章の内容をもとに、動きのある Web ページを制作するコースです。<br>従来の夏のコンテストを、冬にも開催します。</div>
+    </div>
+    <div class="cert animation animation-below">
+      <div id="cert_kamifubuki"></div>
+      <h2 class="text-center">修了認定証</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 text-center">
+          <img src="assets/img/cert.png">
+        </div>
+        <div class="col-xs-12 col-sm-7 text-center cert_deacription shadow">
+          <img class="asta_joy" src="assets/img/joy.png">
+          <div class="asta_serif">マスターコース限定！</div>
+          入門コース第4章までの内容をコードに反映できていると認定された応募者に、もれなく
+          <p class="mt-2 mb-2"><strong>『プログラミング入門コース修了認定証』</strong></p>
+          を贈呈！
+        </div>
+      </div>
+    </div>
+    <div class="rule p-2 animation animation-below">
+      <h2 class="text-center m-5">応募規定</h2>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_common">
+        <dt class="text-center pb-2">
+          <div class="rule_common_tip">コース共通</div><br>
+          ZEN Studyにてプログラミングコースを受講中であること
+        </dt>
+        <dd class="text-center">
+          ZEN Studyプログラミングコース受講生、または N・S高等学校/N中等部の課外授業 にてプログラミングコースを受講している方が応募できます。<br>コンテスト期間中に退会を行うと、審査対象外となったり賞状や賞品が送付できなくなる可能性があります。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_common">
+        <dt class="text-center pb-2">
+          <div class="rule_common_tip">コース共通</div><br>
+          著作権上問題のないメディアファイル、コードのみで構成されていること
+        </dt>
+        <dd class="text-center">
+          自作でない画像やライブラリを利用する際は、該当コンテンツのライセンスを十分に確認してください。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_common">
+        <dt class="text-center pb-2">
+          <div class="rule_common_tip">コース共通</div><br>
+          コードの提出は GitHub リポジトリの URL を提出すること
+        </dt>
+        <dd class="text-center">
+          審査期間中のコード変更は禁止しませんが、バグなどが含まれると評点が下がる可能性があります。<br>
+          審査用にブランチを分けておくと管理がしやすいです。<br>
+          リポジトリの公開設定は Public で作成してください。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_common">
+        <dt class="text-center pb-2">
+          <div class="rule_common_tip">コース共通</div><br>
+          動作確認ができる URL を提出すること
+        </dt>
+        <dd class="text-center">
+          応募作品のアプリケーションをホスティングし、アプリケーションの URL を提出してください。<br>
+          提出しているコードと同じ動作となるようにしてください。<br>
+          ノーマルコースは GitHub Pages、マスターコースは render でのホスティングがおすすめです。<br>
+          もちろん、その他の場所にホスティングしても構いません。<br>
+          GitHub Pages は1章19節、render は、3章31節で学習します。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_common">
+        <dt class="text-center pb-2">
+          <div class="rule_common_tip">コース共通</div><br>
+          作品は審査期間中、 Google Chrome ブラウザで正常に動作すること
+        </dt>
+        <dd class="text-center">審査は PC 版・スマートフォン版の Google Chrome ブラウザにて行われます。</dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_common">
+        <dt class="text-center pb-2">
+          <div class="rule_common_tip">コース共通</div><br>
+          応募作品は公開される可能性があるため、それに了承できること
+        </dt>
+        <dd class="text-center">
+          応募作品のコードおよびアプリケーションの URL は結果ページにリンクが貼られ、プログラミングの授業などにて紹介されます。<br>
+          授業での表彰および紹介が終わるまでは、アプリケーションのホスティングを続けてください。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_master">
+        <dt class="text-center pb-2">
+          <div class="rule_master_tip">マスターコースのみ</div><br>
+          クライアントサーバシステムの Web アプリケーションであること
+        </dt>
+        <dd class="text-center">
+          サーバーサイドの実装量は問いませんが、必ず HTTP リクエストを処理するコードを実装してください。<br>第 4 章以降で学ぶ Web フレームワークを利用することをオススメします。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_master">
+        <dt class="text-center pb-2">
+          <div class="rule_master_tip">マスターコースのみ</div><br>
+          世の中で広く利用されているプログラミング言語であること
+        </dt>
+        <dd class="text-center">
+          自作言語・擬似言語・実用性のない言語は不可とします。<br>
+          ZEN Studyプログラミングコースでは、世の中で広く利用されているプログラミング言語として、<br>
+          JavaScript（TypeScript）、Scala、Python、Golang、Swift、Java を学ぶことができます。
+        </dd>
+      </dl>
+      <dl class="p-4 mx-auto mt-5 mb-5 shadow-lg animation animation-below rule_normal">
+        <dt class="text-center pb-2">
+          <div class="rule_normal_tip">ノーマルコースのみ</div><br>
+          HTML / CSS / JavaScript で作成された動きのある Web ページであること
+        </dt>
+        <dd class="text-center">
+          Bootstrap以外の外部ライブラリ (jQuery, anime.js, Pixi.js など) の利用は、完成度に差がついてしまうため禁止とします。<br>
+          ただし、外部ライブラリを参考にしたオリジナルのプログラムであれば使用可能です。
+        </dd>
+      </dl>
+    </div>
+    <div class="assessment p-2 animation animation-below">
+      <h2 class="text-center m-5">評価項目</h2>
+      <div class="row">
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">コーディング</dt>
+          <dd class="text-center my-2">
+            <ul>
+              <li class="p-2">ファイル/フォルダが整理されているか</li>
+              <li class="p-2">コードが見やすく整理されているか</li>
+              <li class="p-2">必要なコメントが記述されているか</li>
+              <li class="p-2">GitHubを有効に活用できているか</li>
+              <li class="p-2">ライブラリやフレームワークを活用できているか<br>(マスターコースのみ)</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">完成度</dt>
+          <dd class="text-center my-2">
+            <ul>
+              <li class="p-2">バグや動作不良などはないか</li>
+              <li class="p-2">攻撃可能な脆弱性はないか</li>
+              <li class="p-2">UI/UX が洗練されているか</li>
+              <li class="p-2">テストコードが書かれているか</li>
+              <li class="p-2">初めての人が迷子にならないか</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">アイデア</dt>
+          <dd class="text-center text-lg my-2">
+            <ul class="divide-y-[3px] divide-gray-300">
+              <li class="p-2">作品のテーマ・アイデアが新しいか</li>
+              <li class="p-2">機能や実装に独創性があるか</li>
+              <li class="p-2">時世やトレンドを取り入れているか</li>
+              <li class="p-2">デザインに創意工夫があるか</li>
+              <li class="p-2">実際に使われていてユーザーが付いているか</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="award award_nyobi p-2 animation animation-below">
+      <h2 class="text-center m-5">ZEN Study 部門</h2>
+      <div class="row">
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">最優秀賞(1名)</dt>
+          <dd class="text-center py-2">
+            <div class="description">最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold">審査員全員のサインが書かれた本</li>
+              <li>最優秀賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">特別賞(複数名)</dt>
+          <dd class="text-center py-2">
+            <div class="description">デザインやコーディングに優れた作品を <br><strong>特別賞</strong><br> として表彰します</div>
+            <ul>
+              <li>特別賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">健闘賞(複数名)</dt>
+          <dd class="text-center text-lg py-2">
+            <div class="description">特に頑張りが認められた作品を <br><strong>健闘賞</strong><br> として表彰します</div>
+            <ul>
+              <li>健闘賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <a href="https://questant.jp/q/nyobi_contest2024_winter" target="_blank" class="entry_button">応募はこちらから</a>
+    </div>
+    <div class="award award_gakuen p-2 animation animation-below">
+      <h2 class="text-center m-5">角川ドワンゴ学園 部門</h2>
+      <div class="row">
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">最優秀賞(1名)</dt>
+          <dd class="text-center py-2">
+            <div class="description">最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold">
+                学園提供の商品<br>(以下の中からいずれか1つ)
+                <ul>
+                  <li><a href="https://www.pfu.ricoh.com/direct/hhkb/">HHKBキーボード</a></li>
+                  <li><a href="https://www.realforce.co.jp/products/">RealForceキーボード</a></li>
+                  <li><a href="https://www.amazon.co.jp/dp/B0C5C3W47W/?th=1">ミニPC</a></li>
+                </ul>
+              </li>
+              <li>最優秀賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">優秀賞(1名)</dt>
+          <dd class="text-center py-2">
+            <div class="description">最優秀賞に惜しくも届かなかった優秀な作品を <br><strong>優秀賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold">
+                学園提供の商品<br>(以下の中からいずれか1つ)
+                <ul>
+                  <li><a href="https://www.wacom.com/ja-jp/products/wacom-intuos">Wacom Intuos</a></li>
+                  <li><a href="https://www.amazon.co.jp/dp/B099214J49/">外付けSSD</a></li>
+                  <li><a href="https://gaming.logicool.co.jp/ja-jp/products/gaming-audio/g933s-wireless-7-1-surround-sound-lightsync-gaming-headset.981-000747.html">ヘッドセット</a></li>
+                </ul>
+              </li>
+              <li>特別賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg animation animation-below">
+          <dt class="text-center">健闘賞(複数名)</dt>
+          <dd class="text-center text-lg py-2">
+            <div class="description">特に頑張りが認められた作品を <br><strong>健闘賞</strong><br> として表彰します</div>
+            <ul>
+              <li class="gold github">
+                学園提供の商品
+                <ul>
+                  <li>GitHubステッカーパック</li>
+                </ul>
+              </li>
+              <li>健闘賞の賞状</li>
+              <li>審査員からの評価コメント</li>
+              <li>記念品</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <a href="https://forms.gle/zYSB5cbmDjjfQuTV6" class="entry_button" target="_blank">応募はこちらから</a>
+    </div>
+    <div class="judge p-2 animation animation-below">
+      <h2 class="text-center m-5">審査員</h2>
+      <div class="row">
+        <div class="box animation animation-judge">
+          <div class="ribbon"><div class="post">プログラミング教材責任者</div></div>
+          <img src="assets/img/orihara.png">
+          <div class="name">折原 ダビデ竜</div>
+          <div class="description">
+            東京理科大学大学院情報科学専攻修了。卒業後、株式会社ドワンゴに入社。 ニコニコ生放送の開発に携わり、2016年よりプログラミング講師として高校生にプログラミングを教える。
+          </div>
+        </div>
+        <div class="box animation animation-judge">
+          <div class="ribbon"><div class="post">プログラミング講師</div></div>
+          <img src="assets/img/tsuno.png">
+          <div class="name">津野 貴大</div>
+          <div class="description">
+            株式会社ドワンゴに新卒入社。長年ニコニコ関連サービスのエンジニアをしてきた経験を活かして、初心者にも分かりやすくて、より実践的なWebサービス開発について教えている。
+          </div>
+        </div>
+        <div class="box animation animation-judge">
+          <div class="ribbon"><div class="post">教材総監修</div></div>
+          <img src="assets/img/koizuka.jpeg">
+          <div class="name">戀塚 昭彦</div>
+          <div class="description">
+            システム開発会社にて制御系プログラムの開発に従事。その後、フリーランスを経てドワンゴに入社。ニコニコ動画のプロトタイプを三日で創り出した伝説的プログラマ。
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    (C) 2024 ZEN Study 動くWebアプリコンテスト2024冬<br>
+    [ <a href="https://progedu.github.io/webappcontest/">ZEN Study 動くWebアプリコンテスト</a> ]
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://npmcdn.com/particlesjs@2.0.0/dist/particles.min.js"></script>
+  <script src="assets/js/particles.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
