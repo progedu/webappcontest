@@ -8,7 +8,7 @@
 }
 
 header {
-  background-color: rgb(180 154 31 / 80%);
+  background-color: rgb(123 199 255 / 80%);
 }
 
 header img {
@@ -56,7 +56,7 @@ main .bg_wrapper {
   text-align: center;
   font-weight: 400;
   letter-spacing: 3px;
-  background-image: repeating-linear-gradient( 135deg, #111, #111 10px, #222 10px, #222 20px);
+  background-image: repeating-linear-gradient( 135deg, #606, #606 10px, #939 10px, #939 20px);
 }
 
 .limit strong{
