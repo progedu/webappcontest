@@ -1,3 +1,12 @@
+:root {
+  --primary-bg: #f1f1f1;
+  --primary-text: #333;
+  --accent-color1: #ba9ece;
+  --accent-color2: #9ebece;
+  --accent-color3: #cec29e;
+  --accent-color4: #492b5e;
+}
+
 header {
   background-color: rgb(180 154 31 / 80%);
 }
@@ -536,181 +545,90 @@ main .attention h3{
 .award.award_gakuen .entry_button {
   background: rgb(49, 47, 121);
 }
-
 .judge {
+  text-align: center;
   margin: 0 20px;
 }
 
-.judge h2 {
+.judge__title {
   font-weight: 700;
 }
 
-.judge {
-  text-align: center;
-}
-
-.judge img {
-  width: 50%;
-  border-radius: 50%;
-  margin-top: 10px;
-  margin-bottom: 1rem;
-}
-
-.judge .name {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.judge .row {
+.judge__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  margin-left: 0;
 }
 
-.judge .box {
-  width: calc(33% - 50px);
-  display: block;
-  position: relative;
-  padding: 30px 0 20px;
-  margin-left: 40px;
-  background: #f1f1f1;
+.judge__box {
+  position: relative; /* リボンのための基準位置を確保 */
+  flex: 1 1 calc(25% - 20px);
+  max-width: 300px;
+  background: var(--primary-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* 下のスペースを確保 */
 }
 
-.judge .box:first {
-  margin-left: 0px;
+.judge__ribbon {
+  position: absolute;
+  top: 10px; /* ボックス内に配置する */
+  left: 10px;
+  background: var(--accent-color4);
+  color: white;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  transform: rotate(-5deg); /* はみ出しを防ぐように調整 */
+  transform-origin: left top;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 576px) {
-  .judge .box {
-    width: calc(100% - 50px);
-    margin: 0 auto 50px;
+.judge__box:nth-child(1) {
+  background: var(--accent-color1);
+  color: var(--accent-color4);
+}
 
+.judge__box:nth-child(2) {
+  background: var(--accent-color2);
+}
+
+.judge__box:nth-child(3) {
+  background: var(--accent-color3);
+}
+
+.judge__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.judge__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.judge__description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .judge__box {
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
-.judge .name {
-  padding: 1rem;
-  border-top: 1px white dashed;
-  border-bottom: 1px white dashed;
-}
-.judge .description {
-  padding: 1rem;
-  font-weight: 600;
-}
-
-.judge .ribbon {
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  padding: 5px 0;
-  margin: 0 0 0 -20px;
-  width: calc(100% + 20px);
-  color: white;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.judge .ribbon .post {
-  margin: 0;
-  padding: 0 30px 0 15px;
-  border-top: dashed 1px #FFF;
-  border-bottom: dashed 1px #FFF;
-  font-size: 20px;
-  line-height: 46px;
-}
-
-.judge .ribbon:after {
-  position: absolute;
-  content: '';
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 0px;
-  height: 0px;
-  border-width: 30px 15px 30px 0px;
-  border-color: transparent;
-  border-style: solid;
-}
-
-.judge .ribbon:before {
-  position: absolute;
-  content: '';
-  top: 100%;
-  left: 0;
-  border: none;
-  border-bottom: solid 15px transparent;
-  border-right: solid 20px #6081b7;
-}
-
-.judge .box:nth-child(1) {
-  background: #ba9ece;
-}
-.judge .box:nth-child(1) .ribbon:after {
-  border-right-color: #ba9ece;
-}
-.judge .box:nth-child(1) .ribbon {
-  background: #492b5e;
-}
-.judge .box:nth-child(1) .name {
-  color: #492b5e;
-}
-.judge .box:nth-child(1) .description {
-  color: #492b5e;
-}
-.judge .box:nth-child(1) .ribbon:before {
-  border-right-color: rgb(28, 15, 38);
-}
-
-.judge .box:nth-child(2) {
-  background: #9ebece;
-}
-.judge .box:nth-child(2) .ribbon:after {
-  border-right-color: #9ebece;
-}
-.judge .box:nth-child(2) .ribbon {
-  background: #183439;
-}
-.judge .box:nth-child(2) .name {
-  color: #183439;
-}
-.judge .box:nth-child(2) .description {
-  color: #183439;
-}
-.judge .box:nth-child(2) .ribbon:before {
-  border-right-color: #0c1d20;
-}
-
-.judge .box:nth-child(3) {
-  background: #cec29e;
-}
-.judge .box:nth-child(3) .ribbon:after {
-  border-right-color: #cec29e;
-}
-.judge .box:nth-child(3) .ribbon {
-  background: #124b12;
-}
-.judge .box:nth-child(3) .name {
-  color: #082b08;
-}
-.judge .box:nth-child(3) .description {
-  color: #082b08;
-}
-.judge .box:nth-child(3) .ribbon:before {
-  border-right-color: #082408;
-}
-
-.jq-animation-fadein {
-  animation-duration: 3s;
-  animation-name: fadein;
-  position: relative;
-}
-
-.animation-below {
-  visibility: hidden;
-}
-
-.animation-below.active {
-  visibility: visible;
-  animation-duration: 1s;
-  animation-name: below;
+@media (max-width: 576px) {
+  .judge__box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 footer {
