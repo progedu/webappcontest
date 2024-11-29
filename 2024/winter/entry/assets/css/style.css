@@ -186,7 +186,7 @@ main .attention h3{
 }
 
 .cert {
-  background-color: rgb(211, 182, 211);
+  background-color: rgb(255, 207, 231);
   padding: 1rem;
   position: relative;
 }
@@ -545,6 +545,11 @@ main .attention h3{
 .award.award_gakuen .entry_button {
   background: rgb(49, 47, 121);
 }
+
+.award.award_all {
+  background: rgb(211, 182, 211);
+}
+
 .judge {
   text-align: center;
   margin: 0 20px;
