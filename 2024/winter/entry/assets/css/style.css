@@ -443,13 +443,25 @@ main .attention h3{
 
 @media (min-width: 768px) {
   .award dl {
+    width: 32%;
+  }
+  .award.award_gakuen dl {
+    width: 49%;
+  }
+  .award.award_all dl {
     width: 49%;
   }
 }
 
 @media (min-width: 1280px) {
   .award dl {
+    width: 32%;
+  }
+  .award.award_gakuen dl {
     width: 24%;
+  }
+  .award.award_all dl {
+    width: 49%;
   }
 }
 
