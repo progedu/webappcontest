@@ -443,7 +443,13 @@ main .attention h3{
 
 @media (min-width: 768px) {
   .award dl {
-    width: 32%;
+    width: 49%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .award dl {
+    width: 24%;
   }
 }
 
@@ -515,6 +521,14 @@ main .attention h3{
 
 .award dl:nth-child(3), .award dl:nth-child(3) dd {
   background-color: rgb(255 235 220);
+}
+
+.award dl:nth-child(4) dt {
+  background-color: rgb(103, 192, 131)
+}
+
+.award dl:nth-child(4), .award dl:nth-child(4) dd {
+  background-color: rgb(232, 255, 239);
 }
 
 .award .entry_button {
