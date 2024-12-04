@@ -465,6 +465,45 @@ main .attention h3{
   }
 }
 
+.chance {
+  width: 80%;
+  padding: 1rem;
+  margin: 5rem 10% 2rem;
+  text-align: center;
+  font-weight: bold;
+  background: #821194;
+  color: gold;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.chance img {
+  width: 120px;
+  position: absolute;
+  top: -90px;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .chance img {
+    width: 10vw;
+    top: -5vw;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .award dl {
+    width: 32%;
+  }
+  .award.award_gakuen dl {
+    width: 49%;
+  }
+  .award.award_all dl {
+    width: 49%;
+  }
+}
+
 .award ul {
   list-style: none;
   padding: 0px;
