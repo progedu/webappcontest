@@ -745,3 +745,67 @@ footer {
     transform: translate(0, 0)
   }
 }
+
+.award dl.lambda dt {
+  background-color: rgb(5, 158, 69);
+}
+
+.award dl.lambda dd ul li {
+  background-color: #055036;
+}
+
+.award dl.lambda, .award dl.lambda dd {
+  background-color: rgb(210, 255, 224);
+}
+
+.award dl.lambda img {
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  .award dl.lambda dd ul li {
+    width: 55%;
+    margin-left: 10%;
+  }
+  .award dl.lambda dd {
+    position: relative;
+  }
+  .award dl.lambda dd img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+  }
+}
+
+.award dl.watcher dt {
+  background-color: rgb(5, 150, 158);
+}
+
+.award dl.watcher dd ul li {
+  background-color: #053750;
+}
+
+.award dl.watcher, .award dl.watcher dd {
+  background-color: rgb(210, 239, 255);
+}
+
+.award dl.watcher img {
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  .award dl.watcher dd ul li {
+    width: 55%;
+    margin-left: 10%;
+  }
+  .award dl.watcher dd {
+    position: relative;
+  }
+  .award dl.watcher dd img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+  }
+}
