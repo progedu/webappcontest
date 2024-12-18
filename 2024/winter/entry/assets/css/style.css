@@ -701,6 +701,72 @@ main .attention h3{
   }
 }
 
+.specialjudge__box {
+  flex: 1 1 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  position: relative; /* 子要素の絶対配置に対応 */
+  padding: 20px; /* 必要に応じて調整 */
+  text-align: center;
+  background-color: rgba(38, 167, 154, 0.76);
+  border-radius: 10px; /* 角を丸める */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px auto; /* 親レイアウト内で中央揃え */
+}
+
+@media (max-width: 768px) {
+  .specialjudge__box {
+    flex: 1 1 calc(50% - 20px); /* タブレットでは50% */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .specialjudge__box {
+    flex: 1 1 100%; /* スマホでは親要素幅いっぱい */
+    max-width: 100%;
+  }
+}
+
+.specialjudge__ribbon {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%); /* 光沢のあるゴールド */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border-radius: 15px; /* シンプルな角丸 */
+  transform: rotate(-5deg); /* リボンだけ傾ける */
+  transform-origin: left top;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 -4px 6px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 10; /* リボンが上に表示されるように */
+}
+
+.specialjudge__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px auto;
+}
+
+.judge__name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.judge__description {
+  font-size: 0.9rem;
+  color: #222;
+  margin-top: 5px;
+}
+
+
+
 footer {
   background-color: rgb(180 154 31 / 80%);
   text-align: center;
