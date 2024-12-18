@@ -611,6 +611,24 @@ main .attention h3{
   background: rgb(49, 47, 121);
 }
 
+.award .entry_button_pending {
+  display: block;
+  text-decoration: none;
+  color: #888; 
+  background: #DDD;
+  background-size: 40px 40px; /* ストライプのサイズ */
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 20px;
+  border-style: dashed;
+  border: 2px solid #888; 
+  position: relative;
+}
+
 .award.award_all {
   background: rgb(211, 182, 211);
 }
