@@ -999,9 +999,17 @@ footer {
   margin: 0 auto;
   text-align: center;
   background-color: #FFFFFFCC;
-  padding: 2rem;
 
   font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.news article h3 {
+  padding-top: 2rem;
+}
+
+.news article h3,  .news article p{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .news h2 {
