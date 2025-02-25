@@ -1116,3 +1116,232 @@ nav a {
   background-color: rgb(73, 73, 73);
   color: white;
 }
+
+.result {
+  background: url(../img/result4.png) top center no-repeat;
+  background-size: cover;
+  background-color: #392110;
+}
+
+.result .title-header {
+  font-size: 8vw;
+  color: #fecf00;
+  font-family: serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #201d0a;
+}
+
+.result .tokuban {
+  font-family: serif;
+  width: 90%;
+  text-align: center;
+  background-color: #00000099;
+  margin: 20px auto 100px;
+  color: white;
+  border: 3px rgb(111, 101, 101) solid;
+  padding: 10px;
+}
+
+.result .tokuban p {
+  text-align: center;
+}
+
+.result .tokuban h3 {
+  border: 3px rgb(111, 101, 101) solid;
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  top: -46px;
+  background-color: rgba(73, 70, 70);
+  border-radius: 32px;
+}
+
+.result article.zen {
+  font-family: serif;
+  width: 90%;
+  text-align: center;
+  background-color: #00000099;
+  margin: 20px auto;
+  color: white;
+  border: 3px rgb(100, 105, 54) solid;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.result article.zen .entry{
+  color: #333;
+}
+
+.result article.zen h3 {
+  border: 3px rgb(100, 105, 54)  solid;
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  top: -60px;
+  background-color: rgb(58, 60, 37, 0.846);
+  border-radius: 32px;
+}
+
+.result article.gakuen {
+  font-family: serif;
+  width: 90%;
+  text-align: center;
+  background-color: #00000099;
+  margin: 20px auto;
+  color: white;
+  border: 3px rgb(87, 54, 105) solid;
+  padding: 10px;
+}
+
+.result article.gakuen .entry{
+  color: #333;
+}
+
+.result article.gakuen h3 {
+  border: 3px rgb(87, 54, 105)  solid;
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  top: -60px;
+  background-color: rgba(53, 28, 66, 0.846);
+  border-radius: 32px;
+}
+
+.result article .ichiran .entry img {
+  border: 1px solid #c1c1c1;
+}
+
+.result article .ichiran .entry.prize-f {
+  border: rgb(137 98 0 / 78%) 3px solid;
+  background-image: url(../img/gold_bg.png);
+  background-color: rgb(255 243 212);
+}
+
+.result article .ichiran .entry.prize-f .prize-text {
+  background-color: rgb(137 98 0 / 78%);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry .prize-text img {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  border: 0;
+  width: 80px;
+}
+
+.result article .ichiran .entry.prize-g {
+  border: rgba(67, 195, 254, 0.78) 3px solid;
+  background-image: url(../img/special_bg.jpg);
+  background-color: rgb(255 243 212);
+}
+
+.result article .ichiran .entry.prize-g .prize-text {
+  background-color: rgba(67, 195, 254, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry.prize-e {
+  border: rgba(123, 123, 123, 0.78) 3px solid;
+  background-image: url(../img/silver_bg.png);
+  background-color: rgba(184, 183, 183, 0.78);
+}
+
+.result article .ichiran .entry.prize-e .prize-text {
+  background-color: rgba(123, 123, 123, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry.prize-c {
+  border: rgba(195, 140, 91, 0.78) 3px solid;
+  background-image: url(../img/bronze_bg.jpg);
+  background-color: rgba(195, 140, 91, 0.78);
+}
+
+.result article .ichiran .entry.prize-c .prize-text {
+  background-color: rgba(195, 140, 91, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry .thumb img {
+  height: 200px;
+}
+
+.result article .ichiran .entry.prize-g .prize-text img {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  border: 0;
+  width: 100px;
+}
+
+.result article .ichiran .entry.prize-l {
+  border: rgba(91, 195, 173, 0.78) 3px solid;
+  background-image: url(../img/lambda_bg.jpg);
+  background-color: rgba(91, 195, 173, 0.78)
+}
+
+.result article .ichiran .entry.prize-l .prize-text {
+  background-color: rgba(91, 195, 173, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry.prize-l .prize-text img {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  border: 0;
+  width: 60px;
+}
+
+.result article .ichiran .entry.prize-v {
+  border: rgba(186, 94, 94, 0.78) 3px solid;
+  background-image: url(../img/watch_bg.png);
+  background-color: rgba(186, 94, 94, 0.78);
+}
+
+.result article .ichiran .entry.prize-v .prize-text {
+  background-color: rgba(186, 94, 94, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry.prize-v .prize-text img {
+  position: absolute;
+  bottom: -15px;
+  right: 20px;
+  border: 0;
+  width: 100px;
+}
