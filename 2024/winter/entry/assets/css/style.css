@@ -1345,3 +1345,51 @@ nav a {
   border: 0;
   width: 100px;
 }
+
+@media (max-width: 768px) {
+  .result .tokuban h3 {
+    font-size: 20px;
+    padding: 10px 15px;
+    top: -35px;
+  }
+  .result article.zen h3 {
+    font-size: 20px;
+    padding: 10px 15px;
+    top: -52px;
+  }
+  .result article .ichiran .entry .prize-text img {
+    width: 60px;
+    right: 10px;
+  }
+  .result article .ichiran .entry.prize-g .prize-text img {
+    bottom: -10px;
+    right: -10px;
+    width: 80px;
+  }
+  .result article.gakuen h3 {
+    font-size: 20px;
+    padding: 10px 15px;
+    top: -52px;
+  }
+  .result article .ichiran .entry.prize-c .prize-text {
+    font-size: 18px;
+  }
+  .result article .ichiran .entry.prize-c .prize-text img {
+    width: 50px;
+    right: 5px;
+  }
+  .result article .ichiran .entry.prize-l .prize-text {
+    font-size: 18px;
+  }
+  .result article .ichiran .entry.prize-l .prize-text img {
+    right: -10px;
+  }
+  .result article .ichiran .entry.prize-v .prize-text {
+    padding: 10px 10px 15px;
+  }
+  .result article .ichiran .entry.prize-v .prize-text img {
+    width: 60px;
+    bottom: -10px;
+    right: 5px;
+  }
+}
