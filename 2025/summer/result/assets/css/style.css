@@ -1,0 +1,1410 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+main {
+  margin-top: -72px;
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+header {
+  background-color: #0569d4cc;
+  font-size: 18px;
+}
+
+header .title {
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-weight: 400;
+  color: white;
+}
+
+main .header  {
+  position: relative;
+  text-align: center;
+  background: url(../img/tairyo.png) center top no-repeat;
+  background-size: cover;
+  background-color:rgb(255, 226, 152);
+  height: 70vw;
+}
+
+header .title a {
+  color: white;
+  text-decoration: none;
+}
+
+main .header .result {
+  position: relative;
+  top: 20vw;
+  padding-left: 4vw;
+}
+
+main .header .result p {
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-weight: 800;
+  position: relative;
+  color          : #111;
+  font-size      : 15vw;
+  letter-spacing : 5vw;
+  line-height: 2vw;
+  display: inline-block;
+  animation: kakudai 25s infinite cubic-bezier(.62, .28, .23, .99);
+}
+
+main .header .result p.result-b {
+  -webkit-text-stroke: 2vw rgb(254, 18, 34);
+}
+
+main .header .result p.result-m {
+  top: -7vw;
+}
+
+main .header p span {
+  background: linear-gradient(45deg, #f2c821 0%, #f2c821 45%, #FEE9A0 70%, #f2c821 85%, #faca0b 90% 100%);
+  background-size: 800% 400%;
+  animation: gold-animation 5s infinite cubic-bezier(.62, .28, .23, .99);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes gold-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes kakudai {
+  0% {
+    transform: scale(0.5);
+  }
+  10% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2) rotateY(0deg);
+  }
+  60% {
+    transform: scale(1) rotateY(90deg);
+  }
+  70% {
+    transform: scale(0.5) rotateY(180deg);
+  }
+  80% {
+    transform: scale(1) rotateY(270deg);
+  }
+  90% {
+    transform: scale(1.2) rotateY(360deg);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: 20vw;
+    margin-right: 2vw;
+  }
+  header {
+    font-size: 3.5vw;
+  }
+  header .title {
+    padding-left: 0.5rem !important;
+    padding-right: 0 !important;
+  }
+  main .header  {
+    height: 90vw;
+  }
+  main .header .result {
+    top: 30vw;
+  }
+  main .header .result p.result-m {
+    top: -8vw;
+  }
+}
+
+.limit {
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  letter-spacing: 3px;
+  background-image: repeating-linear-gradient( 135deg, #4b0074, #4b0074 10px, #621c88 10px, #621c88 20px);
+}
+
+.limit strong{
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(223, 186, 37);
+}
+
+main .bg {
+  width: 100%;
+}
+
+main .attention {
+  font-family: "RocknRoll One", sans-serif;
+  font-weight: 700;
+  color: white;
+  height: 15vw;
+  background: url(../img/sea2.png) top center no-repeat;
+  background-size: cover;
+}
+
+main .attention h3{
+  padding-top: 4.5vw;
+  color: white;
+  position: relative;
+  font-size: 2.5vw;
+  text-shadow: 3px 3px black;
+}
+
+@media (max-width: 768px) {
+  main .attention {
+    height: 25vw;
+  }
+  main .attention h3 {
+    padding-top: 8vw;
+    font-size: 3.3vw;
+    text-shadow: 1px 1px black;
+  }
+}
+
+
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 200%;
+  background: #292d4a;
+}
+
+@media (min-width: 1000px) {
+  main {
+    background-size: cover;
+  }
+  main .bg_wrapper {
+    height: 500px;
+    overflow: hidden;
+  }
+  .background {
+    height: 400%;
+  }
+}
+
+.course_header {
+  text-align: center;
+}
+
+.course_header_title {
+  font-weight: 700;
+  margin: 1rem;
+}
+.course_header_description {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.course_master {
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.course_master.active .bg {
+  background: rgb(69, 17, 154);
+}
+
+.animation_course .bg {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.animation_course.active .bg {
+  animation-duration: 1s;
+  animation-name: course_box;
+}
+
+.course_normal {
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.course_normal.active .bg {
+  background: rgb(35, 131, 150);
+}
+
+.course_box .course_title {
+  margin-bottom: 1rem;
+}
+
+.course_box .course_title h4 {
+  color: white;
+  font-size: 2rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline;
+  padding: 5px;
+}
+
+.course_box .course_description {
+  color: white;
+  font-size: 1.3rem;
+  display: inline;
+}
+
+.cert {
+  background-color: rgb(211, 182, 211);
+  padding: 1rem;
+  position: relative;
+}
+
+.cert #cert_kamifubuki {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.cert .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.cert .cert_deacription {
+  font-size: 1.1rem;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(90, 22, 90);
+  background-color: rgb(254, 232, 254);
+  position: relative;
+}
+
+.cert .cert_deacription .asta_joy {
+  position: absolute;
+  top: -111px;
+  right: 0px;
+  height: 150px;
+}
+
+.cert .cert_deacription .asta_serif {
+  font-family: "RocknRoll One";
+  position: absolute;
+  top: -67px;
+  right: 141px;
+  background-color: white;
+  border: 2px solid rgb(132, 13, 39);
+  background: rgb(132, 13, 39);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .cert .cert_deacription {
+    margin-top: 150px;
+  }
+}
+
+.cert .cert_deacription .asta_serif::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid rgb(132, 13, 39);
+  z-index: 0;
+}
+
+.cert h2 {
+  font-weight: 700;
+  margin: 1rem 0 2rem;
+}
+
+.cert img {
+  height: 250px;
+}
+
+.rule {
+  background: repeating-linear-gradient(-45deg, #ffe5b2, #ffe5b2 20px, #fdeccb 20px, #fdeccb 40px);
+}
+
+.rule > div {
+  margin: 5rem 0;
+}
+
+.rule h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #d07c0dee;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .rule h2 {
+    font-size: 6vw;
+    text-shadow: 1px 1px rgb(181 181 181);
+  }
+}
+
+.rule dl {
+  width: 90%;
+  border-radius: 20px;
+  border: 3px solid rgba(145, 105, 105, 0.97)
+}
+
+.rule dt {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  border-bottom: 2px dashed #be9f22e6;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.rule .rule_common {
+  background: rgb(129, 171, 105);
+}
+
+.rule .rule_common .rule_common_tip{
+  background: rgb(58, 80, 46);;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule .rule_master {
+  background: rgb(203, 176, 203);
+}
+
+.rule .rule_master .rule_master_tip{
+  background: purple;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule .rule_normal {
+  background: rgb(254 230 230 / 97%)
+}
+
+.rule .rule_normal .rule_normal_tip{
+  background: rgb(0, 94, 128);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule img {
+  width: 70%;
+}
+
+.ichiran .entry {
+  background-color: rgb(247, 235, 235);
+}
+
+.ichiran.gakuen .entry {
+  background-color: rgb(239, 247, 235);
+}
+
+.ichiran .entry .thumb {
+  max-height: 300px;
+}
+
+.ichiran .title {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.ichiran .entry .thumb {
+  height: 300px;
+  line-height: 300px;
+}
+
+.ichiran .entry .thumb img {
+  max-width: 90%;
+  max-height: 300px;
+}
+
+.ichiran .link_content {
+  background-color: #6b0060;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.ichiran .link_content:hover {
+  background-color: #ac119c;
+  color: white;
+}
+
+.ichiran .link_github {
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  width: 100%;
+}
+
+.ichiran .link_github:hover {
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+.assessment {
+  background: url(../img/tropical.png) left top no-repeat;
+  background-size: cover;
+}
+
+.assessment > div {
+  margin: 5rem 0;
+}
+
+.assessment h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #063812ee;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .assessment {
+    background-size: contain;
+  }
+  .assessment h2 {
+    font-size: 6vw;
+    text-shadow: 1px 1px rgb(181 181 181);
+  }
+}
+
+.assessment dl {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.assessment dt {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.assessment dl:nth-child(1) dt {
+  background-color: rgb(0, 0, 174);
+}
+
+.assessment dl:nth-child(1) ul li {
+  border-bottom: 2px dashed rgb(112, 112, 193);
+}
+
+.assessment dl:nth-child(1) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment dl:nth-child(2) dt {
+  background-color: rgb(147, 1, 1);
+}
+
+.assessment dl:nth-child(2) ul li {
+  border-bottom: 2px dashed rgb(202, 161, 161);
+}
+
+.assessment dl:nth-child(2) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment dl:nth-child(3) dt {
+  background-color: rgb(1, 68, 1);
+}
+
+.assessment dl:nth-child(3) ul li {
+  border-bottom: 2px dashed rgb(107, 126, 107);
+}
+
+.assessment dl:nth-child(3) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment .row {
+  gap: 15px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .assessment dl {
+    width: 32%;
+  }
+}
+
+.assessment ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.apology {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding: 10px;
+  color: white;
+  font-size: 1.5vw;
+  background: rgb(154, 154, 154);
+  background-image: linear-gradient(45deg, rgb(139, 139, 139) 25%, transparent 25%, transparent 75%, rgb(139, 139, 139) 75%), linear-gradient(45deg, rgb(139, 139, 139) 25%, transparent 25%, transparent 75%, rgb(139, 139, 139) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.apology > div {
+  margin: 3rem 0;
+}
+
+.apology h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #111111;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.apology strong {
+  font-size: 1.4rem;
+  color: rgb(223, 99, 99);
+  text-decoration: underline;
+}
+
+.apology .message {
+  width: 90%;
+  background-color: #232323;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+@media (max-width: 768px) {
+  .apology {
+    font-size: 3.5vw;
+  }
+  .apology h2 {
+    font-size: 6vw;
+  }
+}
+
+.shoujou {
+  background-color: rgb(211, 182, 211);
+  text-align: center;
+  background: url(../img/sea.jpg) left top no-repeat;
+  background-size: cover;
+}
+
+.shoujou > .title {
+  padding: 3rem 0;
+}
+
+.shoujou h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #176fc0;;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.shoujou strong {
+  font-size: 1.4rem;
+  color: rgb(223, 99, 99);
+  text-decoration: underline;
+}
+
+.shoujou .message {
+  width: 90%;
+  background-color: #232323;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.shoujou img {
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+}
+
+.shoujou .description {
+  width: 95%;
+  margin-left: 2%;
+  background: #fabc75ad;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: 2px solid rgb(90, 22, 90);
+}
+
+.shoujou .zoutei {
+  background-color: #bce0ff;
+  border: 2px solid #176fc0;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 80%;
+  position: relative;
+}
+
+.shoujou .zoutei img {
+  position: absolute;
+  top: -140px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .shoujou .description {
+    margin-top: 2rem;
+  }
+}
+
+.ichiran {
+  background: rgb(251, 223, 211);
+  background-image: linear-gradient(45deg, rgb(255, 208, 190) 25%, transparent 25%, transparent 75%, rgb(255, 208, 190) 75%), linear-gradient(45deg, rgb(255, 208, 190) 25%, transparent 25%, transparent 75%, rgb(255, 208, 190) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.ichiran.gakuen {
+  background: rgb(197, 227, 181);
+  background-image: linear-gradient(45deg, rgb(207, 232, 178) 25%, transparent 25%, transparent 75%, rgb(207, 232, 178) 75%), linear-gradient(45deg, rgb(207, 232, 178) 25%, transparent 25%, transparent 75%, rgb(207, 232, 178) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.ichiran > .title {
+  padding: 3rem 0;
+}
+
+.ichiran h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #b55050;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.ichiran.gakuen h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #122c11;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.ichiran strong {
+  font-size: 1.4rem;
+  color: rgb(223, 99, 99);
+  text-decoration: underline;
+}
+
+.ichiran .message {
+  width: 90%;
+  background-color: #232323;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.ichiran .description {
+  width: 95%;
+  margin-left: 2%;
+  background: #fabc75ad;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: 2px solid rgb(90, 22, 90);
+  position: relative;
+}
+
+.ichiran .description img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .ichiran .description {
+    margin-top: 2rem;
+  }
+}
+
+.award {
+  padding: 10px;
+  background: url(../img/fireworks_study.png) left top no-repeat;
+  background-size: cover;
+}
+
+.award h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #be73fff0;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .award {
+    background-size: contain;
+    background-color: #176fc0;
+  }
+  .award h2 {
+    font-size: 6vw;
+    text-shadow: 1px 1px rgb(181 181 181);
+  }
+}
+
+.award > div {
+  margin: 6rem 0;
+}
+
+.award dl {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.award dt {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.award .row {
+  gap: 15px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .award dl {
+    width: 32%;
+  }
+}
+
+.award ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.award dd {
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.award ul li {
+  background: #514545;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.award ul li.gold {
+  background: rgb(164 3 3);
+  font-weight: bold;
+}
+
+.award ul li.gold ul li {
+  background: rgb(248, 221, 178);
+}
+
+.award ul li.gold ul li a {
+  color: rgb(220, 83, 3);
+  display: inline-block;
+  width: 100%;
+}
+
+.award ul li.gold ul li {
+  color: rgb(220, 83, 3);
+}
+
+.award ul li.gold ul li:hover {
+  background: rgb(243, 173, 61);
+}
+
+.award ul li.gold.github ul li {
+  background: rgb(175, 75, 75);
+}
+
+.award ul li.gold.github ul li:hover {
+  background: rgb(187, 91, 91);
+}
+
+.award dl:nth-child(1) dt {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: rgb(158, 133, 5);
+}
+
+.award dl:nth-child(1), .award dl:nth-child(1) dd {
+  background-color: rgb(255 247 210);
+}
+
+.award dl:nth-child(2) dt {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: rgb(135, 135, 135);
+}
+
+.award dl:nth-child(2), .award dl:nth-child(2) dd {
+  background-color: rgb(245 245 245);
+}
+
+.award dl:nth-child(3) dt {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: rgb(235, 137, 61)
+}
+
+.award dl:nth-child(3), .award dl:nth-child(3) dd {
+  background-color: rgb(255 235 220);
+}
+
+.award .entry_button {
+  display: block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-decoration: none;
+  color: white;
+  background: #dab208;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 20px;
+}
+
+.award .entry_button:hover {
+  opacity: 0.9;
+}
+
+.award .description {
+  padding: 10px;
+}
+
+.award.award_gakuen {
+  background: rgb(149 147 221);
+  background: url(../img/fireworks_gakuen.png) left top no-repeat;
+  background-size: cover;
+}
+
+.award.award_gakuen h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #808cf6f0;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .award.award_gakuen {
+    background-size: contain;
+    background-color: #000000;
+  }
+  .award.award_gakuen h2 {
+    font-size: 6vw;
+    text-shadow: 1px 1px rgb(181 181 181);
+  }
+}
+
+.award.award_gakuen .entry_button {
+  background: #dab208;
+}
+
+.judge {
+  background: url(../img/ocean.png) left top no-repeat;
+  background-color: #137bd6;
+  background-size: cover;
+  text-align: center;
+}
+
+.judge h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #1f226bf0;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .judge {
+    background-size: contain;
+    background-color: #137bd6;
+  }
+  .judge h2 {
+    font-size: 6vw;
+    text-shadow: 1px 1px rgb(181 181 181);
+  }
+}
+
+.judge img {
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+.judge .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.judge .row {
+  justify-content: center;
+  margin-left: 0;
+  padding-bottom: 3rem;
+}
+
+.judge .box {
+  width: calc(25% - 50px);
+  display: block;
+  position: relative;
+  padding: 30px 0 20px;
+  margin-left: 40px;
+  background: #f1f1f1;
+}
+
+.judge .box:first {
+  margin-left: 0px;
+}
+
+@media (max-width: 576px) {
+  .judge .box {
+    width: calc(100% - 50px);
+    margin: 0 auto 50px;
+
+  }
+}
+
+.judge .name {
+  padding: 1rem;
+  border-top: 1px white dashed;
+  border-bottom: 1px white dashed;
+}
+.judge .description {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.judge .ribbon {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 0;
+  margin: 0 0 0 -20px;
+  width: calc(100% + 20px);
+  color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.judge .ribbon .post {
+  margin: 0;
+  padding: 0 30px 0 15px;
+  border-top: dashed 1px #FFF;
+  border-bottom: dashed 1px #FFF;
+  font-size: 20px;
+  line-height: 46px;
+}
+
+.judge .ribbon:after {
+  position: absolute;
+  content: '';
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.judge .ribbon:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #6081b7;
+}
+
+.judge .box:nth-child(1) {
+  background: #ba9ece;
+}
+.judge .box:nth-child(1) .ribbon:after {
+  border-right-color: #ba9ece;
+}
+.judge .box:nth-child(1) .ribbon {
+  background: #492b5e;
+}
+.judge .box:nth-child(1) .name {
+  color: #492b5e;
+}
+.judge .box:nth-child(1) .description {
+  color: #492b5e;
+}
+.judge .box:nth-child(1) .ribbon:before {
+  border-right-color: rgb(28, 15, 38);
+}
+
+.judge .box:nth-child(2) {
+  background: #9ebece;
+}
+.judge .box:nth-child(2) .ribbon:after {
+  border-right-color: #9ebece;
+}
+.judge .box:nth-child(2) .ribbon {
+  background: #183439;
+}
+.judge .box:nth-child(2) .name {
+  color: #183439;
+}
+.judge .box:nth-child(2) .description {
+  color: #183439;
+}
+.judge .box:nth-child(2) .ribbon:before {
+  border-right-color: #0c1d20;
+}
+
+.judge .box:nth-child(3) {
+  background: #cec29e;
+}
+.judge .box:nth-child(3) .ribbon:after {
+  border-right-color: #cec29e;
+}
+.judge .box:nth-child(3) .ribbon {
+  background: #124b12;
+}
+.judge .box:nth-child(3) .name {
+  color: #082b08;
+}
+.judge .box:nth-child(3) .description {
+  color: #082b08;
+}
+.judge .box:nth-child(3) .ribbon:before {
+  border-right-color: #082408;
+}
+
+.judge .box:nth-child(4) {
+  background: #ceac9e;
+}
+.judge .box:nth-child(4) .ribbon:after {
+  border-right-color: #ceac9e;
+}
+.judge .box:nth-child(4) .ribbon {
+  background: #d76f43;
+}
+.judge .box:nth-child(4) .name {
+  color: #622004;
+}
+.judge .box:nth-child(4) .description {
+  color: #622004;
+}
+.judge .box:nth-child(4) .ribbon:before {
+  border-right-color: #622004;
+}
+
+.jq-animation-fadein {
+  animation-duration: 3s;
+  animation-name: fadein;
+  position: relative;
+}
+
+.animation-below {
+  visibility: hidden;
+}
+
+.animation-below.active {
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: below;
+}
+
+footer {
+  background-color: rgb(166 224 255);
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 100px;
+  color: rgb(4, 80, 121);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top: 50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes below {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes course_box {
+  from {
+    opacity: 0;
+    transform: translate(-100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+header img {
+  width: 30px;
+}
+
+.news {
+  background: url(../img/news_header.png) top center no-repeat;
+  background-size: cover;
+  background-color: #ebfbfc;
+}
+
+.news > div {
+  margin: 3rem 0;
+}
+
+.news ul {
+  display: block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border: 3px #77a2c8 solid;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  padding: 0.5rem 1rem;
+} 
+
+.news ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  border-bottom: 2px #77a2c8 dashed;
+  padding: 0.5rem;
+} 
+
+.news ul li:last-child {
+  border-bottom: 0;
+}
+
+.news article {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FFFFFFCC;
+  padding: 2rem;
+
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.news h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #2f8da6ee;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.news article h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.news p {
+  text-align: left;
+}
+
+.news p.date {
+  text-align: right;
+}
+
+.news p strong {
+  font-weight: bold;
+}
+
+.news p img {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.news article .btn {
+  background-color: #2f8da6ee;
+  color: #FFF;
+}
+
+@media (max-width: 768px) {
+  .news h2 {
+    font-size: 6vw;
+    text-shadow: 1px 1px rgb(181 181 181);
+  }
+  .news article h1{
+    font-size: 1.2rem;
+  }
+}
+
+.entry.gold {
+  background: url(../img/gold_bg.png);
+  background-position: 0px;
+}
+
+.entry .white_alpha {
+  background-color: rgba(255,255,255, 0.6);
+  margin: -1rem;
+  border-radius: 0.375rem;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.award_tip {
+  margin-bottom: 2rem;
+  border-radius: 0.375rem;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-family: "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+  font-weight: bold;
+}
+
+.entry.silver {
+  background: url(../img/silver_bg.png);
+  background-position: 0px;
+}
+
+.entry.special {
+  background: url(../img/special_bg.jpg);
+  background-position: 0px;
+}
+
+.entry.lambda {
+  background: url(../img/lambda_bg.jpg);
+  background-position: 0 -100px;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.entry.lambda img.lambda_illust{
+  position: absolute;
+  width: 9rem;
+  right: 0;
+  top: -3.6rem;
+  z-index: 1;
+}
+
+.entry.lambda .award_tip{
+  z-index: 2;
+  position: relative;
+}
