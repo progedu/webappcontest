@@ -470,15 +470,6 @@ main .attention h3{
   border-radius: 2rem;
 }
 
-@media (max-width: 768px) {
-  .apology {
-    font-size: 3.5vw;
-  }
-  .apology h2 {
-    font-size: 6vw;
-  }
-}
-
 .shoujou {
   background-color: rgb(211, 182, 211);
   text-align: center;
@@ -1284,5 +1275,154 @@ header img {
   }
   .news article h1{
     font-size: 1.2rem;
+  }
+}
+
+.history {
+  background: linear-gradient(-45deg, #c9c156 25%, transparent 25%, transparent 75%, #c9c156 75%), linear-gradient(-45deg, #c9c156 25%, transparent 25%, transparent 75%, #c9c156 75%);
+  background-color: #e7e18f;
+  background-position: 0 0;
+}
+
+.history h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #6c7906;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.history .history_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #055036;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+.history .comment {
+  background-color: #c378b5;
+  border: 2px solid #a11872;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 80%;
+  position: relative;
+}
+
+.history .comment img {
+  position: absolute;
+  top: -110px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+
+.lesson {
+  background: linear-gradient(-30deg, #568fc9 25%, transparent 25%, transparent 75%, #568fc9 75%), linear-gradient(-60deg, #56a5c9 25%, transparent 25%, transparent 75%, #56a5c9 75%);
+  background-color: #d2e5ee;
+  background-position: 0 0;
+}
+
+.lesson h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #062979;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.lesson img {
+  width: 80%;
+  max-width: 600px;
+  margin: 1rem auto;
+  border: 2px solid #3b5775;
+}
+
+.lesson .comment {
+  background-color: #78bcc3;
+  border: 2px solid #1856a1;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 80%;
+  position: relative;
+}
+
+.lesson .comment img {
+  position: absolute;
+  top: -120px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+  border: 0;
+}
+
+.lesson .lesson_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #050c50;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .history {
+    font-size: 3.5vw;
+  }
+  .history h2 {
+    font-size: 6vw;
+  }
+  .history .comment img {
+    width: 120px;
+    height: 120px;
+    top: -80px;
+    right: -30px;
+  }
+  .lesson {
+    font-size: 3.5vw;
+  }
+  .lesson h2 {
+    font-size: 6vw;
+  }
+  .lesson .comment img {
+    width: 120px;
+    height: 120px;
+    top: -100px;
+    right: -30px;
+  }
+  .shoujou {
+    font-size: 3.5vw;
+  }
+  .shoujou h2 {
+    font-size: 6vw;
+  }
+  .shoujou .zoutei img {
+    width: 120px;
+    height: 120px;
+    top: -120px;
+    right: -30px;
   }
 }
