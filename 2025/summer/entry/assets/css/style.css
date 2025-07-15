@@ -752,6 +752,10 @@ main .attention h3{
   background: rgb(187, 91, 91);
 }
 
+.award ul li.gold ul li.disabled {
+  background: rgb(190, 190, 190);
+}
+
 .award dl:nth-child(1) dt {
   background-color: rgb(158, 133, 5);
 }
