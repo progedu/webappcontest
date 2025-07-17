@@ -1423,7 +1423,115 @@ header img {
   .shoujou h2 {
     font-size: 6vw;
   }
+  .shoujou img {
+    width: 90%;
+  }
   .shoujou .zoutei img {
+    width: 120px;
+    height: 120px;
+    top: -120px;
+    right: -30px;
+  }
+}
+
+.tokuban {
+  background-color: rgb(211, 182, 211);
+  text-align: center;
+  background: url(../img/tokuban.jpg) left top no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.tokuban > .title {
+  padding: 3rem 0;
+}
+
+.tokuban h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #176fc0;;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.tokuban strong {
+  font-size: 1.4rem;
+  color: rgb(223, 99, 99);
+  text-decoration: underline;
+}
+
+.tokuban .message {
+  width: 90%;
+  background-color: #232323;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.tokuban img {
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+}
+
+.tokuban .description {
+  width: 95%;
+  margin-left: 2%;
+  background: #fabc75ad;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: 2px solid rgb(90, 22, 90);
+}
+
+.tokuban .zoutei {
+  background-color: #bce0ff;
+  border: 2px solid #176fc0;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 80%;
+  position: relative;
+}
+
+.tokuban .zoutei img {
+  position: absolute;
+  top: -140px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+.tokuban .tokuban_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #050c50;
+  width: 70%;
+  margin: 50px auto 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .tokuban .description {
+    margin-top: 2rem;
+  }
+  .tokuban {
+    font-size: 3.5vw;
+  }
+  .tokuban h2 {
+    font-size: 6vw;
+  }
+  .tokuban img {
+    width: 90%;
+  }
+  .tokuban .zoutei img {
     width: 120px;
     height: 120px;
     top: -120px;
