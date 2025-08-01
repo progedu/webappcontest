@@ -732,6 +732,7 @@ main .attention h3{
 
 .award ul li.gold ul li {
   background: rgb(248, 221, 178);
+  color: rgb(220, 83, 3);
 }
 
 .award ul li.gold ul li a {
