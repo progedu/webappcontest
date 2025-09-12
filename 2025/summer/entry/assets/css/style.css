@@ -1539,3 +1539,62 @@ header img {
     right: -30px;
   }
 }
+
+.news.list {
+  background-size: contain;
+}
+
+.news article .ichiran .entry {
+  background-color: rgb(247, 235, 235);
+}
+
+.news article .ichiran.zenuniv .entry {
+  background-color: rgb(222, 214, 238);
+}
+
+.news article .ichiran.gakuen .entry {
+  background-color: rgb(235, 240, 247);
+}
+
+.news article .ichiran .entry .thumb {
+  max-height: 300px;
+}
+
+.news article .ichiran .title {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.news article .ichiran .entry .thumb {
+  height: 300px;
+  line-height: 300px;
+}
+
+.news article .ichiran .entry .thumb img {
+  max-width: 90%;
+  max-height: 300px;
+}
+
+.news article .ichiran .link_content {
+  background-color: #6b0060;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.news article .ichiran .link_content:hover {
+  background-color: #ac119c;
+  color: white;
+}
+
+.news article .ichiran .link_github {
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  width: 100%;
+}
+
+.news article .ichiran .link_github:hover {
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
