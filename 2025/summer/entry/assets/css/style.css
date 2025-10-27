@@ -1598,3 +1598,65 @@ header img {
   background-color: rgb(73, 73, 73);
   color: white;
 }
+
+.entry.gold {
+  background: url(../img/gold_bg.png);
+  background-position: 0px;
+}
+
+.entry .white_alpha {
+  background-color: rgba(255,255,255, 0.6);
+  margin: -1rem;
+  border-radius: 0.375rem;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.award_tip {
+  margin-bottom: 2rem;
+  border-radius: 0.375rem;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-family: "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+  font-weight: bold;
+}
+
+.entry.silver {
+  background: url(../img/silver_bg.png);
+  background-position: 0px;
+}
+
+.entry.special {
+  background: url(../img/special_bg.jpg);
+  background-position: 0px;
+}
+
+.entry.special.watcher {
+  position: relative
+}
+
+.entry.special.watcher img.watcher {
+  position: absolute;
+  width: 120px;
+  right: 0;
+  top: 26px;
+}
+
+@media (max-width: 768px) {
+  .award_tip {
+    font-size: 2rem;
+  }
+  .news article {
+    padding: 1rem;
+  }
+  .entry.special.watcher img.watcher {
+    position: absolute;
+    width: 70px;
+    right: 0;
+    top: 55px;
+  }
+}
