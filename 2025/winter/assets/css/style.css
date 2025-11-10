@@ -1,0 +1,1797 @@
+:root {
+  --primary-bg: #f1f1f1;
+  --primary-text: #333;
+  --accent-color1: #ba9ece;
+  --accent-color2: #9ebece;
+  --accent-color3: #cec29e;
+  --accent-color4: #492b5e;
+}
+
+body {
+  font-family: "Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif !important;
+}
+
+header {
+  background-color: rgba(209, 179, 133, 0.9);
+}
+
+header img {
+  width: 180px;
+  height: auto;
+}
+
+header .title {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+
+main .surface {
+  height: 80vh;
+  text-align: center;
+  inset: 0;
+  pointer-events: none;
+  background: url(../img/bg_horse2.png) no-repeat;
+  background-size: cover;
+  padding-top: 10vh
+}
+
+main h1 {
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 600;
+  display        : inline-block;
+  font-size      : 8vw;
+  letter-spacing : 4px;
+}
+
+main .bg_wrapper {
+  width: 100%;
+}
+
+.limit {
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 3px;
+  background-image: repeating-linear-gradient( 135deg, #5a3202, #5a3202 10px, #794302 10px, #794302 20px);
+  position: relative;
+  border-top: 5px solid #5a3202;
+  border-bottom: 5px solid #5a3202;
+}
+
+.limit img {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  bottom: 39px;
+}
+
+.limit strong{
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(222, 190, 29);
+}
+
+main .bg {
+  width: 100%;
+}
+
+main .attention {
+  font-weight: 700;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: #275569;
+  background-size: contain;
+}
+
+main .attention h3 {
+  color: white;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 200%;
+  background: #292d4a;
+}
+
+@media (min-width: 1000px) {
+  main {
+    background-size: cover;
+  }
+  main .bg_wrapper {
+    height: 500px;
+    overflow: hidden;
+  }
+  .background {
+    height: 400%;
+  }
+}
+@media (max-width: 767.98px) {
+  header img {
+    width: 80px;
+  }
+  header .title {
+    font-size: 4vw;
+    padding: 0.5rem !important;
+  }
+  main h1 {
+    font-size : 40px;
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+  .limit {
+    font-size: 0.8rem;
+  }
+  .limit strong{
+    font-size: 1.5rem;
+  }
+  .limit img{
+    display: none;
+  }
+}
+
+.course_header {
+  text-align: center;
+}
+
+.course_header_title {
+  font-weight: 700;
+  margin: 1rem;
+}
+.course_header_description {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.course_master {
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.course_master.active .bg {
+  background: rgb(69, 17, 154);
+}
+
+.animation_course .bg {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.animation_course.active .bg {
+  animation-duration: 1s;
+  animation-name: course_box;
+}
+
+.course_normal {
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.course_normal.active .bg {
+  background: rgb(35, 131, 150);
+}
+
+.course_box .course_title {
+  margin-bottom: 1rem;
+}
+
+.course_box .course_title h4 {
+  color: white;
+  font-size: 2rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline;
+  padding: 5px;
+}
+
+.course_box .course_description {
+  color: white;
+  font-size: 1.3rem;
+  display: inline;
+}
+
+.cert {
+  background-color: rgb(255, 207, 231);
+  padding: 1rem;
+  position: relative;
+}
+
+.cert #cert_kamifubuki {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.cert .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.cert .cert_deacription {
+  font-size: 1.1rem;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid rgb(90, 22, 90);
+  background-color: rgb(254, 232, 254);
+  position: relative;
+}
+
+.cert .cert_deacription .asta_joy {
+  position: absolute;
+  top: -111px;
+  right: 0px;
+  height: 150px;
+}
+
+.cert .cert_deacription .asta_serif {
+  font-family: "M PLUS Rounded 1c";
+  position: absolute;
+  top: -67px;
+  right: 141px;
+  background-color: white;
+  border: 2px solid rgb(132, 13, 39);
+  background: rgb(132, 13, 39);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .cert .cert_deacription {
+    margin-top: 150px;
+  }
+}
+
+.cert .cert_deacription .asta_serif::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid rgb(132, 13, 39);
+  z-index: 0;
+}
+
+.cert h2 {
+  font-weight: 700;
+  margin: 1rem 0 2rem;
+}
+
+.cert img {
+  height: 250px;
+}
+
+.rule {
+  background: #f8e1ff;
+  background-image: linear-gradient(45deg, #ecd2f4 25%, transparent 25%, transparent 75%, #ecd2f4 75%),
+                    linear-gradient(45deg, #ecd2f4 25%, transparent 25%, transparent 75%, #ecd2f4 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.rule h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #9917c0;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.rule dl {
+  width: 90%;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.rule dt {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.rule .rule_common {
+  background: #f6f0f5;
+  border: 3px solid #a871b9;
+  border-radius: 10px;
+}
+
+.rule .rule_common .rule_common_tip{
+  background: rgb(58, 80, 46);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule .rule_master {
+  background: rgb(203, 176, 203);
+}
+
+.rule .rule_master .rule_master_tip{
+  background: purple;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.rule .rule_normal {
+  background: rgb(176, 191, 203);
+}
+
+.rule .rule_normal .rule_normal_tip{
+  background: rgb(0, 94, 128);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem 1rem;
+  display: inline-block;
+}
+
+.assessment {
+  padding: 10px;
+  background: rgb(253, 238, 238);
+  position: relative;
+}
+
+.assessment > img {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 0;
+}
+
+.assessment h2 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: rgb(255 255 255);
+    font-size: 3vw;
+    background: #196611;
+    display: inline;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+.assessment dl {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.assessment dt {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.assessment dl:nth-child(1) dt {
+  background-color: rgb(0, 0, 174);
+}
+
+.assessment dl:nth-child(1) ul li {
+  border-bottom: 2px dashed rgb(112, 112, 193);
+}
+
+.assessment dl:nth-child(1) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment dl:nth-child(2) dt {
+  background-color: rgb(147, 1, 1);
+}
+
+.assessment dl:nth-child(2) ul li {
+  border-bottom: 2px dashed rgb(202, 161, 161);
+}
+
+.assessment dl:nth-child(2) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment dl:nth-child(3) dt {
+  background-color: rgb(1, 68, 1);
+}
+
+.assessment dl:nth-child(3) ul li {
+  border-bottom: 2px dashed rgb(107, 126, 107);
+}
+
+.assessment dl:nth-child(3) ul li:last-child {
+  border-bottom: none;
+}
+
+.assessment .row {
+  gap: 15px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .assessment dl {
+    width: 32%;
+  }
+}
+
+.assessment ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.award {
+  padding: 10px;
+  background: rgb(93, 202, 164);
+}
+
+.award h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.award dl {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.award dt {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.award .row {
+  gap: 15px;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.award.award_zenuniv {
+  background: rgb(147, 183, 221);
+}
+
+.award.award_zenuniv .entry_button {
+  background: rgb(47, 112, 121);
+}
+
+@media (min-width: 768px) {
+  .award dl {
+    width: 32%;
+  }
+  .award.award_gakuen dl {
+    width: 49%;
+  }
+  .award.award_all dl {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .award dl {
+    width: 32%;
+  }
+  .award.award_gakuen dl {
+    width: 24%;
+  }
+  .award.award_all dl {
+    width: 49%;
+  }
+}
+
+.chance {
+  width: 80%;
+  padding: 1rem;
+  margin: 5rem 10% 2rem;
+  text-align: center;
+  font-weight: bold;
+  background: #821194;
+  color: gold;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.chance img {
+  width: 120px;
+  position: absolute;
+  top: -90px;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .chance img {
+    width: 10vw;
+    top: -5vw;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .award dl {
+    width: 32%;
+  }
+  .award.award_gakuen dl {
+    width: 49%;
+  }
+  .award.award_all dl {
+    width: 49%;
+  }
+}
+
+.award ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.award dd {
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.award ul li {
+  background: #514545;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.award ul li.gold {
+  background: rgb(164 3 3);
+  font-weight: bold;
+}
+
+.award ul li.gold ul li {
+  color: rgb(220, 83, 3);
+  background: rgb(248, 221, 178);
+}
+
+.award ul li.gold ul li a {
+  color: rgb(220, 83, 3);
+  display: inline-block;
+  width: 100%;
+}
+
+.award ul li.gold ul li:hover {
+  background: rgb(243, 173, 61);
+}
+
+.award ul li.gold.github ul li {
+  background: rgb(175, 75, 75);
+}
+
+.award ul li.gold.github ul li:hover {
+  background: rgb(187, 91, 91);
+}
+
+.award ul li.gold ul li.prepare {
+  color: white;
+  background: #999;
+}
+
+.award ul li.gold ul li.prepare:hover {
+  color: white;
+  background: #999;
+}
+
+.award dl:nth-child(1) dt {
+  background-color: rgb(158, 133, 5);
+}
+
+.award dl:nth-child(1), .award dl:nth-child(1) dd {
+  background-color: rgb(255 247 210);
+}
+
+.award dl:nth-child(2) dt {
+  background-color: rgb(135, 135, 135);
+}
+
+.award dl:nth-child(2), .award dl:nth-child(2) dd {
+  background-color: rgb(245 245 245);
+}
+
+.award dl:nth-child(3) dt {
+  background-color: rgb(235, 137, 61)
+}
+
+.award dl:nth-child(3), .award dl:nth-child(3) dd {
+  background-color: rgb(255 235 220);
+}
+
+.award dl:nth-child(4) dt {
+  background-color: rgb(103, 192, 131)
+}
+
+.award dl:nth-child(4), .award dl:nth-child(4) dd {
+  background-color: rgb(232, 255, 239);
+}
+
+.award .entry_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #055036;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+.award .entry_button:hover {
+  opacity: 0.8;
+}
+
+.award .description {
+  padding: 10px;
+}
+
+.award.award_gakuen {
+  background: rgb(149 147 221);
+}
+
+.award.award_gakuen .entry_button {
+  background: rgb(49, 47, 121);
+}
+
+.award .entry_button_pending {
+  display: block;
+  text-decoration: none;
+  color: #888; 
+  background: #DDD;
+  background-size: 40px 40px; /* ストライプのサイズ */
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 20px;
+  border-style: dashed;
+  border: 2px solid #888; 
+  position: relative;
+}
+
+.award.award_all {
+  background: rgb(211, 182, 211);
+}
+
+.judge {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.judge__title {
+  font-weight: 700;
+}
+
+.judge__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.judge__box {
+  position: relative; /* リボンのための基準位置を確保 */
+  flex: 1 1 calc(25% - 20px);
+  max-width: 300px;
+  background: var(--primary-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* 下のスペースを確保 */
+}
+
+.judge__ribbon {
+  position: absolute;
+  top: 10px; /* ボックス内に配置する */
+  left: 10px;
+  background: var(--accent-color4);
+  color: white;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  transform: rotate(-5deg); /* はみ出しを防ぐように調整 */
+  transform-origin: left top;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.judge__box:nth-child(1) {
+  background: var(--accent-color1);
+  color: var(--accent-color4);
+}
+
+.judge__box:nth-child(2) {
+  background: var(--accent-color2);
+}
+
+.judge__box:nth-child(3) {
+  background: var(--accent-color3);
+}
+
+.judge__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.judge__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.judge__description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .judge__box {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .judge__box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.specialjudge__box {
+  flex: 1 1 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  position: relative; /* 子要素の絶対配置に対応 */
+  padding: 20px; /* 必要に応じて調整 */
+  text-align: center;
+  background-color: rgba(38, 167, 154, 0.76);
+  border-radius: 10px; /* 角を丸める */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px auto; /* 親レイアウト内で中央揃え */
+}
+
+@media (max-width: 768px) {
+  .specialjudge__box {
+    flex: 1 1 calc(50% - 20px); /* タブレットでは50% */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .specialjudge__box {
+    flex: 1 1 100%; /* スマホでは親要素幅いっぱい */
+    max-width: 100%;
+  }
+}
+
+.specialjudge__ribbon {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%); /* 光沢のあるゴールド */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border-radius: 15px; /* シンプルな角丸 */
+  transform: rotate(-5deg); /* リボンだけ傾ける */
+  transform-origin: left top;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 -4px 6px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 10; /* リボンが上に表示されるように */
+}
+
+.specialjudge__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px auto;
+}
+
+.judge__name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.judge__description {
+  font-size: 0.9rem;
+  color: #222;
+  margin-top: 5px;
+}
+
+
+
+footer {
+  background-color: rgb(180 154 31 / 80%);
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 100px;
+  margin-top: 100px;
+  color: rgb(106, 90, 15);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top: 50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes below {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes course_box {
+  from {
+    opacity: 0;
+    transform: translate(-100%, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0)
+  }
+}
+
+.award dl.lambda dt {
+  background-color: rgb(5, 158, 69);
+}
+
+.award dl.lambda dd ul li {
+  background-color: #055036;
+}
+
+.award dl.lambda, .award dl.lambda dd {
+  background-color: rgb(210, 255, 224);
+}
+
+.award dl.lambda img {
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  .award dl.lambda dd ul li {
+    width: 55%;
+    margin-left: 10%;
+  }
+  .award dl.lambda dd {
+    position: relative;
+  }
+  .award dl.lambda dd img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+  }
+}
+
+.award dl.watcher dt {
+  background-color: rgb(5, 150, 158);
+}
+
+.award dl.watcher dd ul li {
+  background-color: #053750;
+}
+
+.award dl.watcher, .award dl.watcher dd {
+  background-color: rgb(210, 239, 255);
+}
+
+.award dl.watcher img {
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  .award dl.watcher dd ul li {
+    width: 55%;
+    margin-left: 10%;
+  }
+  .award dl.watcher dd {
+    position: relative;
+  }
+  .award dl.watcher dd img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+  }
+}
+
+
+.oubo {
+  background: rgb(251, 223, 211);
+  background-image: linear-gradient(45deg, rgb(255, 208, 190) 25%, transparent 25%, transparent 75%, rgb(255, 208, 190) 75%), linear-gradient(45deg, rgb(255, 208, 190) 25%, transparent 25%, transparent 75%, rgb(255, 208, 190) 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.oubo > .title {
+  padding: 3rem 0;
+}
+
+.oubo h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #b55050;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.oubo strong {
+  font-size: 1.4rem;
+  color: rgb(223, 99, 99);
+  text-decoration: underline;
+}
+
+.oubo .message {
+  width: 90%;
+  background-color: #232323;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.oubo img {
+  width: 95%;
+  border: 1px solid #333;
+}
+
+.oubo .description {
+  width: 95%;
+  margin-left: 2%;
+  background: #fabc75ad;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: 2px solid rgb(90, 22, 90);
+  position: relative;
+}
+
+.oubo .description img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .oubo .description {
+    margin-top: 2rem;
+  }
+}
+
+.news {
+  background: url(../img/bg_winter.png) top center no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+.news > div {
+  margin: 3rem 0;
+}
+
+.news ul {
+  display: block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  border: 3px #446db4ee solid;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  padding: 0.5rem 1rem;
+} 
+
+.news ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  border-bottom: 2px #446db4ee dashed;
+  padding: 0.5rem;
+} 
+
+.news ul li:last-child {
+  border-bottom: 0;
+}
+
+.news article {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FFFFFFCC;
+
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.news article h3 {
+  padding-top: 2rem;
+}
+
+.news article h3,  .news article p{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.news h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #446db4ee;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.news article h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.news p {
+  text-align: left;
+}
+
+.news p.date {
+  text-align: right;
+}
+
+.news p strong {
+  font-weight: bold;
+}
+
+.news p img {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.news article .btn {
+  background-color: #446db4ee;
+  color: #FFF;
+}
+
+@media (max-width: 768px) {
+  .news h2 {
+    font-size: 6vw;
+    text-shadow: 1px 1px rgb(181 181 181);
+  }
+  .news article h1{
+    font-size: 1.2rem;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.news article .ichiran .entry {
+  background-color: rgb(247, 235, 235);
+}
+
+.news article .ichiran.gakuen .entry {
+  background-color: rgb(239, 247, 235);
+}
+
+.news article .ichiran .entry .thumb {
+  max-height: 300px;
+}
+
+.news article .ichiran .title {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.news article .ichiran .entry .thumb {
+  height: 300px;
+  line-height: 300px;
+}
+
+.news article .ichiran .entry .thumb img {
+  max-width: 90%;
+  max-height: 300px;
+}
+
+.news article .ichiran .link_content {
+  background-color: #6b0060;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.news article .ichiran .link_content:hover {
+  background-color: #ac119c;
+  color: white;
+}
+
+.news article .ichiran .link_github {
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  width: 100%;
+}
+
+.news article .ichiran .link_github:hover {
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+.result {
+  background: url(../img/result4.png) top center no-repeat;
+  background-size: cover;
+  background-color: #392110;
+}
+
+.result .title-header {
+  font-size: 8vw;
+  color: #fecf00;
+  font-family: serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #201d0a;
+}
+
+.result .tokuban {
+  font-family: serif;
+  width: 90%;
+  text-align: center;
+  background-color: #00000099;
+  margin: 20px auto 100px;
+  color: white;
+  border: 3px rgb(111, 101, 101) solid;
+  padding: 10px;
+}
+
+.result .tokuban p {
+  text-align: center;
+}
+
+.result .tokuban h3 {
+  border: 3px rgb(111, 101, 101) solid;
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  top: -46px;
+  background-color: rgba(73, 70, 70);
+  border-radius: 32px;
+}
+
+.result article.zen {
+  font-family: serif;
+  width: 90%;
+  text-align: center;
+  background-color: #00000099;
+  margin: 20px auto;
+  color: white;
+  border: 3px rgb(100, 105, 54) solid;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.result article.zen .entry{
+  color: #333;
+}
+
+.result article.zen h3 {
+  border: 3px rgb(100, 105, 54)  solid;
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  top: -60px;
+  background-color: rgb(58, 60, 37, 0.846);
+  border-radius: 32px;
+}
+
+.result article.gakuen {
+  font-family: serif;
+  width: 90%;
+  text-align: center;
+  background-color: #00000099;
+  margin: 20px auto;
+  color: white;
+  border: 3px rgb(87, 54, 105) solid;
+  padding: 10px;
+}
+
+.result article.gakuen .entry{
+  color: #333;
+}
+
+.result article.gakuen h3 {
+  border: 3px rgb(87, 54, 105)  solid;
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  top: -60px;
+  background-color: rgba(53, 28, 66, 0.846);
+  border-radius: 32px;
+}
+
+.result article .ichiran .entry img {
+  border: 1px solid #c1c1c1;
+}
+
+.result article .ichiran .entry.prize-f {
+  border: rgb(137 98 0 / 78%) 3px solid;
+  background-image: url(../img/gold_bg.png);
+  background-color: rgb(255 243 212);
+}
+
+.result article .ichiran .entry.prize-f .prize-text {
+  background-color: rgb(137 98 0 / 78%);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry .prize-text img {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  border: 0;
+  width: 80px;
+}
+
+.result article .ichiran .entry.prize-g {
+  border: rgba(67, 195, 254, 0.78) 3px solid;
+  background-image: url(../img/special_bg.jpg);
+  background-color: rgb(255 243 212);
+}
+
+.result article .ichiran .entry.prize-g .prize-text {
+  background-color: rgba(67, 195, 254, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry.prize-e {
+  border: rgba(123, 123, 123, 0.78) 3px solid;
+  background-image: url(../img/silver_bg.png);
+  background-color: rgba(184, 183, 183, 0.78);
+}
+
+.result article .ichiran .entry.prize-e .prize-text {
+  background-color: rgba(123, 123, 123, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry.prize-c {
+  border: rgba(195, 140, 91, 0.78) 3px solid;
+  background-image: url(../img/bronze_bg.jpg);
+  background-color: rgba(195, 140, 91, 0.78);
+}
+
+.result article .ichiran .entry.prize-c .prize-text {
+  background-color: rgba(195, 140, 91, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry .thumb img {
+  height: 200px;
+}
+
+.result article .ichiran .entry.prize-g .prize-text img {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  border: 0;
+  width: 100px;
+}
+
+.result article .ichiran .entry.prize-l {
+  border: rgba(91, 195, 173, 0.78) 3px solid;
+  background-image: url(../img/lambda_bg.jpg);
+  background-color: rgba(91, 195, 173, 0.78)
+}
+
+.result article .ichiran .entry.prize-l .prize-text {
+  background-color: rgba(91, 195, 173, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry.prize-l .prize-text img {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  border: 0;
+  width: 60px;
+}
+
+.result article .ichiran .entry.prize-v {
+  border: rgba(186, 94, 94, 0.78) 3px solid;
+  background-image: url(../img/watch_bg.png);
+  background-color: rgba(186, 94, 94, 0.78);
+}
+
+.result article .ichiran .entry.prize-v .prize-text {
+  background-color: rgba(186, 94, 94, 0.78);
+  margin: -16px;
+  font-size: 24px;
+  padding: 10px;
+  color: #111;
+  font-weight: bold;
+  position: relative;
+}
+
+.result article .ichiran .entry.prize-v .prize-text img {
+  position: absolute;
+  bottom: -15px;
+  right: 20px;
+  border: 0;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .result .tokuban h3 {
+    font-size: 20px;
+    padding: 10px 15px;
+    top: -35px;
+  }
+  .result article.zen h3 {
+    font-size: 20px;
+    padding: 10px 15px;
+    top: -52px;
+  }
+  .result article .ichiran .entry .prize-text img {
+    width: 60px;
+    right: 10px;
+  }
+  .result article .ichiran .entry.prize-g .prize-text img {
+    bottom: -10px;
+    right: -10px;
+    width: 80px;
+  }
+  .result article.gakuen h3 {
+    font-size: 20px;
+    padding: 10px 15px;
+    top: -52px;
+  }
+  .result article .ichiran .entry.prize-c .prize-text {
+    font-size: 18px;
+  }
+  .result article .ichiran .entry.prize-c .prize-text img {
+    width: 50px;
+    right: 5px;
+  }
+  .result article .ichiran .entry.prize-l .prize-text {
+    font-size: 18px;
+  }
+  .result article .ichiran .entry.prize-l .prize-text img {
+    right: -10px;
+  }
+  .result article .ichiran .entry.prize-v .prize-text {
+    padding: 10px 10px 15px;
+  }
+  .result article .ichiran .entry.prize-v .prize-text img {
+    width: 60px;
+    bottom: -10px;
+    right: 5px;
+  }
+}
+
+.kinenhin {
+  background-color: rgb(211, 182, 211);
+  text-align: center;
+  background: url(../img/2025_happen.png) left top no-repeat;
+  background-size: cover;
+}
+
+.kinenhin > .title {
+  padding: 3rem 0;
+}
+
+.kinenhin h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #176fc0;;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.kinenhin strong {
+  font-size: 1.4rem;
+  color: rgb(223, 99, 99);
+  text-decoration: underline;
+}
+
+.kinenhin .message {
+  width: 90%;
+  background-color: #232323;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.kinenhin img {
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+}
+
+.kinenhin .description {
+  width: 95%;
+  margin-left: 2%;
+  background: #fabc75ad;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: 2px solid rgb(90, 22, 90);
+}
+
+.kinenhin .zoutei {
+  background-color: #bce0ff;
+  border: 2px solid #176fc0;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 80%;
+  position: relative;
+}
+
+.kinenhin .zoutei img {
+  position: absolute;
+  top: -140px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+.tokuban {
+  background-color: rgb(211, 182, 211);
+  text-align: center;
+  background: url(../img/tokuban.jpg) left top no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.tokuban > .title {
+  padding: 3rem 0;
+}
+
+.tokuban h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-size: 3vw;
+  background: #176fc0;;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.tokuban strong {
+  font-size: 1.4rem;
+  color: rgb(223, 99, 99);
+  text-decoration: underline;
+}
+
+.tokuban .message {
+  width: 90%;
+  background-color: #232323;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.tokuban img {
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+}
+
+.tokuban .description {
+  width: 95%;
+  margin-left: 2%;
+  background: #fabc75ad;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  border: 2px solid rgb(90, 22, 90);
+}
+
+.tokuban .zoutei {
+  background-color: #bce0ff;
+  border: 2px solid #176fc0;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 80%;
+  position: relative;
+}
+
+.tokuban .zoutei img {
+  position: absolute;
+  top: -140px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+.tokuban .tokuban_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #050c50;
+  width: 70%;
+  margin: 50px auto 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+.tokuban .tokuban_button.pending {
+  color: white;
+  background: #999999;
+}
+
+@media (max-width: 768px) {
+  .tokuban .description {
+    margin-top: 2rem;
+  }
+  .tokuban {
+    font-size: 3.5vw;
+  }
+  .tokuban h2 {
+    font-size: 6vw;
+  }
+  .tokuban img {
+    width: 90%;
+  }
+  .tokuban .zoutei img {
+    width: 120px;
+    height: 120px;
+    top: -120px;
+    right: -30px;
+  }
+  .assessment h2 {
+    font-size: 6vw;
+  }
+  .assessment > img {
+    display: none;
+  }
+}
+
+.history {
+  background: linear-gradient(-45deg, #c9c156 25%, transparent 25%, transparent 75%, #c9c156 75%), linear-gradient(-45deg, #c9c156 25%, transparent 25%, transparent 75%, #c9c156 75%);
+  background-color: #e7e18f;
+  background-position: 0 0;
+}
+
+.history h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #6c7906;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.history .history_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #4f0550;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+.history .comment {
+  background-color: #c378b5;
+  border: 2px solid #a11872;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 80%;
+  position: relative;
+}
+
+.history .comment img {
+  position: absolute;
+  top: -110px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+.lesson {
+  background: linear-gradient(-30deg, #568fc9 25%, transparent 25%, transparent 75%, #568fc9 75%), linear-gradient(-60deg, #56a5c9 25%, transparent 25%, transparent 75%, #56a5c9 75%);
+  background-color: #d2e5ee;
+  background-position: 0 0;
+}
+
+.lesson h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: rgb(255 255 255);
+  font-weight: 400;
+  font-size: 3vw;
+  text-shadow: 2px 2px rgb(181 181 181);
+  background: #062979;
+  display: inline;
+  padding: 10px 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.lesson img {
+  width: 80%;
+  max-width: 600px;
+  margin: 1rem auto;
+  border: 2px solid #3b5775;
+}
+
+.lesson .comment {
+  background-color: #78bcc3;
+  border: 2px solid #1856a1;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  width: 80%;
+  position: relative;
+}
+
+.lesson .comment img {
+  position: absolute;
+  top: -120px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+  border: 0;
+}
+
+.lesson .lesson_button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #050c50;
+  width: 70%;
+  margin: 30px auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .history {
+    font-size: 3.5vw;
+  }
+  .history h2 {
+    font-size: 6vw;
+  }
+  .history .comment img {
+    width: 120px;
+    height: 120px;
+    top: -80px;
+    right: -30px;
+  }
+  .history .history_button {
+    font-size: 1rem;
+  }
+  .lesson {
+    font-size: 3.5vw;
+  }
+  .lesson h2 {
+    font-size: 6vw;
+  }
+  .lesson .comment img {
+    width: 120px;
+    height: 120px;
+    top: -100px;
+    right: -30px;
+  }
+  .lesson .lesson_button {
+    font-size: 1rem;
+  }
+  .shoujou {
+    font-size: 3.5vw;
+  }
+  .shoujou h2 {
+    font-size: 6vw;
+  }
+  .shoujou img {
+    width: 90%;
+  }
+  .shoujou .zoutei img {
+    width: 120px;
+    height: 120px;
+    top: -120px;
+    right: -30px;
+  }
+}
