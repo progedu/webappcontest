@@ -109,9 +109,6 @@ main .attention h3 {
   main {
     background-size: cover;
   }
-  main .surface {
-    background-position-y: 0;
-  }
   main .bg_wrapper {
     height: 500px;
     overflow: hidden;
@@ -132,6 +129,10 @@ main .attention h3 {
     font-size : 40px;
     padding-top: 0px;
     padding-left: 10px;
+  }
+  main .surface {
+    padding-top: 10vh;
+    background-position-y: 0;
   }
   .limit {
     font-size: 0.8rem;
