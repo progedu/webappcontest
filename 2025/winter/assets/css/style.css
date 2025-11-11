@@ -33,7 +33,7 @@ main .surface {
   pointer-events: none;
   background: url(../img/bg_horse2.png) no-repeat;
   background-size: cover;
-  padding-top: 10vh;
+  padding-top: 5vh;
   background-position-y: -100px;
 }
 
