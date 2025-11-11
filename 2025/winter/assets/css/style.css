@@ -133,6 +133,7 @@ main .attention h3 {
   main .surface {
     padding-top: 10vh;
     background-position-y: 0;
+    height: 70vh;
   }
   .limit {
     font-size: 0.8rem;
