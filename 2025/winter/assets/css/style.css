@@ -144,6 +144,9 @@ main .attention h3 {
   .limit img{
     display: none;
   }
+  .award .entry_button_pending {
+    font-size: 1rem;
+  }
 }
 
 .course_header {
@@ -1643,6 +1646,12 @@ nav a {
   .assessment > img {
     display: none;
   }
+  .kinenhin h2 {
+    font-size: 6vw;
+  }
+  .rule h2 {
+    font-size: 6vw;
+  }
 }
 
 .history {
@@ -1656,7 +1665,6 @@ nav a {
   color: rgb(255 255 255);
   font-weight: 400;
   font-size: 3vw;
-  text-shadow: 2px 2px rgb(181 181 181);
   background: #6c7906;
   display: inline;
   padding: 10px 50px;
@@ -1706,7 +1714,6 @@ nav a {
   color: rgb(255 255 255);
   font-weight: 400;
   font-size: 3vw;
-  text-shadow: 2px 2px rgb(181 181 181);
   background: #062979;
   display: inline;
   padding: 10px 50px;
