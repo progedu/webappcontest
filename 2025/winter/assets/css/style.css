@@ -144,9 +144,6 @@ main .attention h3 {
   .limit img{
     display: none;
   }
-  .award .entry_button_pending {
-    font-size: 1rem;
-  }
 }
 
 .course_header {
@@ -558,6 +555,9 @@ main .attention h3 {
   }
   .award.award_all dl {
     width: 49%;
+  }
+  .award .entry_button_pending {
+    font-size: 1rem;
   }
 }
 
