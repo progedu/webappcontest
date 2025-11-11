@@ -109,6 +109,9 @@ main .attention h3 {
   main {
     background-size: cover;
   }
+  main .surface {
+    background-position-y: 0;
+  }
   main .bg_wrapper {
     height: 500px;
     overflow: hidden;
