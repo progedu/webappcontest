@@ -1138,6 +1138,10 @@ nav a {
   background-color: rgb(247, 235, 235);
 }
 
+.news article .ichiran.zenuniv .entry {
+  background-color: rgb(222, 214, 238);
+}
+
 .news article .ichiran.gakuen .entry {
   background-color: rgb(239, 247, 235);
 }
