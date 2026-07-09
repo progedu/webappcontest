@@ -4927,3 +4927,34 @@ main > .judge > :not(.section-fish-layer) {
     font-size: 1rem !important;
   }
 }
+
+/* Disabled special-program page button matching application buttons */
+.tokuban .tokuban_button.pending {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: min(100%, 720px) !important;
+  min-height: 64px !important;
+  margin: clamp(1.35rem, 3vw, 2rem) auto 0 !important;
+  padding: 0.95rem 1.35rem !important;
+  color: #4f5964 !important;
+  background: #d7dce2 !important;
+  border: 3px solid #8c98a5 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  font-size: clamp(1.05rem, 1.9vw, 1.28rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .tokuban .tokuban_button.pending {
+    min-height: 56px !important;
+    padding: 0.82rem 1rem !important;
+    font-size: 1rem !important;
+  }
+}
