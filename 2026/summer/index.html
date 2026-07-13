@@ -9,7 +9,7 @@
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?20260709v96">
+  <link rel="stylesheet" href="assets/css/style.css?20260713v115">
   <meta property="og:title" content="ZEN Study プログラミングコンテスト2026夏" />
   <meta property="og:description" content="ZEN Study プログラミングコンテスト2026夏の概要ページです" />
   <meta property="og:url" content="https://progedu.github.io/webappcontest/2026/summer/index.html"/>
@@ -59,7 +59,18 @@
       <div class="text-center">
         <img src="assets/img/2026summer_tokuban.png" class="shadow tokuban-banner" alt="ZEN Study プログラミングコンテスト2026夏 特番">
       </div>
-      <div class="pending tokuban_button">特番ページ準備中</div>
+      <div class="tokuban-links">
+        <a href="https://www.nnn.ed.nico/lessons/482533635" target="_blank" rel="noopener noreferrer" class="tokuban_button tokuban_button--zenstudy">
+          <img src="assets/img/logo.png" class="tokuban_button-logo" alt="">
+          <span>ZEN Studyで視聴する</span>
+          <span class="tokuban_button-external" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://www.youtube.com/live/xwEp6EaqFVM" target="_blank" rel="noopener noreferrer" class="tokuban_button tokuban_button--youtube">
+          <span class="tokuban_button-play" aria-hidden="true"></span>
+          <span>YouTube LIVEで視聴する</span>
+          <span class="tokuban_button-external" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
     <div class="shoujou">
       <div class="text-center title"><h2>記念品</h2></div>
@@ -68,7 +79,18 @@
         <img class="novelty-speech__character" src="assets/img/asta_formal.svg" alt="アスタリスくん">
       </div>
       <div class="text-center sticker-preview">
-        <div class="sticker-placeholder" role="img" aria-label="アスタリスくんステッカー デザイン作成中">デザイン作成中</div>
+        <div class="sticker-placeholder">
+          <div class="sticker-placeholder__art" aria-hidden="true">
+            <img class="sticker-placeholder__silhouette" src="assets/img/asta_silhouette.png" alt="">
+            <span class="sticker-placeholder__sparkle sticker-placeholder__sparkle--one">✦</span>
+            <span class="sticker-placeholder__sparkle sticker-placeholder__sparkle--two">✦</span>
+            <span class="sticker-placeholder__sparkle sticker-placeholder__sparkle--three">✦</span>
+          </div>
+          <div class="sticker-placeholder__copy">
+            <strong>デザイン作成中！</strong>
+            <span>どんなアスタリスくんシールになるか、お楽しみに！</span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="division p-2" id="entry">
@@ -266,6 +288,13 @@
     </div>
     <div class="award award_webpage p-2" id="award">
       <h2 class="text-center m-5">Webページ部門</h2>
+      <div class="entry-astar-message web-award-notice">
+        <div class="entry-astar-message__bubble">
+          <span class="web-award-notice__label">応募前に確認</span>
+          <p><strong>ZEN大学生・角川ドワンゴ学園生の皆さんへ</strong><br><span class="web-award-notice__group">（N高グループ生・N中等部生）</span><br><span class="web-award-notice__action">応募先を間違えないよう、必ず所属に合ったタブから応募してください！</span></p>
+        </div>
+        <img class="entry-astar-message__character" src="assets/img/asta_caution.png" alt="アスタリスくん">
+      </div>
       <div class="connected-tabs web-award-tab-block">
       <ul class="nav web-award-tabs" id="webAwardTabs" role="tablist">
         <li class="nav-item" role="presentation">
@@ -282,7 +311,7 @@
         <div class="tab-pane fade show active web-award-panel award_zenstudy" id="web-award-zenstudy" role="tabpanel" aria-labelledby="web-award-zenstudy-tab" tabindex="0">
       <h3 class="web-award-title text-center">ZEN Study ユーザー</h3>
       <div class="row">
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--gold">
           <dt class="text-center">最優秀賞(1名)</dt>
           <dd class="text-center py-2">
             <div class="description">最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
@@ -322,7 +351,7 @@
         <div class="tab-pane fade web-award-panel award_zenuniv" id="web-award-zenuniv" role="tabpanel" aria-labelledby="web-award-zenuniv-tab" tabindex="0">
       <h3 class="web-award-title text-center">ZEN大学</h3>
       <div class="row">
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--gold">
           <dt class="text-center">最優秀賞(1名)</dt>
           <dd class="text-center py-2">
             <div class="description">最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
@@ -330,10 +359,10 @@
               <li class="gold">
                 大学提供の賞品<br>(以下の中からいずれか1つ)
                 <ul>
-                  <li><a href="https://www.yodobashi.com/product/100000001008460297/" target="_blank">デル 液晶モニター 23.8型</a></li>
-                  <li><a href="https://www.yodobashi.com/product/100000001008656181/" target="_blank">Anker Prime Power Bank</a></li>
+                  <li><a href="https://www.yodobashi.com/product/100000001009809171/" target="_blank">デル 液晶モニター 27型</a></li>
+                  <li><a href="https://www.yodobashi.com/product/100000001009835329/" target="_blank">Anker Prime Power Bank 20100mAh</a></li>
                   <li><a href="https://www.amazon.co.jp//dp/B0CTQRCH8H/" target="_blank">ラズベリーパイ Pi 5 8gb キット</a></li>
-                  <li><a href="https://www.yodobashi.com/product/100000001007475783/" target="_blank">Anker USB急速充電器 120W ライチュウモデル</a></li>
+                  <li><a href="https://www.yodobashi.com/product/100000001008724203/" target="_blank">AirPods 4 アクティブノイズキャンセリング搭載</a></li>
                 </ul>
               </li>
               <li>最優秀賞の表彰状</li>
@@ -342,7 +371,7 @@
             </ul>
           </dd>
         </dl>
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--silver">
           <dt class="text-center">優秀賞(2名)</dt>
           <dd class="text-center py-2">
             <div class="description">優れた作品を <br><strong>優秀賞</strong><br> として表彰します</div>
@@ -350,8 +379,8 @@
               <li class="gold">
                 大学提供の賞品<br>(以下の中からいずれか1つ)
                 <ul>
-                  <li><a href="https://www.yodobashi.com/product/100000001008185743/" target="_blank">ASUS 液晶モニター 23.8型</a></li>
-                  <li><a href="https://www.yodobashi.com/product/100000001008749419/" target="_blank">Anker MagGo Power Bank </a></li>
+                  <li><a href="https://www.yodobashi.com/product/100000001008616670/" target="_blank">ジャパンネクスト 液晶モニター 23.8型</a></li>
+                  <li><a href="https://www.yodobashi.com/product/100000001008749419/" target="_blank">Anker MagGo Power Bank 10000mAh</a></li>
                   <li><a href="https://www.amazon.co.jp/dp/B09364FXR3/" target="_blank">マイクロビット ベーシック</a></li>
                   <li><a href="https://www.yodobashi.com/product/100000001007475782/" target="_blank">Anker USB急速充電器 65W ピカチュウモデル</a></li>
                 </ul>
@@ -380,19 +409,15 @@
         <div class="tab-pane fade web-award-panel award_gakuen" id="web-award-gakuen" role="tabpanel" aria-labelledby="web-award-gakuen-tab" tabindex="0">
       <h3 class="web-award-title text-center">角川ドワンゴ学園<br>(N高グループ生・N中等部生)</h3>
       <div class="row">
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--gold">
           <dt class="text-center">最優秀賞(1名)</dt>
           <dd class="text-center py-2">
             <div class="description">最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
             <ul>
-              <li class="gold">
-                学園提供の賞品<br>(以下の中からいずれか1つ)
-                <ul>
-                  <li><a href="https://www.pfu.ricoh.com/direct/hhkb/" target="_blank">HHKBキーボード</a></li>
-                  <li><a href="https://gaming.logicool.co.jp/ja-jp/products/gaming-audio/pro-x-2-wireless-headset.html" target="_blank">Logicoolヘッドセット</a></li>
-                  <li><a href="https://raspberry-pi.ksyic.com/main/index/pdp.id/1113/pdp.open/1113" target="_blank">Raspberry Pi5 8GB + 周辺機器セット</a></li>
-                  <li><a href="https://amzn.asia/d/2zMQ2d7" target="_blank">New Kindle Paperwhite(32GB)</a></li>
-                </ul>
+              <li class="prize-pending">
+                <span class="prize-pending__label">学園提供の賞品</span>
+                <strong>現在選定中です</strong>
+                <span class="prize-pending__note">決まり次第、このページでお知らせします。</span>
               </li>
               <li>最優秀賞の表彰状</li>
               <li>審査員からの評価コメント</li>
@@ -400,19 +425,15 @@
             </ul>
           </dd>
         </dl>
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--silver">
           <dt class="text-center">優秀賞(2名)</dt>
           <dd class="text-center py-2">
             <div class="description">最優秀賞に惜しくも届かなかった優秀な作品を <br><strong>優秀賞</strong><br> として表彰します</div>
             <ul>
-              <li class="gold">
-                学園提供の賞品<br>(以下の中からいずれか1つ)
-                <ul>
-                  <li><a href="https://www.ankerjapan.com/products/a3117?variant=37523101548705" target="_blank">Anker Bluetooth スピーカー</a></li>
-                  <li><a href="https://amzn.asia/d/6r53EIg" target="_blank">Logicool トラックボールマウス</a></li>
-                  <li><a href="https://raspberry-pi.ksyic.com/main/index/pdp.id/525/pdp.open/525" target="_blank">Raspberry Pi 3 Model B</a></li>
-                  <li><a href="https://www.storexppen.jp/buy/deco-m-mw_2022.html" target="_blank">XP-PEN ペンタブレット</a></li>
-                </ul>
+              <li class="prize-pending">
+                <span class="prize-pending__label">学園提供の賞品</span>
+                <strong>現在選定中です</strong>
+                <span class="prize-pending__note">決まり次第、このページでお知らせします。</span>
               </li>
               <li>優秀賞の表彰状</li>
               <li>審査員からの評価コメント</li>
@@ -420,19 +441,16 @@
             </ul>
           </dd>
         </dl>
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--bronze">
           <dt class="text-center">のびしろ<ruby>∞<rt>むげんだい</rt></ruby>で賞(3名)</dt>
           <dd class="text-center py-2">
             <div class="description">最優秀賞、優秀賞に届かなかった中で<br>大きな期待ができる作品を <br><strong>のびしろ<ruby>∞<rt>むげんだい</rt>
                 </ruby>で賞</strong><br> として表彰します</div>
             <ul>
-              <li class="gold">
-                学園提供の賞品<br>(以下の中からいずれか1つ)
-                <ul>
-                  <li><a href="https://thetileapp.jp/products/#slim" target="_blank">tile slim スマートトラッカー</a></li>
-                  <li><a href="https://www.ankerjapan.com/products/t8w11?srsltid=AfmBOoq7TfNZm5cmGIJkQCLF-T-d_IyDVLH9PAqPdHBZybpxEcg4GCWR" target="_blank">Anker インドアカメラ</a></li>
-                  <li><a href="https://akizukidenshi.com/catalog/g/g118246/" target="_blank">Arduino UNO R4 WiFi</a></li>
-                </ul>
+              <li class="prize-pending">
+                <span class="prize-pending__label">学園提供の賞品</span>
+                <strong>現在選定中です</strong>
+                <span class="prize-pending__note">決まり次第、このページでお知らせします。</span>
               </li>
               <li>のびしろ<ruby>∞<rt>むげんだい</rt></ruby>で賞の表彰状</li>
               <li>審査員からの評価コメント</li>
@@ -445,11 +463,10 @@
           <dd class="text-center text-lg py-2">
             <div class="description">特に頑張りが認められた作品を <br><strong>健闘賞</strong><br> として表彰します</div>
             <ul>
-              <li class="gold">
-                学園提供の賞品
-                <ul>
-                  <li>記念ステッカー</li>
-                </ul>
+              <li class="prize-pending">
+                <span class="prize-pending__label">学園提供の賞品</span>
+                <strong>現在選定中です</strong>
+                <span class="prize-pending__note">決まり次第、このページでお知らせします。</span>
               </li>
               <li>健闘賞の表彰状</li>
               <li>審査員からの評価コメント</li>
@@ -467,7 +484,7 @@
     <div class="award award_scratch p-2">
       <h2 class="text-center m-5">Scratch部門</h2>
       <div class="row">
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--gold">
           <dt class="text-center">最優秀賞(1名)</dt>
           <dd class="text-center py-2">
             <div class="description">Scratch部門で最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
@@ -478,7 +495,7 @@
             </ul>
           </dd>
         </dl>
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--silver">
           <dt class="text-center">優秀賞(複数名)</dt>
           <dd class="text-center py-2">
             <div class="description">アイデアや完成度に優れた作品を <br><strong>優秀賞</strong><br> として表彰します</div>
@@ -507,7 +524,7 @@
     <div class="award award_unity p-2">
       <h2 class="text-center m-5">Unity部門</h2>
       <div class="row">
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--gold">
           <dt class="text-center">最優秀賞(1名)</dt>
           <dd class="text-center py-2">
             <div class="description">Unity部門で最も優れた作品を <br><strong>最優秀賞</strong><br> として表彰します</div>
@@ -518,7 +535,7 @@
             </ul>
           </dd>
         </dl>
-        <dl class="shadow-lg">
+        <dl class="shadow-lg award-tier award-tier--silver">
           <dt class="text-center">優秀賞(複数名)</dt>
           <dd class="text-center py-2">
             <div class="description">ゲーム性や表現力に優れた作品を <br><strong>優秀賞</strong><br> として表彰します</div>
@@ -556,7 +573,7 @@
               <li>審査員からの評価コメント</li>
               <li>記念品</li>
             </ul>
-            <img src="assets/img/watcher.png">
+            <img src="assets/img/watcher.png" alt="" aria-hidden="true">
           </dd>
         </dl>
       </div>
@@ -618,6 +635,14 @@
           <div class="name">津野 貴大</div>
           <div class="description">
             株式会社ドワンゴに新卒入社。長年ニコニコ関連サービスのエンジニアをしてきた経験を活かして、初心者にも分かりやすくて、より実践的なWebサービス開発について教えている。
+          </div>
+        </div>
+        <div class="box">
+          <div class="ribbon"><div class="post">プログラミング講師</div></div>
+          <img src="assets/img/gerber_akina.jpg" class="judge-photo--top" alt="ガーバー明菜">
+          <div class="name">ガーバー明菜</div>
+          <div class="description">
+            株式会社ドワンゴ入社後、ZEN大学助教として、人工知能（AI）やプログラミングの教育に携わる。「ビジュアルプログラミング」では、Scratchを楽しく学べる授業を展開。本コンテストでは、Scratch部門の審査員を務める。
           </div>
         </div>
         <div class="box">

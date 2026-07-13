@@ -597,7 +597,7 @@ main > .judge::before {
   margin: 0;
 }
 
-.award.award_gakuen .row {
+.award .award_gakuen .row {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 226px), 1fr));
 }
 
@@ -924,6 +924,10 @@ main > .judge::before {
   border-radius: 0;
 }
 
+.judge img.judge-photo--top {
+  object-position: center top;
+}
+
 .judge .name {
   order: 3;
   padding: 0 1rem 0.75rem;
@@ -1015,6 +1019,157 @@ main .shadow-lg {
 
   .motion-ready .scroll-reveal {
     opacity: 1 !important;
+  }
+}
+
+/* Emphasized application-path notice above the Web award tabs */
+.award_webpage .web-award-notice {
+  width: min(100%, 900px) !important;
+  margin-bottom: clamp(1.35rem, 3vw, 2rem) !important;
+}
+
+.award_webpage .web-award-notice .entry-astar-message__bubble {
+  padding: clamp(1.15rem, 2.5vw, 1.55rem) clamp(1.2rem, 3vw, 1.8rem) !important;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f5fdff 100%) !important;
+  border-width: 4px !important;
+  box-shadow: 8px 8px 0 rgba(8, 32, 72, 0.2);
+}
+
+.web-award-notice__label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  margin: 0 0 0.72rem;
+  padding: 0.22rem 0.78rem;
+  color: #082048;
+  background: #ffe13d;
+  border: 2px solid #082048;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 #082048;
+  font-size: clamp(0.82rem, 1.35vw, 0.94rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  transform: rotate(-1deg);
+}
+
+.award_webpage .web-award-notice p {
+  font-size: clamp(1rem, 1.65vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.award_webpage .web-award-notice p > strong {
+  color: #082048;
+  font-size: 1.12em;
+}
+
+.web-award-notice__group {
+  color: #41546a;
+  font-size: 0.92em;
+}
+
+.web-award-notice__action {
+  color: #082048;
+  background: linear-gradient(transparent 58%, rgba(255, 225, 61, 0.82) 58%);
+  font-weight: 900;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.award_webpage .web-award-notice .entry-astar-message__character {
+  flex-basis: clamp(104px, 15vw, 152px);
+  width: clamp(104px, 15vw, 152px);
+}
+
+@media (max-width: 600px) {
+  .award_webpage .web-award-notice {
+    align-items: flex-end !important;
+    gap: 0.5rem;
+  }
+
+  .award_webpage .web-award-notice .entry-astar-message__bubble {
+    padding: 0.95rem 0.9rem !important;
+    border-width: 3px !important;
+    box-shadow: 5px 5px 0 rgba(8, 32, 72, 0.18);
+  }
+
+  .web-award-notice__label {
+    min-height: 1.75rem;
+    margin-bottom: 0.55rem;
+    padding: 0.18rem 0.58rem;
+    box-shadow: 2px 2px 0 #082048;
+  }
+
+  .award_webpage .web-award-notice p {
+    font-size: 0.94rem;
+    line-height: 1.72;
+  }
+
+  .award_webpage .web-award-notice .entry-astar-message__character {
+    flex-basis: 80px;
+    width: 80px;
+  }
+}
+
+/* Audience award: calm green palette with supporters as a background motif */
+.award .watcher {
+  position: relative;
+  isolation: isolate;
+  border-color: #23684d !important;
+}
+
+.award .watcher dt {
+  color: #ffffff !important;
+  background:
+    linear-gradient(105deg, #23684d 0%, #2f7a5d 58%, #3b8d6c 100%) !important;
+  border-bottom: 2px solid #184c38 !important;
+}
+
+.award .watcher dd {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding-bottom: 1.18rem !important;
+  background:
+    linear-gradient(135deg, rgba(241, 251, 246, 0.98), rgba(219, 242, 229, 0.92)) !important;
+}
+
+.award .watcher .description,
+.award .watcher ul {
+  position: relative;
+  z-index: 2;
+}
+
+.award .watcher .description strong {
+  color: #1e6b4b !important;
+}
+
+.award .watcher ul li {
+  background: rgba(249, 253, 250, 0.88) !important;
+  border-color: rgba(35, 104, 77, 0.24) !important;
+}
+
+.award .watcher img {
+  position: absolute;
+  z-index: 1;
+  right: -4%;
+  bottom: -18%;
+  width: min(480px, 76%);
+  max-width: none;
+  opacity: 0.09;
+  filter: sepia(0.35) hue-rotate(82deg) saturate(1.5);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .award .watcher img {
+    right: -18%;
+    bottom: -8%;
+    width: 105%;
+    opacity: 0.075;
   }
 }
 
@@ -1209,7 +1364,7 @@ main .shadow-lg {
   .assessment .row,
   .award .row,
   .judge .row,
-  .award.award_gakuen .row {
+  .award .award_gakuen .row {
     grid-template-columns: 1fr;
   }
 
@@ -4264,6 +4419,12 @@ main > .judge {
   gap: clamp(0.9rem, 2.2vw, 1.4rem) !important;
 }
 
+.award_webpage .web-award-notice {
+  align-items: center !important;
+  width: min(100%, 820px) !important;
+  margin: 0 auto !important;
+}
+
 .entry-astar-message__bubble {
   order: 1;
   flex: 1 1 auto;
@@ -4732,19 +4893,156 @@ main > .judge > :not(.section-fish-layer) {
 }
 
 .sticker-placeholder {
-  display: flex;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(130px, 0.8fr) minmax(0, 1.35fr);
   align-items: center;
-  justify-content: center;
-  width: min(100%, 400px);
-  aspect-ratio: 5 / 3;
-  color: #ffffff;
+  gap: clamp(1.1rem, 4vw, 2.4rem);
+  overflow: hidden;
+  width: min(100%, 580px);
+  min-height: 270px;
+  padding: clamp(1.3rem, 4vw, 2.25rem);
+  color: #082048;
   background:
-    linear-gradient(135deg, #6e747c 0%, #9aa1a9 48%, #727982 100%);
+    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.95) 0 0.38rem, transparent 0.42rem),
+    radial-gradient(circle at 88% 82%, rgba(255, 255, 255, 0.8) 0 0.28rem, transparent 0.32rem),
+    linear-gradient(135deg, #fff4ad 0%, #ffdcf0 48%, #b9f4ff 100%);
   border: 3px solid #082048;
-  font-size: clamp(1.25rem, 3.6vw, 2rem);
+  border-radius: 16px;
+  box-shadow: 9px 9px 0 #082048;
+}
+
+.sticker-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: repeating-linear-gradient(-45deg, transparent 0 13px, rgba(255, 255, 255, 0.22) 13px 15px);
+  animation: sticker-teaser-shimmer 12s linear infinite;
+}
+
+.sticker-placeholder__art {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: min(100%, 190px);
+  aspect-ratio: 1;
+  margin: auto;
+}
+
+.sticker-placeholder__silhouette {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 94%;
+  height: auto;
+  filter:
+    drop-shadow(2px 0 0 #ffffff)
+    drop-shadow(-2px 0 0 #ffffff)
+    drop-shadow(0 2px 0 #ffffff)
+    drop-shadow(0 -2px 0 #ffffff)
+    drop-shadow(0 11px 0 rgba(8, 32, 72, 0.14));
+  transform: rotate(-5deg);
+  animation: sticker-teaser-float 3.2s ease-in-out infinite;
+}
+
+.sticker-placeholder__sparkle {
+  position: absolute;
+  color: #ffffff;
+  font-size: clamp(1.4rem, 4vw, 2.1rem);
+  line-height: 1;
+  text-shadow: 2px 2px 0 #082048;
+  animation: sticker-teaser-twinkle 1.8s ease-in-out infinite;
+}
+
+.sticker-placeholder__sparkle--one {
+  top: 2%;
+  right: 5%;
+}
+
+.sticker-placeholder__sparkle--two {
+  bottom: 7%;
+  left: 0;
+  color: #f3d32a;
+  animation-delay: -0.6s;
+}
+
+.sticker-placeholder__sparkle--three {
+  top: 14%;
+  left: 1%;
+  color: #ed5aa7;
+  font-size: 1.2rem;
+  animation-delay: -1.2s;
+}
+
+.sticker-placeholder__copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  text-align: left;
+}
+
+.sticker-placeholder__label {
+  display: inline-flex;
+  padding: 0.28rem 0.72rem;
+  color: #ffffff;
+  background: #1837c8;
+  border: 2px solid #082048;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
   font-weight: 900;
   line-height: 1.2;
-  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.sticker-placeholder__copy strong {
+  font-size: clamp(1.45rem, 4vw, 2.35rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.sticker-placeholder__copy > span:last-child {
+  font-size: clamp(0.88rem, 1.7vw, 1rem);
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+@keyframes sticker-teaser-float {
+  0%,
+  100% {
+    transform: rotate(-5deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-2deg) translateY(-7px);
+  }
+}
+
+@keyframes sticker-teaser-twinkle {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.72) rotate(-10deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.12) rotate(8deg);
+  }
+}
+
+@keyframes sticker-teaser-shimmer {
+  to {
+    background-position: 180px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4779,7 +5077,38 @@ main > .judge > :not(.section-fish-layer) {
   }
 
   .sticker-placeholder {
-    width: min(100%, 320px);
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 0.9rem;
+    width: min(100%, 390px);
+    min-height: 210px;
+    padding: 1.1rem;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 #082048;
+  }
+
+  .sticker-placeholder__silhouette {
+    width: 100%;
+  }
+
+  .sticker-placeholder__copy {
+    gap: 0.48rem;
+  }
+
+  .sticker-placeholder__copy strong {
+    font-size: clamp(1rem, 5.3vw, 1.55rem);
+  }
+
+  .sticker-placeholder__copy > span:last-child {
+    font-size: 0.78rem;
+    line-height: 1.55;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticker-placeholder::before,
+  .sticker-placeholder__silhouette,
+  .sticker-placeholder__sparkle {
+    animation: none;
   }
 }
 
@@ -4887,16 +5216,6 @@ main > .judge > :not(.section-fish-layer) {
   }
 }
 
-/* Soften and center assessment card headers */
-.assessment dt,
-.assessment dl:nth-of-type(3n + 2) dt,
-.assessment dl:nth-of-type(3n) dt {
-  color: #082048 !important;
-  background: #a7dce8 !important;
-  border-bottom: 0 !important;
-  text-align: center !important;
-}
-
 /* Large disabled application buttons for award sections */
 .award .entry_button_pending {
   display: flex !important;
@@ -4956,5 +5275,336 @@ main > .judge > :not(.section-fish-layer) {
     min-height: 56px !important;
     padding: 0.82rem 1rem !important;
     font-size: 1rem !important;
+  }
+}
+
+/* Special-program viewing links */
+.tokuban-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  width: min(100%, 820px);
+}
+
+.tokuban .tokuban-links .tokuban_button {
+  position: relative;
+  gap: 0.7rem;
+  width: 100%;
+  min-height: 64px;
+  margin: 0;
+  padding: 0.9rem 2.6rem 0.9rem 1.15rem;
+  border: 3px solid;
+  border-radius: 8px;
+  box-shadow: 5px 5px 0 rgba(5, 8, 20, 0.18) !important;
+  font-size: clamp(0.95rem, 1.7vw, 1.08rem);
+  transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.tokuban .tokuban-links .tokuban_button--zenstudy,
+.tokuban .tokuban-links .tokuban_button--zenstudy:link,
+.tokuban .tokuban-links .tokuban_button--zenstudy:visited {
+  color: #02253a;
+  background: #f5fbff;
+  border-color: #0077d3;
+  border-left: 12px solid #003b6f;
+}
+
+.tokuban .tokuban-links .tokuban_button--youtube,
+.tokuban .tokuban-links .tokuban_button--youtube:link,
+.tokuban .tokuban-links .tokuban_button--youtube:visited {
+  color: #ffffff;
+  background: #ff0033;
+  border-color: #b80025;
+  border-left: 12px solid #8f001d;
+}
+
+.tokuban .tokuban-links .tokuban_button--zenstudy:hover {
+  background: #e5f5ff;
+}
+
+.tokuban .tokuban-links .tokuban_button--youtube:hover {
+  background: #e6002e;
+}
+
+.tokuban .tokuban-links .tokuban_button:hover {
+  box-shadow: 3px 3px 0 rgba(5, 8, 20, 0.22) !important;
+}
+
+.tokuban .tokuban-links .tokuban_button:focus-visible {
+  outline: 4px solid var(--acid);
+  outline-offset: 4px;
+}
+
+.tokuban_button-logo {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.tokuban_button-play {
+  position: relative;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+.tokuban_button-play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #ff0033;
+  transform: translate(-50%, -50%);
+}
+
+.tokuban_button-external {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 680px) {
+  .tokuban-links {
+    grid-template-columns: 1fr;
+  }
+
+  .tokuban .tokuban-links .tokuban_button {
+    min-height: 58px;
+  }
+}
+
+/* Subtle award tiers shared across all award categories */
+.award .award-tier {
+  --award-tier-base: #d3b04a;
+  --award-tier-surface: #fffaf0;
+  --award-tier-prize: #f4e6b5;
+  --award-tier-spark: #fff4bd;
+  --award-tier-ink: #654400;
+  --award-tier-delay: 0s;
+  border-color: #082048 !important;
+  box-shadow: none !important;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.award .award-tier--silver {
+  --award-tier-base: #b9c0c8;
+  --award-tier-surface: #f7f8fa;
+  --award-tier-prize: #e2e6ea;
+  --award-tier-spark: #ffffff;
+  --award-tier-ink: #35424f;
+  --award-tier-delay: -1.8s;
+}
+
+.award .award-tier--bronze {
+  --award-tier-base: #bc8560;
+  --award-tier-surface: #fbf5f0;
+  --award-tier-prize: #ead3c2;
+  --award-tier-spark: #ffe7d5;
+  --award-tier-ink: #67361f;
+  --award-tier-delay: -3.6s;
+}
+
+.award .row > dl {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+.award .row > dl > dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4.5rem;
+}
+
+.award .row > dl > dd {
+  display: flex;
+  flex-direction: column;
+}
+
+.award .row > dl > dd > ul {
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (min-width: 769px) {
+  .award .award_gakuen .row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.award .award-tier dt {
+  position: relative;
+  overflow: hidden;
+  padding-right: 2.35rem;
+  padding-left: 2.35rem;
+  color: var(--award-tier-ink) !important;
+  background:
+    linear-gradient(110deg, transparent 26%, rgba(255, 255, 255, 0.62) 47%, transparent 66%) -180% 0 / 52% 100% no-repeat,
+    var(--award-tier-base) !important;
+  border-bottom: 2px solid #082048 !important;
+  animation: award-tier-shimmer 3.8s cubic-bezier(0.45, 0, 0.2, 1) var(--award-tier-delay) infinite;
+}
+
+.award .award-tier dt::before,
+.award .award-tier dt::after {
+  content: "✦" !important;
+  position: absolute;
+  top: 50%;
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  color: var(--award-tier-spark);
+  background: none !important;
+  font-size: 1rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.82));
+  transform: translateY(-50%);
+}
+
+.award .award-tier dt::before {
+  left: 0.85rem;
+  animation: award-tier-sparkle-left 2.15s ease-in-out var(--award-tier-delay) infinite;
+}
+
+.award .award-tier dt::after {
+  right: 0.85rem;
+  font-size: 0.78rem;
+  animation: award-tier-sparkle-right 1.85s ease-in-out calc(var(--award-tier-delay) - 0.9s) infinite;
+}
+
+.award .award-tier dd {
+  background: var(--award-tier-surface) !important;
+}
+
+.award .award-tier ul > li.gold {
+  background: var(--award-tier-prize) !important;
+  border-color: rgba(8, 32, 72, 0.28) !important;
+}
+
+.award .award-tier .description strong {
+  color: var(--award-tier-ink) !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .award .award-tier:hover {
+    z-index: 1;
+    box-shadow: 0 9px 0 rgba(8, 32, 72, 0.13) !important;
+    transform: translateY(-5px);
+  }
+
+  .award .award-tier:hover dt {
+    animation-duration: 2.65s;
+  }
+}
+
+/* Prize selection notice for Kadokawa Dwango Gakuen awards */
+.award_gakuen .prize-pending {
+  display: grid;
+  gap: 0.34rem;
+  padding: 0.88rem 0.9rem !important;
+  background: #f4f6f7 !important;
+  border: 1px solid rgba(8, 32, 72, 0.16) !important;
+  box-shadow: none !important;
+  text-align: center !important;
+}
+
+.award_gakuen .prize-pending__label {
+  justify-self: center;
+  padding: 0.16rem 0.68rem;
+  color: #445363;
+  background: #e3e8eb;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+}
+
+.award_gakuen .prize-pending strong {
+  color: #082048;
+  font-size: 1.04rem;
+  font-weight: 900;
+}
+
+.award_gakuen .prize-pending__note {
+  color: #516071;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+@keyframes award-tier-shimmer {
+  0%,
+  54% {
+    background-position: -180% 0, 0 0;
+  }
+
+  100% {
+    background-position: 320% 0, 0 0;
+  }
+}
+
+@keyframes award-tier-sparkle-left {
+  0%,
+  100% {
+    opacity: 0.38;
+    transform: translateY(-50%) rotate(-18deg) scale(0.66);
+  }
+
+  38% {
+    opacity: 1;
+    transform: translateY(calc(-50% - 3px)) rotate(14deg) scale(1.18);
+  }
+
+  68% {
+    opacity: 0.62;
+    transform: translateY(calc(-50% + 2px)) rotate(28deg) scale(0.86);
+  }
+}
+
+@keyframes award-tier-sparkle-right {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(-50%) rotate(20deg) scale(0.62);
+  }
+
+  52% {
+    opacity: 1;
+    transform: translateY(calc(-50% - 4px)) rotate(-18deg) scale(1.24);
+  }
+}
+
+@media (max-width: 480px) {
+  .award .award-tier dt {
+    min-height: 4rem;
+    padding-right: 1.85rem;
+    padding-left: 1.85rem;
+  }
+
+  .award .award-tier dt::before {
+    left: 0.58rem;
+  }
+
+  .award .award-tier dt::after {
+    right: 0.58rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .award .award-tier dt,
+  .award .award-tier dt::before,
+  .award .award-tier dt::after {
+    animation: none !important;
   }
 }
