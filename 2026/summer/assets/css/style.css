@@ -1153,8 +1153,8 @@ main .shadow-lg {
 .award .watcher img {
   position: absolute;
   z-index: 1;
+  top: -18%;
   right: -4%;
-  bottom: -18%;
   width: min(480px, 76%);
   max-width: none;
   opacity: 0.09;
@@ -1166,8 +1166,8 @@ main .shadow-lg {
 
 @media (max-width: 600px) {
   .award .watcher img {
+    top: -8%;
     right: -18%;
-    bottom: -8%;
     width: 105%;
     opacity: 0.075;
   }
