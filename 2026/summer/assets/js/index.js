@@ -2,8 +2,41 @@
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const root = document.documentElement;
 
+  const initNewsLabels = () => {
+    const millisecondsPerDay = 24 * 60 * 60 * 1000;
+    const now = new Date();
+    const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+
+    document.querySelectorAll(".news li").forEach((item) => {
+      const dateMatch = item.textContent.trim().match(/^(\d{4})\.(\d{2})\.(\d{2})/);
+      if (!dateMatch || item.querySelector(".news-new-label")) return;
+
+      const [, yearText, monthText, dayText] = dateMatch;
+      const year = Number(yearText);
+      const month = Number(monthText) - 1;
+      const day = Number(dayText);
+      const newsDate = Date.UTC(year, month, day);
+      const parsedDate = new Date(newsDate);
+
+      const isValidDate =
+        parsedDate.getUTCFullYear() === year &&
+        parsedDate.getUTCMonth() === month &&
+        parsedDate.getUTCDate() === day;
+      if (!isValidDate) return;
+
+      const ageInDays = (today - newsDate) / millisecondsPerDay;
+      if (ageInDays < 0 || ageInDays > 7) return;
+
+      const label = document.createElement("span");
+      label.className = "news-new-label";
+      label.textContent = "NEW";
+      label.setAttribute("aria-label", "新着");
+      item.prepend(label);
+    });
+  };
+
   const initTabs = () => {
-    const setupTabGroup = (tabListSelector, panelContainerSelector) => {
+    const setupTabGroup = (tabListSelector, panelContainerSelector, initialTarget) => {
       const tabs = Array.from(document.querySelectorAll(`${tabListSelector} [data-tab-target]`));
       const panels = Array.from(document.querySelectorAll(`${panelContainerSelector} .tab-pane`));
 
@@ -52,11 +85,19 @@
         });
       });
 
-      const activeTab = tabs.find((tab) => tab.classList.contains("active")) || tabs[0];
+      const requestedTab = tabs.find((tab) => tab.dataset.tabTarget === initialTarget);
+      const activeTab = requestedTab || tabs.find((tab) => tab.classList.contains("active")) || tabs[0];
       activateTab(activeTab);
     };
 
-    setupTabGroup("#webAwardTabs", "#webAwardTabsContent");
+    const mode = new URLSearchParams(window.location.search).get("mode");
+    const webAwardTargetByMode = {
+      gakuen: "#web-award-gakuen",
+      zenuniv: "#web-award-zenuniv"
+    };
+    const webAwardTarget = webAwardTargetByMode[mode?.trim().toLowerCase()];
+
+    setupTabGroup("#webAwardTabs", "#webAwardTabsContent", webAwardTarget);
     setupTabGroup("#ruleTabs", "#ruleTabsContent");
   };
 
@@ -812,6 +853,7 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     initUnderwaterCanvas();
+    initNewsLabels();
     initTabs();
     initSectionFish();
     initScrollDepth();
