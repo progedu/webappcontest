@@ -25,13 +25,14 @@
       if (!isValidDate) return;
 
       const ageInDays = (today - newsDate) / millisecondsPerDay;
-      if (ageInDays < 0 || ageInDays > 7) return;
+      if (ageInDays < 0 || ageInDays >= 7) return;
 
       const label = document.createElement("span");
       label.className = "news-new-label";
       label.textContent = "NEW";
       label.setAttribute("aria-label", "新着");
-      item.prepend(label);
+      const labelTarget = item.querySelector("a") || item;
+      labelTarget.prepend(label);
     });
   };
 
@@ -85,6 +86,27 @@
         });
       });
 
+      document.querySelectorAll("[data-activate-tab]").forEach((link) => {
+        const linkedTab = tabs.find((tab) => tab.dataset.tabTarget === link.dataset.activateTab);
+        if (!linkedTab) return;
+
+        link.addEventListener("click", (event) => {
+          const destinationSelector = link.getAttribute("href");
+          const destination = destinationSelector?.startsWith("#")
+            ? document.querySelector(destinationSelector)
+            : null;
+          if (!destination) return;
+
+          event.preventDefault();
+          activateTab(linkedTab);
+          window.history.pushState(null, "", destinationSelector);
+          destination.scrollIntoView({
+            behavior: reducedMotion ? "auto" : "smooth",
+            block: "start"
+          });
+        });
+      });
+
       const requestedTab = tabs.find((tab) => tab.dataset.tabTarget === initialTarget);
       const activeTab = requestedTab || tabs.find((tab) => tab.classList.contains("active")) || tabs[0];
       activateTab(activeTab);
@@ -92,6 +114,7 @@
 
     const mode = new URLSearchParams(window.location.search).get("mode");
     const webAwardTargetByMode = {
+      zenstudy: "#web-award-zenstudy",
       gakuen: "#web-award-gakuen",
       zenuniv: "#web-award-zenuniv"
     };

@@ -508,9 +508,51 @@ main > .judge::before {
 }
 
 .news li {
-  padding: 1.15rem 1.3rem;
+  padding: 0;
   font-weight: 700;
   text-align: left;
+}
+
+.news li + li {
+  border-top: 1px solid rgba(5, 8, 20, 0.12);
+}
+
+.news li > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 1.15rem 3.4rem 1.15rem 1.3rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.news li > a::after {
+  content: "›";
+  position: absolute;
+  top: 50%;
+  right: 1.35rem;
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+  transform: translateY(-52%);
+  transition: transform 160ms ease;
+}
+
+.news li > a:hover {
+  color: var(--blue);
+  background: rgba(24, 183, 204, 0.08);
+}
+
+.news li > a:hover::after {
+  transform: translate(0.22rem, -52%);
+}
+
+.news li > a:focus-visible {
+  outline: 4px solid var(--blue);
+  outline-offset: -4px;
 }
 
 .tokuban .zoutei,
@@ -6103,6 +6145,149 @@ main > .judge > :not(.section-fish-layer) {
   z-index: 4;
 }
 
+.award .entry_button--scratch {
+  background:
+    linear-gradient(112deg, #775a78 0%, #ae6a84 48%, #806f8a 100%);
+  border-color: #624c68 !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.14),
+    inset 0 1px 18px rgba(221, 194, 212, 0.13),
+    0 9px 24px rgba(66, 39, 66, 0.27),
+    0 0 8px rgba(91, 151, 156, 0.13) !important;
+}
+
+.award .entry_button--scratch::before {
+  background:
+    linear-gradient(116deg, transparent 0 24%, rgba(155, 211, 211, 0.12) 24.5% 34%, transparent 34.5% 100%),
+    radial-gradient(circle at 78% 18%, rgba(224, 174, 198, 0.15), transparent 25%);
+}
+
+.award .entry_button--unity {
+  background:
+    linear-gradient(112deg, #806b38 0%, #ad8e3f 48%, #857443 100%);
+  border-color: #66552e !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.14),
+    inset 0 1px 18px rgba(232, 215, 164, 0.14),
+    0 9px 24px rgba(69, 55, 26, 0.27),
+    0 0 8px rgba(92, 143, 145, 0.12) !important;
+}
+
+.award .entry_button--unity::before {
+  background:
+    linear-gradient(64deg, transparent 0 33%, rgba(151, 205, 207, 0.11) 33.5% 43%, transparent 43.5% 100%),
+    radial-gradient(circle at 22% 20%, rgba(231, 211, 139, 0.16), transparent 27%);
+}
+
+.entry-button-fish-school {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.entry_button--unity .entry-button-fish-school {
+  transform: scaleX(-1);
+}
+
+.entry-button-fish {
+  --fish-color: #d5b454;
+  --fish-accent: #bd7653;
+  --fish-scale: 1;
+  position: absolute;
+  top: 14%;
+  left: -3.5rem;
+  width: clamp(1.55rem, 3vw, 2.25rem);
+  height: clamp(0.72rem, 1.4vw, 1.02rem);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--fish-color) 0 38%,
+      var(--fish-accent) 38% 52%
+    );
+  border: 1px solid rgba(0, 36, 72, 0.5);
+  border-radius: 64% 46% 46% 64%;
+  box-shadow:
+    inset -0.34rem 0 rgba(255, 255, 255, 0.22),
+    0 0.12rem 0.25rem rgba(0, 24, 72, 0.28);
+  transform-origin: center;
+  will-change: left, transform;
+  animation: entry-button-fish-swim 8.2s linear infinite;
+}
+
+.entry-button-fish::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.58rem;
+  width: 0.72rem;
+  height: 0.86rem;
+  background: var(--fish-accent);
+  clip-path: polygon(100% 50%, 0 0, 22% 50%, 0 100%);
+  filter: drop-shadow(-1px 1px 0 rgba(0, 36, 72, 0.26));
+  transform: translateY(-50%);
+}
+
+.entry-button-fish::after {
+  content: "";
+  position: absolute;
+  top: 24%;
+  right: 0.28rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: #082048;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.entry-button-fish:nth-child(2) {
+  --fish-color: #c87892;
+  --fish-accent: #ddd0a8;
+  --fish-scale: 0.78;
+  top: 58%;
+  animation-delay: -5.9s;
+  animation-duration: 10.4s;
+}
+
+.entry-button-fish:nth-child(3) {
+  --fish-color: #82a979;
+  --fish-accent: #4d908d;
+  --fish-scale: 0.64;
+  top: 34%;
+  animation-delay: -3.1s;
+  animation-duration: 12.2s;
+}
+
+.entry-button-fish:nth-child(4) {
+  --fish-color: #c5825a;
+  --fish-accent: #70a5b5;
+  --fish-scale: 0.84;
+  top: 69%;
+  animation-delay: -8.4s;
+  animation-duration: 13.6s;
+}
+
+.entry_button--unity .entry-button-fish:nth-child(1) {
+  --fish-color: #76a0aa;
+  --fish-accent: #506f91;
+}
+
+.entry_button--unity .entry-button-fish:nth-child(2) {
+  --fish-color: #b87486;
+  --fish-accent: #dccaa8;
+}
+
+.entry_button--unity .entry-button-fish:nth-child(3) {
+  --fish-color: #8f779e;
+  --fish-accent: #5e638c;
+}
+
+.entry_button--unity .entry-button-fish:nth-child(4) {
+  --fish-color: #6f968b;
+  --fish-accent: #486f72;
+}
+
 .entry-button-seaweed {
   position: absolute;
   bottom: -0.45rem;
@@ -6232,6 +6417,30 @@ main > .judge > :not(.section-fish-layer) {
   }
 }
 
+@keyframes entry-button-fish-swim {
+  0% {
+    left: -3.5rem;
+    transform: translateY(0) rotate(-2deg) scale(var(--fish-scale));
+  }
+
+  24% {
+    transform: translateY(-0.22rem) rotate(2deg) scale(var(--fish-scale));
+  }
+
+  52% {
+    transform: translateY(0.18rem) rotate(-1deg) scale(var(--fish-scale));
+  }
+
+  76% {
+    transform: translateY(-0.16rem) rotate(2deg) scale(var(--fish-scale));
+  }
+
+  100% {
+    left: calc(100% + 3.5rem);
+    transform: translateY(0) rotate(-2deg) scale(var(--fish-scale));
+  }
+}
+
 @media (max-width: 768px) {
   .award .entry_button,
   .award .entry_button_pending {
@@ -6245,12 +6454,29 @@ main > .judge > :not(.section-fish-layer) {
   .award .entry_button,
   .award .entry_button::before,
   .award .entry_button::after,
+  .entry-button-fish,
   .entry-button-seaweed > span {
     animation: none !important;
   }
 
   .award .entry_button {
     transition: none !important;
+  }
+
+  .entry-button-fish {
+    left: 7%;
+  }
+
+  .entry-button-fish:nth-child(2) {
+    left: 21%;
+  }
+
+  .entry-button-fish:nth-child(3) {
+    left: 76%;
+  }
+
+  .entry-button-fish:nth-child(4) {
+    left: 89%;
   }
 }
 
