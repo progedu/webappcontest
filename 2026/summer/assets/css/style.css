@@ -6192,28 +6192,17 @@ main > .judge > :not(.section-fish-layer) {
 }
 
 .entry-button-fish {
-  --fish-color: #d5b454;
-  --fish-accent: #bd7653;
-  --fish-scale: 1;
+  --fish-color: #20385b;
   position: absolute;
-  top: 14%;
+  top: 32%;
   left: -3.5rem;
   width: clamp(1.55rem, 3vw, 2.25rem);
   height: clamp(0.72rem, 1.4vw, 1.02rem);
-  background:
-    repeating-linear-gradient(
-      90deg,
-      var(--fish-color) 0 38%,
-      var(--fish-accent) 38% 52%
-    );
-  border: 1px solid rgba(0, 36, 72, 0.5);
+  background: var(--fish-color);
   border-radius: 64% 46% 46% 64%;
-  box-shadow:
-    inset -0.34rem 0 rgba(255, 255, 255, 0.22),
-    0 0.12rem 0.25rem rgba(0, 24, 72, 0.28);
-  transform-origin: center;
+  opacity: 0.52;
   will-change: transform;
-  animation: entry-button-fish-swim 8.2s linear infinite;
+  animation: entry-button-fish-swim 11.4s -2.3s linear infinite;
 }
 
 .entry-button-fish::before {
@@ -6223,40 +6212,16 @@ main > .judge > :not(.section-fish-layer) {
   left: -0.58rem;
   width: 0.72rem;
   height: 0.86rem;
-  background: var(--fish-accent);
+  background: var(--fish-color);
   clip-path: polygon(100% 50%, 0 0, 22% 50%, 0 100%);
   transform: translateY(-50%);
 }
 
-.entry-button-fish::after {
-  content: "";
-  position: absolute;
-  top: 24%;
-  right: 0.28rem;
-  width: 0.2rem;
-  height: 0.2rem;
-  background: #082048;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-}
-
-.entry-button-fish:nth-child(2) {
-  --fish-color: #c87892;
-  --fish-accent: #ddd0a8;
-  --fish-scale: 0.78;
-  top: 58%;
-  animation-delay: -5.9s;
-  animation-duration: 10.4s;
-}
-
-.entry_button--unity .entry-button-fish:nth-child(1) {
-  --fish-color: #76a0aa;
-  --fish-accent: #506f91;
-}
-
-.entry_button--unity .entry-button-fish:nth-child(2) {
-  --fish-color: #b87486;
-  --fish-accent: #dccaa8;
+.entry_button--unity .entry-button-fish {
+  --fish-color: #173c50;
+  top: 56%;
+  animation-delay: -7.1s;
+  animation-duration: 12.8s;
 }
 
 .entry-button-seaweed {
@@ -6338,11 +6303,11 @@ main > .judge > :not(.section-fish-layer) {
 
 @keyframes entry-button-fish-swim {
   from {
-    transform: translate3d(0, 0, 0) rotate(-2deg) scale(var(--fish-scale));
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    transform: translate3d(calc(100cqi + 7rem), 0, 0) rotate(-2deg) scale(var(--fish-scale));
+    transform: translate3d(calc(100cqi + 7rem), 0, 0);
   }
 }
 
@@ -6369,11 +6334,7 @@ main > .judge > :not(.section-fish-layer) {
   }
 
   .entry-button-fish {
-    transform: translate3d(calc(18cqi + 3.5rem), 0, 0) scale(var(--fish-scale));
-  }
-
-  .entry-button-fish:nth-child(2) {
-    transform: translate3d(calc(72cqi + 3.5rem), 0, 0) scale(var(--fish-scale));
+    transform: translate3d(calc(42cqi + 3.5rem), 0, 0);
   }
 }
 
