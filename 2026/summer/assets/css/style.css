@@ -6079,11 +6079,11 @@ main > .judge > :not(.section-fish-layer) {
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  contain: paint;
+  container-type: inline-size;
   color: #ffffff !important;
   background:
     linear-gradient(112deg, #0a318c 0%, #1268c3 50%, #0b8fa8 100%);
-  background-position: 0% 50%;
-  background-size: 180% 180%;
   border: 2px solid rgba(50, 77, 148, 0.96) !important;
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.1),
@@ -6092,7 +6092,6 @@ main > .judge > :not(.section-fish-layer) {
     0 0 8px rgba(28, 54, 126, 0.16) !important;
   text-shadow: 0 1px 8px rgba(0, 15, 58, 0.78);
   transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
-  animation: entry-button-current 6.5s ease-in-out infinite alternate;
 }
 
 .award .entry_button::before {
@@ -6103,10 +6102,7 @@ main > .judge > :not(.section-fish-layer) {
   background:
     radial-gradient(circle at 22% 30%, rgba(159, 182, 238, 0.14), transparent 34%),
     radial-gradient(circle at 78% 70%, rgba(91, 139, 210, 0.14), transparent 38%);
-  background-position: 0% 0%, 100% 100%;
-  background-size: 135% 135%, 145% 145%;
   pointer-events: none;
-  animation: entry-button-ambient 8s ease-in-out infinite alternate;
 }
 
 .award .entry_button::after {
@@ -6137,7 +6133,6 @@ main > .judge > :not(.section-fish-layer) {
   background-size: 84px 84px, 137px 137px, 181px 181px;
   opacity: 0.54;
   pointer-events: none;
-  animation: entry-button-bubbles 8.5s linear infinite;
 }
 
 .entry-button-label {
@@ -6212,7 +6207,7 @@ main > .judge > :not(.section-fish-layer) {
     inset -0.34rem 0 rgba(255, 255, 255, 0.22),
     0 0.12rem 0.25rem rgba(0, 24, 72, 0.28);
   transform-origin: center;
-  will-change: left, transform;
+  will-change: transform;
   animation: entry-button-fish-swim 8.2s linear infinite;
 }
 
@@ -6225,7 +6220,6 @@ main > .judge > :not(.section-fish-layer) {
   height: 0.86rem;
   background: var(--fish-accent);
   clip-path: polygon(100% 50%, 0 0, 22% 50%, 0 100%);
-  filter: drop-shadow(-1px 1px 0 rgba(0, 36, 72, 0.26));
   transform: translateY(-50%);
 }
 
@@ -6250,24 +6244,6 @@ main > .judge > :not(.section-fish-layer) {
   animation-duration: 10.4s;
 }
 
-.entry-button-fish:nth-child(3) {
-  --fish-color: #82a979;
-  --fish-accent: #4d908d;
-  --fish-scale: 0.64;
-  top: 34%;
-  animation-delay: -3.1s;
-  animation-duration: 12.2s;
-}
-
-.entry-button-fish:nth-child(4) {
-  --fish-color: #c5825a;
-  --fish-accent: #70a5b5;
-  --fish-scale: 0.84;
-  top: 69%;
-  animation-delay: -8.4s;
-  animation-duration: 13.6s;
-}
-
 .entry_button--unity .entry-button-fish:nth-child(1) {
   --fish-color: #76a0aa;
   --fish-accent: #506f91;
@@ -6276,16 +6252,6 @@ main > .judge > :not(.section-fish-layer) {
 .entry_button--unity .entry-button-fish:nth-child(2) {
   --fish-color: #b87486;
   --fish-accent: #dccaa8;
-}
-
-.entry_button--unity .entry-button-fish:nth-child(3) {
-  --fish-color: #8f779e;
-  --fish-accent: #5e638c;
-}
-
-.entry_button--unity .entry-button-fish:nth-child(4) {
-  --fish-color: #6f968b;
-  --fish-accent: #486f72;
 }
 
 .entry-button-seaweed {
@@ -6320,30 +6286,23 @@ main > .judge > :not(.section-fish-layer) {
   border-radius: 75% 25% 45% 55% / 100% 100% 12% 12%;
   box-shadow: inset 2px 0 rgba(255, 255, 255, 0.1);
   font-size: 0;
-  transform-origin: 50% 100%;
-  animation: entry-button-seaweed-sway 3.8s ease-in-out infinite alternate;
 }
 
 .entry-button-seaweed > span:nth-child(1) {
   left: 0.75rem;
   height: 2.8rem;
-  animation-delay: -1.2s;
 }
 
 .entry-button-seaweed > span:nth-child(2) {
   left: 2.3rem;
   width: 0.82rem;
   height: 4rem;
-  animation-delay: -2.7s;
-  animation-duration: 4.6s;
 }
 
 .entry-button-seaweed > span:nth-child(3) {
   left: 4rem;
   width: 0.64rem;
   height: 3.25rem;
-  animation-delay: -0.5s;
-  animation-duration: 3.3s;
 }
 
 .award .entry_button:hover,
@@ -6361,7 +6320,6 @@ main > .judge > :not(.section-fish-layer) {
 .award .entry_button:hover::after,
 .award .entry_button:focus-visible::after {
   opacity: 0.68;
-  animation-duration: 6.5s;
 }
 
 .award .entry_button:focus-visible {
@@ -6373,71 +6331,13 @@ main > .judge > :not(.section-fish-layer) {
   transform: translateY(-1px) scale(0.995);
 }
 
-@keyframes entry-button-ambient {
-  from {
-    background-position: 0% 0%, 100% 100%;
-    opacity: 0.62;
-  }
-
-  to {
-    background-position: 24% 12%, 76% 88%;
-    opacity: 1;
-  }
-}
-
-@keyframes entry-button-current {
-  from {
-    background-position: 0% 50%;
-  }
-
-  to {
-    background-position: 100% 50%;
-  }
-}
-
-@keyframes entry-button-bubbles {
-  from {
-    background-position: 10px 92px, 42px 136px, -18px 178px;
-  }
-
-  to {
-    background-position: 24px -76px, 15px -138px, 30px -184px;
-  }
-}
-
-@keyframes entry-button-seaweed-sway {
-  from {
-    border-radius: 75% 25% 45% 55% / 100% 100% 12% 12%;
-    transform: rotate(-9deg) skewX(-4deg);
-  }
-
-  to {
-    border-radius: 28% 72% 55% 45% / 100% 100% 12% 12%;
-    transform: rotate(10deg) skewX(5deg);
-  }
-}
-
 @keyframes entry-button-fish-swim {
-  0% {
-    left: -3.5rem;
-    transform: translateY(0) rotate(-2deg) scale(var(--fish-scale));
+  from {
+    transform: translate3d(0, 0, 0) rotate(-2deg) scale(var(--fish-scale));
   }
 
-  24% {
-    transform: translateY(-0.22rem) rotate(2deg) scale(var(--fish-scale));
-  }
-
-  52% {
-    transform: translateY(0.18rem) rotate(-1deg) scale(var(--fish-scale));
-  }
-
-  76% {
-    transform: translateY(-0.16rem) rotate(2deg) scale(var(--fish-scale));
-  }
-
-  100% {
-    left: calc(100% + 3.5rem);
-    transform: translateY(0) rotate(-2deg) scale(var(--fish-scale));
+  to {
+    transform: translate3d(calc(100cqi + 7rem), 0, 0) rotate(-2deg) scale(var(--fish-scale));
   }
 }
 
@@ -6464,19 +6364,11 @@ main > .judge > :not(.section-fish-layer) {
   }
 
   .entry-button-fish {
-    left: 7%;
+    transform: translate3d(calc(18cqi + 3.5rem), 0, 0) scale(var(--fish-scale));
   }
 
   .entry-button-fish:nth-child(2) {
-    left: 21%;
-  }
-
-  .entry-button-fish:nth-child(3) {
-    left: 76%;
-  }
-
-  .entry-button-fish:nth-child(4) {
-    left: 89%;
+    transform: translate3d(calc(72cqi + 3.5rem), 0, 0) scale(var(--fish-scale));
   }
 }
 
