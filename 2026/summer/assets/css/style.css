@@ -5646,7 +5646,126 @@ main > .judge > :not(.section-fish-layer) {
   margin-left: auto !important;
 }
 
-/* Novelty section speech bubble and temporary sticker preview */
+/* Rotate only the rays; the heading, character and sticker stay still. */
+@property --novelty-ray-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -8deg;
+}
+
+@keyframes novelty-rays-turn {
+  from { --novelty-ray-angle: -8deg; }
+  to { --novelty-ray-angle: 352deg; }
+}
+
+/* One continuous announcement stage for the participation souvenir */
+main > #novelty {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  padding: clamp(3rem, 6vw, 5rem) var(--side);
+  color: #223269 !important;
+  background:
+    linear-gradient(180deg, #fff5bf 0%, rgba(255, 245, 191, 0.82) 18%, rgba(255, 245, 191, 0) 48%),
+    repeating-conic-gradient(from var(--novelty-ray-angle, -8deg) at 50% 58%, #ffe04a 0deg 10deg, #fff2a4 10deg 20deg) !important;
+  animation: novelty-rays-turn 180s linear infinite;
+  border-top: 3px solid #223269;
+  border-bottom: 3px solid #223269;
+  text-align: center;
+}
+
+/* Override the former grid heading alignment inside this flex section. */
+#novelty > .title,
+#novelty > .sticker-ribbon,
+#novelty > .novelty-speech,
+#novelty > .sticker-preview {
+  align-self: center !important;
+  margin: 0 auto !important;
+}
+
+#novelty > .title {
+  width: min(100%, 920px);
+  padding: 0 !important;
+}
+
+#novelty > .title h2 {
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+main > #novelty::after,
+#novelty > .section-fish-layer {
+  display: none !important;
+}
+
+#novelty > .sticker-preview {
+  width: min(100%, 920px);
+  margin: 0;
+  padding: 0;
+}
+
+#novelty .sticker-design {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background: #ffffff;
+  border: 3px solid #223269;
+  border-radius: 0 !important;
+  box-shadow: 8px 8px 0 #223269 !important;
+}
+
+#novelty > .sticker-ribbon {
+  position: relative;
+  width: min(calc(100% - 2.6rem), calc(920px - 2.6rem));
+  margin: 0 auto;
+  margin-top: clamp(0.75rem, 1.5vw, 1.25rem) !important;
+  padding: 0;
+  color: #223269;
+  font-size: clamp(1rem, 2.3vw, 1.5rem);
+  font-weight: 900;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.sticker-ribbon::before,
+.sticker-ribbon::after {
+  content: "";
+  position: absolute;
+  top: 0.65rem;
+  bottom: -0.65rem;
+  width: 2.6rem;
+  background: #223269;
+}
+
+.sticker-ribbon::before {
+  left: -1.3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+}
+
+.sticker-ribbon::after {
+  right: -1.3rem;
+  clip-path: polygon(0 0, 100% 0, 75% 50%, 100% 100%, 0 100%);
+}
+
+.sticker-ribbon > span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 0.8rem 1rem;
+  background: #ffb5a7;
+  border: 3px solid #223269;
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main > #novelty {
+    animation: none;
+  }
+}
+
+/* Preserve the original Astaris speech bubble and character */
 .shoujou .zoutei.novelty-speech {
   display: flex !important;
   align-items: center !important;
@@ -5654,10 +5773,10 @@ main > .judge > :not(.section-fish-layer) {
   gap: clamp(0.8rem, 2.4vw, 1.35rem) !important;
   position: relative !important;
   overflow: visible !important;
-  width: min(100%, 720px) !important;
-  margin-bottom: clamp(1.6rem, 3vw, 2.4rem) !important;
+  width: min(100%, 920px) !important;
+  margin: 0 auto !important;
   padding: 0 !important;
-  color: #082048 !important;
+  color: #223269 !important;
   background: transparent !important;
   border: 0 !important;
   border-radius: 0 !important;
@@ -5674,9 +5793,9 @@ main > .judge > :not(.section-fish-layer) {
   position: relative;
   flex: 1 1 auto;
   padding: clamp(1.05rem, 2.4vw, 1.45rem) clamp(1.15rem, 3vw, 1.7rem);
-  color: #082048;
+  color: #223269;
   background: #ffffff;
-  border: 3px solid #082048;
+  border: 3px solid #223269;
   border-radius: 8px;
   font-weight: 900;
   text-align: left;
@@ -5696,7 +5815,7 @@ main > .judge > :not(.section-fish-layer) {
   right: -1.15rem;
   border-top: 0.82rem solid transparent;
   border-bottom: 0.82rem solid transparent;
-  border-left: 1.15rem solid #082048;
+  border-left: 1.15rem solid #223269;
 }
 
 .novelty-speech__bubble::after {
@@ -5715,166 +5834,6 @@ main > .judge > :not(.section-fish-layer) {
   margin: 0 !important;
   filter: drop-shadow(0 0.34rem 0 rgba(8, 32, 72, 0.14));
   transform: rotate(-3deg);
-}
-
-.shoujou .sticker-preview {
-  display: flex !important;
-  justify-content: center !important;
-  width: min(100%, 720px) !important;
-  margin: 0 auto !important;
-}
-
-.sticker-placeholder {
-  position: relative;
-  isolation: isolate;
-  display: grid;
-  grid-template-columns: minmax(130px, 0.8fr) minmax(0, 1.35fr);
-  align-items: center;
-  gap: clamp(1.1rem, 4vw, 2.4rem);
-  overflow: hidden;
-  width: min(100%, 580px);
-  min-height: 270px;
-  padding: clamp(1.3rem, 4vw, 2.25rem);
-  color: #082048;
-  background:
-    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.95) 0 0.38rem, transparent 0.42rem),
-    radial-gradient(circle at 88% 82%, rgba(255, 255, 255, 0.8) 0 0.28rem, transparent 0.32rem),
-    linear-gradient(135deg, #fff4ad 0%, #ffdcf0 48%, #b9f4ff 100%);
-  border: 3px solid #082048;
-  border-radius: 16px;
-  box-shadow: 9px 9px 0 #082048;
-}
-
-.sticker-placeholder::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: repeating-linear-gradient(-45deg, transparent 0 13px, rgba(255, 255, 255, 0.22) 13px 15px);
-  animation: sticker-teaser-shimmer 12s linear infinite;
-}
-
-.sticker-placeholder__art {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  width: min(100%, 190px);
-  aspect-ratio: 1;
-  margin: auto;
-}
-
-.sticker-placeholder__silhouette {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 94%;
-  height: auto;
-  filter:
-    drop-shadow(2px 0 0 #ffffff)
-    drop-shadow(-2px 0 0 #ffffff)
-    drop-shadow(0 2px 0 #ffffff)
-    drop-shadow(0 -2px 0 #ffffff)
-    drop-shadow(0 11px 0 rgba(8, 32, 72, 0.14));
-  transform: rotate(-5deg);
-  animation: sticker-teaser-float 3.2s ease-in-out infinite;
-}
-
-.sticker-placeholder__sparkle {
-  position: absolute;
-  color: #ffffff;
-  font-size: clamp(1.4rem, 4vw, 2.1rem);
-  line-height: 1;
-  text-shadow: 2px 2px 0 #082048;
-  animation: sticker-teaser-twinkle 1.8s ease-in-out infinite;
-}
-
-.sticker-placeholder__sparkle--one {
-  top: 2%;
-  right: 5%;
-}
-
-.sticker-placeholder__sparkle--two {
-  bottom: 7%;
-  left: 0;
-  color: #f3d32a;
-  animation-delay: -0.6s;
-}
-
-.sticker-placeholder__sparkle--three {
-  top: 14%;
-  left: 1%;
-  color: #ed5aa7;
-  font-size: 1.2rem;
-  animation-delay: -1.2s;
-}
-
-.sticker-placeholder__copy {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.65rem;
-  text-align: left;
-}
-
-.sticker-placeholder__label {
-  display: inline-flex;
-  padding: 0.28rem 0.72rem;
-  color: #ffffff;
-  background: #1837c8;
-  border: 2px solid #082048;
-  border-radius: 999px;
-  font-family: var(--font-display);
-  font-size: 0.82rem;
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: 0.08em;
-}
-
-.sticker-placeholder__copy strong {
-  font-size: clamp(1.45rem, 4vw, 2.35rem);
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  white-space: nowrap;
-}
-
-.sticker-placeholder__copy > span:last-child {
-  font-size: clamp(0.88rem, 1.7vw, 1rem);
-  font-weight: 700;
-  line-height: 1.65;
-}
-
-@keyframes sticker-teaser-float {
-  0%,
-  100% {
-    transform: rotate(-5deg) translateY(0);
-  }
-
-  50% {
-    transform: rotate(-2deg) translateY(-7px);
-  }
-}
-
-@keyframes sticker-teaser-twinkle {
-  0%,
-  100% {
-    opacity: 0.45;
-    transform: scale(0.72) rotate(-10deg);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.12) rotate(8deg);
-  }
-}
-
-@keyframes sticker-teaser-shimmer {
-  to {
-    background-position: 180px 0;
-  }
 }
 
 @media (max-width: 768px) {
@@ -5908,40 +5867,6 @@ main > .judge > :not(.section-fish-layer) {
     width: 72px !important;
   }
 
-  .sticker-placeholder {
-    grid-template-columns: 92px minmax(0, 1fr);
-    gap: 0.9rem;
-    width: min(100%, 390px);
-    min-height: 210px;
-    padding: 1.1rem;
-    border-radius: 12px;
-    box-shadow: 6px 6px 0 #082048;
-  }
-
-  .sticker-placeholder__silhouette {
-    width: 100%;
-  }
-
-  .sticker-placeholder__copy {
-    gap: 0.48rem;
-  }
-
-  .sticker-placeholder__copy strong {
-    font-size: clamp(1rem, 5.3vw, 1.55rem);
-  }
-
-  .sticker-placeholder__copy > span:last-child {
-    font-size: 0.78rem;
-    line-height: 1.55;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .sticker-placeholder::before,
-  .sticker-placeholder__silhouette,
-  .sticker-placeholder__sparkle {
-    animation: none;
-  }
 }
 
 /* Archive section speech bubble matching the novelty section */
