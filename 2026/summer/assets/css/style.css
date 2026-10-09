@@ -3661,10 +3661,21 @@ main > .judge {
     line-height: 1.52 !important;
   }
 
-  .news ul {
-    width: calc(100% - 32px) !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
+  main > .news:not(.list) {
+    grid-template-columns: 12px minmax(0, 1fr) 12px;
+    column-gap: 0;
+  }
+
+  main > .news:not(.list) > ul {
+    width: 100% !important;
+  }
+
+  main > .news:not(.list) li > a {
+    padding: 1rem 2rem 1rem 0.85rem;
+  }
+
+  main > .news:not(.list) li > a::after {
+    right: 0.6rem;
   }
 
   .news li {

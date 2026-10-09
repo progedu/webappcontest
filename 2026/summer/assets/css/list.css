@@ -67,6 +67,10 @@
   margin-bottom: 0;
 }
 
+.entry-list-intro .date {
+  text-align: right;
+}
+
 .entry-list-toc {
   margin: 2.5rem 0 0;
   padding: 1.2rem clamp(1rem, 3vw, 2rem);
