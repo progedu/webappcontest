@@ -202,13 +202,14 @@ a.catalogue-image:hover { opacity: 0.85; }
 .catalogue-archive dd { margin: 4px 0 0; }
 .catalogue-archive .catalogue-links { margin-top: 0; }
 .catalogue-novelty__layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; align-items: center; }
-.catalogue-novelty__image { display: block; }
+.catalogue-novelty__image { display: block; padding: 12px; background: #fff; border: 2px solid #082048; border-radius: 8px; }
 .catalogue-novelty__image img { display: block; width: 100%; height: auto; }
 .catalogue-novelty__information { min-width: 0; }
 .catalogue-novelty__information h3 { margin: 0 0 16px; font-size: 22px; font-weight: 700; line-height: 1.6; }
 .catalogue-novelty__information h3 > span { display: inline-block; font-size: 16px; font-weight: 400; }
 .catalogue-novelty__information p { margin: 0; font-size: 16px; line-height: 1.9; }
-.catalogue-novelty__information strong { font-weight: 700; }
+.catalogue-novelty__information strong { display: block; margin-top: 16px; padding: 14px 16px; color: #082048; background: #ffdf51; border-left: 4px solid #082048; border-radius: 4px; font-size: 24px; font-weight: 700; line-height: 1.6; }
+.catalogue-novelty__information strong > span { display: inline-block; }
 .catalogue-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 8px 0 36px; font-size: 15px; }
 .catalogue-bottom a { min-height: 40px; display: inline-flex; align-items: center; text-underline-offset: 5px; }
 .contest-result footer { margin: 0; padding: 28px 24px; color: #e1f0f7; background: #102c54; font-size: 14px; font-weight: 400; }
@@ -290,6 +291,7 @@ a.catalogue-image:hover { opacity: 0.85; }
   .catalogue-archive__layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .catalogue-novelty__layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .catalogue-novelty__information h3 { font-size: 21px; }
+  .catalogue-novelty__information strong { font-size: 22px; }
   .catalogue-bottom { gap: 8px; padding-bottom: 24px; }
   .catalogue-bottom a { font-size: 14px; }
 }
