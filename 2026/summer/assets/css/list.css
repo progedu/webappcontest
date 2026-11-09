@@ -343,6 +343,9 @@
 
 .work-card__link--video {
   gap: 0.5rem;
+  color: #fff;
+  background: #23684d;
+  border-color: #23684d;
 }
 
 .work-card__link-icon {
@@ -361,6 +364,12 @@
 .work-card__link:hover {
   color: var(--ink);
   background: #fff;
+}
+
+.work-card__link--video:hover {
+  color: #fff;
+  background: #184c38;
+  border-color: #184c38;
 }
 
 .entry-list-bottom {
