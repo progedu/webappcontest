@@ -1,0 +1,299 @@
+/* Summer result article: clear hierarchy, readable text, consistent work layouts. */
+.contest-result {
+  --font-ja: "M PLUS Rounded 1c", sans-serif;
+  --font-display: var(--font-ja);
+  --catalogue-ink: #082048;
+  --catalogue-muted: #40566e;
+  --catalogue-line: #ccdae4;
+  --catalogue-cyan: #22c8e8;
+  --catalogue-pink: #f255a8;
+  --catalogue-yellow: #ffdb28;
+  --catalogue-department: var(--catalogue-cyan);
+  --catalogue-department-tint: #edfaff;
+  margin: 0;
+  color: var(--catalogue-ink);
+  background: #eaf5fa !important;
+  font-family: var(--font-ja);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.contest-result::before,
+.contest-result::after { display: none !important; }
+.contest-result main { overflow: clip; }
+.contest-result .site-nav .title a,
+.contest-result .site-nav__links a { font-family: var(--font-ja); font-weight: 700; }
+.contest-result .site-nav__links a { font-size: 14px; letter-spacing: 0; }
+.contest-result a:focus-visible { outline: 3px solid #0058a3; outline-offset: 5px; }
+.catalogue-skip { position: fixed; top: -100px; left: 16px; z-index: 100; padding: 12px 20px; color: #fff; background: #082048; }
+.catalogue-skip:focus { top: 16px; }
+.result-article { width: 100%; }
+
+/* Opening: the existing key visual supplies the summer identity. */
+.catalogue-header {
+  padding: 24px max(24px, calc((100vw - 1180px) / 2)) 32px;
+  color: #fff;
+  background: #102c54;
+}
+.catalogue-header__meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; color: #d5e9f5; }
+.catalogue-header__meta > a { text-underline-offset: 4px; }
+.catalogue-header__meta > span { border-left: 1px solid #7896b4; padding-left: 16px; }
+.catalogue-header__meta time { margin-left: auto; }
+.catalogue-header__layout { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr); align-items: center; gap: 40px; padding: 32px 0; }
+.catalogue-header__title > p { margin: 0 0 16px; font-size: 17px; line-height: 1.7; }
+.catalogue-header h1 { margin: 0; font-family: var(--font-ja); font-size: clamp(40px, 5vw, 64px); font-weight: 500; line-height: 1.3; letter-spacing: 0; }
+.catalogue-header h1 span { display: block; margin-bottom: 8px; color: #ffdf51; font-size: 22px; font-weight: 700; }
+.catalogue-header__visual { margin: 0; }
+.catalogue-header__visual img { display: block; width: 100%; height: auto; }
+.catalogue-introduction { max-width: 980px; padding-top: 24px; border-top: 1px solid #6f8aa8; font-size: 16px; line-height: 1.9; }
+.catalogue-introduction p { margin: 0 0 10px; }
+.catalogue-introduction p:last-child { margin-bottom: 0; }
+.catalogue-introduction strong { font-weight: 700; }
+.catalogue-introduction p:last-child strong { display: block; margin-top: 8px; color: #ffdf51; }
+
+/* One navigation above the article, so the work images retain their full width. */
+.catalogue-navigation { width: min(1180px, calc(100% - 48px)); margin: 32px auto; scroll-margin-top: 16px; }
+.catalogue-navigation > p { margin: 0 0 14px; font-size: 18px; font-weight: 700; }
+.catalogue-navigation ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.catalogue-navigation li { min-width: 0; padding: 16px 20px; background: #fff; border: 1px solid #bacddc; border-top: 6px solid var(--catalogue-department); border-radius: 8px; }
+.catalogue-navigation li > a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 40px; font-size: 18px; font-weight: 700; text-decoration: none; }
+.catalogue-navigation li > a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.catalogue-navigation li > div { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 8px; }
+.catalogue-navigation li > div a { display: inline-flex; align-items: center; min-height: 36px; color: #164d77; font-size: 15px; text-underline-offset: 4px; }
+.catalogue-navigation__special { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 28px; margin-top: 16px; padding: 12px 20px; background: #fff; border: 1px solid #bacddc; border-radius: 8px; font-size: 16px; }
+.catalogue-navigation__special > span { font-weight: 700; }
+.catalogue-navigation__special > a { display: inline-flex; align-items: center; gap: 12px; min-height: 40px; text-underline-offset: 4px; }
+.catalogue-division--web,
+.catalogue-navigation__web { --catalogue-department: #22c8e8; --catalogue-department-tint: #edfaff; }
+.catalogue-division--scratch,
+.catalogue-navigation__scratch { --catalogue-department: #f255a8; --catalogue-department-tint: #fff1f8; }
+.catalogue-division--unity,
+.catalogue-navigation__unity { --catalogue-department: #ffdb28; --catalogue-department-tint: #fffbea; }
+
+/* Department > affiliation > award. Color identifies the department throughout. */
+.catalogue-content { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+.catalogue-section { padding: 32px; margin-bottom: 36px; background: #fff; border: 1px solid #ccdae4; border-radius: 12px; scroll-margin-top: 16px; }
+.catalogue-section__heading { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin: -32px -32px 32px; padding: 24px 32px; background: var(--catalogue-department-tint); border-left: 8px solid var(--catalogue-department); border-bottom: 1px solid #ccdae4; border-radius: 11px 11px 0 0; }
+.catalogue-section__heading h2 { margin: 0; font-size: 32px; font-weight: 700; line-height: 1.45; }
+.catalogue-section__heading > p { margin: 0 0 0 auto; color: #334d64; font-size: 15px; white-space: nowrap; }
+.catalogue-division-group { margin-bottom: 48px; scroll-margin-top: 16px; }
+.catalogue-division-group:last-child { margin-bottom: 0; }
+.catalogue-division-group + .catalogue-division-group { padding-top: 32px; border-top: 2px solid #ccdae4; }
+.catalogue-division-group__heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 28px; }
+.catalogue-division-group__heading h3 { margin: 0; font-size: 26px; font-weight: 700; line-height: 1.5; }
+.catalogue-division-group__heading p { margin: 0; color: #40566e; font-size: 15px; }
+.catalogue-award { margin-bottom: 36px; }
+.catalogue-award:last-child { margin-bottom: 0; }
+.catalogue-award__heading { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; padding-left: 12px; border-left: 4px solid var(--catalogue-department); }
+.catalogue-award__heading h3,
+.catalogue-award__heading h4 { margin: 0; font-size: 21px; font-weight: 700; line-height: 1.5; }
+.catalogue-award__heading p { margin: 0; color: #40566e; font-size: 14px; }
+
+/* A large first prize, followed by a consistent two-column gallery. */
+.catalogue-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.catalogue-grid--grand { grid-template-columns: minmax(0, 1fr); }
+.catalogue-work { display: flex; flex-direction: column; min-width: 0; overflow: hidden; color: #082048; background: #fff; border: 1px solid #bacddc; border-top: 4px solid var(--catalogue-department); border-radius: 8px; scroll-margin-top: 16px; }
+.catalogue-image { display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: #f3f7fa; border-bottom: 1px solid #d6e1e9; }
+.catalogue-image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+a.catalogue-image:hover { opacity: 0.85; }
+.catalogue-work__information { display: flex; flex-direction: column; flex: 1; padding: 20px; }
+.catalogue-work__division { margin: 0 0 10px; color: #40566e; font-size: 14px; line-height: 1.7; }
+.catalogue-work__title { margin: 0 0 10px; font-size: 22px; font-weight: 700; line-height: 1.55; overflow-wrap: anywhere; }
+.catalogue-work__author { margin: 0 0 4px; color: #263f58; font-size: 16px; line-height: 1.8; }
+.catalogue-links { display: flex; align-items: stretch; flex-wrap: wrap; gap: 12px; margin-top: auto; padding-top: 20px; }
+.catalogue-link { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px; padding: 10px 16px; color: #082048; background: var(--catalogue-department); border: 1px solid #082048; border-radius: 5px; font-size: 15px; font-weight: 700; line-height: 1.5; text-decoration: none; }
+.catalogue-link[href*="github.com"] { background: #fff; }
+.catalogue-link__icon { display: block; flex: 0 0 auto; width: 20px; height: 20px; }
+.catalogue-link:hover { background: var(--catalogue-department-tint); }
+.catalogue-work--grand { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+.catalogue-work--grand .catalogue-image { align-self: stretch; aspect-ratio: 16 / 10; padding: 16px; border-bottom: 0; border-right: 1px solid #d6e1e9; }
+.catalogue-work--grand .catalogue-work__information { justify-content: center; padding: 28px; }
+.catalogue-work--grand .catalogue-work__title { font-size: 30px; line-height: 1.5; }
+.catalogue-work--grand .catalogue-links { margin-top: 0; }
+
+/* Gold and silver distinguish the award tiers; department colors stay on the navigation and buttons. */
+.catalogue-award--grand {
+  --award-edge: #b48b28;
+  --award-ink: #72510b;
+  --award-face: #fff0ae;
+  --award-surface: #fffaf0;
+  --award-reflection: linear-gradient(110deg, #c8a03e 0%, #eed17e 24%, #fff4c4 46%, #e6c36a 72%, #d5af4b 100%);
+  --award-shadow: rgba(115, 79, 9, 0.14);
+}
+.catalogue-award--excellent {
+  --award-edge: #8c99a8;
+  --award-ink: #465465;
+  --award-face: #f6f9fc;
+  --award-surface: #f5f7fa;
+  --award-reflection: linear-gradient(110deg, #aab5c2 0%, #dce2e9 24%, #fafcfe 46%, #cad3dd 72%, #b6c1ce 100%);
+  --award-shadow: rgba(46, 65, 88, 0.12);
+}
+.catalogue-award--grand .catalogue-award__heading,
+.catalogue-award--excellent .catalogue-award__heading {
+  gap: 14px;
+  padding: 12px 20px;
+  color: #082048;
+  background: var(--award-reflection);
+  border: 1px solid var(--award-edge);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), inset 0 -1px 0 rgba(255, 255, 255, 0.45);
+}
+.catalogue-award--grand .catalogue-award__heading p,
+.catalogue-award--excellent .catalogue-award__heading p { margin-left: auto; color: #082048; }
+.catalogue-award__medal { display: block; flex: 0 0 auto; width: 40px; height: 46px; color: var(--award-ink); }
+.catalogue-award__medal-face { fill: var(--award-face); }
+.catalogue-award--grand .catalogue-work,
+.catalogue-award--excellent .catalogue-work {
+  border: 2px solid var(--award-edge);
+  border-top-width: 6px;
+  box-shadow: 0 4px 14px var(--award-shadow), 0 1px 2px rgba(8, 32, 72, 0.06);
+}
+.catalogue-award--grand .catalogue-image,
+.catalogue-award--excellent .catalogue-image { background: #fff; }
+.catalogue-award--grand .catalogue-work__information,
+.catalogue-award--excellent .catalogue-work__information { background: linear-gradient(135deg, #fff 0%, var(--award-surface) 70%); }
+
+/* The special-award gift uses the summer yellow from the supplied T-shirt. */
+.catalogue-prize { display: flex; align-items: center; gap: 28px; margin-bottom: 24px; padding: 20px 28px; background: #fffbea; border: 1px solid #dfd6ac; border-left: 6px solid #ffdb28; border-radius: 8px; }
+.catalogue-prize > img { display: block; flex: 0 0 auto; width: 160px; height: 160px; object-fit: contain; background: #fff; border: 1px solid #e4e7eb; border-radius: 4px; }
+.catalogue-prize__information { min-width: 0; }
+.catalogue-prize__label { display: inline-block; margin: 0 0 6px; padding: 0 10px; color: #fff; background: #082048; border-radius: 3px; font-size: 14px; font-weight: 700; line-height: 1.8; }
+.catalogue-prize__title { margin: 0 0 8px; font-size: 22px; font-weight: 700; line-height: 1.5; }
+.catalogue-prize__description { margin: 0; color: #263f58; font-size: 16px; line-height: 1.8; }
+
+/* Special awards stand alongside the department results, outside affiliation groups. */
+.catalogue-special-award--judges { --catalogue-department: #082048; --catalogue-department-tint: #f0f5fa; }
+.catalogue-special-award--judges .catalogue-work { border-top-color: #082048; }
+.catalogue-special-award--judges .catalogue-link { color: #fff; }
+.catalogue-special-award--judges .catalogue-link[href*="github.com"] { color: #082048; }
+.catalogue-special-award--judges .catalogue-link:hover { color: #082048; }
+.catalogue-judge { display: flex; align-items: center; gap: 16px; padding: 20px; background: #f0f5fa; border-bottom: 1px solid #ccdae4; }
+.catalogue-judge__portrait { display: block; flex: 0 0 auto; width: 80px; height: 80px; object-fit: contain; background: #fff; border: 1px solid #ccdae4; border-radius: 8px; }
+.catalogue-judge__information { min-width: 0; }
+.catalogue-judge__award { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.5; }
+.catalogue-judge__name { margin: 4px 0 0; font-size: 16px; line-height: 1.7; overflow-wrap: anywhere; }
+.catalogue-judge__role { margin: 2px 0 0; color: #40566e; font-size: 14px; line-height: 1.7; }
+.catalogue-special-award--audience { --catalogue-department: #23684d; --catalogue-department-tint: #f0faf4; }
+.catalogue-audience__heading { gap: 24px; }
+.catalogue-audience__introduction { flex: 1; min-width: 0; }
+.catalogue-audience__label { position: relative; display: inline-block; margin: 0 0 18px; padding: 5px 14px; color: #23684d; background: #fff; border: 1px solid #23684d; border-radius: 20px; font-size: 14px; font-weight: 700; line-height: 1.7; }
+.catalogue-audience__label::after { position: absolute; bottom: -6px; left: 24px; width: 10px; height: 10px; content: ""; background: #fff; border-right: 1px solid #23684d; border-bottom: 1px solid #23684d; transform: rotate(45deg); }
+.catalogue-audience__heading h2 > span { display: inline-block; margin-left: 16px; color: #334d64; font-size: 15px; font-weight: 400; white-space: nowrap; }
+.catalogue-audience__description { margin: 12px 0 0; color: #263f58; font-size: 16px; line-height: 1.8; }
+.catalogue-audience__supporters { display: block; flex: 0 0 auto; align-self: flex-end; width: 176px; height: auto; aspect-ratio: 1600 / 930; object-fit: cover; object-position: center top; margin-bottom: -24px; mix-blend-mode: multiply; }
+.catalogue-special-award--audience .catalogue-work { border-top-color: #23684d; }
+.catalogue-special-award--audience .catalogue-link { color: #fff; }
+.catalogue-special-award--audience .catalogue-link[href*="github.com"] { color: #082048; }
+.catalogue-special-award--audience .catalogue-link:hover { color: #082048; }
+
+.catalogue-award--honors { padding: 24px; background: #f3f7fa; border: 1px solid #d5e1e8; border-radius: 8px; }
+.catalogue-list-guide { margin: 0 0 16px; font-size: 16px; line-height: 1.85; }
+
+/* Broadcast and participation announcements appear before the results. */
+.catalogue-archive--lead,
+.catalogue-novelty { width: min(1180px, calc(100% - 48px)); margin: 32px auto; }
+.catalogue-archive > p { max-width: 72ch; margin: 0 0 24px; font-size: 16px; line-height: 1.9; }
+.catalogue-archive__layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; align-items: center; }
+.catalogue-archive__banner img { display: block; width: 100%; height: auto; }
+.catalogue-archive dl { margin: 0; font-size: 16px; }
+.catalogue-archive dt { margin-top: 16px; color: #40566e; font-size: 14px; font-weight: 700; }
+.catalogue-archive dt:first-child { margin-top: 0; }
+.catalogue-archive dd { margin: 4px 0 0; }
+.catalogue-archive .catalogue-links { margin-top: 0; }
+.catalogue-novelty__layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; align-items: center; }
+.catalogue-novelty__image { display: block; }
+.catalogue-novelty__image img { display: block; width: 100%; height: auto; }
+.catalogue-novelty__information { min-width: 0; }
+.catalogue-novelty__information h3 { margin: 0 0 16px; font-size: 22px; font-weight: 700; line-height: 1.6; }
+.catalogue-novelty__information h3 > span { display: inline-block; font-size: 16px; font-weight: 400; }
+.catalogue-novelty__information p { margin: 0; font-size: 16px; line-height: 1.9; }
+.catalogue-novelty__information strong { font-weight: 700; }
+.catalogue-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 8px 0 36px; font-size: 15px; }
+.catalogue-bottom a { min-height: 40px; display: inline-flex; align-items: center; text-underline-offset: 5px; }
+.contest-result footer { margin: 0; padding: 28px 24px; color: #e1f0f7; background: #102c54; font-size: 14px; font-weight: 400; }
+
+@media (max-width: 900px) {
+  .catalogue-audience__supporters { margin-bottom: -20px; }
+  .catalogue-header__layout { gap: 24px; }
+  .catalogue-header__title > p { font-size: 16px; }
+  .catalogue-header h1 { font-size: 44px; }
+  .catalogue-header h1 span { font-size: 20px; }
+  .catalogue-section { padding: 24px; }
+  .catalogue-section__heading { margin: -24px -24px 28px; padding: 20px 24px; }
+  .catalogue-section__heading h2 { font-size: 28px; }
+  .catalogue-work--grand .catalogue-work__information { padding: 22px; }
+  .catalogue-work--grand .catalogue-work__title { font-size: 26px; }
+}
+
+@media (max-width: 680px) {
+  .catalogue-header { padding: 20px 20px 28px; }
+  .catalogue-header__meta { font-size: 14px; }
+  .catalogue-header__meta time { width: 100%; margin-left: 0; }
+  .catalogue-header__layout { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 24px 0; }
+  .catalogue-header__title > p { margin-bottom: 12px; }
+  .catalogue-header h1 { font-size: 44px; }
+  .catalogue-header h1 span { font-size: 20px; }
+  .catalogue-header__visual { max-width: 520px; }
+  .catalogue-introduction { padding-top: 20px; font-size: 16px; }
+  .catalogue-introduction br { display: none; }
+  .catalogue-navigation,
+  .catalogue-content,
+  .catalogue-archive--lead,
+  .catalogue-novelty,
+  .catalogue-bottom { width: calc(100% - 32px); }
+  .catalogue-archive--lead,
+  .catalogue-novelty { margin-block: 24px; }
+  .catalogue-navigation { margin-block: 24px; }
+  .catalogue-navigation ul { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .catalogue-navigation li { padding: 12px 16px; border-top-width: 4px; }
+  .catalogue-navigation li > a { min-height: 36px; font-size: 17px; }
+  .catalogue-navigation li > div { gap: 4px 20px; margin-top: 0; }
+  .catalogue-navigation__special { gap: 4px 20px; padding: 12px 16px; }
+  .catalogue-navigation__special > span { width: 100%; }
+  .catalogue-section { padding: 20px 16px; margin-bottom: 24px; scroll-margin-top: 12px; }
+  .catalogue-section__heading { gap: 6px 16px; margin: -20px -16px 24px; padding: 18px 16px; border-left-width: 6px; }
+  .catalogue-section__heading h2 { font-size: 25px; }
+  .catalogue-section__heading > p { margin-left: 0; font-size: 14px; }
+  .catalogue-division-group { margin-bottom: 36px; scroll-margin-top: 12px; }
+  .catalogue-division-group + .catalogue-division-group { padding-top: 24px; }
+  .catalogue-division-group__heading { gap: 4px 16px; margin-bottom: 24px; }
+  .catalogue-division-group__heading h3 { font-size: 23px; }
+  .catalogue-division-group__heading p { font-size: 14px; }
+  .catalogue-award { margin-bottom: 30px; }
+  .catalogue-award__heading { gap: 12px; padding-left: 10px; }
+  .catalogue-award__heading h3,
+  .catalogue-award__heading h4 { font-size: 20px; }
+  .catalogue-award--grand .catalogue-award__heading,
+  .catalogue-award--excellent .catalogue-award__heading { gap: 10px; padding: 12px; }
+  .catalogue-award__medal { width: 32px; height: 40px; }
+  .catalogue-prize { flex-direction: column; gap: 16px; padding: 20px 16px; }
+  .catalogue-prize > img { width: 160px; height: 160px; }
+  .catalogue-prize__information { width: 100%; }
+  .catalogue-prize__title { font-size: 21px; }
+  .catalogue-judge { gap: 12px; padding: 16px; }
+  .catalogue-judge__portrait { width: 64px; height: 64px; }
+  .catalogue-audience__heading { flex-wrap: nowrap; gap: 12px; }
+  .catalogue-audience__heading h2 > span { display: block; margin: 8px 0 0; font-size: 14px; }
+  .catalogue-audience__label { padding: 4px 10px; font-size: 14px; }
+  .catalogue-audience__supporters { width: 72px; margin-bottom: -18px; }
+  .catalogue-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .catalogue-work--grand { display: flex; }
+  .catalogue-work--grand .catalogue-image { padding: 12px; border-right: 0; border-bottom: 1px solid #d6e1e9; }
+  .catalogue-work__information,
+  .catalogue-work--grand .catalogue-work__information { padding: 18px 16px; }
+  .catalogue-work__title { font-size: 21px; }
+  .catalogue-work--grand .catalogue-work__title { font-size: 26px; }
+  .catalogue-links { gap: 10px; padding-top: 16px; }
+  .catalogue-link { min-height: 46px; padding: 10px 14px; font-size: 15px; }
+  .catalogue-award--honors { padding: 20px 16px; }
+  .catalogue-archive__layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .catalogue-novelty__layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .catalogue-novelty__information h3 { font-size: 21px; }
+  .catalogue-bottom { gap: 8px; padding-bottom: 24px; }
+  .catalogue-bottom a { font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
