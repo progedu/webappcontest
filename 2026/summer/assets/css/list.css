@@ -340,6 +340,18 @@
   text-decoration: none;
 }
 
+
+.work-card__link--video {
+  gap: 0.5rem;
+}
+
+.work-card__link-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+}
+
 .work-card__link--secondary {
   background: var(--ink);
   border-color: var(--ink);

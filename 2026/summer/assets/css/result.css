@@ -104,6 +104,7 @@ a.catalogue-image:hover { opacity: 0.85; }
 .catalogue-links { display: flex; align-items: stretch; flex-wrap: wrap; gap: 12px; margin-top: auto; padding-top: 20px; }
 .catalogue-link { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 46px; padding: 10px 16px; color: #082048; background: var(--catalogue-department); border: 1px solid #082048; border-radius: 5px; font-size: 15px; font-weight: 700; line-height: 1.5; text-decoration: none; }
 .catalogue-link[href*="github.com"] { background: #fff; }
+.catalogue-division--scratch .catalogue-link--video { background: #fff; }
 .catalogue-link__icon { display: block; flex: 0 0 auto; width: 20px; height: 20px; }
 .catalogue-link:hover { background: var(--catalogue-department-tint); }
 .catalogue-work--grand { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
