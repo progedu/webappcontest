@@ -190,7 +190,30 @@ a.catalogue-image:hover { opacity: 0.85; }
 .catalogue-special-award--audience .catalogue-link:hover { color: #082048; }
 
 .catalogue-award--honors { padding: 24px; background: #f3f7fa; border: 1px solid #d5e1e8; border-radius: 8px; }
-.catalogue-list-guide { margin: 0 0 16px; font-size: 16px; line-height: 1.85; }
+.catalogue-honors-disclosure > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 58px; padding: 14px 16px; color: #082048; background: #fff; border: 1px solid #bacddc; border-radius: 6px; font-size: 17px; font-weight: 700; line-height: 1.6; list-style: none; cursor: pointer; }
+.catalogue-honors-disclosure > summary::-webkit-details-marker { display: none; }
+.catalogue-honors-disclosure > summary:hover { background: var(--catalogue-department-tint); }
+.catalogue-honors-disclosure > summary:focus-visible { outline: 3px solid #0058a3; outline-offset: 4px; }
+.catalogue-honors-disclosure__open { display: none; }
+.catalogue-honors-disclosure[open] > summary { background: var(--catalogue-department-tint); border-radius: 6px 6px 0 0; }
+.catalogue-honors-disclosure[open] .catalogue-honors-disclosure__closed { display: none; }
+.catalogue-honors-disclosure[open] .catalogue-honors-disclosure__open { display: inline; }
+.catalogue-honors-disclosure__toggle { position: relative; display: block; flex: 0 0 auto; width: 20px; height: 20px; }
+.catalogue-honors-disclosure__toggle::before,
+.catalogue-honors-disclosure__toggle::after { position: absolute; top: 9px; left: 3px; width: 14px; height: 2px; content: ""; background: currentColor; }
+.catalogue-honors-disclosure__toggle::after { transform: rotate(90deg); }
+.catalogue-honors-disclosure[open] .catalogue-honors-disclosure__toggle::after { display: none; }
+.catalogue-honors-disclosure__body { padding: 0 18px; background: #fff; border: 1px solid #bacddc; border-top: 0; border-radius: 0 0 6px 6px; }
+.catalogue-honors-list { margin: 0; padding: 0; list-style: none; }
+.catalogue-honors-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 16px; padding: 16px 0; border-bottom: 1px solid #d5e1e8; }
+.catalogue-honors-item:last-child { border-bottom: 0; }
+.catalogue-honors-item__information { min-width: 0; }
+.catalogue-honors-item__title { margin: 0; font-size: 17px; font-weight: 700; line-height: 1.6; overflow-wrap: anywhere; }
+.catalogue-honors-item__author { margin: 4px 0 0; color: #40566e; font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+.catalogue-honors-item__links { gap: 8px; margin: 0; padding: 0; }
+.catalogue-honors-item__links .catalogue-link { padding: 8px 12px; font-size: 14px; }
+.catalogue-honors-guide { margin: 12px 0 0; font-size: 14px; line-height: 1.7; }
+.catalogue-honors-guide a { display: inline-flex; align-items: center; min-height: 40px; text-underline-offset: 4px; }
 
 /* Broadcast and participation announcements appear before the results. */
 .catalogue-archive--lead,
@@ -291,6 +314,9 @@ a.catalogue-image:hover { opacity: 0.85; }
   .catalogue-links { gap: 10px; padding-top: 16px; }
   .catalogue-link { min-height: 46px; padding: 10px 14px; font-size: 15px; }
   .catalogue-award--honors { padding: 20px 16px; }
+  .catalogue-honors-disclosure > summary { gap: 12px; padding: 14px 12px; font-size: 16px; }
+  .catalogue-honors-disclosure__body { padding: 0 12px; }
+  .catalogue-honors-item { grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .catalogue-archive__layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .catalogue-novelty__layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .catalogue-novelty__information h3 { font-size: 21px; }
