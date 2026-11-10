@@ -190,7 +190,7 @@ a.catalogue-image:hover { opacity: 0.85; }
 .catalogue-special-award--audience .catalogue-link:hover { color: #082048; }
 
 .catalogue-award--honors { padding: 24px; background: #f3f7fa; border: 1px solid #d5e1e8; border-radius: 8px; }
-.catalogue-honors-disclosure > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 58px; padding: 14px 16px; color: #082048; background: #fff; border: 1px solid #bacddc; border-radius: 6px; font-size: 17px; font-weight: 700; line-height: 1.6; list-style: none; cursor: pointer; }
+.catalogue-honors-disclosure > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 58px; padding: 14px 16px; color: #082048; background: #fff; border: 1px solid #bacddc; border-radius: 6px; font-size: 17px; font-weight: 700; line-height: 1.6; list-style: none; cursor: pointer; scroll-margin-top: 16px; }
 .catalogue-honors-disclosure > summary::-webkit-details-marker { display: none; }
 .catalogue-honors-disclosure > summary:hover { background: var(--catalogue-department-tint); }
 .catalogue-honors-disclosure > summary:focus-visible { outline: 3px solid #0058a3; outline-offset: 4px; }
@@ -207,6 +207,10 @@ a.catalogue-image:hover { opacity: 0.85; }
 .catalogue-honors-list { margin: 0; padding: 0; list-style: none; }
 .catalogue-honors-item { min-width: 0; }
 .catalogue-honors-item > .catalogue-work { height: 100%; }
+.catalogue-honors-close { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; min-height: 52px; margin: 24px 0 0; padding: 12px 16px; color: #082048; background: var(--catalogue-department-tint); border: 1px solid #bacddc; border-radius: 6px; font: inherit; font-weight: 700; cursor: pointer; }
+.catalogue-honors-close[hidden] { display: none; }
+.catalogue-honors-close:hover { background: #e6f0f7; }
+.catalogue-honors-close:focus-visible { outline: 3px solid #0058a3; outline-offset: 4px; }
 .catalogue-honors-guide { margin: 12px 0 0; font-size: 14px; line-height: 1.7; }
 .catalogue-honors-guide a { display: inline-flex; align-items: center; min-height: 40px; text-underline-offset: 4px; }
 
