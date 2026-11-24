@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" preserveAspectRatio="none" fill="none">
+  <style>
+    .land { --far:#91adae; --near:#6c9994; --line:#547d7a; --bough:#466f66; --pasture:#8daa71; --bank:#b1c687; --field:#92b173; --furrow:#72965f; --tuft:#618157; --caps:none; }
+    :is(#unity,#unity-snow):target ~ .land { --far:#b7aaa5; --near:#918f80; }
+    :is(#scratch,#scratch-snow):target ~ .land { --far:#b8b192; --near:#949b77; }
+    .winter:target ~ .land { --pasture:#c5d8e1; --bank:#f8fbfb; --field:#e4eef1; --furrow:#c1d4dd; --caps:inline; }
+    .winter:target ~ .land .grass { display:none; }
+    .snow-cap { display:var(--caps); }
+    .plum { display:none; }
+    :is(#unity,#unity-snow):target ~ .land .plum { display:inline; }
+  </style>
+  <defs>
+    <g id="pine">
+      <path d="m-2 0 1 21h3L2 0" fill="var(--bough)"/>
+      <path d="M0-49c-1 8-8 16-14 20l8-1c-4 7-10 13-18 18l12-1c-7 7-14 12-21 15 12 5 22 4 33 1 11 3 21 3 32-1-9-4-16-9-21-15l11 1c-9-6-15-12-19-19l8 1C8-36 3-42 0-49Z" fill="var(--bough)"/>
+      <path class="snow-cap" d="m0-48-9 16 7-4 5 4 5 1zm-5 23-11 12 10-3 8 2-5-5zm-5 23-10 5 12-1 8-3z" fill="#f8fbfc"/>
+    </g>
+    <path id="tuft" d="M0 0c-4-8-8-12-13-15 6 1 10 4 13 8-1-10 1-16 4-22-1 10 0 17 2 22 4-7 9-11 15-12-6 5-10 12-12 18z" fill="var(--tuft)"/>
+    <g id="seed" stroke-linecap="round">
+      <path d="M0 0Q-1-16 6-35m-6 33q-7-11-16-14" stroke="var(--tuft)" stroke-width="1.8"/>
+      <path d="M4-28q-1-7 7-13 1 7-7 13Z" fill="#cbba79"/>
+    </g>
+    <path id="petal" d="M0 0c-5-4-7-9-3-11 2-1 4 0 4 2 2-2 4-2 5 0C8-6 4-2 0 0Z"/>
+    <g id="blossom" fill="#ce7662">
+      <use href="#petal"/><use href="#petal" transform="rotate(72)"/><use href="#petal" transform="rotate(144)"/>
+      <use href="#petal" transform="rotate(216)"/><use href="#petal" transform="rotate(288)"/>
+      <circle r="2.4" fill="#f8db98"/>
+    </g>
+  </defs>
+  <g id="unity"/><g id="scratch"/>
+  <g class="winter" id="snow"/><g class="winter" id="unity-snow"/><g class="winter" id="scratch-snow"/>
+  <g class="land">
+    <path d="m0 198 54-30 35 9 47-26 49 21 28-7 54 29 38-4 80 29 47-5 53 21 64-9 82 27 62-14 45 3 68-28 37 9 61-35 42 4 72-40 37 8 57-43 39 17 32-18 53 12 46-20v253H0Z" fill="var(--far)"/>
+    <path d="m0 220 56-32 35 10 30-16 48 29 49 6 46 26 55 2 56 22 81 5 64 14 104-1 81 13 71-20 58-8 48-30 29-5 60-37 28-5 55-40 29 11 57-38 45 16 38-24 37-8 30-31 38 8 21-11 39 18v227H0Z" fill="var(--near)"/>
+    <g class="snow-cap" fill="#f5fafb">
+      <path d="m0 219 56-32 35 10 29-15 28 17-27-10-26 17-10-3-6 3-22-11-29 19-2-3z"/>
+      <path d="m946 221 29-27 28-5 55-40 29 11 57-38 28 9-27-2-36 29 9-2-27 15-30-13-28 24-19 5-7 9-24 2z"/>
+      <path d="m1193 135 38-24 37-8 12-13v9l-10 10-36 10-15 12 2-6z"/>
+    </g>
+    <path d="m1016 205 31-18 13-15 15 6m37-7 31-25 10 2m-1055 67 19-13 15 4" stroke="var(--line)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M0 246q75-24 156 3 136 49 264 61 154 20 328-17 158-39 254-43 156-13 278-45v155H0Z" fill="var(--pasture)"/>
+    <path d="M0 273q65-22 123-1t171 34q173 31 317 19 180-13 314-29 102-13 169-38 89-33 186-28v130H0Z" fill="var(--bank)"/>
+    <path d="M0 318q105-30 222-2 114 28 260 34-134 5-255-13Q111 317 0 338zm764 17q121-24 206-25 97-3 157-28 70-27 153-24v14q-64-7-143 23-66 24-160 25-93 0-213 15Z" fill="var(--field)"/>
+    <path d="M0 281q77-14 132 4m942-14q57-20 111-20m-144 44q47-6 76-16" stroke="var(--furrow)" stroke-width="2" stroke-linecap="round"/>
+    <g class="grass">
+      <use href="#tuft" transform="translate(8 344) scale(.98)"/><use href="#tuft" transform="translate(67 286) scale(.49)"/>
+      <use href="#seed" transform="translate(38 325) rotate(-7)"/><use href="#seed" transform="translate(52 326) scale(.73) rotate(6)"/>
+      <use href="#tuft" transform="translate(133 333) scale(.7)"/><use href="#tuft" transform="translate(271 311) scale(.4)"/>
+      <use href="#tuft" transform="translate(494 344) scale(.48)"/><use href="#seed" transform="translate(779 351) scale(.69)"/>
+      <use href="#tuft" transform="translate(879 314) scale(.36)"/><use href="#tuft" transform="translate(1055 346) scale(.8)"/>
+      <use href="#tuft" transform="translate(1111 274) scale(.46)"/><use href="#seed" transform="translate(1175 312) rotate(13)"/>
+      <use href="#seed" transform="translate(1187 312) scale(.7)"/><use href="#tuft" transform="translate(1232 336)"/>
+      <use href="#tuft" transform="translate(1273 266) scale(.62)"/>
+    </g>
+    <use href="#pine" transform="translate(22 259) scale(1.12)"/><use href="#pine" transform="translate(52 259) scale(.69)"/>
+    <g class="plum">
+      <path d="M1293 226q-25-58-70-78-31-16-70-17 37-2 64 10-12-15-17-37 11 25 28 36 23 13 35 28-3-19 2-42-2 31 11 50l17 20z" fill="#966959"/>
+      <use href="#blossom" transform="translate(1162 131) scale(.75)"/><use href="#blossom" transform="translate(1201 107) scale(.92)"/>
+      <use href="#blossom" transform="translate(1222 146) scale(1.15)"/><use href="#blossom" transform="translate(1265 125) scale(.80)"/>
+      <circle cx="1198" cy="99" r="3" fill="#bd6857"/><circle cx="1259" cy="133" r="3.7" fill="#bd6857"/>
+    </g>
+  </g>
+</svg>

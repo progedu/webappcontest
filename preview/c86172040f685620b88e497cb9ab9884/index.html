@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ZEN Study プログラミングコンテスト2026 冬</title>
+  <script>document.documentElement.setAttribute('data-page-loading','');</script>
+  <style>
+    .page-loader { display: none; }
+    html[data-page-loading] { overflow: hidden; scrollbar-gutter: stable; }
+    html[data-page-loading] body > :not(.page-loader) { visibility: hidden; }
+    html[data-page-loading] .page-loader {
+      display: grid; position: fixed; inset: 0; z-index: 200; place-items: center;
+      background: #fff9ec; color: #17266c;
+    }
+    @media print {
+      html[data-page-loading] { overflow: visible; }
+      html[data-page-loading] .page-loader { display: none; }
+      html[data-page-loading] body > :not(.page-loader) { visibility: visible; }
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="preload" as="image" href="assets/img/astaris-break-original.png">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/zen-maru-gothic-headings.woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css?20261125-omikuji-v65">
+  <meta name="description" content="ZEN Study プログラミングコンテスト2026冬の概要ページです。Webページ部門・Unity部門・Scratch部門。応募締切は2027年1月17日（日）です。">
+  <meta property="og:title" content="ZEN Study プログラミングコンテスト2026冬">
+  <meta property="og:description" content="Webページ・Unity・Scratchの3部門で作品を募集します。応募締切は2027年1月17日（日）です。">
+  <meta property="og:url" content="https://progedu.github.io/webappcontest/preview/c86172040f685620b88e497cb9ab9884/">
+  <meta property="og:image" content="https://progedu.github.io/webappcontest/preview/c86172040f685620b88e497cb9ab9884/assets/img/2026winter-ogp.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:image:alt" content="ZEN Study プログラミングコンテスト2026冬。絵馬の隣で大吉のおみくじを引くアスタリスくん。">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ZEN Study プログラミングコンテスト2026冬">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="image_src" href="assets/img/2026winter-ogp.png">
+</head>
+
+<body id="page-top">
+  <div class="page-loader">
+    <div class="page-loader__inner">
+      <img src="assets/img/astaris-break-original.png" width="2048" height="1580" alt="お茶を飲んでひと休みするアスタリスくん" fetchpriority="high">
+      <div class="page-loader__label">
+        <span role="status">読み込み中</span>
+        <span data-load-progress aria-hidden="true">0%</span>
+      </div>
+      <progress value="0" max="100" aria-label="ページの読み込み"></progress>
+      <button type="button" hidden>先にページを開く</button>
+    </div>
+  </div>
+  <a class="skip-link" href="#entry">応募部門を選ぶ</a>
+  <header class="site-nav">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="#page-top">
+        <img src="assets/img/logo_horizontal.svg" alt="ZEN Study" width="440" height="135">
+        <span class="site-nav__title">
+          <span class="site-nav__name">プログラミングコンテスト</span>
+          <span class="site-nav__edition">2026 冬</span>
+        </span>
+      </a>
+      <nav class="site-nav__links" aria-label="ヘッダーから応募部門を選ぶ">
+        <a href="#department-web" data-department-choice>Webページ部門</a>
+        <a href="#department-unity" data-department-choice>Unity部門</a>
+        <a href="#department-scratch" data-department-choice>Scratch部門</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="sr-only">ZEN Study プログラミングコンテスト2026冬</h1>
+    <div class="header hero-visual">
+      <picture>
+        <source type="image/webp" srcset="assets/img/2026winter_banner-600.webp?omikuji=20261125 600w, assets/img/2026winter_banner.webp?omikuji=20261125 1280w" sizes="100vw">
+        <img src="assets/img/2026winter_banner.png?omikuji=20261125" srcset="assets/img/2026winter_banner-600.png?omikuji=20261125 600w, assets/img/2026winter_banner.png?omikuji=20261125 1280w" sizes="100vw" alt="ZEN Study プログラミングコンテスト2026冬。応募締切は2027年1月17日（日）" width="1280" height="720" fetchpriority="high">
+      </picture>
+      <button class="hero-fortune" type="button" aria-label="アスタリスくんのおみくじを引く" disabled>
+        <img src="assets/img/omikuji/ready.png" width="2048" height="1843" alt="">
+      </button>
+      <span class="sr-only" id="fortune-announcement" role="status" aria-live="polite" aria-atomic="true"></span>
+      <template id="fortune-poses">
+        <img src="assets/img/omikuji/shake-1.png" alt="">
+        <img src="assets/img/omikuji/shake-2.png" alt="">
+        <img src="assets/img/omikuji/daikichi.png" alt="大吉">
+        <img src="assets/img/omikuji/chukichi.png" alt="中吉">
+        <img src="assets/img/omikuji/kichi.png" alt="吉">
+        <img src="assets/img/omikuji/shokichi.png" alt="小吉">
+        <img src="assets/img/omikuji/suekichi.png" alt="末吉">
+        <img src="assets/img/omikuji/kyo.png" alt="凶">
+      </template>
+    </div>
+
+    <div class="winter-sky" aria-hidden="true">
+      <canvas class="winter-sky__colors" width="224" height="160" hidden></canvas>
+      <span class="winter-sky__kasumi"></span>
+      <span class="winter-sky__stars"></span>
+      <svg class="winter-sky__constellation" role="img" aria-label="星を結んだアスタリスくんの顔" focusable="false" xmlns="http://www.w3.org/2000/svg" width="180" height="140" viewBox="0 0 180 140" fill="none">
+        <defs>
+          <g id="astaris-chart-star">
+            <circle r="3.5" fill="#ffe3a4" opacity=".14"/>
+            <circle r="1.7" fill="#fff3d9"/>
+          </g>
+          <g id="astaris-chart-bright">
+            <circle r="5.5" fill="#ffd994" opacity=".12"/>
+            <path d="M0-4.4.9-1 4.5 0 1 .9 0 4.5-.9 1-4.5 0-1-1Z" fill="#ffe4af"/>
+            <circle r="1.45" fill="#fff9ee"/>
+          </g>
+        </defs>
+
+        <g stroke-linecap="round" stroke-linejoin="round">
+          <g stroke="#e5c895" stroke-width="1.65">
+            <path d="m46 43-4-22 4-9 9-1 15 11 19-4 20 4 14-11 9 2 4 9-6 21"/>
+          </g>
+          <g stroke="#d4c6ae" stroke-width="1.55">
+            <path d="m130 43 24 8 13 16 3 21-6 19-15 14-19 5-20-4-22 6-20-5-24 4-19-5-13-16-4-21 5-22 14-15 19-5"/>
+          </g>
+          <g stroke="#dbbf92" stroke-width="1" opacity=".45">
+            <path d="m46 43 12 16 12 12"/>
+            <path d="m130 43-30 16-10 12"/>
+          </g>
+          <g stroke="#f9dfaa" stroke-width="1.7">
+            <path d="M70 71h20L79 80Z"/>
+          </g>
+          <g stroke="#f0d8b0" stroke-width="1.6">
+            <path d="m82 87 6 5 8-1 6-8"/>
+          </g>
+        </g>
+
+        <g data-constellation-stars="">
+          <use href="#astaris-chart-bright" x="46" y="12"/>
+          <use href="#astaris-chart-star" x="46" y="43"/>
+          <use href="#astaris-chart-star" x="70" y="22"/>
+          <use href="#astaris-chart-star" x="109" y="22"/>
+          <use href="#astaris-chart-bright" x="132" y="13"/>
+          <use href="#astaris-chart-star" x="130" y="43"/>
+          <use href="#astaris-chart-star" x="27" y="48"/>
+          <use href="#astaris-chart-bright" x="8" y="85"/>
+          <use href="#astaris-chart-star" x="25" y="122"/>
+          <use href="#astaris-chart-star" x="68" y="123"/>
+          <use href="#astaris-chart-star" x="88" y="128"/>
+          <use href="#astaris-chart-star" x="110" y="122"/>
+          <use href="#astaris-chart-star" x="149" y="121"/>
+          <use href="#astaris-chart-bright" x="170" y="88"/>
+          <use href="#astaris-chart-star" x="154" y="51"/>
+          <g fill="#fff5de">
+            <circle cx="58" cy="59" r="3.1"/><circle cx="100" cy="59" r="3.1"/>
+            <circle cx="79" cy="80" r="1.9"/><circle cx="102" cy="83" r="1.45"/>
+          </g>
+        </g>
+      </svg>
+      <span class="winter-sky__sun"></span>
+      <div class="winter-sky__cranes">
+        <svg class="winter-crane winter-crane--lead" viewBox="0 0 200 160" fill="none" stroke="#3b5060" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <g stroke-width="2.8">
+            <path d="M93 90 51 96 8 99m4-1-6 3"/>
+            <path d="M96 94 60 103 19 108m6-1-7 3"/>
+          </g>
+          <g class="winter-crane__wing winter-crane__wing--low">
+            <path d="M112 80c-6 22-36 38-66 46-6 2-9-2-4-6l12-10-20 7c-6 2-8-2-4-6l15-12-11 3c-4 1-7-2-2-6 15-12 38-18 61-21Z" fill="#d0dfe4"/>
+            <path d="M106 81c-9 13-21 19-36 24l8-9-14 5 6-7-9 3c13-13 30-19 45-16Z" fill="#4f626e" stroke="none"/>
+          </g>
+          <path d="M176 62c-1 5-7 8-13 7-16 3-27 17-43 22-12 9-28 12-42 9l-22-5c-4-1-4-4-1-5l16-8c11-9 25-11 37-8 6 1 12 5 19 3 11-4 21-13 31-17 3-8 13-10 17-5 2 2 2 5 1 7Z" fill="#faf7eb"/>
+          <path d="M160 58c6-3 14-2 16 2 0 6-6 9-12 8-12 2-25 15-40 20 18-11 28-18 36-30Z" fill="#324654" stroke="none"/>
+          <path d="m175 58 18-5-17 11Z" fill="#ddbb7d" stroke-width="1.4"/>
+          <path d="M157 60c0-8 8-14 15-10 4 2 5 5 5 9-8-2-14-2-20 1Z" fill="#df5845" stroke="none"/>
+          <circle cx="172" cy="60.5" r="1.45" fill="#fff3d6" stroke="none"/>
+          <g class="winter-crane__wing winter-crane__wing--high">
+            <path d="M113 80c4-20-7-39-23-57L72 6c-5-4-10-4-8 3l5 16L50 10c-6-4-10-2-7 5 3 8 9 16 16 22L39 25c-7-4-11-1-7 6 4 10 11 17 21 24l-16-7c-7-3-9 0-5 7 10 14 26 23 39 28 12 5 26 9 38 3" fill="#faf7eb"/>
+            <path d="M111 82c-9-2-20-10-28-19l3 12c-9-4-16-10-24-19l5 14-16-10c8 14 22 23 35 27 11 4 17 2 25-5Z" fill="#344956" stroke="none"/>
+            <path d="M102 65c-2-10-8-18-17-26" stroke="#bbcbd0" stroke-width="1.5"/>
+          </g>
+        </svg>
+        <svg class="winter-crane winter-crane--following" viewBox="0 0 200 160" fill="none" stroke="#445969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <g stroke-width="2.8">
+            <path d="M90 87 41 84 8 80m4 1-5 1"/>
+            <path d="M92 92 47 93 9 89m4 1-6 1"/>
+          </g>
+          <g class="winter-crane__wing winter-crane__wing--high">
+            <path d="M110 82C94 75 65 58 38 36c-6-5-4-9 2-7l17 6-12-13c-5-7-2-10 5-7l17 9-7-11c-3-6 0-9 5-6 22 11 42 38 50 66Z" fill="#ccdce3"/>
+            <path d="M110 79C97 74 82 64 74 54l13 6-7-12c12 8 23 16 30 31Z" fill="#3a4c59" stroke="none"/>
+          </g>
+          <path d="M171 66c-3 5-9 6-15 5-12 3-24 12-37 17-12 10-34 13-51 8l-16-5c-3-1-3-3 0-5l14-5c11-8 25-11 40-7 7 2 12 5 18 2l29-13c3-7 12-10 17-6 3 2 4 6 1 9Z" fill="#faf7ec"/>
+          <path d="M157 61c6-3 13-2 16 2-1 5-7 8-14 7-11 3-24 11-35 14 13-8 23-12 33-23Z" fill="#354957" stroke="none"/>
+          <path d="m170 61 18-3-16 8Z" fill="#dab87a" stroke-width="1.4"/>
+          <path d="M154 63c0-8 8-13 15-8 3 1 4 4 4 7-7-3-13-2-19 1Z" fill="#dd5847" stroke="none"/>
+          <circle cx="168" cy="63.5" r="1.45" fill="#fff4db" stroke="none"/>
+          <g class="winter-crane__wing winter-crane__wing--low">
+            <path d="M109 84c0 22-26 49-57 63-7 3-10 0-6-6l11-14-20 11c-6 3-10 0-7-5l14-15-14 5c-6 2-8-2-3-7 12-14 30-22 45-28 9-4 14-9 18-13" fill="#faf7ec"/>
+            <path d="M106 84c-5 13-21 23-32 27l7-11-15 6 6-7-11 2c7-11 19-18 30-20 6-1 11-1 15 3Z" fill="#364957" stroke="none"/>
+          </g>
+        </svg>
+      </div>
+      <template id="winter-snow-profile">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <image href="assets/img/winter-snow-depth.webp" x="0" y="87" width="1280" height="273" filter="url(#winter-snow-threshold)"/>
+        </svg>
+      </template>
+      <div class="winter-sky__ridge">
+        <svg class="winter-snowpack" viewBox="0 0 1280 360" preserveAspectRatio="none" focusable="false">
+          <defs>
+            <filter id="winter-snow-threshold" x="0" y="87" width="1280" height="273" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feComponentTransfer in="SourceAlpha">
+                <feFuncA id="winter-snow-weight" type="linear" slope="12" intercept="-12.220"/>
+              </feComponentTransfer>
+            </filter>
+            <mask id="winter-snow-depth" x="0" y="87" width="1280" height="273" maskUnits="userSpaceOnUse" style="mask-type:alpha"></mask>
+          </defs>
+          <g class="winter-snowpack__terrain" mask="url(#winter-snow-depth)">
+            <image class="winter-snowpack__surface" href="assets/img/winter-department-landscape.svg?drifts#snow" width="1280" height="360"/>
+          </g>
+        </svg>
+      </div>
+      <div class="winter-snowman">
+        <span class="winter-snowman__footlights"></span>
+        <span class="winter-snowman__packing">
+          <span class="winter-snowman__tail"></span>
+          <span class="winter-snowman__body"></span>
+          <span class="winter-snowman__head"></span>
+        </span>
+        <img src="assets/img/winter-astaris-snowman.svg" width="640" height="557" alt="">
+      </div>
+      <span class="winter-whiteout" hidden></span>
+      <span class="winter-sky__flurries"></span>
+      <canvas class="winter-snowfall" aria-hidden="true"></canvas>
+    </div>
+    <div class="page-layout">
+      <div class="winter-opening">
+        <section class="news" id="news" aria-labelledby="news-title">
+          <div class="news__inner">
+            <h2 id="news-title">お知らせ</h2>
+            <div class="news__list" role="region" aria-label="お知らせ一覧" tabindex="0">
+              <ul>
+                <li>
+                  <time datetime="2026-11-25">2026年11月25日</time>
+                  <span>コンテストページを公開しました</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="department-picker" id="entry" aria-label="応募部門を選ぶ">
+          <div class="department-picker__inner">
+            <div class="news__message">
+              <p><span>今年の冬も3部門開催！</span><span class="news__eligibility">3部門すべてに応募できるよ。</span><strong>目指せ、<span>三冠王！</span></strong></p>
+              <img src="assets/img/astaris-king-original.png" width="2048" height="1972" alt="王冠をかぶったアスタリスくん">
+            </div>
+            <nav class="division-banners" aria-label="応募部門を選ぶ">
+              <a class="division-banner division-banner--web" href="#department-web" data-department-choice>
+                <img src="assets/img/department-web-192.png" srcset="assets/img/department-web-192.png 1.4x, assets/img/department-web-384.png 3x, assets/img/department-web-768.png 6x" width="192" height="128" alt="" decoding="async">
+                <span class="division-banner__name">Webページ<span>部門</span></span>
+              </a>
+              <a class="division-banner division-banner--unity" href="#department-unity" data-department-choice>
+                <img src="assets/img/department-unity-192.png" srcset="assets/img/department-unity-192.png 1.4x, assets/img/department-unity-384.png 3x, assets/img/department-unity-768.png 6x" width="192" height="128" alt="" decoding="async">
+                <span class="division-banner__name">Unity<span>部門</span></span>
+              </a>
+              <a class="division-banner division-banner--scratch" href="#department-scratch" data-department-choice>
+                <img src="assets/img/department-scratch-192.png" srcset="assets/img/department-scratch-192.png 1.4x, assets/img/department-scratch-384.png 3x, assets/img/department-scratch-768.png 6x" width="192" height="128" alt="" decoding="async">
+                <span class="division-banner__name">Scratch<span>部門</span></span>
+              </a>
+            </nav>
+          </div>
+        </section>
+      </div>
+      <div class="page-content">
+        <div class="department-pane" id="department-content-panel">
+        <div class="department-header">
+          <div class="department-header__inner">
+            <section class="department-details" aria-label="部門概要">
+              <article class="department" id="department-web" data-department-summary tabindex="-1" aria-labelledby="department-web-title">
+                <h2 id="department-web-title">Webページ<span>部門</span></h2>
+              </article>
+              <article class="department" id="department-unity" data-department-summary tabindex="-1" aria-labelledby="department-unity-title">
+                <h2 id="department-unity-title">Unity<span>部門</span></h2>
+              </article>
+              <article class="department" id="department-scratch" data-department-summary tabindex="-1" aria-labelledby="department-scratch-title">
+                <h2 id="department-scratch-title">Scratch<span>部門</span></h2>
+              </article>
+            </section>
+            <nav id="department-links" class="department__actions" aria-label="部門内メニュー">
+              <a href="#rules" data-section="rule">応募規定</a>
+              <a href="#notice">賞・賞品</a>
+              <a href="#award" data-section="award"><span>応募<wbr>フォーム</span></a>
+              <a href="#assessment">評価項目</a>
+              <a href="#judge">審査員</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="department-content">
+        <section class="page-section rule" id="rules" aria-labelledby="rules-title">
+          <div class="section-heading"><h2 id="rules-title">応募規定</h2></div>
+          <div class="rule-cards">
+            <dl class="rule_normal rule-illustrated rule-illustrated--work" id="rule-web" data-departments="web">
+              <dt id="rule-web-title">クライアントサーバシステムの Web アプリケーションであること</dt>
+              <dd>
+                <p>サーバーサイドの実装量は問いませんが、必ず <strong>HTTP リクエストを処理するコード</strong>を実装してください。</p>
+                <p>ホスティング先は自由です。おすすめは Render です。公開手順は<a href="https://www.nnn.ed.nico/courses/2142/chapters/27092">Webアプリケーション開発コース3 第4回「Render で Web サービスを公開」</a>で学べます。</p>
+              </dd>
+            </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--work" id="rule-unity" data-departments="unity">
+              <dt id="rule-unity-title">Unityで制作された作品であること</dt>
+              <dd>
+                Unityで制作した作品を応募してください。
+              </dd>
+            </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--work" id="rule-scratch" data-departments="scratch">
+              <dt id="rule-scratch-title">Scratchで制作された作品であること</dt>
+              <dd>
+                Scratchで制作した作品を応募してください。
+              </dd>
+            </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--ai">
+              <dt>AIを利用した場合は、利用したAIの種類と利用箇所を明記すること</dt>
+              <dd>
+                応募時に、どのAIを使い、作品制作のどの箇所で使ったかを必ず記載してください。
+              </dd>
+            </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--membership">
+              <dt>ZEN Study有料会員・ZEN大学生・N高グループ生・N中等部生であること</dt>
+              <dd>
+                ZEN Study有料会員・ZEN大学生・N高グループ生・N中等部生が応募できます。
+                <span data-departments="web">ご自身の所属に合った<a href="#award-web">応募フォーム</a>を選んでください。</span>
+              </dd>
+            </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--repository" data-departments="web">
+              <dt>コードの提出は GitHub リポジトリの URL を提出すること</dt>
+              <dd>
+                リポジトリの公開設定は <strong>Public</strong> で作成してください。
+              </dd>
+            </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--url" data-departments="web">
+              <dt>動作確認ができる URL を提出すること</dt>
+              <dd>
+                応募作品のアプリケーションをホスティングし、アプリケーションの URL を提出してください。<br>
+                提出しているコードと同じ動作となるようにしてください。
+              </dd>
+            </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--url" data-departments="scratch">
+              <dt>動作確認できる URL を提出すること</dt>
+              <dd>
+                審査期間中に作品の<strong>動作を確認できる URL</strong> を提出してください。<br>
+                審査期間中に確認できる状態を維持してください。
+              </dd>
+            </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--video" data-departments="unity scratch">
+              <dt>作品の紹介動画を提出すること</dt>
+              <dd>
+                <p>作品の内容や操作方法が分かる紹介動画の提出が必須です。長さは<strong>2分程度</strong>を目安にしてください。動画のサイズは問いません。</p>
+                <p>応募フォームから動画を提出するか、SNSに投稿した動画のURLを送ってください。</p>
+              </dd>
+            </dl>
+            <dl class="rule_normal" id="rule-common">
+              <dt id="common-title">一定以上のオリジナリティがあること</dt>
+              <dd>
+                教科書やWebサイトにあるものを作ってそのまま提出したものや、少し変えただけのものは審査の対象となりません。
+              </dd>
+            </dl>
+            <dl class="rule_normal">
+              <dt>著作権上問題のないメディアファイル、コードのみで構成されていること</dt>
+              <dd>
+                自作でない画像やライブラリを利用する際は、該当コンテンツのライセンスを十分に確認してください。
+              </dd>
+            </dl>
+            <dl class="rule_normal" data-departments="web">
+              <dt>世の中で広く利用されているプログラミング言語であること</dt>
+              <dd>
+                自作言語・擬似言語・実用性のない言語は不可とします。
+              </dd>
+            </dl>
+            <dl class="rule_normal" data-departments="web">
+              <dt>作品は審査期間中、 Google Chrome ブラウザで正常に動作すること</dt>
+              <dd>
+                審査は PC 版・スマートフォン版の Google Chrome ブラウザにて行われます。
+              </dd>
+            </dl>
+            <dl class="rule_normal">
+              <dt>応募作品は公開される可能性があるため、それに了承できること</dt>
+              <dd>
+                応募作品のコード、アプリケーションの URL、紹介動画などは結果ページにリンクが貼られ、プログラミングの授業などにて紹介されます。<br>
+                授業での表彰および紹介が終わるまでは、提出物の公開・共有状態を維持してください。
+                <span data-departments="web">Webアプリケーションのホスティングも同じ期間継続してください。</span>
+              </dd>
+            </dl>
+            <dl class="rule_normal" data-departments="web">
+              <dt>審査期間中のコードの管理</dt>
+              <dd>
+                審査期間中のコード変更は禁止しませんが、バグなどが含まれると評点が下がる可能性があります。<br>
+                審査用にブランチを分けておくと管理がしやすいです。
+              </dd>
+            </dl>
+            <dl class="rule_normal" data-departments="web">
+              <dt>開発に使う言語・フレームワークの参考</dt>
+              <dd>
+                ZEN Studyプログラミングコースでは、世の中で広く利用されているプログラミング言語として、JavaScript（TypeScript）、Scala、Python、Golang、Swift、Kotlin を学ぶことができます。<br>
+                Hono をはじめとした Web フレームワークを利用することをオススメします。
+              </dd>
+            </dl>
+            <dl class="rule_normal" data-departments="unity scratch">
+              <dt>作品の評価について</dt>
+              <dd>
+                <span data-departments="unity">ゲーム性や表現力、操作性に加えて、コーディングも評価します。</span>
+                <span data-departments="scratch">アイデアや完成度、遊びやすさに加えて、コーディングも評価します。</span>
+              </dd>
+            </dl>
+            <dl class="rule_normal" data-departments="unity">
+              <dt>制作物の共有 URL について</dt>
+              <dd>
+                制作物そのものの提出は任意です。<br>
+                可能であれば、作品の ZIP ファイルを Google ドライブや GitHub などで公開し、その URL を応募フォームで提出してください。<br>
+                審査の参考にできるため、ご協力いただけると嬉しいです。
+              </dd>
+            </dl>
+          </div>
+        </section>
+
+        <section class="page-section notices" id="notice" aria-labelledby="notice-title">
+          <div class="section-heading">
+            <h2 id="notice-title">賞・賞品</h2>
+          </div>
+          <div class="award-message">
+            <p><span>応募規約を満たした応募者全員に、</span><strong>賞状・審査員からのフィードバックコメント・記念品</strong>を差し上げます！</p>
+            <img src="assets/img/astaris-joy-original.png" width="2048" height="1580" alt="よろこぶアスタリスくん" loading="lazy" decoding="async">
+          </div>
+          <section class="award-listing" aria-labelledby="award-listing-title">
+            <h3 id="award-listing-title" class="award-listing__title">
+              <span data-departments="web">Webページ部門の賞</span>
+              <span data-departments="unity">Unity部門の賞</span>
+              <span data-departments="scratch">Scratch部門の賞</span>
+            </h3>
+            <div class="award-groups" data-departments="web">
+              <section class="award-ledger">
+                <h4>ZEN Study ユーザー</h4>
+                <dl>
+                  <div><dt>最優秀賞</dt><dd>1名</dd><dd class="award-selection award-selection--gold"><span>賞品は<wbr><strong>現在選定中</strong>です</span></dd></div>
+                  <div><dt>特別賞</dt><dd>複数名</dd></div>
+                  <div><dt>健闘賞</dt><dd></dd></div>
+                </dl>
+              </section>
+              <section class="award-ledger">
+                <h4>ZEN大学</h4>
+                <dl>
+                  <div><dt>最優秀賞</dt><dd>1名</dd><dd class="award-selection award-selection--gold"><span>賞品は<wbr><strong>現在選定中</strong>です</span></dd></div>
+                  <div><dt>優秀賞</dt><dd>2名</dd><dd class="award-selection award-selection--silver"><span>賞品は<wbr><strong>現在選定中</strong>です</span></dd></div>
+                  <div><dt>健闘賞</dt><dd></dd></div>
+                </dl>
+              </section>
+              <section class="award-ledger">
+                <h4>角川ドワンゴ学園<small>N高グループ・N中等部</small></h4>
+                <dl>
+                  <div><dt>最優秀賞</dt><dd>1名</dd><dd class="award-selection award-selection--gold"><span>賞品は<wbr><strong>現在選定中</strong>です</span></dd></div>
+                  <div><dt>優秀賞</dt><dd>2名</dd><dd class="award-selection award-selection--silver"><span>賞品は<wbr><strong>現在選定中</strong>です</span></dd></div>
+                  <div><dt>のびしろ<ruby>∞<rt>むげんだい</rt></ruby>で賞</dt><dd>3名</dd><dd class="award-selection award-selection--bronze"><span>賞品は<wbr><strong>現在選定中</strong>です</span></dd></div>
+                  <div><dt>健闘賞</dt><dd></dd></div>
+                </dl>
+              </section>
+            </div>
+            <dl class="award-tiers" data-departments="unity scratch">
+              <div><dt>最優秀賞 <span>1名</span></dt><dd>部門で最も優れた作品</dd><dd class="award-selection award-selection--gold"><span>賞品は<wbr><strong>現在選定中</strong>です</span></dd></div>
+              <div><dt>優秀賞 <span>複数名</span></dt><dd><span data-departments="unity">ゲーム性や表現力に優れた作品</span><span data-departments="scratch">アイデアや完成度に優れた作品</span></dd><dd class="award-selection award-selection--silver"><span>賞品は<wbr><strong>現在選定中</strong>です</span></dd></div>
+              <div><dt>健闘賞</dt><dd>制作での頑張りが特に認められた作品</dd></div>
+            </dl>
+            <div class="award-viewers" id="audience-award">
+              <div>
+                <h4><span>視聴者特別賞 <small>全部門を通じて1名</small></span></h4>
+                <p>ほかの賞を受賞していない作品のうち、結果発表特番で視聴者から多くの票を集めた作品を表彰します。</p>
+                <p class="award-viewers__prize"><span>賞品</span><strong>アスタリスくんTシャツ</strong></p>
+              </div>
+              <img class="award-viewers__shirt" src="assets/img/award-tshirt.png" alt="黄色と紺色のアスタリスくんがプリントされた白いTシャツ" width="712" height="712" loading="lazy" decoding="async">
+            </div>
+          </section>
+        </section>
+
+        <section class="page-section" id="novelty" aria-labelledby="novelty-title">
+          <div class="section-heading">
+            <h2 id="novelty-title">記念品</h2>
+            <img class="section-heading__astaris" src="assets/img/astaris-discovery-original.png" width="2047" height="1673" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="novelty-teaser">
+            <div class="novelty-teaser__copy">
+              <h3 class="novelty-teaser__headline">鋭意制作中！</h3>
+              <p class="novelty-teaser__detail">応募規定を満たした応募者全員に、記念品をお贈りします。</p>
+              <p class="novelty-teaser__detail">複数の部門に応募した場合も、お一人につき1つです。</p>
+            </div>
+            <div class="novelty-teaser__medallion">
+              <img src="assets/img/asta_silhouette.png" alt="アスタリスくんのシルエット" width="640" height="557" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section applications" id="award" aria-labelledby="applications-title">
+          <div class="application-sheet">
+            <div class="section-heading">
+              <h2 id="applications-title">応募フォーム</h2>
+              <img class="section-heading__astaris" data-departments="unity scratch" hidden src="assets/img/astaris-guide-original.png" width="2048" height="1412" alt="" loading="lazy" decoding="async">
+            </div>
+            <section class="application-group" id="award-web" data-departments="web" aria-label="所属別の応募先">
+              <div class="application-guidance">
+                <p>ZEN大学の学生、角川ドワンゴ学園の生徒のみなさんへ。<strong>必ず自分の所属先のフォームから応募してください！</strong></p>
+                <img src="assets/img/astaris-guide-original.png" width="2048" height="1412" alt="案内するアスタリスくん" loading="lazy" decoding="async">
+              </div>
+              <div class="application-row" id="web-award-zenstudy">
+                <div class="application-row__identity">
+                  <img class="application-row__logo" src="assets/img/logo_horizontal.svg" alt="" width="440" height="135" loading="lazy" decoding="async">
+                  <h3>ZEN Study ユーザー</h3>
+                </div>
+                <button class="application-button" type="button" aria-label="ZEN Study ユーザーの応募フォーム（準備中）" disabled>準備中</button>
+              </div>
+              <div class="application-row" id="web-award-zenuniv">
+                <div class="application-row__identity">
+                  <img class="application-row__logo" src="assets/img/zen-university.svg" alt="" width="2592" height="782" loading="lazy" decoding="async">
+                  <h3>ZEN大学</h3>
+                </div>
+                <button class="application-button" type="button" aria-label="ZEN大学の応募フォーム（準備中）" disabled>準備中</button>
+              </div>
+              <div class="application-row" id="web-award-gakuen">
+                <div class="application-row__identity">
+                  <img class="application-row__logo application-row__logo--academy" src="assets/img/kadokawa-dwango-academy.jpg" alt="" width="789" height="789" loading="lazy" decoding="async">
+                  <div><h3>角川ドワンゴ学園</h3><p>N高グループ・N中等部</p></div>
+                </div>
+                <button class="application-button" type="button" aria-label="角川ドワンゴ学園の応募フォーム（準備中）" disabled>準備中</button>
+              </div>
+            </section>
+            <section class="application-group" id="award-unity" data-departments="unity" aria-labelledby="application-unity-title">
+              <div class="application-row">
+                <h3 id="application-unity-title">全所属共通</h3>
+                <button class="application-button" type="button" aria-label="全所属共通の応募フォーム（準備中）" disabled>準備中</button>
+              </div>
+            </section>
+            <section class="application-group" id="award-scratch" data-departments="scratch" aria-labelledby="application-scratch-title">
+              <div class="application-row">
+                <h3 id="application-scratch-title">全所属共通</h3>
+                <button class="application-button" type="button" aria-label="全所属共通の応募フォーム（準備中）" disabled>準備中</button>
+              </div>
+            </section>
+          </div>
+        </section>
+    <section class="page-section assessment" id="assessment" aria-labelledby="assessment-title">
+      <div class="assessment__card">
+      <div class="section-heading">
+        <h2 id="assessment-title">評価項目</h2>
+        <img class="section-heading__astaris" src="assets/img/astaris-thinking-original.png" width="2048" height="2011" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="mt-5 row">
+        <dl class="shadow-lg">
+          <dt class="text-center">コーディング</dt>
+          <dd class="text-center my-2">
+            <ul data-departments="web">
+              <li class="p-2">ファイル/フォルダが整理されているか</li>
+              <li class="p-2">コードが見やすく整理されているか</li>
+              <li class="p-2">必要なコメントが記述されているか</li>
+              <li class="p-2">GitHub を有効に活用できているか</li>
+              <li class="p-2">ライブラリやフレームワークを活用できているか</li>
+            </ul>
+            <ul data-departments="unity">
+              <li>スクリプトが役割ごとに整理されているか</li>
+              <li>変数やメソッドの名前から、何を扱うか、何をするかが伝わるか</li>
+              <li>繰り返し使う処理を分かりやすくまとめているか</li>
+            </ul>
+            <ul data-departments="scratch">
+              <li>スプライトごとにブロックが整理され、動きの流れを追えるか</li>
+              <li>変数やメッセージの名前から、役割が伝わるか</li>
+              <li>同じ動きが続く場面で、繰り返しなどのブロックを活用できているか</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg">
+          <dt class="text-center">完成度</dt>
+          <dd class="text-center my-2">
+            <ul>
+              <li class="p-2">バグや動作不良などはないか</li>
+              <li class="p-2">攻撃可能な脆弱性はないか</li>
+              <li class="p-2">UI/UX が洗練されているか</li>
+              <li class="p-2">テストコードが書かれているか</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="shadow-lg">
+          <dt class="text-center">アイデア</dt>
+          <dd class="text-center text-lg my-2">
+            <ul class="divide-y-[3px] divide-gray-300">
+              <li class="p-2">作品のテーマ・アイデアが新しいか</li>
+              <li>オリジナリティのあるアイデアかどうか</li>
+              <li class="p-2">機能や実装に独創性があるか</li>
+              <li class="p-2">時世やトレンドを取り入れているか</li>
+              <li class="p-2">デザインに創意工夫があるか</li>
+              <li class="p-2">実際に使われていてユーザーが付いているか</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <section class="assessment-bonus" aria-labelledby="assessment-bonus-title">
+        <h3 id="assessment-bonus-title">加点ポイント</h3>
+        <ul role="list">
+          <li>
+            <h4><span>AIを利用せずに</span><span>アルゴリズムに</span><span>工夫を凝らした</span><span>プログラム</span><small>（作品内の一部でも可）</small></h4>
+            <p>作品の一部でも、AIを使わずに自分で考えて実装した工夫を評価します。特にがんばったところは応募フォームでアピールしてください。</p>
+          </li>
+          <li>
+            <h4><span>コンテスト用に</span><span>新しく作られた作品</span></h4>
+              <p>今回のコンテストに向けて新しく制作した作品は、加点の対象です。温めていたアイデアを、ぜひこの機会に形にしてみてください。</p>
+          </li>
+          <li>
+            <h4><span>初めて利用する</span><span>ユーザでも</span><span>理解できる作品</span></h4>
+            <p>初めての人が直感的に使える作品はもちろん、作品内に使い方の説明やチュートリアルを用意している場合も加点します。</p>
+          </li>
+        </ul>
+      </section>
+      </div>
+    </section>
+    <section class="history" id="history" data-departments="web" aria-labelledby="history-title">
+      <h2 id="history-title">過去作品</h2>
+      <div class="history-links">
+        <a href="https://progedu.github.io/webappcontest/2026/summer/result.html" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/archive-2026-summer.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+          <span class="history-link__caption"><span>2026<small>年</small></span> <span class="history-link__season">夏</span></span>
+        </a>
+        <a href="https://progedu.github.io/webappcontest/2025/winter/result.html" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/archive-2025-winter.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async">
+          <span class="history-link__caption"><span>2025<small>年</small></span> <span class="history-link__season history-link__season--winter">冬</span></span>
+        </a>
+        <a href="https://progedu.github.io/webappcontest/2025/summer/result/index.html" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/archive-2025-summer.webp" width="1200" height="630" alt="" loading="lazy" decoding="async">
+          <span class="history-link__caption"><span>2025<small>年</small></span> <span class="history-link__season">夏</span></span>
+        </a>
+      </div>
+    </section>
+    <section class="page-section judge" id="judge" aria-labelledby="judge-title">
+      <div class="section-heading">
+        <h2 id="judge-title">審査員</h2>
+        <img class="section-heading__astaris" src="assets/img/astaris-formal-original.png" width="2048" height="1885" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="row">
+        <div class="box" data-departments="scratch">
+          <div class="ribbon"><div class="post">Scratch部門 · プログラミング講師</div></div>
+          <img src="assets/img/gerber_akina.jpg" srcset="assets/img/gerber_akina-96.webp 96w, assets/img/gerber_akina-240.webp 240w, assets/img/gerber_akina.jpg 400w" sizes="(max-width: 760px) 72px, 78px" width="400" height="400" class="judge-photo--top" alt="ガーバー明菜" loading="lazy" decoding="async">
+          <div class="name">ガーバー明菜</div>
+          <div class="description">
+            株式会社ドワンゴ入社後、ZEN大学助教として、人工知能（AI）やプログラミングの教育に携わる。「ビジュアルプログラミング」では、Scratchを楽しく学べる授業を展開。本コンテストでは、Scratch部門の審査員を務める。
+          </div>
+        </div>
+        <div class="box" id="judge-arakawa" data-departments="unity">
+          <div class="ribbon"><div class="post">Unity部門 · ユニティ・テクノロジーズ・ジャパン</div></div>
+          <img src="assets/img/takuya-arakawa.webp" srcset="assets/img/takuya-arakawa-96.webp 96w, assets/img/takuya-arakawa-240.webp 240w, assets/img/takuya-arakawa.webp 400w" sizes="(max-width: 760px) 72px, 78px" width="400" height="400" alt="荒川巧也さん" loading="lazy" decoding="async">
+          <div class="name">荒川 巧也</div>
+          <div class="description">
+            トレーニングマネージャーとして、企業向けのUnity研修や開発のアドバイスを担当。Unity入門書を執筆し、ZEN StudyではUnityコースの講師を務める。<a href="https://learning.unity3d.jp/speaker/takuya-arakawa/">Unity公式プロフィール</a>
+          </div>
+        </div>
+        <div class="box" data-departments="web scratch">
+          <div class="ribbon"><div class="post">教材責任者</div></div>
+          <img src="assets/img/orihara.webp" srcset="assets/img/orihara-96.webp 96w, assets/img/orihara-240.webp 240w, assets/img/orihara.webp 691w" sizes="(max-width: 760px) 72px, 78px" width="691" height="691" alt="" loading="lazy" decoding="async">
+          <div class="name">折原 ダビデ竜</div>
+          <div class="description">
+            東京理科大学大学院情報科学専攻修了。卒業後、株式会社ドワンゴに入社。 ニコニコ生放送の開発に携わり、2016年よりZEN Studyのプログラミング講師として高校生にプログラミングを教える。
+          </div>
+        </div>
+        <div class="box" data-departments="web scratch">
+          <div class="ribbon"><div class="post">プログラミング講師</div></div>
+          <img src="assets/img/tsuno.webp" srcset="assets/img/tsuno-96.webp 96w, assets/img/tsuno-240.webp 240w, assets/img/tsuno.webp 709w" sizes="(max-width: 760px) 72px, 78px" width="709" height="709" alt="" loading="lazy" decoding="async">
+          <div class="name">津野 貴大</div>
+          <div class="description">
+            株式会社ドワンゴに新卒入社。長年ニコニコ関連サービスのエンジニアをしてきた経験を活かして、初心者にも分かりやすくて、より実践的なWebサービス開発について教えている。
+          </div>
+        </div>
+        <div class="box" data-departments="web scratch">
+          <div class="ribbon"><div class="post">プログラミング講師</div></div>
+          <img src="assets/img/hsjoihs.jpg" srcset="assets/img/hsjoihs-96.webp 96w, assets/img/hsjoihs.jpg 500w" sizes="(max-width: 760px) 72px, 78px" width="500" height="500" alt="" loading="lazy" decoding="async">
+          <div class="name">佐藤 弘崇(hsjoihs)</div>
+          <div class="description">
+            スタンフォード大学修士課程修了。株式会社ドワンゴに新卒入社。セキュリティ・キャンプ全国大会2022・2023・2024・2025「Cコンパイラゼミ」講師。ZEN大学情報コース講師着任予定。
+          </div>
+        </div>
+        <div class="box" data-departments="web scratch">
+          <div class="ribbon"><div class="post">教材総監修</div></div>
+          <img src="assets/img/koizuka.jpeg" srcset="assets/img/koizuka-96.webp 96w, assets/img/koizuka.jpeg 400w" sizes="(max-width: 760px) 72px, 78px" width="400" height="400" alt="" loading="lazy" decoding="async">
+          <div class="name">戀塚 昭彦</div>
+          <div class="description">
+            システム開発会社にて制御系プログラムの開発に従事。その後、フリーランスを経てドワンゴに入社。ニコニコ動画のプロトタイプを三日で創り出した伝説的プログラマ。
+          </div>
+        </div>
+      </div>
+    </section>
+        <section class="page-section preparation" id="preparation" aria-labelledby="preparation-title">
+          <div class="section-heading">
+            <h2 id="preparation-title">制作の<wbr>参考授業・教材</h2>
+            <img class="section-heading__astaris" src="assets/img/astaris-computer-original.png" width="2048" height="1570" alt="" loading="lazy" decoding="async">
+          </div>
+          <div id="lesson">
+            <article class="lesson-resource lesson-resource--web" data-departments="web">
+              <div class="lesson-resource__media"><img src="assets/img/lesson.jpg" width="1200" height="675" loading="lazy" alt=""></div>
+              <div class="lesson-resource__body">
+                <h3>Webアプリケーション開発1〜4</h3>
+                <p class="lesson-resource__description">Webアプリケーションの制作方法は、ZEN Studyの「Webアプリケーション開発1〜4」で学ぶことができます。ZEN大学の同名科目と同等の内容です。</p>
+              </div>
+              <div class="lesson-resource__links">
+                <a href="https://www.nnn.ed.nico/courses/2140" target="_blank" rel="noopener noreferrer" aria-label="Webアプリケーション開発1"><span>Webアプリケーション開発</span><b>1</b></a>
+                <a href="https://www.nnn.ed.nico/courses/2141" target="_blank" rel="noopener noreferrer" aria-label="Webアプリケーション開発2"><span>Webアプリケーション開発</span><b>2</b></a>
+                <a href="https://www.nnn.ed.nico/courses/2142" target="_blank" rel="noopener noreferrer" aria-label="Webアプリケーション開発3"><span>Webアプリケーション開発</span><b>3</b></a>
+                <a href="https://www.nnn.ed.nico/courses/2143" target="_blank" rel="noopener noreferrer" aria-label="Webアプリケーション開発4"><span>Webアプリケーション開発</span><b>4</b></a>
+              </div>
+            </article>
+            <article class="lesson-resource lesson-resource--unity" data-departments="unity">
+              <div class="lesson-resource__media"><img src="assets/img/lesson-unity.webp" width="1200" height="675" loading="lazy" alt=""></div>
+              <div class="lesson-resource__body">
+                <h3>Unity 2D/3D ゲーム開発</h3>
+                <p class="lesson-resource__description">Unityの基本的な使い方をゼロから学び、2D/3Dゲーム制作に必要な知識を身につけられるZEN Studyのコースです。</p>
+                <a href="https://www.nnn.ed.nico/courses/673" target="_blank" rel="noopener noreferrer" class="lesson-resource__button" aria-label="Unity 2D/3D ゲーム開発のコースを見る">コースを見る</a>
+              </div>
+            </article>
+            <article class="lesson-resource lesson-resource--scratch" data-departments="scratch">
+              <div class="lesson-resource__media"><img src="assets/img/lesson-scratch.webp" width="1200" height="675" loading="lazy" alt=""></div>
+              <div class="lesson-resource__body">
+                <h3>入門者用プロジェクト</h3>
+                <p class="lesson-resource__description">Scratch公式のスタータープロジェクト集です。簡単なコードをリミックスし、アニメーションやゲーム、物語などを自分のアイデアで発展させられます。</p>
+                <a href="https://scratch.mit.edu/starter-projects" target="_blank" rel="noopener noreferrer" class="lesson-resource__button" aria-label="Scratchの入門者用プロジェクトを見る">プロジェクトを見る</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="footer__content">
+      <p>© <span>プログラミングコンテスト</span> <span>2026冬</span></p>
+      <a href="https://progedu.github.io/webappcontest/">ZEN Study <span>プログラミングコンテスト</span></a>
+    </div>
+  </footer>
+  <script>
+    // The page remains reachable even if the main script or a resource stalls.
+    (() => {
+      const root = document.documentElement;
+      const skip = document.querySelector('.page-loader button');
+      skip.onclick = () => root.removeAttribute('data-page-loading');
+      setTimeout(() => { if (root.hasAttribute('data-page-loading')) skip.hidden = false; }, 12000);
+    })();
+  </script>
+  <script src="assets/js/omikuji.js?20261125-v2" defer></script>
+  <script src="assets/js/snowfall.js" defer></script>
+  <script src="assets/js/index.js?20261125-winter-scene-v45" onerror="document.documentElement.removeAttribute('data-page-loading')"></script>
+</body>
+</html>

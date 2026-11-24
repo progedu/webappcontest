@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" preserveAspectRatio="none" fill="none">
+  <defs>
+    <linearGradient id="gold">
+      <stop stop-color="#ffc578" stop-opacity=".18"/>
+      <stop offset=".35" stop-color="#ffdb8c" stop-opacity=".68"/>
+      <stop offset=".69" stop-color="#fff1bb" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#ffe0a9" stop-opacity=".24"/>
+    </linearGradient>
+    <path id="glint" d="M0-4Q.5-.6 3.4 0 .5.6 0 4-.5.6-3.4 0-.5-.6 0-4Z"/>
+  </defs>
+  <g fill="url(#gold)">
+    <path d="M-12 89h97c8 0 8-6 1-6H66c-7 0-7-5 0-5h87c10 0 10 6 1 6h-18c-8 0-8 5 0 5h98c11 0 11 7 0 7H-12Z"/>
+    <path d="M256 40h85c9 0 9-6 1-6h-25c-6 0-6-5 0-5h84c9 0 9 6 0 6h-24c-8 0-8 5 0 5h63c6 0 6 4 0 4H256c-6 0-6-4 0-4Z"/>
+    <path d="M588 129h107c9 0 9-6 0-6h-22c-7 0-7-5 0-5h75c8 0 8 5 0 5h-11c-8 0-8 6 0 6h44c7 0 7 5 0 5H588c-8 0-8-5 0-5Z"/>
+    <path d="M1114 67h99c7 0 7-5 0-5h-24c-6 0-6-5 0-5h116c9 0 9 6 0 6h-27c-7 0-7 5 0 5h170v6h-334c-8 0-8-7 0-7Z"/>
+  </g>
+  <g stroke="#fff0bf" stroke-linecap="round" opacity=".67">
+    <path d="M18 102h106m12 0h17M323 48h66m783 32h105"/>
+  </g>
+  <g fill="#ffebad" opacity=".85">
+    <use href="#glint" x="196" y="68"/>
+    <use href="#glint" transform="translate(211 62) scale(.55)"/>
+    <use href="#glint" transform="translate(527 111) scale(.7)"/>
+    <use href="#glint" x="1288" y="43"/>
+  </g>
+</svg>

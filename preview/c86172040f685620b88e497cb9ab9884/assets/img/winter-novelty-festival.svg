@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="290" viewBox="0 0 1000 290" fill="none">
+  <defs>
+    <path id="petal" d="M-2 1C-8-2-11-7-9-12c1-5 6-8 10-6 5-1 9 3 9 8C10-5 6 0 2 2Z"/>
+    <g id="blossom">
+      <g fill="currentColor">
+        <use href="#petal"/>
+        <use href="#petal" transform="rotate(72)"/>
+        <use href="#petal" transform="rotate(144)"/>
+        <use href="#petal" transform="rotate(216)"/>
+        <use href="#petal" transform="rotate(288)"/>
+      </g>
+      <g stroke="#694539" stroke-width=".85" stroke-linecap="round">
+        <path d="m0 1-3-6m3 6 4-7m-4 7 7-1m-7 1 3 6M0 1l-5 4"/>
+      </g>
+      <g fill="#f5cf75">
+        <circle cx="-3" cy="-5" r="1.45"/><circle cx="4" cy="-6" r="1.45"/>
+        <circle cx="7" r="1.45"/><circle cx="3" cy="7" r="1.45"/>
+        <circle cx="-5" cy="5" r="1.45"/><circle cy="1" r="2.6"/>
+      </g>
+    </g>
+    <g id="spray">
+      <g stroke="#be9963" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M-11 81C7 64 23 53 36 43s29-17 46-19" stroke-width="3.6"/>
+        <path d="M13 59c4-13 7-23 16-31m15 11c3-11 9-18 18-25m-3 16c8 1 17 7 24 13m-52 5c-2 11-1 22 2 29" stroke-width="2"/>
+      </g>
+      <use href="#blossom" transform="translate(24 51) rotate(-18) scale(.88)" color="#d65749"/>
+      <use href="#blossom" transform="translate(62 22) rotate(14) scale(.66)" color="#fff0d2"/>
+      <use href="#blossom" transform="translate(7 74) rotate(-11) scale(.56)" color="#e7b76d"/>
+      <g fill="#d6604b">
+        <ellipse cx="85" cy="24" rx="6" ry="3.6" transform="rotate(-11 85 24)"/>
+        <ellipse cx="29" cy="27" rx="3.6" ry="5.8" transform="rotate(22 29 27)"/>
+        <ellipse cx="83" cy="43" rx="4.2" ry="5.1" transform="rotate(-42 83 43)"/>
+      </g>
+    </g>
+    <g id="wave">
+      <path d="M-44 0a44 44 0 0 1 88 0" fill="#263957" stroke="#a99669" stroke-width="1"/>
+      <path d="M-35 0a35 35 0 0 1 70 0m-62 0a27 27 0 0 1 54 0m-46 0a19 19 0 0 1 38 0m-30 0a11 11 0 0 1 22 0" stroke="#968866" stroke-width="1"/>
+    </g>
+    <g id="wave-bank">
+      <use href="#wave" x="-26" y="21"/><use href="#wave" x="62" y="21"/>
+      <use href="#wave" x="18" y="43"/><use href="#wave" x="106" y="43"/>
+      <use href="#wave" x="62" y="65"/><use href="#wave" x="150" y="65"/>
+    </g>
+    <path id="glint" d="M0-8c1.4 5.7 2.1 6.4 7.6 8C2.1 1.5 1.2 2.7 0 8c-1.3-5.2-2.4-6.4-7.6-8C-2.4-1.4-1.4-2.6 0-8Z" fill="#f9d986"/>
+  </defs>
+  <g opacity=".72">
+    <use href="#wave-bank" transform="translate(0 256)"/>
+    <use href="#wave-bank" transform="translate(1000 245) scale(-1.12 1.12)"/>
+  </g>
+  <use href="#spray" transform="translate(-6 -15) scale(1.24)"/>
+  <use href="#spray" transform="translate(1016 99) rotate(152) scale(1.27)"/>
+  <use href="#blossom" transform="translate(957 260) rotate(-14) scale(.67)" color="#d65749"/>
+  <use href="#blossom" transform="translate(40 256) rotate(27) scale(.43)" color="#ffeac4"/>
+  <g fill="#d9ae62">
+    <path d="m127 19 7-3 2 5-6 3zm34 21 3-4 4 2-2 4zm76-24 7 2-1 4-7-2zM17 153l6-2 2 7-6 1zM82 225l7-3 2 5-7 4zm116 52 7-6 2 3-5 6zM377 267l4-1 2 5-5 1zm167-244 6-2 2 4-6 3zm96 246 7 2-1 4-7-2zm174-249 5 3-2 3-5-2zm86 228 4-5 4 2-3 6zm57-104 5 1-1 6-5-1z"/>
+  </g>
+  <use href="#glint" transform="translate(112 54) scale(.67)"/>
+  <use href="#glint" transform="translate(34 187) scale(.67)"/>
+  <use href="#glint" transform="translate(143 258) scale(.77)"/>
+  <use href="#glint" transform="translate(341 24) scale(.49)"/>
+  <use href="#glint" transform="translate(637 37) scale(.62)"/>
+  <use href="#glint" transform="translate(857 263) scale(.84)"/>
+  <use href="#glint" transform="translate(930 70) scale(.58)"/>
+  <use href="#glint" transform="translate(975 193) scale(.72)"/>
+</svg>

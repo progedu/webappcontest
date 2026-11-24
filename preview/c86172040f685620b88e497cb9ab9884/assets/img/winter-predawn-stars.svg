@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="840" viewBox="0 0 1440 840">
+  <defs>
+    <path id="pinprick" d="M0-4.2.8-.8 3.7 0 .8.65 0 4.4-.7.8-3.9 0-.7-.65Z"/>
+  </defs>
+
+  <g fill="#f4e2c2">
+    <use href="#pinprick" transform="translate(174 226) scale(.77)"/>
+    <use href="#pinprick" transform="translate(647 129) scale(.63)"/>
+    <use href="#pinprick" transform="translate(1032 367) scale(.73)"/>
+    <circle cx="308" cy="111" r="1.2"/>
+    <circle cx="537" cy="398" r="1.45"/>
+    <circle cx="594" cy="340" r=".9"/>
+    <circle cx="771" cy="477" r="1.15"/>
+    <circle cx="824" cy="70" r="1.25"/>
+    <circle cx="1149" cy="612" r="1.1"/>
+    <circle cx="1394" cy="492" r="1.45"/>
+  </g>
+  <g fill="#d8e5f6" opacity=".85">
+    <use href="#pinprick" transform="translate(63 516) scale(.49)"/>
+    <use href="#pinprick" transform="translate(707 306) scale(.57)"/>
+    <circle cx="118" cy="83" r="1.35"/>
+    <circle cx="224" cy="371" r="1.05"/>
+    <circle cx="323" cy="482" r=".95"/>
+    <circle cx="455" cy="203" r="1.25"/>
+    <circle cx="520" cy="58" r="1.1"/>
+    <circle cx="575" cy="267" r="1.25"/>
+    <circle cx="634" cy="598" r="1.15"/>
+    <circle cx="669" cy="412" r=".9"/>
+    <circle cx="801" cy="190" r="1.2"/>
+    <circle cx="907" cy="535" r="1.4"/>
+    <circle cx="972" cy="122" r=".9"/>
+    <circle cx="1125" cy="46" r="1.15"/>
+    <circle cx="1179" cy="420" r="1"/>
+    <circle cx="1272" cy="319" r="1.1"/>
+    <circle cx="1362" cy="110" r=".85"/>
+  </g>
+  <g fill="#b7c7df" opacity=".75">
+    <circle cx="42" cy="168" r=".91"/>
+    <circle cx="75" cy="329" r=".77"/>
+    <circle cx="186" cy="211" r=".85"/>
+    <circle cx="239" cy="57" r=".8"/>
+    <circle cx="275" cy="283" r="1"/>
+    <circle cx="352" cy="624" r=".91"/>
+    <circle cx="394" cy="76" r=".82"/>
+    <circle cx="417" cy="337" r="1.05"/>
+    <circle cx="493" cy="449" r=".85"/>
+    <circle cx="551" cy="157" r=".92"/>
+    <circle cx="581" cy="740" r="1"/>
+    <circle cx="626" cy="280" r=".78"/>
+    <circle cx="644" cy="370" r=".87"/>
+    <circle cx="651" cy="518" r=".95"/>
+    <circle cx="731" cy="62" r=".9"/>
+    <circle cx="746" cy="223" r=".72"/>
+    <circle cx="764" cy="395" r=".84"/>
+    <circle cx="825" cy="609" r="1.05"/>
+    <circle cx="858" cy="369" r=".82"/>
+    <circle cx="892" cy="87" r=".7"/>
+    <circle cx="932" cy="234" r=".88"/>
+    <circle cx="991" cy="307" r=".92"/>
+    <circle cx="1087" cy="205" r=".79"/>
+    <circle cx="1112" cy="482" r="1"/>
+    <circle cx="1195" cy="99" r=".75"/>
+    <circle cx="1290" cy="593" r=".95"/>
+    <circle cx="1372" cy="54" r=".77"/>
+    <circle cx="1423" cy="344" r=".96"/>
+  </g>
+  <g fill="#adc1da" opacity=".57">
+    <circle cx="18" cy="42" r=".78"/>
+    <circle cx="104" cy="633" r=".86"/>
+    <circle cx="203" cy="485" r=".78"/>
+    <circle cx="289" cy="727" r=".9"/>
+    <circle cx="307" cy="203" r=".74"/>
+    <circle cx="423" cy="390" r=".8"/>
+    <circle cx="439" cy="544" r=".73"/>
+    <circle cx="511" cy="245" r=".72"/>
+    <circle cx="529" cy="577" r=".81"/>
+    <circle cx="604" cy="122" r=".66"/>
+    <circle cx="608" cy="354" r=".8"/>
+    <circle cx="686" cy="329" r=".74"/>
+    <circle cx="718" cy="182" r=".74"/>
+    <circle cx="737" cy="557" r=".85"/>
+    <circle cx="792" cy="684" r=".85"/>
+    <circle cx="846" cy="445" r=".71"/>
+    <circle cx="927" cy="385" r=".76"/>
+    <circle cx="980" cy="696" r=".87"/>
+    <circle cx="1053" cy="379" r=".74"/>
+    <circle cx="1071" cy="73" r=".69"/>
+    <circle cx="1161" cy="301" r=".72"/>
+    <circle cx="1236" cy="497" r=".78"/>
+    <circle cx="1342" cy="721" r=".87"/>
+    <circle cx="1411" cy="237" r=".71"/>
+  </g>
+</svg>

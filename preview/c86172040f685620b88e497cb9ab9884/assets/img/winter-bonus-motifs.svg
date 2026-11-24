@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60" fill="none">
+  <g stroke="#34415a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <g id="algorithm">
+      <path d="m14 19-7 9 7 9m32-18 7 9-7 9" stroke-width="2.8"/>
+      <path d="M30 16v9m0 0c0 5-8 6-8 12v4m8-16c0 5 8 6 8 12v4"/>
+      <path d="m30 8 5 5-5 5-5-5z" fill="#e5b35d"/>
+      <circle cx="22" cy="44" r="4.5" fill="#c76852"/>
+      <circle cx="38" cy="44" r="4.5" fill="#fff6db"/>
+    </g>
+    <g id="manuscript" transform="translate(60)">
+      <g transform="rotate(-6 29 30)">
+        <path d="M12 13h23l9 9v29H12Z" fill="#dbac5b"/>
+        <path d="M16 9h20l10 11v27H16Z" fill="#fff8e8"/>
+        <path d="M36 9v11h10" fill="#f0d7a0"/>
+        <path d="M22 20h7m-7 7h16m-16 6h12" stroke-width="1.8"/>
+        <rect x="33" y="36" width="7" height="6" rx=".7" fill="#ba614e" stroke="none"/>
+      </g>
+      <path d="M48 6q.6 4.4 4.6 5-4 .9-4.6 5-.8-4.3-4.6-5 3.9-.8 4.6-5Z" fill="#c79645" stroke="none"/>
+    </g>
+    <g id="guidebook" transform="translate(120)">
+      <path d="M6 16q13-4 24 3 11-7 24-3v28q-12-3-22 3h-4q-10-6-22-3Z" fill="#c76852"/>
+      <path d="M9 12q12-2 21 5v26q-9-6-21-4Z" fill="#fff8e8"/>
+      <path d="M30 17q9-7 21-5v27q-12-2-21 4Z" fill="#f2e0b6"/>
+      <path d="M13 31l4-6 4 5 2-2 3 5-13-2Z" fill="#d2a45b" stroke-width="1.4"/>
+      <circle cx="22" cy="21" r="2" fill="#bd624d" stroke="none"/>
+      <path d="M35 24q4-2 10-2m-10 8q5-2 8-2" stroke-width="1.8"/>
+      <path d="m40 13 4-1v7l-2-1-2 2Z" fill="#bd624d" stroke="none"/>
+    </g>
+  </g>
+</svg>
