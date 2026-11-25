@@ -564,17 +564,18 @@ body[data-active-department="scratch"] .winter-sky {
   font-size: .875rem;
 }
 .special-program__link {
-  display: inline-flex;
+  grid-column: 1 / -1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  margin-top: 16px;
-  padding: 9px 22px;
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 22px;
   border: 1px solid var(--ink);
   border-radius: 4px;
   background: var(--ink);
   color: #fffdf8;
-  font: 700 1rem/1.5 var(--display);
+  font: 700 1.125rem/1.5 var(--display);
   text-decoration: none;
 }
 .special-program__link:is(:hover,:focus-visible) {
