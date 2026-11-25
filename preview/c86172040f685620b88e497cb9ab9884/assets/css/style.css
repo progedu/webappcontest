@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../fonts/noto-sans-jp-text.woff2?20261125-overview-program-v67") format("woff2");
+  src: url("../fonts/noto-sans-jp-text.woff2?20261125-special-notice-v68") format("woff2");
   font-weight: 400 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Zen Maru Gothic";
-  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-overview-program-v67") format("woff2");
+  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-special-notice-v68") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
@@ -509,7 +509,56 @@ body[data-active-department="scratch"] .winter-sky {
   white-space: nowrap;
 }
 .special-program { padding-bottom: clamp(24px,3vw,40px); }
-.special-program img { width: 100%; height: auto; }
+.special-program__card {
+  display: grid;
+  grid-template-columns: minmax(0,340px) minmax(0,1fr);
+  align-items: center;
+  gap: clamp(20px,3vw,32px);
+  padding: clamp(20px,3vw,32px);
+  border: 1px solid #ead09290;
+  border-radius: 18px;
+  background: linear-gradient(115deg,#0c1c41f5,#132d4df0);
+  color: #fff9ee;
+  box-shadow: 0 14px 32px #08152b24;
+}
+.special-program__banner {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border: 1px solid #ffffff30;
+  border-radius: 10px;
+}
+.special-program__content { min-width: 0; }
+.special-program__label {
+  margin-bottom: 8px;
+  color: #ffe4a0;
+  font-size: .8125rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.special-program h2 {
+  color: #fff9ee;
+  font-size: clamp(1.125rem,1.8vw,1.5rem);
+  line-height: 1.6;
+}
+.special-program__date {
+  margin-block: 12px;
+  font-size: clamp(1.0625rem,1.6vw,1.25rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+}
+.special-program__date span { display: inline-block; }
+.special-program strong { color: #ffe4a0; }
+.special-program__cast {
+  margin-top: 12px;
+  color: #d6e0ec;
+  font-size: .875rem;
+}
+@media (max-width: 47.99rem) {
+  .special-program__card { grid-template-columns: minmax(0,1fr); gap: 18px; }
+  .special-program__banner { justify-self: center; max-width: 320px; }
+}
 .news__message {
   --mascot-size: clamp(90px,8.4vw,116px);
   position: relative;
@@ -1656,6 +1705,8 @@ footer a:focus-visible { outline-color: #ffdc9e; }
   body, .news, .news li, footer { color: #17243c; background: white; }
   .news h2, .news time { color: inherit; }
   .news__list { max-height: none; overflow: visible; }
+  .special-program__card { break-inside: avoid; background: white; color: #17243c; border-color: #888; box-shadow: none; }
+  .special-program h2, .special-program strong, .special-program__label, .special-program__cast { color: inherit; }
   .rule-cards { display: block; }
   .rule_normal { break-inside: avoid; }
   .rule-cards > dl { margin-bottom: .65rem; padding: .75rem 1rem; border: 1px solid #888; background: white; }
