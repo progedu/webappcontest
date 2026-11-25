@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../fonts/noto-sans-jp-text.woff2?20261125-program-festival-v70") format("woff2");
+  src: url("../fonts/noto-sans-jp-text.woff2?20261125-zenuniv-prizes-v77") format("woff2");
   font-weight: 400 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Zen Maru Gothic";
-  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-program-festival-v70") format("woff2");
+  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-zenuniv-prizes-v77") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
@@ -1503,6 +1503,7 @@ body[data-active-department] .page-content {
   grid-template-columns: repeat(3,minmax(0,1fr));
   gap: clamp(12px,1.8vw,22px);
 }
+.award-groups { align-items: start; }
 .award-ledger, .award-tiers > div {
   padding: clamp(16px,2vw,25px);
   border: 1px solid var(--line);
@@ -1562,7 +1563,24 @@ body[data-active-department] .page-content {
 }
 .award-selection strong { font: 700 1.125rem/1.5 var(--display); }
 .award-selection > span { word-break: keep-all; overflow-wrap: anywhere; }
+.award-selection--confirmed small { font-size: .75rem; }
+.award-selection--confirmed strong { display: block; font-size: 1rem; line-height: 1.6; }
 .award-tiers .award-selection { margin-top: 12px; }
+.award-prizes {
+  grid-column: 1 / -1;
+  margin-top: 6px;
+  padding: 12px;
+  border: 1px solid var(--gift-ribbon);
+  border-radius: 4px;
+  background: var(--gift-paper);
+  font-size: .875rem;
+  line-height: 1.6;
+}
+.award-prizes__label { color: var(--gift-ink); font-weight: 700; }
+.award-prizes__label small { display: block; margin-top: 3px; font-size: .8125rem; font-weight: 400; }
+.award-prizes ul { margin-top: 8px; padding: 0; list-style: none; }
+.award-prizes li + li { border-top: 1px solid color-mix(in srgb,var(--gift-ribbon) 35%,transparent); }
+.award-prizes a { display: flex; align-items: center; min-height: 44px; padding-block: 6px; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .award-viewers {
   --award-motif: 100%;
   display: grid;
