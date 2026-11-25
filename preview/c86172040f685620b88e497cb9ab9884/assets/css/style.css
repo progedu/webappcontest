@@ -12,6 +12,12 @@
   font-weight: 700;
   font-display: swap;
 }
+@font-face {
+  font-family: "Zen Old Mincho Program";
+  src: url("../fonts/zen-old-mincho-program-700.woff2?20261125-program-button-v75") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
 
 :root {
   --ink: #18246d;
@@ -578,8 +584,8 @@ body[data-active-department="scratch"] .winter-sky {
   background: linear-gradient(110deg,#f7dc94,#edc361 52%,#f6d991);
   box-shadow: inset 0 1px 0 #fff7da, 0 2px 0 #b28b35;
   color: #49351c;
-  font: 700 1.125rem/1.5 var(--reading);
-  letter-spacing: .06em;
+  font: 700 1.25rem/1.5 "Zen Old Mincho Program", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  letter-spacing: .1em;
   text-decoration: none;
 }
 .special-program__link::before {
