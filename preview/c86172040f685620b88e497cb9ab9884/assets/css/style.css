@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../fonts/noto-sans-jp-text.woff2?20261125-special-notice-v68") format("woff2");
+  src: url("../fonts/noto-sans-jp-text.woff2?20261125-program-festival-v70") format("woff2");
   font-weight: 400 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Zen Maru Gothic";
-  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-special-notice-v68") format("woff2");
+  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-program-festival-v70") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
@@ -510,16 +510,32 @@ body[data-active-department="scratch"] .winter-sky {
 }
 .special-program { padding-bottom: clamp(24px,3vw,40px); }
 .special-program__card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(0,340px) minmax(0,1fr);
   align-items: center;
   gap: clamp(20px,3vw,32px);
   padding: clamp(18px,2.5vw,28px);
-  border: 1px solid #ab938080;
+  border: 1px solid #d1a94f;
+  border-top: 4px solid #c74330;
   border-radius: 10px;
-  background: #fffdf8;
+  background:
+    url("../img/winter-first-sunrise-kasumi.svg") left bottom / 1080px 135px no-repeat,
+    linear-gradient(112deg,#ffe19d,#fffaf0 32% 76%,#ffe8ad);
   color: var(--text);
 }
+.special-program__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/winter-program-pattern.svg") right bottom / 180px 120px repeat;
+  mask-image: linear-gradient(90deg,#000,transparent 27% 76%,#000);
+  opacity: .34;
+  pointer-events: none;
+}
+.special-program__card > * { position: relative; z-index: 1; }
 .special-program__image-link {
   display: block;
   width: 100%;
@@ -1718,6 +1734,7 @@ footer a:focus-visible { outline-color: #ffdc9e; }
   .news h2, .news time { color: inherit; }
   .news__list { max-height: none; overflow: visible; }
   .special-program__card { break-inside: avoid; background: white; color: #17243c; border-color: #888; box-shadow: none; }
+  .special-program__card::before { display: none; }
   .special-program h2, .special-program__date, .special-program__cast { color: inherit; }
   .special-program__link { background: white; color: #17243c; border-color: #888; }
   .rule-cards { display: block; }
