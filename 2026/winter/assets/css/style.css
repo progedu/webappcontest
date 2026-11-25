@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../fonts/noto-sans-jp-text.woff2?20261125-zenuniv-prizes-v77") format("woff2");
+  src: url("../fonts/noto-sans-jp-text.woff2?20261125-unity-prizes-v78") format("woff2");
   font-weight: 400 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Zen Maru Gothic";
-  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-zenuniv-prizes-v77") format("woff2");
+  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-unity-prizes-v78") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
