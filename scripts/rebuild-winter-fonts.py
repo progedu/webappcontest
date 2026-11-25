@@ -6,9 +6,7 @@ Run: python scripts/rebuild-winter-fonts.py
 An alternate site tree can be selected with --root /path/to/2026/winter.
 The unlisted preview tree is detected when the canonical winter tree is absent.
 TTFs and the JSON audit report stay in the temporary source cache selected by
---sources; only the WOFF2 files and the optional program font's OFL license
-are written into the site tree. Use --program-font-only to rebuild the small
-special-program button font without modifying the two reading/display fonts.
+--sources; only the two WOFF2 files are written into the site tree.
 """
 
 import argparse
@@ -45,20 +43,6 @@ SOURCES = [
         "variable": False,
     },
 ]
-PROGRAM_FONT = {
-    "source": "ZenOldMincho-Bold.ttf",
-    "url": f"{GOOGLE_FONTS_BASE}/zenoldmincho/ZenOldMincho-Bold.ttf",
-    "sha256": "d6b95c1ff45c8dac153d28961e4c37d7d03b648330c71f884d124dc652a13c0d",
-    "output": "zen-old-mincho-program-700.woff2",
-    "variable": False,
-    "text": "特番ページへ",
-    "license": {
-        "source": "ZenOldMincho-OFL.txt",
-        "url": f"{GOOGLE_FONTS_BASE}/zenoldmincho/OFL.txt",
-        "sha256": "469d214f9842809659c827b7f2adaf40ec0df6efdd5fe18b7127665c32aafaec",
-        "output": "zen-old-mincho-OFL.txt",
-    },
-}
 COMMON_RANGES = [
     (0x20, 0x7E),  # ASCII.
     (0xA0, 0xFF),  # Latin punctuation and symbols.
@@ -121,17 +105,6 @@ def main():
         default=Path(tempfile.gettempdir()) / "winter-contest-font-sources",
         help="temporary cache for official source TTFs and the audit report",
     )
-    program_options = parser.add_mutually_exclusive_group()
-    program_options.add_argument(
-        "--include-program-font",
-        action="store_true",
-        help="also rebuild the label-only Zen Old Mincho special-program button font",
-    )
-    program_options.add_argument(
-        "--program-font-only",
-        action="store_true",
-        help="rebuild only the special-program button font and its OFL license",
-    )
     args = parser.parse_args()
     args.root = args.root.expanduser().resolve()
     args.sources = args.sources.expanduser().resolve()
@@ -156,19 +129,14 @@ def main():
         "required_characters": len(required),
         "fonts": [],
     }
-    items = [PROGRAM_FONT] if args.program_font_only else SOURCES + (
-        [PROGRAM_FONT] if args.include_program_font else []
-    )
-    for item in items:
+    for item in SOURCES:
         source = get_source(args.sources, item)
         font = TTFont(source, recalcTimestamp=False)
         original_version = font["name"].getDebugName(5)
-        original_license = font["name"].getDebugName(13)
         available = set(font.getBestCmap())
-        font_required = (set(map(ord, item["text"])) | {0x20}) if "text" in item else required
-        missing = font_required - available
+        missing = required - available
         require(not missing, f"Source lacks required characters: {describe_characters(missing)}")
-        wanted = font_required if "text" in item else font_required | (common & available)
+        wanted = required | (common & available)
         options = subset.Options()
         options.name_IDs = ["*"]  # Preserve original names and license metadata.
         options.name_languages = ["*"]
@@ -188,9 +156,7 @@ def main():
         cmap = set(rebuilt.getBestCmap())
         missing = wanted - cmap
         require(not missing, f"Subset lost requested glyphs: {describe_characters(missing)}")
-        if "text" not in item:
-            require(set(map(ord, "加点ポイント視聴特鋭凝解")) <= cmap, "Regression glyphs missing")
-        require(rebuilt["name"].getDebugName(13) == original_license, "License metadata changed")
+        require(set(map(ord, "加点ポイント視聴特鋭凝解")) <= cmap, "Regression glyphs missing")
         axes = (
             {a.axisTag: [a.minValue, a.defaultValue, a.maxValue] for a in rebuilt["fvar"].axes}
             if "fvar" in rebuilt
@@ -200,8 +166,8 @@ def main():
             require(axes == {"wght": [400, 400, 700]}, f"Unexpected variable axes: {axes}")
             require(rebuilt["OS/2"].usWeightClass == 400, "Noto default weight must be 400")
         else:
-            require(not axes and rebuilt["OS/2"].usWeightClass == 700, "Font must be static 700")
-        font_report = {
+            require(not axes and rebuilt["OS/2"].usWeightClass == 700, "Zen must be static 700")
+        report["fonts"].append({
             "path": str(target), "source_url": item["url"],
             "source_version": original_version, "source_sha256": item["sha256"],
             "bytes": target.stat().st_size, "sha256": digest(target),
@@ -209,20 +175,8 @@ def main():
             "subfamily": rebuilt["name"].getDebugName(2),
             "weight": rebuilt["OS/2"].usWeightClass, "axes": axes,
             "cmap_characters": len(cmap), "required_missing": [],
-            "extra_common_characters": len(wanted - font_required),
-        }
-        if "text" in item:
-            font_report["label"] = item["text"]
-        if "license" in item:
-            license_source = get_source(args.sources, item["license"])
-            license_target = target.parent / item["license"]["output"]
-            license_target.write_bytes(license_source.read_bytes())
-            font_report["license"] = {
-                "path": str(license_target),
-                "source_url": item["license"]["url"],
-                "sha256": digest(license_target),
-            }
-        report["fonts"].append(font_report)
+            "extra_common_characters": len(wanted - required),
+        })
     report_path = args.sources / "winter-font-rebuild-report.json"
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
