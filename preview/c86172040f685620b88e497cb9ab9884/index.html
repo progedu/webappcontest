@@ -544,19 +544,10 @@
         <h2 id="assessment-title">評価項目</h2>
         <img class="section-heading__astaris" src="assets/img/astaris-thinking-original.png" width="2048" height="2011" alt="" loading="lazy" decoding="async">
       </div>
-      <dl class="assessment-design" data-departments="unity">
-        <dt>設計</dt>
-        <dd>
-          <ul>
-            <li>シーンの階層や Prefab が整理され、手を加えやすく作られているか</li>
-            <li>画面遷移やデータ受け渡し、素材・フォルダ構成に無理がなく拡張しやすいか</li>
-            <li>役割分担や処理の流れがまとまり、スクリプトの分け方や工夫が伝わるか</li>
-          </ul>
-        </dd>
-      </dl>
       <div class="mt-5 row">
-        <dl class="shadow-lg">
-          <dt class="text-center">コーディング</dt>
+        <dl class="shadow-lg" data-departments="web scratch unity">
+          <dt class="text-center" data-departments="web scratch">コーディング</dt>
+          <dt class="text-center" data-departments="unity">設計</dt>
           <dd class="text-center my-2">
             <ul data-departments="web">
               <li class="p-2">ファイル/フォルダが整理されているか</li>
@@ -565,15 +556,17 @@
               <li class="p-2">GitHub を有効に活用できているか</li>
               <li class="p-2">ライブラリやフレームワークを活用できているか</li>
             </ul>
-            <ul data-departments="unity">
-              <li>スクリプトが役割ごとに整理されているか</li>
-              <li>変数やメソッドの名前から、何を扱うか、何をするかが伝わるか</li>
-              <li>繰り返し使う処理を分かりやすくまとめているか</li>
-            </ul>
             <ul data-departments="scratch">
-              <li>スプライトごとにブロックが整理され、動きの流れを追えるか</li>
-              <li>変数やメッセージの名前から、役割が伝わるか</li>
-              <li>同じ動きが続く場面で、繰り返しなどのブロックを活用できているか</li>
+              <li class="p-2">ブロックが整理され、処理の流れを追いやすくなっているか</li>
+              <li class="p-2">変数、リスト、メッセージ、定義ブロックなどの名前から、その役割が伝わるか</li>
+              <li class="p-2">変数やリストを適切に活用し、データを効率的に管理しているか</li>
+              <li class="p-2">定義ブロックを活用するなど、処理の共通化・モジュール化ができているか</li>
+              <li class="p-2">メッセージやクローンなど、Scratch特有の機能を効果的に活用しているか</li>
+            </ul>
+            <ul data-departments="unity">
+              <li class="p-2">シーンの階層や Prefab が整理され、手を加えやすく作られているか</li>
+              <li class="p-2">画面遷移やデータ受け渡し、素材・フォルダ構成に無理がなく拡張しやすいか</li>
+              <li class="p-2">役割分担や処理の流れがまとまり、スクリプトの分け方や工夫が伝わるか</li>
             </ul>
           </dd>
         </dl>
@@ -582,24 +575,34 @@
           <dd class="text-center my-2">
             <ul>
               <li class="p-2">バグや動作不良などはないか</li>
-              <li class="p-2">攻撃可能な脆弱性はないか</li>
-              <li class="p-2">UI/UX が洗練されているか</li>
-              <li class="p-2">テストコードが書かれているか</li>
+              <li class="p-2" data-departments="web">攻撃可能な脆弱性はないか</li>
+              <li class="p-2" data-departments="web">UI/UX が洗練されているか</li>
+              <li class="p-2" data-departments="web">テストコードが書かれているか</li>
               <li class="p-2" data-departments="unity">操作感や当たり判定、演出に違和感がないか</li>
               <li class="p-2" data-departments="unity">最後まで通して遊べ、画面サイズや重さにも配慮されているか</li>
+              <li data-departments="scratch">作ユーザーの操作に対する反応が適切で、快適に操作できるか</li>
+              <li data-departments="scratch">作品を繰り返し実行した場合や、想定外の操作をした場合にも適切に動作するか</li>
+              <li data-departments="scratch">作作品全体が細部まで作り込まれ、意図した機能や表現が十分に実現されているか</li>
             </ul>
           </dd>
         </dl>
         <dl class="shadow-lg">
           <dt class="text-center">アイデア</dt>
           <dd class="text-center text-lg my-2">
-            <ul class="divide-y-[3px] divide-gray-300">
+            <ul class="divide-y-[3px] divide-gray-300" data-departments="web unity">
               <li class="p-2">作品のテーマ・アイデアが新しいか</li>
               <li>オリジナリティのあるアイデアかどうか</li>
               <li class="p-2">機能や実装に独創性があるか</li>
               <li class="p-2">時世やトレンドを取り入れているか</li>
               <li class="p-2">デザインに創意工夫があるか</li>
               <li class="p-2">実際に使われていてユーザーが付いているか</li>
+            </ul>
+            <ul class="divide-y-[3px] divide-gray-300" data-departments="scratch">
+              <li class="p-2">作品のテーマや着眼点に新規性・独自性があるか</li>
+              <li class="p-2">Scratchの機能や制約を踏まえた創意工夫があるか</li>
+              <li class="p-2">時世やトレンドを取り入れているか</li>
+              <li class="p-2">デザインや演出に創意工夫があるか</li>
+              <li class="p-2">ユーザーに価値を提供する作品になっているか</li>
             </ul>
           </dd>
         </dl>
