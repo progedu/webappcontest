@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../fonts/noto-sans-jp-text.woff2") format("woff2");
+  src: url("../fonts/noto-sans-jp-text.woff2?20261125-overview-program-v67") format("woff2");
   font-weight: 400 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Zen Maru Gothic";
-  src: url("../fonts/zen-maru-gothic-700.woff2") format("woff2");
+  src: url("../fonts/zen-maru-gothic-700.woff2?20261125-overview-program-v67") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
@@ -508,6 +508,8 @@ body[data-active-department="scratch"] .winter-sky {
   line-height: 1.5;
   white-space: nowrap;
 }
+.special-program { padding-bottom: clamp(24px,3vw,40px); }
+.special-program img { width: 100%; height: auto; }
 .news__message {
   --mascot-size: clamp(90px,8.4vw,116px);
   position: relative;
@@ -626,7 +628,7 @@ body[data-active-department="scratch"] .winter-sky {
 .page-layout, .page-content { width: 100%; }
 /* Department changes replace content above the reader's current position. */
 .page-content { overflow-anchor: none; }
-.news__inner, .department-picker__inner, .department-header, .department-content {
+.news__inner, .special-program, .department-picker__inner, .department-header, .department-content {
   width: var(--department-width);
   margin-inline: var(--department-left) var(--department-right);
 }
