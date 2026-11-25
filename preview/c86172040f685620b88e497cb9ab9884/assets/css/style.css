@@ -1163,6 +1163,9 @@ body[data-active-department] .page-content {
   padding: 12px var(--section-card-inset);
   background: linear-gradient(100deg,var(--division-paper),#fffdf8 85%);
 }
+.assessment .assessment-design {
+  padding: 24px var(--section-card-inset) 0;
+}
 .assessment .row {
   display: grid;
   grid-template-columns: repeat(3,minmax(0,1fr));

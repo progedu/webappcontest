@@ -340,6 +340,13 @@
                 リポジトリの公開設定は <strong>Public</strong> で作成してください。
               </dd>
             </dl>
+            <dl class="rule_normal rule-illustrated rule-illustrated--repository" data-departments="unity">
+              <dt>Unityパッケージをアップロードし、共有 URL を提出すること</dt>
+              <dd>
+                <p>作品のプロジェクトファイルを<strong>Unityパッケージ（.unitypackage）</strong>として、<strong>GitHub の Public リポジトリ</strong>または<strong>Google ドライブ</strong>にアップロードし、その URL を応募フォームに記載してください。提出は必須です。</p>
+                <p>審査員がプロジェクトファイルをダウンロードして確認できる共有設定にしてください。</p>
+              </dd>
+            </dl>
             <dl class="rule_normal rule-illustrated rule-illustrated--url" data-departments="web">
               <dt>動作確認ができる URL を提出すること</dt>
               <dd>
@@ -405,14 +412,6 @@
               <dd>
                 <span data-departments="unity">ゲーム性や表現力、操作性に加えて、コーディングも評価します。</span>
                 <span data-departments="scratch">アイデアや完成度、遊びやすさに加えて、コーディングも評価します。</span>
-              </dd>
-            </dl>
-            <dl class="rule_normal" data-departments="unity">
-              <dt>制作物の共有 URL について</dt>
-              <dd>
-                制作物そのものの提出は任意です。<br>
-                可能であれば、作品の ZIP ファイルを Google ドライブや GitHub などで公開し、その URL を応募フォームで提出してください。<br>
-                審査の参考にできるため、ご協力いただけると嬉しいです。
               </dd>
             </dl>
           </div>
@@ -545,6 +544,16 @@
         <h2 id="assessment-title">評価項目</h2>
         <img class="section-heading__astaris" src="assets/img/astaris-thinking-original.png" width="2048" height="2011" alt="" loading="lazy" decoding="async">
       </div>
+      <dl class="assessment-design" data-departments="unity">
+        <dt>設計</dt>
+        <dd>
+          <ul>
+            <li>シーンの階層や Prefab が整理され、手を加えやすく作られているか</li>
+            <li>画面遷移やデータ受け渡し、素材・フォルダ構成に無理がなく拡張しやすいか</li>
+            <li>役割分担や処理の流れがまとまり、スクリプトの分け方や工夫が伝わるか</li>
+          </ul>
+        </dd>
+      </dl>
       <div class="mt-5 row">
         <dl class="shadow-lg">
           <dt class="text-center">コーディング</dt>
@@ -576,6 +585,8 @@
               <li class="p-2">攻撃可能な脆弱性はないか</li>
               <li class="p-2">UI/UX が洗練されているか</li>
               <li class="p-2">テストコードが書かれているか</li>
+              <li class="p-2" data-departments="unity">操作感や当たり判定、演出に違和感がないか</li>
+              <li class="p-2" data-departments="unity">最後まで通して遊べ、画面サイズや重さにも配慮されているか</li>
             </ul>
           </dd>
         </dl>
