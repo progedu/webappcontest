@@ -2,33 +2,15 @@
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../fonts/noto-sans-jp.woff2") format("woff2");
+  src: url("../fonts/noto-sans-jp-text.woff2") format("woff2");
   font-weight: 400 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Zen Maru Gothic";
-  src: url("../fonts/zen-maru-gothic-headings.woff2") format("woff2");
+  src: url("../fonts/zen-maru-gothic-700.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
-}
-
-/* Glyphs outside the contest headings remain available for future announcements. */
-@font-face {
-  font-family: "Zen Maru Gothic";
-  src: url("../fonts/zen-maru-gothic-extra.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  unicode-range: U+A0-3000, U+300C-300D, U+3044-3048, U+304B-304C, U+3051, U+3054, U+305D, U+3060-3064, U+3069-306A,
-    U+306F-3078, U+307E-307F, U+3084, U+308A, U+308D-308F, U+3093-30A1, U+30A6, U+30A8, U+30AA, U+30AD,
-    U+30BB-30BF, U+30C1-30C4, U+30CA-30CE, U+30D1, U+30D6, U+30D8, U+30DB, U+30DE, U+30E1-30E5, U+30EC,
-    U+4E00, U+4E0A-4E16, U+4E3B, U+4E86-4EBA, U+4ECB-4F3C, U+4F7F, U+4FEE, U+50CF-5148, U+516C, U+5185,
-    U+51E6-5207, U+5275-529B, U+52A9-52D9, U+5341-5358, U+53D6-540C, U+5411-542B, U+554F-56FD, U+57FA-5834,
-    U+58EB-5909, U+5B09-5B50, U+5B89, U+5B9F-5BB9, U+5BFE-5C55, U+5E2B-5E38, U+5E83, U+5F0F, U+5F31-5F53,
-    U+5F70-5FC5, U+6027-60C5, U+614B, U+627F-6295, U+62C5-6301, U+632F, U+63D0-653E, U+6574-6599, U+65B9-65E5,
-    U+6642-672C, U+6771-679C, U+6821-682A, U+697D-6D17, U+6D3B, U+7248-7269, U+72B6-72EC, U+751F, U+753B,
-    U+7684-76E3, U+7740, U+7814-7A3F, U+7B2C, U+7BA1-7FD2, U+80B2-826F, U+8457, U+884C-898B, U+8A00, U+8A2D,
-    U+8A72-8CAC, U+8CBC-8CC7, U+8DF5-9001, U+9023-904A, U+91CF, U+9577, U+9593-96C6, U+9808-9A13, U+FF08-FF09;
 }
 
 :root {
@@ -579,7 +561,7 @@ body[data-active-department="scratch"] .winter-sky {
     linear-gradient(63deg,transparent 33%,#ffda4b 36% 64%,transparent 67%) right top / 8px 10px no-repeat,
     linear-gradient(25deg,transparent 30%,#ffda4b 34% 64%,transparent 68%) left bottom / 12px 7px no-repeat;
 }
-.news__message strong { font-size: 1.18em; }
+.news__message strong { font-size: 1.18em; font-weight: 700; }
 .news__message strong span {
   color: #a02b23;
   background: linear-gradient(176deg,transparent 67%,#ffe174 68% 92%,transparent 93%);
