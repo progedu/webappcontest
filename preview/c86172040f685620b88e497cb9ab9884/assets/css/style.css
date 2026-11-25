@@ -577,9 +577,9 @@ body[data-active-department="scratch"] .winter-sky {
   border-radius: 6px;
   background: linear-gradient(110deg,#f7dc94,#edc361 52%,#f6d991);
   box-shadow: inset 0 1px 0 #fff7da, 0 2px 0 #b28b35;
-  color: #17205e;
-  font: 700 1.125rem/1.5 var(--display);
-  letter-spacing: .08em;
+  color: #49351c;
+  font: 700 1.125rem/1.5 var(--reading);
+  letter-spacing: .06em;
   text-decoration: none;
 }
 .special-program__link::before {
@@ -594,11 +594,10 @@ body[data-active-department="scratch"] .winter-sky {
 }
 .special-program__link:is(:hover,:focus-visible) {
   background: #f7dc94;
-  color: #17205e;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  color: #49351c;
+  text-decoration: none;
 }
-.special-program__link:focus-visible { outline-color: var(--ink); }
+.special-program__link:focus-visible { outline-color: #49351c; }
 @media (max-width: 47.99rem) {
   .special-program__card { grid-template-columns: minmax(0,1fr); gap: 18px; }
   .special-program__image-link { justify-self: center; max-width: 320px; }
